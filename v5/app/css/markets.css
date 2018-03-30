@@ -1,0 +1,304 @@
+.choosing-form {
+  margin-top: 32px;
+  background-color: #fff;
+}
+.choosing-form form fieldset {
+  position: relative;
+  padding: 0 24px 15px;
+  border-bottom: 1px solid #e0e6ed;
+}
+.choosing-form form fieldset legend {
+  padding-top: 15px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.06px;
+}
+.choosing-form form fieldset .dropdown::before {
+  right: 40px;
+  top: 20px;
+}
+.choosing-form form fieldset .choosing-form_list {
+  margin-top: 15px;
+}
+.choosing-form form fieldset .choosing-form_list li {
+  margin-bottom: 8px;
+}
+.choosing-form form fieldset .choosing-form_list li .bold {
+  font-weight: 500;
+}
+.choosing-form form fieldset .choosing-form_list li sup {
+  margin-left: 5px;
+  color: #9096a0;
+  font-size: 10px;
+  letter-spacing: -0.1px;
+}
+.choosing-form form fieldset .choosing-form_list li:last-child {
+  margin-bottom: 0;
+}
+.markets-content {
+  margin-top: 32px;
+}
+.markets-content h1 {
+  margin-bottom: 20px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.markets-content_intro {
+  margin-bottom: 20px;
+}
+.markets-content_intro p {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.markets-content_top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+.markets-content_markets-amount {
+  margin-bottom: 7px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.markets-content_markets-amount span {
+  font-weight: 700;
+}
+.markets-content_tag {
+  display: inline-block;
+  padding: 4px 8px 4px 5px;
+  background-color: #44af36;
+}
+.markets-content_tag a {
+  display: inline-block;
+  text-indent: -9999px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/cross.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.markets-content_tag span {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 500;
+}
+.markets-content_topics-select {
+  position: relative;
+}
+.markets-content_topics-select select {
+  padding: 6px 85px 6px 12px;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  box-shadow: 0 1px 0 #e2e7ee;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid rgba(197, 208, 222, 0.5);
+  background-color: #ffffff;
+  outline: none;
+}
+.markets-content_topics-select::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 33px;
+  box-shadow: 0 1px 0 #e2e7ee;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid rgba(197, 208, 222, 0.5);
+  background-color: #ffffff;
+  left: -39px;
+  top: 0px;
+  background-image: url('../img/topic-select-icon.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.markets-content_topics-select::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  right: 16px;
+  top: 15px;
+  background-image: url('../img/select-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.markets-item {
+  margin-bottom: 20px;
+}
+.markets-item_content {
+  display: flex;
+}
+.markets-item_image {
+  display: flex;
+  width: 188px;
+  height: 180px;
+}
+.markets-item_image img {
+  margin: auto;
+  padding: 10px;
+}
+.markets-item_discription {
+  padding: 20px 24px 0 28px;
+  flex-grow: 1;
+  background-color: #fafbfc;
+}
+.markets-item_title {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.markets-item_title h2 {
+  color: #333f52;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.markets-item_title .rating {
+  white-space: nowrap;
+  padding: 7px 8px 5px 16px;
+  background-color: #f9a73e;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 16px;
+}
+.markets-item_title .rating span {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.markets-item_type {
+  margin-bottom: 13px;
+}
+.markets-item_type span {
+  display: inline-block;
+  padding: 3px 4px 2px;
+  margin-right: 4px;
+  margin-bottom: 5px;
+  background-color: #8f96a1;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: -0.03px;
+  text-transform: uppercase;
+}
+.markets-item_features {
+  margin-bottom: 8px;
+}
+.markets-item_features span {
+  margin-right: 16px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.06px;
+}
+.markets-item_bottom-line {
+  padding: 17px 17px 17px 45px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+}
+.markets-item_bottom-line a {
+  position: relative;
+  margin-right: 45px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.13px;
+}
+.markets-item_bottom-line a sup {
+  top: -7px;
+  margin-left: 4px;
+  margin-top: -22px;
+  padding: 1px 5px 1px 3px;
+  border-radius: 8px;
+  background-color: #5bb0d5;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 9px;
+}
+.markets-item_bottom-line .to-discuss::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: -25px;
+  top: 0px;
+  background-image: url('../img/discuss-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.markets-item_bottom-line .to-rate::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: -25px;
+  top: 0px;
+  background-image: url('../img/to-rate-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.markets-item_characteristics {
+  background-color: #dfe5ed;
+  padding: 30px 28px 18px;
+}
+.markets-item_characteristics-feature {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.markets-item_characteristics-name {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.markets-item_characteristics-score {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 12px;
+}
+.markets-item_buttons-set {
+  display: flex;
+  flex-wrap: nowrap;
+}

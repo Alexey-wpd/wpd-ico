@@ -1,0 +1,88 @@
+.main-forum {
+  margin-top: 32px;
+}
+.main-forum .forum-section {
+  padding-bottom: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  border-radius: 4px;
+  background-color: #fafbfc;
+}
+.main-forum .forum-section_title {
+  padding: 19px 28px;
+  background-color: #beceda;
+  box-shadow: 0 1px 0 #beceda;
+  border-radius: 4px 4px 0 0;
+  border-left: 4px solid #7bd2fe;
+}
+.main-forum .forum-section_title h3 {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.main-forum .forum-section_subsection {
+  padding: 20px 34px 0 34px;
+}
+.main-forum .forum-section_subsection .forum-subsection {
+  display: flex;
+  align-items: baseline;
+}
+.main-forum .forum-section_subsection .forum-subsection_icon {
+  margin-right: 15px;
+  width: 13px;
+  height: 10px;
+  background-image: url('../img/subsection-icon.svg');
+  cursor: pointer;
+}
+.main-forum .forum-section_subsection .forum-subsection_icon--lock {
+  height: 16px;
+  background-image: url('../img/lock.svg');
+}
+.main-forum .forum-section_subsection .forum-subsection_icon--dropdown {
+  width: 12px;
+  height: 7px;
+  background-image: url('../img/subsection-icon-small.svg');
+}
+.main-forum .forum-section_subsection .forum-subsection_title {
+  margin-right: 16px;
+}
+.main-forum .forum-section_subsection .forum-subsection_title a {
+  color: #1991eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.main-forum .forum-section_subsection .forum-subsection_title a:hover {
+  text-decoration: underline;
+  color: #1175c0;
+}
+.main-forum .forum-section_subsection .forum-subsection_title--dropdown a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.1px;
+}
+.main-forum .forum-section_subsection .forum-subsection_title--grey a {
+  color: #525c6c;
+}
+.main-forum .forum-section_subsection .forum-subsection--dropdown {
+  padding-left: 29px;
+  padding-top: 20px;
+}
+.main-forum .forum-section_subsection .topic-count {
+  margin-top: 3px;
+  margin-left: 29px;
+}
+.main-forum .forum-section_subsection .topic-count span {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.main-forum .forum-section_subsection .topic-count--dropdown {
+  padding-left: 29px;
+}

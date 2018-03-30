@@ -1,0 +1,96 @@
+@import "vars";
+
+.main-forum{
+    margin-top: 32px;
+    .forum-section {
+        padding-bottom: 18px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+        border-radius: 4px;
+        background-color: #fafbfc;
+        &_title {
+            padding: 19px 28px;
+            background-color: darken(@body-bg, 15%);
+            box-shadow: 0 1px 0 darken(@body-bg, 15%);
+            border-radius: 4px 4px 0 0;
+            border-left: 4px solid #7bd2fe;
+            h3 {
+                color: #333f52;
+                font-family: @main-font;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 18px;
+            }
+        }
+        &_subsection {
+            padding: 20px 34px 0 34px;
+            .forum-subsection {
+                display: flex;
+                align-items: baseline;;
+                &_icon {
+                    margin-right: 15px;
+                    width: 13px;
+                    height: 10px;
+                    background-image: @img-subsection-icon;
+                    cursor: pointer;
+                    &--lock {
+                        height: 16px;
+                        background-image: @img-lock;
+                    }
+                    &--dropdown {
+                        width: 12px;
+                        height: 7px;
+                        background-image: @img-subsection-icon-small;
+                    }
+                }
+                &_title {
+                    margin-right: 16px;
+                    a {
+                        color: @main-color;
+                        font-family: @main-font;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        &:hover {
+                            text-decoration: underline;
+                            color: darken(@main-color, 10%);
+                        }
+                    }
+                    &--dropdown {
+                        a {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 16px;
+                            letter-spacing: -0.1px;
+                        }
+                    }
+                    &--grey {
+                        a {
+                            color: #525c6c;
+                        }
+                    }
+                }
+                .readers {
+                }
+                &--dropdown {
+                    padding-left: 29px;
+                    padding-top: 20px;
+                }
+            }
+            .topic-count {
+                margin-top: 3px;
+                margin-left: 29px;
+                span {
+                    color: #525c6c;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 12px;
+                }
+                &--dropdown {
+                    padding-left: 29px;
+                }
+            }
+        }
+    }
+}

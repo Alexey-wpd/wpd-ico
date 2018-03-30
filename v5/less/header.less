@@ -1,0 +1,139 @@
+@import "vars";
+
+.header {
+    background-color: #fff;
+    &_top-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;;
+        .logo {
+            margin-right: 64px;
+        }
+        .main-nav {
+            display: flex;
+            align-items: center;
+            &_menu {
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                &-item {
+                    margin-right: 48px;
+                    a {
+                        display: block;
+                        padding: 25px 0 22px;
+                        color: @accent-color;
+                        font-family: @main-font;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+                    &--active {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;;
+                            width: 100%;
+                            height: 4px;
+                            background-color: @accent-color;
+                        }
+                    }
+                    &--block {
+                        ul {
+                            padding: 25px 0 22px;
+                            a {
+                                display: block;
+                                padding: 0;
+                                color: #525c6c;
+                                font-family: @main-font;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .user {
+            margin-bottom: 0;
+        	&_block {
+        		.user_icon {
+                    margin-left: 10px;
+        			margin-right: 0;
+                    margin-top: -22px;
+        		}
+        		.user_name {
+                    text-align: right;
+        		}
+        		.user_rank {
+        			&--boss {
+        			}
+        			&--team {
+        			}
+        		}
+        	}
+        	.user_rating {
+        		span {
+        			color: @accent-color;
+        			font-family: @main-font;
+        			font-size: 14px;
+        			font-weight: 700;
+        			line-height: 20px;
+        		}
+        	}
+        }
+    }
+    .bottom-line {
+        background-color: darken(@body-bg, 65%);
+        padding: 20px 0;
+        .searching-form {
+            position: relative;
+            form {
+                //border-top-left-radius: 4px;
+                //border-bottom-left-radius: 4px;
+                border-radius: 4px 0 0 4px;
+                border: 1px solid rgba(197, 208, 222, 0.5);
+                background-color: #ffffff;
+                input {
+                    padding: 11px 15px;
+                    min-width: 460px;
+                    color: #333f52;
+                    font-family: @main-font;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+                    border: none;
+                }
+            }
+            select {
+                padding: 0 36px 0 12px;
+                outline: none;
+                color: #707986;
+                font-family: @main-font;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                border: 1px solid rgba(197, 208, 222, 0.5);
+                //border-top-right-radius: 4px;
+                //border-bottom-right-radius: 4px;
+                border-radius: 0 4px 4px 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                background-color: #ffffff;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 4px;
+                right: 16px;
+                top: 19px;
+                background-image: @img-select-arrow;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 11;
+            }
+        }
+    }
+}

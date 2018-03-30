@@ -3,6 +3,8 @@
 .choosing-form {
     margin-top: 32px;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+    border-radius: 4px;
     form {
         fieldset {
             position: relative;
@@ -160,6 +162,7 @@
         display: flex;
         width: 188px;
         height: 180px;
+        border-radius: 4px 0 0 0;
         img {
             margin: auto;
             padding: 10px;
@@ -182,20 +185,38 @@
             line-height: 24px;
         }
         .rating {
-            white-space: nowrap;
-            padding: 7px 8px 5px 16px;
-            background-color: #f9a73e;
-            color: #333f52;
-            font-family: @main-font;
-            font-size: 16px;
-            font-weight: 900;
-            line-height: 16px;
+            position: relative;
+            display: flex;
+            width: 69px;
+            height: 28px;
+            background-color: #fbc783;
+            &::before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                border: 9px solid #fafbfc;
+                border-top-width: 14px;
+                border-bottom-width: 14px;
+                border-top-color: transparent;
+                border-bottom-color: transparent;
+                border-right-width: 0;
+            }
             span {
-                color: #707986;
+                margin: auto;
+                white-space: nowrap;
+                color: #333f52;
                 font-family: @main-font;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 16px;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 19px;
+                span {
+                    padding: 0;
+                    color: #707986;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                }
             }
         }
     }
@@ -232,6 +253,7 @@
         padding: 17px 17px 17px 45px;
         background-color: #fff;
         box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+        border-radius: 0 0 0 4px;
         a {
             position: relative;
             margin-right: 45px;
@@ -287,6 +309,7 @@
     &_characteristics {
         background-color: #dfe5ed;
         padding: 30px 28px 18px;
+        border-radius: 0 4px 0 0;
         &-feature {
             margin-bottom: 10px;
             display: flex;
@@ -310,6 +333,7 @@
         }
     }
     &_buttons-set {
+        position: relative;
         display: flex;
         flex-wrap: nowrap;
     }

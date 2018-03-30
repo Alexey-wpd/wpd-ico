@@ -1,6 +1,8 @@
 .choosing-form {
   margin-top: 32px;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  border-radius: 4px;
 }
 .choosing-form form fieldset {
   position: relative;
@@ -153,6 +155,7 @@
   display: flex;
   width: 188px;
   height: 180px;
+  border-radius: 4px 0 0 0;
 }
 .markets-item_image img {
   margin: auto;
@@ -176,16 +179,34 @@
   line-height: 24px;
 }
 .markets-item_title .rating {
+  position: relative;
+  display: flex;
+  width: 69px;
+  height: 28px;
+  background-color: #fbc783;
+}
+.markets-item_title .rating::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border: 9px solid #fafbfc;
+  border-top-width: 14px;
+  border-bottom-width: 14px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-width: 0;
+}
+.markets-item_title .rating span {
+  margin: auto;
   white-space: nowrap;
-  padding: 7px 8px 5px 16px;
-  background-color: #f9a73e;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 900;
-  line-height: 16px;
+  line-height: 19px;
 }
-.markets-item_title .rating span {
+.markets-item_title .rating span span {
+  padding: 0;
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -225,6 +246,7 @@
   padding: 17px 17px 17px 45px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  border-radius: 0 0 0 4px;
 }
 .markets-item_bottom-line a {
   position: relative;
@@ -276,6 +298,7 @@
 .markets-item_characteristics {
   background-color: #dfe5ed;
   padding: 30px 28px 18px;
+  border-radius: 0 4px 0 0;
 }
 .markets-item_characteristics-feature {
   margin-bottom: 10px;
@@ -299,6 +322,7 @@
   line-height: 12px;
 }
 .markets-item_buttons-set {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
 }

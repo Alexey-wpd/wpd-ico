@@ -1,0 +1,223 @@
+@import "vars";
+
+.inner-topic {
+    margin-top: 32px;
+    padding: 0 28px 42px 28px;
+    box-shadow: 0 10px 30px rgba(82, 92, 108, 0.15);
+    background-color: #ffffff;
+    &_top-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+        .user {
+            justify-content: flex-start;
+            margin-bottom: 0;
+            padding-top: 20px;
+            &_block {
+                margin-right: 8px;
+                .user_icon {
+                    margin-right: 12px;
+                    img {
+                        //margin-top: 1px;
+                    }
+                }
+                .user_name {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 12px;
+                    letter-spacing: -0.07px;
+                    .user_rating {
+                        margin-left: 5px;
+                        font-size: 10px;
+                        font-weight: 500;
+                        //line-height: 20px;
+                        color: @accent-color;
+                        font-family: @main-font;
+                    }
+                }
+                .user_rank {
+                    padding: 2px 4px;
+                    &--team {
+
+                    }
+                    &--boss {
+
+                    }
+                }
+            }
+        }
+    }
+    &_topic-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+        .topic-statistic {
+            display: flex;
+            margin-left: 58px;
+            &_time {
+                margin-right: 27px;
+        		span {
+                    position: relative;
+                    color: #333f52;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+        			white-space: nowrap;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 3px;
+                        height: 3px;
+                        background-color: #959ca7;
+                        top: 5px;
+                        left: 95px;
+                    }
+        		}
+            }
+            &_veiws {
+                margin-right: 24px;
+        		span {
+        			margin-right: 7px;
+                    color: #8f96a1;
+                    font-family: @main-font;
+                    font-weight: 400;
+                    line-height: 14px;
+                    font-size: 14px;
+        		}
+            }
+            &_comments {
+                color: #707986;
+                font-family:  @main-font;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                span {
+                    margin-left: 5px;
+                    background-color: #9ea4ad;
+                    position: relative;
+        			padding: 3px 6px;
+        			border-radius: 8px;
+                    font-size: 11px;
+                    font-weight: 700;
+                    line-height: 10px;
+                    color: #fff;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 11px;
+                        height: 6px;
+                        right: 50%;
+                        margin-right: -4px;
+                        top: 18px;
+                        background-image: @img-tail;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .readers {
+                margin-right: 24px;
+            }
+        }
+        .topic-rating {
+            display: flex;
+            //align-items: center;
+            &_count {
+                color: #707986;
+                font-family: @main-font;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 26px;
+                white-space: nowrap;
+                span {
+                    margin-left: 5px;
+                    color: #b64ad4;
+                    font-family: @main-font;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 26px;
+                }
+            }
+            &_add-rating {
+                margin-left: 12px;
+                a {
+    				display: inline-block;
+    				text-align: center;
+    				vertical-align: middle;
+    				width: 24px;
+    				height: 24px;
+    				border-radius: 12px;
+    				background-color: #b54ad3;
+    				font-size: 14px;
+    				font-weight: 900;
+    				line-height: 25px;
+    				color: #fff;
+    			}
+                &--nocolor {
+                    a {
+                        color: #b54ad3;
+                        border: 1px solid #b54ad3;
+                        background-color: inherit;
+                        line-height: 24px;
+                    }
+                }
+            }
+            &_icon-star {
+                display: flex;
+                align-items: center;
+                margin-left: 28px;
+                span {
+                    margin-left: 8px;
+                    color: #707986;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+    &_content {
+        padding-left: 60px;
+        h1 {
+            margin-bottom: 15px;
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #525c6c;
+            font-family: @main-font;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #525c6c;
+            font-family: @main-font;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+            a {
+                color: @main-color;
+                font-weight: 500;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        &-image {
+            padding: 32px 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

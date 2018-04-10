@@ -78,7 +78,12 @@
   margin-bottom: 1px;
   background-color: #fff;
   box-shadow: 0 1px 0 #e0e6ed;
+}
+.forum-subsection-content_topic:first-child {
   border-radius: 4px 4px 0 0;
+}
+.forum-subsection-content_topic:last-child {
+  border-radius: 0 0 4px 4px;
 }
 .forum-subsection-content_topic .user {
   justify-content: flex-start;

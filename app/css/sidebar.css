@@ -64,6 +64,7 @@
 .sidebar .profile_topics-item--icon-my-message::after,
 .sidebar .profile_favourites-item--icon-my-message::after,
 .sidebar .profile_settings-item--icon-my-message::after {
+  top: 1px;
   background-image: url('../img/my-message-icon.svg');
 }
 .sidebar .profile_rating-item--icon-my-topic::after,
@@ -71,6 +72,7 @@
 .sidebar .profile_topics-item--icon-my-topic::after,
 .sidebar .profile_favourites-item--icon-my-topic::after,
 .sidebar .profile_settings-item--icon-my-topic::after {
+  top: 4px;
   background-image: url('../img/my-topics-icon.svg');
 }
 .sidebar .profile_rating-item--icon-my-favourites::after,

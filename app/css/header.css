@@ -92,6 +92,10 @@
 .header .main-nav_user-language {
   margin-left: 28px;
 }
+.header .main-nav_user-language .language {
+  position: absolute;
+  top: 33px;
+}
 .header .main-nav_user-login {
   margin-left: 64px;
 }

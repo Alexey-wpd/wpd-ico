@@ -33,3 +33,8 @@
 	  $(".language-header_current").html($(this).html());
 	});
 });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

@@ -92,6 +92,10 @@
 .header .main-nav_user-language {
   margin-left: 28px;
 }
+.header .main-nav_user-language .language {
+  position: absolute;
+  top: 33px;
+}
 .header .main-nav_user-login {
   margin-left: 64px;
 }
@@ -399,6 +403,7 @@
 .sidebar .profile_topics-item--icon-my-message::after,
 .sidebar .profile_favourites-item--icon-my-message::after,
 .sidebar .profile_settings-item--icon-my-message::after {
+  top: 1px;
   background-image: url('../img/my-message-icon.svg');
 }
 .sidebar .profile_rating-item--icon-my-topic::after,
@@ -406,6 +411,7 @@
 .sidebar .profile_topics-item--icon-my-topic::after,
 .sidebar .profile_favourites-item--icon-my-topic::after,
 .sidebar .profile_settings-item--icon-my-topic::after {
+  top: 4px;
   background-image: url('../img/my-topics-icon.svg');
 }
 .sidebar .profile_rating-item--icon-my-favourites::after,
@@ -814,7 +820,12 @@
   margin-bottom: 1px;
   background-color: #fff;
   box-shadow: 0 1px 0 #e0e6ed;
+}
+.forum-subsection-content_topic:first-child {
   border-radius: 4px 4px 0 0;
+}
+.forum-subsection-content_topic:last-child {
+  border-radius: 0 0 4px 4px;
 }
 .forum-subsection-content_topic .user {
   justify-content: flex-start;
@@ -1756,11 +1767,42 @@
 .top5-ico .ico-item {
   display: flex;
   margin-bottom: 1px;
+  position: relative;
+}
+.top5-ico .ico-item .rating {
+  position: absolute;
+  top: 14px;
+  display: flex;
+  width: 30px;
+  height: 18px;
+  background-color: #f7981b;
+  z-index: 55;
+}
+.top5-ico .ico-item .rating::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -7px;
+  border: 7px solid transparent;
+  border-top-width: 9px;
+  border-bottom-width: 9px;
+  border-top-color: #f7981b;
+  border-bottom-color: #f7981b;
+  border-left-width: 0;
+}
+.top5-ico .ico-item .rating span {
+  margin: auto;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
 }
 .top5-ico .ico-item_logo {
+  position: relative;
   display: flex;
   min-width: 106px;
-  height: 132px;
 }
 .top5-ico .ico-item_logo img {
   margin: auto;
@@ -1811,6 +1853,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.top5-ico .ico-item_data:last-child {
+  margin-bottom: 16px;
+}
 .top5-ico .ico-item_data-trading-start-date {
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
@@ -1857,6 +1902,30 @@
   line-height: 20px;
   letter-spacing: -0.35px;
 }
+.top5-ico .ico-item_data-token-x {
+  position: relative;
+  padding-left: 14px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.top5-ico .ico-item_data-token-x span {
+  font-size: 14px;
+}
+.top5-ico .ico-item_data-token-x::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  left: -1px;
+  top: 7px;
+  background-image: url('../img/triangle-green.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .top5-ico_button {
   text-align: center;
   margin-top: 36px;
@@ -1866,10 +1935,17 @@
   background-color: #44af36;
   box-shadow: 0 4px 0 #35882a;
 }
-.latest {
+.latest-wrapper {
+  padding-bottom: 60px;
   background-color: #e0e6ed;
 }
-.latest h2 {
+.latest-wrapper .latest {
+  position: relative;
+  background-color: #e0e6ed;
+  height: 880px;
+  overflow: hidden;
+}
+.latest-wrapper .latest h2 {
   margin-top: 34px;
   margin-bottom: 26px;
   color: #333f52;
@@ -1878,32 +1954,45 @@
   font-weight: 700;
   line-height: 18px;
 }
-.latest-forum .forum-subsection-content {
+.latest-wrapper .latest-forum .forum-subsection-content {
   margin-top: 0;
 }
-.latest-forum .forum-topic_numbers {
+.latest-wrapper .latest-forum .forum-topic_numbers {
   width: 100px;
   justify-content: space-between;
 }
-.latest-review_item {
+.latest-wrapper .latest-review {
+  height: 850px;
+}
+.latest-wrapper .latest-review::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  width: 440px;
+  height: 72px;
+  background-image: linear-gradient(to top, #e0e6ed 0%, rgba(224, 230, 237, 0) 100%);
+  z-index: 55;
+}
+.latest-wrapper .latest-review_item {
   margin-bottom: 16px;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
 }
-.latest-review_item-title {
+.latest-wrapper .latest-review_item-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 13px 33px 13px 24px;
   background-image: linear-gradient(225deg, #8392d9 0%, #3841ba 100%);
 }
-.latest-review_item-title h3 {
+.latest-wrapper .latest-review_item-title h3 {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
-.latest-review_item-title span {
+.latest-wrapper .latest-review_item-title span {
   padding: 1px 6px;
   border-radius: 8px;
   border: 1px solid #ffffff;
@@ -1915,13 +2004,13 @@
   text-transform: uppercase;
   letter-spacing: -0.03px;
 }
-.latest-review_item-discription {
+.latest-wrapper .latest-review_item-discription {
   position: relative;
   padding: 16px 24px 0px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
-.latest-review_item-discription p {
+.latest-wrapper .latest-review_item-discription p {
   position: relative;
   padding-bottom: 20px;
   color: #525c6c;
@@ -1930,41 +2019,41 @@
   font-weight: 400;
   line-height: 16px;
 }
-.latest-review_item .markets-item_characteristics {
+.latest-wrapper .latest-review_item .markets-item_characteristics {
   background-color: #fff;
   padding: 18px 28px 16px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   border-radius: 0;
   border-top: 1px solid #e0e6ed;
 }
-.latest-review_item .user {
+.latest-wrapper .latest-review_item .user {
   padding: 14px 24px;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   background-color: #fafbfc;
 }
-.latest-review_item .user_block {
+.latest-wrapper .latest-review_item .user_block {
   align-items: flex-start;
 }
-.latest-review_item .user_rating {
+.latest-wrapper .latest-review_item .user_rating {
   color: #44af36;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   font-weight: 500;
   line-height: 20px;
 }
-.latest-review_item .rating {
+.latest-wrapper .latest-review_item .rating {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.latest-review_item .rating_tag {
+.latest-wrapper .latest-review_item .rating_tag {
   position: relative;
   display: flex;
   width: 40px;
   height: 20px;
   background-color: #44af36;
 }
-.latest-review_item .rating_tag::before {
+.latest-wrapper .latest-review_item .rating_tag::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -1973,7 +2062,7 @@
   border-right-width: 10px;
   border-right-color: transparent;
 }
-.latest-review_item .rating_tag span {
+.latest-wrapper .latest-review_item .rating_tag span {
   margin: auto;
   white-space: nowrap;
   color: #fff;
@@ -1982,7 +2071,7 @@
   font-weight: 700;
   line-height: 21px;
 }
-.latest-review_item-date {
+.latest-wrapper .latest-review_item-date {
   margin-top: 5px;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -1990,12 +2079,12 @@
   font-weight: 400;
   line-height: 9px;
 }
-.latest-review_item .dropdown {
+.latest-wrapper .latest-review_item .dropdown {
   cursor: pointer;
   position: absolute;
   left: 50%;
 }
-.latest-review_item .dropdown::before {
+.latest-wrapper .latest-review_item .dropdown::before {
   content: "";
   position: absolute;
   width: 22px;

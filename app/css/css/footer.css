@@ -1,0 +1,131 @@
+.footer {
+  background-color: #ffffff;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0 25px;
+  box-shadow: 0 -1px 0 #e0e6ed;
+}
+.footer-content {
+  display: flex;
+}
+.footer_logo {
+  margin-bottom: 20px;
+}
+.footer_intro {
+  margin-bottom: 20px;
+  margin-right: 60px;
+}
+.footer_intro p {
+  max-width: 260px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.footer_social a {
+  margin-right: 5px;
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+}
+.footer_social a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 1px;
+  top: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.footer_social-fb {
+  background-color: #345c94;
+}
+.footer_social-fb::before {
+  background-image: url('../img/fb-icon.svg');
+}
+.footer_social-tw {
+  background-color: #00b0e9;
+}
+.footer_social-tw::before {
+  background-image: url('../img/twitter-ico.svg');
+}
+.footer_social-vk {
+  background-color: #00ac68;
+}
+.footer_social-vk::before {
+  background-image: url('../img/mmm-icon.svg');
+}
+.footer_nav {
+  display: flex;
+}
+.footer_nav-menu {
+  margin-right: 44px;
+}
+.footer_nav-menu-item {
+  margin-bottom: 15px;
+}
+.footer_nav-menu-item a {
+  color: #44af36;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+.footer_search {
+  position: relative;
+}
+.footer_search form {
+  margin-bottom: 32px;
+}
+.footer_search form::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 12px;
+  top: 4px;
+  background-image: url('../img/search-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.footer_search input {
+  padding: 5px 40px 5px 15px;
+  width: 284px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 4px;
+  border: 1px solid #c5d0de;
+  background-color: #ffffff;
+}
+.footer .terms {
+  margin: 0;
+  padding: 16px 0;
+  background-color: #fafbfc;
+}
+.footer .terms a {
+  margin-right: 32px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.footer .terms a:hover {
+  text-decoration: none;
+  color: #737c8a;
+}

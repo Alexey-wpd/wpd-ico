@@ -10,7 +10,7 @@
     <title>MAIN</title>
 
     <!-- Bootstrap grid CSS -->
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -179,12 +179,12 @@
                                       </p>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-trading-start-date">20.03.2018</span>
+                                      <span class="ico-item_data-trading-start-date" data-toggle="tooltip" data-placement="right" title="Начало торгов">20.03.2018</span>
                                       <span class="ico-item_data-full-amount">$ 20 000 000</span>
                                   </div>
                                   <div class="ico-item_data">
                                       <span class="ico-item_data-trading-time-left">7 ч 18 м</span>
-                                      <span class="ico-item_data-current-amount">$ 5 060 000<span class="ico-item_data-current-percent">25.2%</span></span>
+                                      <span class="ico-item_data-current-amount" data-toggle="tooltip" data-placement="bottom" title="Собрано на PRE сэйл">$ 5 060 000<span class="ico-item_data-current-percent">25.2%</span></span>
                                   </div>
                               </div>
                               <!-- /.ico-item_content -->
@@ -209,7 +209,7 @@
                                       </p>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-trading-start-date">21.04.2018</span>
+                                      <span class="ico-item_data-trading-start-date" data-toggle="tooltip" data-placement="right" title="Начало торгов">21.04.2018</span>
                                       <span class="ico-item_data-full-amount">$ 1 000 000</span>
                                   </div>
                                   <div class="ico-item_data">
@@ -245,7 +245,7 @@
                                       </p>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-current-token-price" data-toggle="tooltip" data-placement="top" title="Цена токена сейчас">$ 102</span>
+                                      <span class="ico-item_data-current-token-price" data-toggle="tooltip" data-placement="right" title="Цена токена сейчас">$ 102</span>
                                       <span class="ico-item_data-full-amount">$ 20 000 000</span>
                                   </div>
                                   <div class="ico-item_data">
@@ -275,7 +275,7 @@
                                       </p>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-current-token-price" data-toggle="tooltip" data-placement="top" title="Цена токена сейчас">$ 0.10</span>
+                                      <span class="ico-item_data-current-token-price" data-toggle="tooltip" data-placement="right" title="Цена токена сейчас">$ 0.10</span>
                                       <span class="ico-item_data-full-amount">$ 1 000 000</span>
                                   </div>
                                   <div class="ico-item_data">
@@ -776,7 +776,7 @@
           <!-- /.container-fluid -->
           <div class="terms">
               <div class="container-fluid">
-                  <a href="#">Условия использования</a>
+                  <a href="#" data-toggle="tooltip" title="Что-то не сработало?">Условия использования</a>
                   <a href="#">Политика конфиденциальности </a>
                   <a href="#">Предложения о сотрудничестве, реклама</a>
               </div>
@@ -785,17 +785,14 @@
       </footer>
       <!-- /.footer -->
 
-
     <!-- Bootstrap core JavaScript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-    <script src="libs/popper/popper.min.js"></script>
-    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.bundle.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

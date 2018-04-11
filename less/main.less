@@ -86,6 +86,9 @@ fieldset {
 	outline: none;
 	border-radius: 4px;
 	cursor: pointer;
+	&:hover {
+		color: #fff;
+	}
 	&--login {
 		padding: 10px 12px 10px 32px;
 		color: #fff;
@@ -603,4 +606,39 @@ label.checkbox input[type=checkbox]:checked + span::after {
 			margin-bottom: 5px;
 		}
 	}
+}
+//==============================TOOLTIP======================
+.tooltip {
+	&-inner {
+	 max-width: 320px;
+	 text-align: left;
+	 padding: 8px;
+	 box-shadow: -8px 8px 24px rgba(0, 0, 0, 0.2);
+	 border: 1px solid #e0e6ed;
+	 background-color: #ffffff;
+	 color: #525c6c;
+	 font-family: @main-font;
+	 font-size: 12px;
+	 font-weight: 400;
+	 line-height: 12px;
+	}
+}
+.bs-tooltip-top .arrow::before{
+  border-top-color: rgba(255, 255, 255, 1);
+  top: -1px;
+}
+
+.bs-tooltip-right .arrow::before {
+  border-right-color: rgba(255, 255, 255, 1);
+  right: -1px;
+}
+
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: rgba(255, 255, 255, 1);
+  top: 1px;
+}
+
+.bs-tooltip-left .arrow::before {
+  border-left-color: rgba(255, 255, 255, 1);
+  left: -1px;
 }

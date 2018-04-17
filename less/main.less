@@ -140,6 +140,9 @@ fieldset {
 		background-color: #ffffff;
 		color: @main-color;
 		padding: 11px 12px 11px 34px;
+		&:hover {
+			color: @main-color;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -158,6 +161,9 @@ fieldset {
 		background-color: #ffffff;
 		color: #525c6c;
 		padding: 11px 12px 11px 34px;
+		&:hover {
+			color: #525c6c;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -581,6 +587,7 @@ label.checkbox input[type=checkbox]:checked + span::after {
 }
 //============================Language ===================
 .language {
+	z-index: 22;
 	&_current,
 	&-header_current {
 		position: relative;

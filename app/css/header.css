@@ -178,6 +178,7 @@
   padding: 20px 0;
 }
 .header .bottom-line .searching-form {
+  display: flex;
   position: relative;
 }
 .header .bottom-line .searching-form::before {

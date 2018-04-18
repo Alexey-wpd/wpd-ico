@@ -372,18 +372,39 @@
 }
 .latest-wrapper .latest-review_item .dropdown {
   cursor: pointer;
-  position: absolute;
-  left: 50%;
+  position: relative;
 }
 .latest-wrapper .latest-review_item .dropdown::before {
+  background-image: none;
+}
+.latest-wrapper .latest-review_item .dropdown span {
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c1c1c1;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 22;
+}
+.latest-wrapper .latest-review_item .dropdown span::before {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 22px;
-  left: -5px;
-  top: -9px;
-  background-image: url('../img/arrow-circle-dropdown.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: rotate(45deg);
+}
+.latest-wrapper .latest-review_item .dropdown span::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 7px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: rotate(-45deg);
 }

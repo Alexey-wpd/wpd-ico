@@ -8,6 +8,7 @@
 @import "markets";
 @import "main-page";
 @import "footer";
+@import "cabinet-cases";
 
 
 body {
@@ -553,7 +554,7 @@ label {
 		display: block;
 		padding-left: 22px;
 		white-space: wrap;
-		color: #525c6c;
+		color: #333f52;
 		font-family: @main-font;
 		font-size: 14px;
 		font-weight: 400;
@@ -585,7 +586,64 @@ label.checkbox input[type=checkbox]:checked + span::after {
     background-position: center;
     z-index: 33;
 }
-//============================Language ===================
+label.checkbox input[type=checkbox]:checked + .white-list::after {
+    background-image: @img-pink-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .KYC::after {
+    background-image: @img-blue-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .pre-ico::after {
+    background-image: @img-orange-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .start-ico::after {
+    background-image: @img-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .ending-ico::after {
+    background-image: @img-purple-checkbox;
+}
+
+//============================radio-buttons========================//
+
+.radio-buttons {
+	display: flex;
+	label {
+		flex-grow: 1;
+		text-align: center;
+		&:first-child {
+			b {
+				border-radius: 4px 0 0 4px;
+				border: 1px solid @accent-color
+			}
+		}
+		&:last-child {
+			b {
+				border-radius: 0 2px 2px 0;
+				border: 1px solid @accent-color
+			}
+		}
+		input[type=radio] {
+			display: none;
+			position: relative;
+			top: 2px;
+		}
+		b {
+			display: block;
+			padding: 10px 0px;
+			color: @accent-color;
+			background-color: #fff;
+			font-family: @main-font;
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 13px;
+		}
+	}
+}
+.radio-buttons label input[type=radio]:checked+b {
+	background: @accent-color;
+    color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+//============================Language ===========================//
 .language {
 	z-index: 22;
 	&_current,

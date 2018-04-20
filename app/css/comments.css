@@ -39,7 +39,7 @@
 .comments-section_checkbox-set {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .comments-section_checkbox-set .comments-section_select {
   margin-left: 64px;

@@ -80,7 +80,6 @@
                     font-weight: 400;
                     line-height: 12px;
                     text-decoration: underline;
-
                     &:hover {
                         text-decoration: none;
                     }
@@ -139,12 +138,13 @@
         }
     }
 }
+//===================================================ICO-LIST=======================//
 .ico-list {
     margin-top: 32px;
     &_top-line {
         display: flex;
         align-items: center;
-        margin-bottom: 28px;
+        margin-bottom: 20px;
     }
     &_date {
         display: flex;
@@ -279,9 +279,77 @@
         }
     }
 }
+//========================================TIMELINE-EVENTS===================
 .timeline {
     margin-top: 32px;
     margin-bottom: 32px;
+    &_top-line {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &_today {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        &-date {
+            margin-bottom: 7px;
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+        &-time {
+            color: #707986;
+            font-family: @main-font;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            &-UTC {
+                margin-left: 3px;
+                color: @main-color;
+                font-size: 10px;
+                letter-spacing: -0.08px;
+            }
+        }
+    }
+    &_date {
+        display: flex;
+        flex-direction: column;
+        &--next-day {
+            margin-left: 50px;
+        }
+        &-month {
+            margin-bottom: 7px;
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+        &-day {
+            color: #707986;
+            font-family: @main-font;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+    .radio-buttons {
+        margin-left: auto;
+        label {
+    		b {
+    			display: block;
+    			padding: 10px 12px;
+    			color: #525c6c;
+    			font-family: @main-font;
+    			font-size: 13px;
+    			font-weight: 500;
+    			line-height: 13px;
+    		}
+        }
+    }
     &_item {
         display: flex;
         height: 48px;
@@ -450,6 +518,21 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 z-index: 33;
+            }
+        }
+    }
+    &_next24 {
+        margin-top: 20px;
+        margin-left: 50px;
+        a {
+            color: @main-color;
+            font-family: @main-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
             }
         }
     }

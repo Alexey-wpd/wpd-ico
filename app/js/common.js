@@ -39,3 +39,13 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+//==============================POPOVER================//
+
+$(function(){
+    // Enables popover
+    $("[data-toggle=popover]").popover({
+    	html: true,
+    	content: $('#popover')
+    });
+});

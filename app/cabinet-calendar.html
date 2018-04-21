@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>CABINET calendar</title>
+
+    <!-- Bootstrap grid CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <header class="header">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <nav class="main-nav">
+                         <div class="logo">
+                             <img src="img/logo.svg" alt="ICOPAPA" />
+                         </div>
+                         <div class="main-nav_wrapper">
+                             <ul class="main-nav_menu">
+                              <li class="main-nav_item"><a href="#">Каталог<br>ICO</a></li>
+                                 <li class="main-nav_item"><a href="#">Наши<br>рейтинги</a></li>
+                                 <li class="main-nav_item"><a href="#">Биржи<br>и обменники</a></li>
+                                 <li class="main-nav_item"><a href="#">Форум</a></li>
+                                 <li class="main-nav_item">
+                                     <ul class="main-nav_faq">
+                                         <li class="main-nav_faq-item"><a href="vk">Наша команда</a></li>
+                                         <li class="main-nav_faq-item"><a href="#">FAQ</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                             <ul class="main-nav_user-menu main-nav_user-menu--hidden">
+                                 <li class="main-nav_user-search">
+                                     <form>
+                                         <input type="text" placeholder="" name="search">
+                                     </form>
+                                 </li>
+                                 <li class="main-nav_user-language">
+                                     <div class="language">
+                                         <div class="language-header_current">
+                                             <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                         </div>
+                                         <div class="language-header_list">
+                                              <ul>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                              </ul>
+                                         </div>
+                                     </div>
+                                     <!-- /.language -->
+                                 </li>
+                                 <li class="main-nav_user-login">
+                                     <a href="#" class="btn btn--login">Войти</a>
+                                 </li>
+                             </ul>
+                             <!-- /.main-nav_user-menu -->
+                             <div class="user user--hiddenn">
+                                <div class="main-nav_user-search">
+                                    <form>
+                                        <input type="text" placeholder="" name="search">
+                                    </form>
+                                </div>
+                                <ul>
+                                    <li class="user_name">achubais.1965</li>
+                                    <li class="user_notification">
+                                        <ul class="user_notification-wrapper">
+                                            <li class="user_notification-message"><a href="#"></a></li>
+                                            <li class="user_notification-bell"><a></a></li>
+                                            <li class="user_notification-num"><a href="#">2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="user_icon user_icon--ico">
+                                    <img src="img/user-icon.png" alt="" height="45" width="45">
+                                </div>
+                             </div>
+                             <!-- /.user -->
+                         </div>
+                         <!-- /.main-nav_wrapper -->
+                     </nav>
+                      <!-- /.main-nav -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+          <div class="cabinet-nav">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col">
+                          <ul class="cabinet-nav_menu">
+                              <li class="cabinet-nav_item"><a>Кабинет инвестора</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--cases"><a href="#">Дела на сегодня</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--calendar cabinet-nav_item--active"><a href="#">Календарь ICO</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--investment"><a href="#">Мои инвестиции</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--statistic"><a href="#">Статистика</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--marked-ico"><a href="#">Отмеченные ICO</a></li>
+                          </ul>
+                      </div>
+                      <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+              </div>
+              <!-- /.container-fluid -->
+          </div>
+          <!-- /.header_cabinet-nav -->
+      </header>
+      <!-- /.header -->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-3">
+                 <div class="events">
+                     <div class="events-filter">
+                         <form action="" method="">
+                             <fieldset>
+                                 <legend class="dropdown">ФИЛЬТР СОБЫТИЙ</legend>
+                                 <ul class="choosing-form_list">
+                                     <li>
+                                         <label class="checkbox">
+             								<input type="checkbox" checked name="name" value="1">
+             								<span class="white-list">White List</span>
+             							</label>
+                                        <span>23</span>
+                                     </li>
+                                     <li>
+                                         <label class="checkbox">
+             								<input type="checkbox" checked name="name" value="1">
+             								<span class="KYC">KYC</span>
+             							</label>
+                                        <span>23</span>
+                                     </li>
+                                     <li>
+                                         <label class="checkbox">
+             								<input type="checkbox" checked name="name" value="1">
+             								<span class="pre-ico">Pre ICO</span>
+             							</label>
+                                        <span>23</span>
+                                     </li>
+                                     <li>
+                                         <label class="checkbox">
+             								<input type="checkbox" checked name="name" value="1">
+             								<span class="start-ico">Начало ICO</span>
+             							</label>
+                                        <span>23</span>
+                                     </li>
+                                     <li>
+                                         <label class="checkbox">
+             								<input type="checkbox" checked name="name" value="1">
+             								<span class="ending-ico">Завершение ICO</span>
+             							</label>
+                                        <span>23</span>
+                                     </li>
+                                 </ul>
+                                 <!-- /.choosing-form_list -->
+                             </fieldset>
+                             <!-- /.fieldset -->
+                         </form>
+                     </div>
+                     <!-- /.events_filter -->
+                 </div>
+                 <!-- /.events -->
+              </div>
+              <!-- /.col-3 -->
+              <div class="col-9">
+                  <div class="timeline timeline--calendar">
+                      <div class="timeline_top-line">
+                          <div class="timeline_date">
+                              <span class="timeline_date-month">10—16 февраля</span>
+                              <span class="timeline_date-day">Сегодня <b>10 февраля</b>, воскресенье</span>
+                          </div>
+                          <div class="radio-buttons">
+                              <a href="#" class="btn">Добавить ICO</a>
+                          </div>
+                      </div>
+                      <!-- /.ico-list_top-line -->
+                      <div class="timeline_item timeline_item--calendar">
+                          <div class="timeline_item-time">
+                              <span></span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar timeline_item-scale--calendar-today">
+                              <div class="timeline_item-data">
+                                  <span class="timeline_item-date">10</span>
+                                  <span class="timeline_item-day">Воскресенье</span>
+                              </div>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_item-data">
+                                  <span class="timeline_item-date">11</span>
+                                  <span class="timeline_item-day">Понедельник</span>
+                              </div>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_item-data">
+                                  <span class="timeline_item-date">12</span>
+                                  <span class="timeline_item-day">Вторник</span>
+                              </div>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_item-data">
+                                  <span class="timeline_item-date">13</span>
+                                  <span class="timeline_item-day">Среда</span>
+                              </div>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_item-data">
+                                  <span class="timeline_item-date">14</span>
+                                  <span class="timeline_item-day">Четверг</span>
+                              </div>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_item-data">
+                                  <span class="timeline_item-date">15</span>
+                                  <span class="timeline_item-day">Воскресенье</span>
+                              </div>
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>09:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar timeline_item-scale--calendar-today">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>10:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar timeline_item-scale--calendar-today">
+                              <div class="timeline_event timeline_event--KYC">
+                                  <div class="timeline_event-data">
+                                      <span class="timeline_event-time">10:00 <a class="timeline_event-notification-bell"></a><a href="#" class="timeline_event-notification-message"></a></span>
+                                      <span class="timeline_event-name timeline_event-name--calendar">Aurora</span>
+                                  </div>
+                                  <div class="timeline_event-type">
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>11:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar timeline_item-scale--calendar-today">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>12:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_event timeline_event--white-list">
+                                  <div class="timeline_event-data">
+                                      <span class="timeline_event-time">11:40 <a class="timeline_event-notification-bell"></a></span>
+                                      <span class="timeline_event-name timeline_event-name--calendar">Covesting</span>
+                                  </div>
+                                  <div class="timeline_event-type">
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>13:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>14:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_event timeline_event--ending-ico">
+                                  <div class="timeline_event-data">
+                                      <span class="timeline_event-time">14:00 <a href="#" class="timeline_event-notification-message"></a></span>
+                                      <span class="timeline_event-name timeline_event-name--calendar">INS Ecosystem</span>
+                                  </div>
+                                  <div class="timeline_event-type">
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>15:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>16:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_event timeline_event--pre-ico">
+                                  <div class="timeline_event-data">
+                                      <span class="timeline_event-time">16:00 <a class="timeline_event-notification-bell"></a></span>
+                                      <span class="timeline_event-name timeline_event-name--calendar">Covesting</span>
+                                  </div>
+                                  <div class="timeline_event-type">
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>17:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                      <div class="timeline_item">
+                          <div class="timeline_item-time">
+                              <span>18:00</span>
+                          </div>
+                          <div class="timeline_item-scale timeline_item-scale--calendar">
+                              <div class="timeline_event timeline_event--start-ico">
+                                  <div class="timeline_event-data">
+                                      <span class="timeline_event-time">18:00 <a class="timeline_event-notification-bell"></a><a href="#" class="timeline_event-notification-message"></a></span>
+                                      <span class="timeline_event-name timeline_event-name--calendar">Covesting</span>
+                                  </div>
+                                  <div class="timeline_event-type">
+                                      <span></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- /.timeline_item-scale -->
+                      </div>
+                      <!-- /.timeline_item -->
+                  </div>
+                  <!-- /.timeline -->
+              </div>
+              <!-- /.col-9 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+      <footer class="footer">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <div class="footer-wrapper">
+                          <div class="footer-content">
+                              <div class="footer_about-us">
+                                  <div class="footer_logo">
+                                      <img src="img/logo.svg" alt="ICOPAPA" />
+                                  </div>
+                                  <div class="footer_intro">
+                                      <p>Ликазам этаммые прачнос тураментный колько стравле метель обеспечать с всех этабли в друменицы. </p>
+                                  </div>
+                                  <div class="footer_social">
+                                      <a href="#" class="footer_social-fb">fb</a>
+                                      <a href="#" class="footer_social-tw">tw</a>
+                                      <a href="#" class="footer_social-vk">vk</a>
+                                  </div>
+                              </div>
+                              <!-- /.footer_about-us -->
+                              <div class="footer_nav">
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item"><a href="#">Каталог ICO</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Наши рейтинги</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Биржи и обменники</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Форум</a></li>
+                                  </ul>
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item"><a href="#">Наша команда</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">FAQ</a></li>
+                                  </ul>
+                              </div>
+                              <!-- /.footer_main-nav -->
+                          </div>
+                          <!-- /.footer_content -->
+                          <div class="footer_search">
+                              <form>
+                                  <input type="text" placeholder="" name="search">
+                              </form>
+                              <div class="language">
+                                  <div class="language_current">
+                                      <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                  </div>
+                                  <div class="language_list">
+                                       <ul>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                       </ul>
+                                  </div>
+                              </div>
+                              <!-- /.language -->
+                          </div>
+                          <!-- /.footer_search -->
+                      </div>
+                      <!-- /.footer-wrapper -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+          <div class="terms">
+              <div class="container-fluid">
+                  <a href="#">Условия использования</a>
+                  <a href="#">Политика конфиденциальности </a>
+                  <a href="#">Предложения о сотрудничестве, реклама</a>
+              </div>
+          </div>
+          <!-- /.terms -->
+      </footer>
+      <!-- /.footer -->
+
+
+      <!-- Bootstrap core JavaScript ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+
+
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+      <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+      <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="js/common.js"></script>
+  </body>
+</html>

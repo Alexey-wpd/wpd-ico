@@ -401,7 +401,7 @@
 }
 .timeline_item-scale--calendar {
   background-color: #fafbfc;
-  min-width: 168px;
+  min-width: 192px;
   border-right: 1px solid #e0e6ed;
 }
 .timeline_item-scale--calendar-today {

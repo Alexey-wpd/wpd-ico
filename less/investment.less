@@ -1,0 +1,432 @@
+@import "vars";
+
+.portfolio-view {
+    margin-top: 32px;
+    h2 {
+        margin-bottom: 12px;
+        color: #333f52;
+        font-family: @main-font;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    &_graph {
+            margin-top: 40px;
+            padding-left: 28px;
+        a {
+            position: relative;
+            color: @main-color;
+            font-family: @main-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+            &::before {
+    			content: "";
+    			position: absolute;
+    			width: 18px;
+    			height: 12px;
+    			left: -30px;
+    			top: 4px;
+    			background-image: @img-graph;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+        }
+    }
+    &_public {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        padding-left: 28px;
+        a {
+            position: relative;
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            &::before {
+    			content: "";
+    			position: absolute;
+    			width: 20px;
+    			height: 16px;
+    			left: -30px;
+    			top: -1px;
+    			background-image: @img-www;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+        }
+    }
+    &_toggle{
+        margin-left: auto;
+    }
+}
+//=========================PORTFOLIO==================//
+.portfolio {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    &_bottom-line {
+        display: flex;
+        align-items: center;
+    }
+    .portfolio_worth {
+        display: flex;
+        flex-direction: column;
+        &-price {
+            margin-bottom: 9px;
+            color: #707986;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 11px;
+            letter-spacing: 0.3px;
+        }
+        &-usd {
+            margin-bottom: 4px;
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+        }
+        &-btc {
+            opacity: 0.6;
+            color: #525c6c;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 12px;
+            text-transform: uppercase;
+        }
+    }
+    &_deviation {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        &-24hours {
+            margin-bottom: 9px;
+            color: #707986;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 11px;
+            letter-spacing: 0.3px;
+        }
+        &-percent {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 4px;
+            color: @accent-color;
+            font-family: @main-font;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            &::before {
+    			content: "";
+    			position: absolute;
+    			width: 20px;
+    			height: 16px;
+    			left: -5px;
+    			top: 6px;
+    			background-image: @img-triangle-green;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+            sup {
+                font-size: 16px;
+                letter-spacing: -0.5px;
+            }
+        }
+        &-usd {
+            opacity: 0.6;
+            color: #525c6c;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 11px;
+        }
+    }
+    &_button {
+        margin-left: auto;
+        &--bottom {
+            margin-top: 30px;
+            text-align: right;
+        }
+        .btn {
+            position: relative;
+            padding: 11px 11px 10px 32px;
+            background-color: @accent-color;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 0 darken(@accent-color, 10%);
+            color: #ffffff;
+            font-family: @main-font;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 11px;
+            letter-spacing: -0.22px;
+            &::before {
+    			content: "";
+    			position: absolute;
+    			width: 12px;
+    			height: 12px;
+    			left: 10px;
+    			top: 11px;
+    			background-image: @img-dollar;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+        }
+    }
+    &_list {
+        margin-top: 26px;
+        box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+        border-radius: 4px;
+        &-head {
+            background-color: #e0e6ed;
+            border-bottom: 2px solid #c5d0de;
+            &-item {
+                padding: 17px 12px;
+                border-right: 1px solid #e9ecee;
+                span {
+                    color: #525c6c;
+                    font-family: @main-font;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+    &_item {
+        position: relative;
+        background-color: #fafbfc;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 50px;
+            left: 0px;
+            top: 1px;
+            z-index: 11;
+        }
+        &--bts {
+            &::before {
+                background-color: #8f5bc0;
+            }
+        }
+        &--MON {
+            &::before {
+                background-color: #c28f58;
+            }
+        }
+        &--OPA {
+            &::before {
+                background-color: #429db0;
+            }
+        }
+        &--EOS {
+            &::before {
+                background-color: #ffa635;
+            }
+        }
+        &--XMR {
+            &::before {
+                background-color: #6982fc;
+            }
+        }
+        &--DASH {
+            &::before {
+                background-color: #ff6d71;
+            }
+        }
+        &--NEO {
+            &::before {
+                background-color: #bcbdbc;
+            }
+        }
+        &--ETH {
+            &::before {
+                background-color: #85b222;
+            }
+        }
+        &-logo {
+            margin-right: 8px;
+        }
+        &-name {
+            padding: 0px 10px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid #e9ecee;
+            span {
+                color: #333f52;
+                font-family: @main-font;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                letter-spacing: -0.2px;
+            }
+            b {
+                font-weight: 500;
+                color: #8f96a1;
+                letter-spacing: -0.2px;
+            }
+        }
+        &-amount {
+            height: 52px;
+            align-items: center;
+            padding: 0px 12px;
+            display: flex;
+            justify-content: space-between;
+            border-right: 1px solid #e9ecee;
+            span {
+                color: #333f52;
+                font-family: @main-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                text-transform: uppercase;
+            }
+            b {
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+        &-edit {
+            width: 12px;
+            height: 12px;
+            background-image: @img-edit;
+        }
+        &-percent {
+            display: flex;
+            align-items: center;
+            padding: 0px 12px;
+            height: 52px;
+            border-right: 1px solid #e9ecee;
+            span {
+                color: #333f52;
+                font-family: @main-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+        }
+        &-price {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 12px;
+            margin-bottom: -11px;
+            height: 52px;
+            border-right: 1px solid #e9ecee;
+            &-usd {
+                color: #333f52;
+                font-family: @main-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+            &-bts {
+                opacity: 0.6;
+                color: #8f96a1;
+                font-family: @main-font;
+                font-size: 9px;
+                font-weight: 500;
+                line-height: 12px;
+                text-transform: uppercase;
+            }
+        }
+        &-24hour {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            height: 52px;
+            border-right: 1px solid #e9ecee;
+            b {
+                margin: auto;
+                padding: 3px 6px 2px;
+                color: #8f96a1;
+                border-radius: 9px;
+                border: 1px solid #8f96a1;
+                font-family: @main-font;
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 11px;
+                text-transform: uppercase;
+            }
+            span {
+                margin: auto;
+                padding-left: 10px;
+                color: #707986;
+                font-family: @main-font;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                &::before {
+        			content: "";
+        			position: absolute;
+        			width: 20px;
+        			height: 16px;
+        			left: 6px;
+        			top: 16px;
+        			background-image: @img-triangle-green;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+        		}
+            }
+        }
+        &-capitalizations {
+            display: flex;
+            align-items: center;
+            padding: 0px 12px;
+            height: 52px;
+            border-right: 1px solid #e9ecee;
+            span {
+                color: #707986;
+                font-family: @main-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                text-transform: uppercase;
+            }
+            b {
+                font-size: 12px;
+            }
+        }
+        &-volume {
+            display: flex;
+            align-items: center;
+            padding: 0px 12px;
+            height: 52px;
+            span {
+                color: #707986;
+                font-family: @main-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                text-transform: uppercase;
+            }
+            b {
+                font-size: 12px;
+            }
+        }
+        &-dropdown {
+            margin-left: auto;
+            width: 12px;
+            height: 12px;
+            background-image: @img-dropdown-portfolio;
+        }
+    }
+}

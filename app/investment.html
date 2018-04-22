@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>CABINET investment</title>
+
+    <!-- Bootstrap grid CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <header class="header">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <nav class="main-nav">
+                         <div class="logo">
+                             <img src="img/logo.svg" alt="ICOPAPA" />
+                         </div>
+                         <div class="main-nav_wrapper">
+                             <ul class="main-nav_menu">
+                              <li class="main-nav_item"><a href="#">Каталог<br>ICO</a></li>
+                                 <li class="main-nav_item"><a href="#">Наши<br>рейтинги</a></li>
+                                 <li class="main-nav_item"><a href="#">Биржи<br>и обменники</a></li>
+                                 <li class="main-nav_item"><a href="#">Форум</a></li>
+                                 <li class="main-nav_item">
+                                     <ul class="main-nav_faq">
+                                         <li class="main-nav_faq-item"><a href="vk">Наша команда</a></li>
+                                         <li class="main-nav_faq-item"><a href="#">FAQ</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                             <ul class="main-nav_user-menu main-nav_user-menu--hidden">
+                                 <li class="main-nav_user-search">
+                                     <form>
+                                         <input type="text" placeholder="" name="search">
+                                     </form>
+                                 </li>
+                                 <li class="main-nav_user-language">
+                                     <div class="language">
+                                         <div class="language-header_current">
+                                             <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                         </div>
+                                         <div class="language-header_list">
+                                              <ul>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                              </ul>
+                                         </div>
+                                     </div>
+                                     <!-- /.language -->
+                                 </li>
+                                 <li class="main-nav_user-login">
+                                     <a href="#" class="btn btn--login">Войти</a>
+                                 </li>
+                             </ul>
+                             <!-- /.main-nav_user-menu -->
+                             <div class="user user--hiddenn">
+                                <div class="main-nav_user-search">
+                                    <form>
+                                        <input type="text" placeholder="" name="search">
+                                    </form>
+                                </div>
+                                <ul>
+                                    <li class="user_name">achubais.1965</li>
+                                    <li class="user_notification">
+                                        <ul class="user_notification-wrapper">
+                                            <li class="user_notification-message"><a href="#"></a></li>
+                                            <li class="user_notification-bell"><a></a></li>
+                                            <li class="user_notification-num"><a href="#">2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="user_icon user_icon--ico">
+                                    <img src="img/user-icon.png" alt="" height="45" width="45">
+                                </div>
+                             </div>
+                             <!-- /.user -->
+                         </div>
+                         <!-- /.main-nav_wrapper -->
+                     </nav>
+                      <!-- /.main-nav -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+          <div class="cabinet-nav">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col">
+                          <ul class="cabinet-nav_menu">
+                              <li class="cabinet-nav_item"><a>Кабинет инвестора</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--cases"><a href="#">Дела на сегодня</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--calendar"><a href="#">Календарь ICO</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--investment cabinet-nav_item--active"><a href="#">Мои инвестиции</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--statistic"><a href="#">Статистика</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--marked-ico"><a href="#">Отмеченные ICO</a></li>
+                          </ul>
+                      </div>
+                      <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+              </div>
+              <!-- /.container-fluid -->
+          </div>
+          <!-- /.header_cabinet-nav -->
+      </header>
+      <!-- /.header -->
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-3">
+                  <div class="portfolio-view">
+                      <h2>Портфель инвестора</h2>
+                      <div class="portfolio-view_filter">
+                          <label>
+                              <input name="portfolio-filter-usd" type="checkbox" value="usd" checked>
+                              <b>USD</b>
+                          </label>
+                          <label>
+                              <input name="portfolio-filter-btc" type="checkbox" value="bts">
+                              <b>BTC</b>
+                          </label>
+                          <label>
+                              <input name="portfolio-filter-ETH" type="checkbox" value="ETH">
+                              <b>ETH</b>
+                          </label>
+                          <label>
+                              <input name="portfolio-filter-WAVES" type="checkbox" value="WAVES">
+                              <b>WAVES</b>
+                          </label>
+                      </div>
+                      <!-- /.portfolio-view_filter -->
+                      <div class="portfolio-view_graph">
+                          <a href="#">График изменений стоимости<br> портфеля</a>
+                      </div>
+                      <div class="portfolio-view_public">
+                          <a>Публичный портфель<sup class="tooltip-mark"></sup></a>
+                          <div class="portfolio-view_toggle">
+                              <span>toggle</span>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- /.portfolio-view -->
+              </div>
+              <!-- /.col-3 -->
+              <div class="col-9">
+                    <div class="portfolio">
+                        <div class="portfolio_bottom-line">
+                            <div class="portfolio_worth">
+                                <span class="portfolio_worth-price">СТОИМОСТЬ ПОРТФЕЛЯ<sup class="tooltip-mark"></sup></span>
+                                <span class="portfolio_worth-usd">$ 293 091.09</span>
+                                <span class="portfolio_worth-btc">38.612110038 BTC</span>
+                            </div>
+                            <!-- /.portfolio_worth -->
+                            <div class="portfolio_deviation">
+                                <span class="portfolio_deviation-24hours">ИЗМЕНЕНИЕ ЗА 24 ЧАСА</span>
+                                <span class="portfolio_deviation-percent">+3.4 <sup>%</sup></span>
+                                <span class="portfolio_deviation-usd">$ 9 079.76</span>
+                            </div>
+                            <!-- /.portfolio_deviation -->
+                            <div class="portfolio_button">
+                                <a href="#" class="btn">Добавить/убрать монету</a>
+                            </div>
+                        </div>
+                        <!-- /.portfolio_bottom-line -->
+                        <div class="portfolio_list">
+                            <div class="portfolio_list-head">
+                                <div class="container">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="portfolio_list-head-item">
+                                                <span>Название</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_list-head-item">
+                                                <span>В портфеле</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_list-head-item">
+                                                <span>%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_list-head-item">
+                                                <span>Цена</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_list-head-item">
+                                                <span>24ч</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_list-head-item">
+                                                <span>Капитализация</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_list-head-item">
+                                                <span>Объем (24ч)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.container -->
+                            </div>
+                            <!-- /.portfolio_list-head -->
+                            <div class="portfolio_item portfolio_item--bts">
+                                <div class="container">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <div class="portfolio_item-name">
+                                                <div class="portfolio_item-logo">
+                                                    <img src="img/btc-logo.png" alt="btc">
+                                                </div>
+                                                <span>Bitcoin · <b>BTC</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-amount">
+                                                <span>0.0014503 <b>BTC</b></span>
+                                                <a href="#" class="portfolio_item-edit"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_item-percent">
+                                                <span>31%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-price">
+                                                <span class="portfolio_item-price-usd">$ 7 619.89</span>
+                                                <span class="portfolio_item-price-bts">0.0014503 BTC</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_item-24hour">
+                                                <span>+5.44%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-capitalizations">
+                                                <span><b>$</b> 130.02 B</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-volume">
+                                                <span><b>$</b> 4.14 B</span>
+                                                <a href="#" class="portfolio_item-dropdown"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.container -->
+                            </div>
+                            <!-- /.portfolio_item -->
+                            <div class="portfolio_item portfolio_item--XMR">
+                                <div class="container">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <div class="portfolio_item-name">
+                                                <div class="portfolio_item-logo">
+                                                    <img src="img/monero-logo.png" alt="btc">
+                                                </div>
+                                                <span>Monero · <b>XMR</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-amount">
+                                                <span>201  <b>XMR</b></span>
+                                                <a href="#" class="portfolio_item-edit"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_item-percent">
+                                                <span>14%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-price">
+                                                <span class="portfolio_item-price-usd">$ 186.12</span>
+                                                <span class="portfolio_item-price-bts">0.00001208 BTC</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_item-24hour">
+                                                <span>-7.04%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-capitalizations">
+                                                <span><b>$</b> 2.93 B</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-volume">
+                                                <span><b>$</b> 44 700 000</span>
+                                                <a href="#" class="portfolio_item-dropdown"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.container -->
+                            </div>
+                            <!-- /.portfolio_item -->
+                            <div class="portfolio_item portfolio_item--NEO">
+                                <div class="container">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-2">
+                                            <div class="portfolio_item-name">
+                                                <div class="portfolio_item-logo">
+                                                    <img src="img/neo-logo.png" alt="btc">
+                                                </div>
+                                                <span>NEO · <b>NEO</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-amount">
+                                                <span>305  <b>NEO </b></span>
+                                                <a href="#" class="portfolio_item-edit"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_item-percent">
+                                                <span>7%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-price">
+                                                <span class="portfolio_item-price-usd">$ 55.12</span>
+                                                <span class="portfolio_item-price-bts">0.0000000090 BTC</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="portfolio_item-24hour">
+                                                <b>ICO</b>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-capitalizations">
+                                                <span><b>$</b> 3.71 B</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="portfolio_item-volume">
+                                                <span><b>$</b> 83.15 M</span>
+                                                <a href="#" class="portfolio_item-dropdown"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.container -->
+                            </div>
+                            <!-- /.portfolio_item -->
+                        </div>
+                        <!-- /.portfolio_list -->
+                        <div class="portfolio_button portfolio_button--bottom">
+                            <a href="#" class="btn">Добавить/убрать монету</a>
+                        </div>
+                    </div>
+                    <!-- /.portfolio -->
+              </div>
+              <!-- /.col-9 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+      <footer class="footer">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <div class="footer-wrapper">
+                          <div class="footer-content">
+                              <div class="footer_about-us">
+                                  <div class="footer_logo">
+                                      <img src="img/logo.svg" alt="ICOPAPA" />
+                                  </div>
+                                  <div class="footer_intro">
+                                      <p>Ликазам этаммые прачнос тураментный колько стравле метель обеспечать с всех этабли в друменицы. </p>
+                                  </div>
+                                  <div class="footer_social">
+                                      <a href="#" class="footer_social-fb">fb</a>
+                                      <a href="#" class="footer_social-tw">tw</a>
+                                      <a href="#" class="footer_social-vk">vk</a>
+                                  </div>
+                              </div>
+                              <!-- /.footer_about-us -->
+                              <div class="footer_nav">
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item"><a href="#">Каталог ICO</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Наши рейтинги</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Биржи и обменники</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Форум</a></li>
+                                  </ul>
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item"><a href="#">Наша команда</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">FAQ</a></li>
+                                  </ul>
+                              </div>
+                              <!-- /.footer_main-nav -->
+                          </div>
+                          <!-- /.footer_content -->
+                          <div class="footer_search">
+                              <form>
+                                  <input type="text" placeholder="" name="search">
+                              </form>
+                              <div class="language">
+                                  <div class="language_current">
+                                      <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                  </div>
+                                  <div class="language_list">
+                                       <ul>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                       </ul>
+                                  </div>
+                              </div>
+                              <!-- /.language -->
+                          </div>
+                          <!-- /.footer_search -->
+                      </div>
+                      <!-- /.footer-wrapper -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+          <div class="terms">
+              <div class="container-fluid">
+                  <a href="#">Условия использования</a>
+                  <a href="#">Политика конфиденциальности </a>
+                  <a href="#">Предложения о сотрудничестве, реклама</a>
+              </div>
+          </div>
+          <!-- /.terms -->
+      </footer>
+      <!-- /.footer -->
+
+
+      <!-- Bootstrap core JavaScript ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+
+
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+      <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+      <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="js/common.js"></script>
+  </body>
+</html>

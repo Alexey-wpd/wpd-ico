@@ -171,7 +171,7 @@
                     <div class="portfolio">
                         <div class="portfolio_bottom-line">
                             <div class="portfolio_worth">
-                                <span class="portfolio_worth-price">СТОИМОСТЬ ПОРТФЕЛЯ<sup class="tooltip-mark"></sup></span>
+                                <span class="portfolio_worth-price">СТОИМОСТЬ ПОРТФЕЛЯ<sup class="tooltip-mark" data-toggle="tooltip" data-placement="right" data-original-title="Данные обновляются раз в сутки"></sup></span>
                                 <span class="portfolio_worth-usd">$ 293 091.09</span>
                                 <span class="portfolio_worth-btc">38.612110038 BTC</span>
                             </div>
@@ -187,206 +187,315 @@
                             </div>
                         </div>
                         <!-- /.portfolio_bottom-line -->
-                        <div class="portfolio_list">
-                            <div class="portfolio_list-head">
-                                <div class="container">
-                                    <div class="row no-gutters">
-                                        <div class="col-2">
-                                            <div class="portfolio_list-head-item">
-                                                <span>Название</span>
-                                            </div>
+                        <div class="portfolio_form">
+                            <div class="portfolio_form-close">
+                            </div>
+                            <h3>Добавить/убрать монету</h3>
+                            <form action="#" class="add-coin-form">
+                                <fieldset class="fieldset-left">
+                                    <div class="add-coin-form_wrapper">
+                                        <div class="add-coin-form_name">
+                                            <label for="name">Название</label>
+                                            <select size="1" name="name[]" id="name">
+                                                  <option value=""><a href="#">NEO</a></option>
+                                                  <option value=""><a href="#">BTC</a></option>
+                                                  <option value=""><a href="#">ETH</a></option>
+                                            </select>
                                         </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_list-head-item">
-                                                <span>В портфеле</span>
-                                            </div>
+                                        <div class="add-coin-form_amount">
+                                            <label for="amount">Количество</label>
+                                            <input type="number" name="amount" id="amount" placeholder="">
                                         </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_list-head-item">
-                                                <span>%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_list-head-item">
-                                                <span>Цена</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_list-head-item">
-                                                <span>24ч</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_list-head-item">
-                                                <span>Капитализация</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_list-head-item">
-                                                <span>Объем (24ч)</span>
-                                            </div>
+                                        <div class="add-coin-form_price">
+                                            <label>Цена</label>
+                                            <span><b>$</b> 7 619.89</span>
                                         </div>
                                     </div>
-                                    <!-- /.row -->
+                                    <!-- /.add-coin-form_wrapper -->
+                                    <div class="add-coin-form_wrapper">
+                                        <button class="btn btn-primary" type="submit" name="button">Сохранить</button>
+                                        <a href="#">Удалить монету</a>
+                                    </div>
+                                    <!-- /.add-coin-form_wrapper -->
+                                </fieldset>
+                                <fieldset class="fieldset-right">
+                                    <div class="add-coin-form_textarea">
+                                        <label for="textarea"><a href="#">Удалить комментарий</a></label>
+                                        <textarea placeholder="комментарий" id="textarea"></textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <!-- /.add-coin-form -->
+                        </div>
+                        <!-- /.portfolio_form -->
+                        <div class="portfolio_list">
+                            <div class="portfolio_head">
+                                <div class="portfolio_head-item portfolio_head-item--name">
+                                    <span>Название</span>
                                 </div>
-                                <!-- /.container -->
+                                <div class="portfolio_head-item portfolio_head-item--amount">
+                                    <span>В портфеле</span>
+                                </div>
+                                <div class="portfolio_head-item portfolio_head-item--percent">
+                                    <span>%</span>
+                                </div>
+                                <div class="portfolio_head-item portfolio_head-item--price">
+                                    <span>Цена</span>
+                                </div>
+                                <div class="portfolio_head-item portfolio_head-item--24hour">
+                                    <span>24ч</span>
+                                </div>
+                                <div class="portfolio_head-item portfolio_head-item--capitalizations">
+                                    <span>Капитализация</span>
+                                </div>
+                                <div class="portfolio_head-item portfolio_head-item--volume">
+                                    <span>Объем (24ч)</span>
+                                </div>
                             </div>
                             <!-- /.portfolio_list-head -->
                             <div class="portfolio_item portfolio_item--bts">
-                                <div class="container">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2">
-                                            <div class="portfolio_item-name">
-                                                <div class="portfolio_item-logo">
-                                                    <img src="img/btc-logo.png" alt="btc">
-                                                </div>
-                                                <span>Bitcoin · <b>BTC</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-amount">
-                                                <span>0.0014503 <b>BTC</b></span>
-                                                <a href="#" class="portfolio_item-edit"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_item-percent">
-                                                <span>31%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-price">
-                                                <span class="portfolio_item-price-usd">$ 7 619.89</span>
-                                                <span class="portfolio_item-price-bts">0.0014503 BTC</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_item-24hour">
-                                                <span>+5.44%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-capitalizations">
-                                                <span><b>$</b> 130.02 B</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-volume">
-                                                <span><b>$</b> 4.14 B</span>
-                                                <a href="#" class="portfolio_item-dropdown"></a>
-                                            </div>
-                                        </div>
+                                <div class="portfolio_item-name">
+                                    <div class="portfolio_item-logo">
+                                        <img src="img/btc-logo.png" alt="btc">
                                     </div>
-                                    <!-- /.row -->
+                                    <span>Bitcoin · <b>BTC</b></span>
                                 </div>
-                                <!-- /.container -->
+                                <div class="portfolio_item-amount">
+                                    <span>0.0014503 <b>BTC</b></span>
+                                    <a href="#" class="portfolio_item-edit"></a>
+                                </div>
+                                <div class="portfolio_item-percent">
+                                    <span>31%</span>
+                                </div>
+                                <div class="portfolio_item-price">
+                                    <span class="portfolio_item-price-usd">$ 7 619.89</span>
+                                    <span class="portfolio_item-price-bts">0.0014503 BTC</span>
+                                </div>
+                                <div class="portfolio_item-24hour">
+                                    <span>+5.44%</span>
+                                </div>
+                                <div class="portfolio_item-capitalizations">
+                                    <span><b>$</b> 130.02 B</span>
+                                </div>
+                                <div class="portfolio_item-volume">
+                                    <span><b>$</b> 4.14 B</span>
+                                    <a href="#" class="portfolio_item-dropdown"></a>
+                                </div>
                             </div>
                             <!-- /.portfolio_item -->
                             <div class="portfolio_item portfolio_item--XMR">
-                                <div class="container">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2">
-                                            <div class="portfolio_item-name">
-                                                <div class="portfolio_item-logo">
-                                                    <img src="img/monero-logo.png" alt="btc">
-                                                </div>
-                                                <span>Monero · <b>XMR</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-amount">
-                                                <span>201  <b>XMR</b></span>
-                                                <a href="#" class="portfolio_item-edit"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_item-percent">
-                                                <span>14%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-price">
-                                                <span class="portfolio_item-price-usd">$ 186.12</span>
-                                                <span class="portfolio_item-price-bts">0.00001208 BTC</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_item-24hour">
-                                                <span>-7.04%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-capitalizations">
-                                                <span><b>$</b> 2.93 B</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-volume">
-                                                <span><b>$</b> 44 700 000</span>
-                                                <a href="#" class="portfolio_item-dropdown"></a>
-                                            </div>
-                                        </div>
+                                <div class="portfolio_item-name">
+                                    <div class="portfolio_item-logo">
+                                        <img src="img/monero-logo.png" alt="btc">
                                     </div>
-                                    <!-- /.row -->
+                                    <span>Monero · <b>XMR</b></span>
                                 </div>
-                                <!-- /.container -->
+                                <div class="portfolio_item-amount">
+                                    <span>201  <b>XMR</b></span>
+                                    <a href="#" class="portfolio_item-edit"></a>
+                                </div>
+                                <div class="portfolio_item-percent">
+                                    <span>14%</span>
+                                </div>
+                                <div class="portfolio_item-price">
+                                    <span class="portfolio_item-price-usd">$ 186.12</span>
+                                    <span class="portfolio_item-price-bts">0.00001208 BTC</span>
+                                </div>
+                                <div class="portfolio_item-24hour">
+                                    <span>-7.04%</span>
+                                </div>
+                                <div class="portfolio_item-capitalizations">
+                                    <span><b>$</b> 2.93 B</span>
+                                </div>
+                                <div class="portfolio_item-volume">
+                                    <span><b>$</b> 44 700 000</span>
+                                    <a href="#" class="portfolio_item-dropdown"></a>
+                                </div>
                             </div>
                             <!-- /.portfolio_item -->
-                            <div class="portfolio_item portfolio_item--NEO">
-                                <div class="container">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2">
-                                            <div class="portfolio_item-name">
-                                                <div class="portfolio_item-logo">
-                                                    <img src="img/neo-logo.png" alt="btc">
-                                                </div>
-                                                <span>NEO · <b>NEO</b></span>
-                                            </div>
+                            <div class="portfolio_item-wrapper">
+                                <div class="portfolio_item portfolio_item--NEO portfolio_item--active">
+                                    <div class="portfolio_item-name">
+                                        <div class="portfolio_item-logo">
+                                            <img src="img/neo-logo.png" alt="btc">
                                         </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-amount">
-                                                <span>305  <b>NEO </b></span>
-                                                <a href="#" class="portfolio_item-edit"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_item-percent">
-                                                <span>7%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-price">
-                                                <span class="portfolio_item-price-usd">$ 55.12</span>
-                                                <span class="portfolio_item-price-bts">0.0000000090 BTC</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-1">
-                                            <div class="portfolio_item-24hour">
-                                                <b>ICO</b>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-capitalizations">
-                                                <span><b>$</b> 3.71 B</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="portfolio_item-volume">
-                                                <span><b>$</b> 83.15 M</span>
-                                                <a href="#" class="portfolio_item-dropdown"></a>
-                                            </div>
-                                        </div>
+                                        <span>NEO · <b>NEO</b></span>
                                     </div>
-                                    <!-- /.row -->
+                                    <div class="portfolio_item-amount">
+                                        <span>305  <b>NEO </b></span>
+                                        <a href="#" class="portfolio_item-edit"></a>
+                                    </div>
+                                    <div class="portfolio_item-percent">
+                                        <span>7%</span>
+                                    </div>
+                                    <div class="portfolio_item-price">
+                                        <span class="portfolio_item-price-usd">$ 55.12</span>
+                                        <span class="portfolio_item-price-bts">0.0000000090 BTC</span>
+                                    </div>
+                                    <div class="portfolio_item-24hour">
+                                        <b>ICO</b>
+                                    </div>
+                                    <div class="portfolio_item-capitalizations">
+                                        <span><b>$</b> 3.71 B</span>
+                                    </div>
+                                    <div class="portfolio_item-volume">
+                                        <span><b>$</b> 83.15 M</span>
+                                        <a href="#" class="portfolio_item-dropdown"></a>
+                                    </div>
                                 </div>
-                                <!-- /.container -->
+                                <!-- /.portfolio_item -->
+                                <div class="portfolio_dropdown portfolio_dropdown--NEO">
+                                    <div class="portfolio_graph">
+                                        <img src="img/graph.png" alt="">
+                                    </div>
+                                    <div class="portfolio_markets">
+                                        <div class="portfolio_markets-table-head">
+                                            <div class="portfolio_markets-table-market">
+                                                <span>Биржа</span>
+                                            </div>
+                                            <div class="portfolio_markets-table-price">
+                                                <span>Цена</span>
+                                            </div>
+                                            <div class="portfolio_markets-table-volume">
+                                                <span>Объём</span>
+                                            </div>
+                                            <div class="portfolio_markets-table-button">
+                                            </div>
+                                        </div>
+                                        <!-- /.portfolio_dropdown-market -->
+                                        <div class="portfolio_market">
+                                            <div class="portfolio_market-name">
+                                                <img src="img/kraken-logo-small.png" alt="">
+                                            </div>
+                                            <div class="portfolio_market-price">
+                                                <span><b>$</b> 4.36</span>
+                                            </div>
+                                            <div class="portfolio_market-volume">
+                                                <span><b>$</b> 10 010 000</span>
+                                            </div>
+                                            <div class="portfolio_market-button">
+                                                <a href="#" class="btn btn-primary">Торговать</a>
+                                            </div>
+                                        </div>
+                                        <!-- /.portfolio_dropdown-market -->
+                                        <div class="portfolio_market">
+                                            <div class="portfolio_market-name">
+                                                <img src="img/poloniex-log.png" alt="">
+                                            </div>
+                                            <div class="portfolio_market-price">
+                                                <span><b>$</b> 4.34</span>
+                                            </div>
+                                            <div class="portfolio_market-volume">
+                                                <span><b>$</b> 156 011 000</span>
+                                            </div>
+                                            <div class="portfolio_market-button">
+                                                <a href="#" class="btn btn-primary">Торговать</a>
+                                            </div>
+                                        </div>
+                                        <!-- /.portfolio_dropdown-market -->
+                                        <div class="portfolio_market">
+                                            <div class="portfolio_market-name">
+                                                <img src="img/bittrex-logo.png" alt="">
+                                            </div>
+                                            <div class="portfolio_market-price">
+                                                <span><b>$</b> 4.32</span>
+                                            </div>
+                                            <div class="portfolio_market-volume">
+                                                <span><b>$</b> 10 010 000</span>
+                                            </div>
+                                            <div class="portfolio_market-button">
+                                                <a href="#" class="btn btn-primary">Торговать</a>
+                                            </div>
+                                        </div>
+                                        <!-- /.portfolio_dropdown-market -->
+                                        <div class="portfolio_market">
+                                            <div class="portfolio_market-name">
+                                                <img src="img/huobi-logo.png" alt="">
+                                            </div>
+                                            <div class="portfolio_market-price">
+                                                <span><b>$</b> 4.22</span>
+                                            </div>
+                                            <div class="portfolio_market-volume">
+                                                <span><b>$</b> 93 B</span>
+                                            </div>
+                                            <div class="portfolio_market-button">
+                                                <a href="#" class="btn btn-primary">Торговать</a>
+                                            </div>
+                                        </div>
+                                        <!-- /.portfolio_dropdown-market -->
+                                    </div>
+                                    <!-- /.portfolio_dropdown-markets -->
+                                </div>
+                                <!-- /.portfolio_item-dropdown -->
                             </div>
-                            <!-- /.portfolio_item -->
+                            <!-- /.portfolio_item-wrapper -->
                         </div>
                         <!-- /.portfolio_list -->
                         <div class="portfolio_button portfolio_button--bottom">
                             <a href="#" class="btn">Добавить/убрать монету</a>
                         </div>
+                        <div class="portfolio_history">
+                            <h3>история изменений</h3>
+                            <div class="history_items">
+                                <div class="history_item history_item--deleted">
+                                    <div class="history_item-data">
+                                        <span class="history_item-name">MiniApps</span>
+                                        <span class="history_item-result">– 13 MAP</span>
+                                        <span class="history_item-usd"></span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <span class="history_item-time">Удалено 7 минут назад</span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <a href="#" class="history_item-restore">Восстановить</a>
+                                    </div>
+                                </div>
+                                <!-- /.history-item -->
+                                <div class="history_item history_item--added">
+                                    <div class="history_item-data">
+                                        <span class="history_item-name">DigiCash</span>
+                                        <span class="history_item-result">+ 871 DASH</span>
+                                        <span class="history_item-usd">($ 790.61)</span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <span class="history_item-time">Добавлено 11 минут назад</span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <a href="#" class="history_item-restore"></a>
+                                    </div>
+                                </div>
+                                <div class="history_item history_item--added">
+                                    <div class="history_item-data">
+                                        <span class="history_item-name">NEO</span>
+                                        <span class="history_item-result">+ 305 NEO</span>
+                                        <span class="history_item-usd">($ 55.12)</span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <span class="history_item-time">Добавлено 1 час назад</span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <a href="#" class="history_item-restore"></a>
+                                    </div>
+                                </div>
+                                <!-- /.history-item -->
+                                <div class="history_item history_item--added">
+                                    <div class="history_item-data">
+                                        <span class="history_item-name">MiniApps</span>
+                                        <span class="history_item-result">– 13 MAP</span>
+                                        <span class="history_item-usd"></span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <span class="history_item-time">Удалено 7 минут назад</span>
+                                    </div>
+                                    <div class="history_item-data">
+                                        <a href="#" class="history_item-restore">Восстановить</a>
+                                    </div>
+                                </div>
+                                <!-- /.history-item -->
+                            </div>
+                            <!-- /.history-items -->
+                        </div>
+                        <!-- /.portfilio_history -->
                     </div>
                     <!-- /.portfolio -->
               </div>

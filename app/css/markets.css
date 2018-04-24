@@ -19,7 +19,7 @@
   letter-spacing: -0.06px;
 }
 .choosing-form form fieldset .dropdown::before {
-  right: 40px;
+  right: 5px;
   top: 20px;
 }
 .choosing-form form fieldset .choosing-form_list {

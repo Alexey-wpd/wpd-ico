@@ -212,11 +212,11 @@
                                         </div>
                                     </div>
                                     <!-- /.add-coin-form_wrapper -->
-                                    <div class="add-coin-form_wrapper">
-                                        <button class="btn btn-primary" type="submit" name="button">Сохранить</button>
-                                        <a href="#">Удалить монету</a>
+                                    <div class="add-coin-form_buttons">
+                                            <button class="btn btn-primary" type="submit" name="button">Сохранить</button>
+                                            <a href="#">Удалить монету</a>
                                     </div>
-                                    <!-- /.add-coin-form_wrapper -->
+                                    <!-- /.add-coin-form_buttons -->
                                 </fieldset>
                                 <fieldset class="fieldset-right">
                                     <div class="add-coin-form_textarea">
@@ -262,7 +262,7 @@
                                 </div>
                                 <div class="portfolio_item-amount">
                                     <span>0.0014503 <b>BTC</b></span>
-                                    <a href="#" class="portfolio_item-edit"></a>
+                                    <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="top"></a>
                                 </div>
                                 <div class="portfolio_item-percent">
                                     <span>31%</span>
@@ -292,7 +292,7 @@
                                 </div>
                                 <div class="portfolio_item-amount">
                                     <span>201  <b>XMR</b></span>
-                                    <a href="#" class="portfolio_item-edit"></a>
+                                    <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="top"></a>
                                 </div>
                                 <div class="portfolio_item-percent">
                                     <span>14%</span>
@@ -323,7 +323,7 @@
                                     </div>
                                     <div class="portfolio_item-amount">
                                         <span>305  <b>NEO </b></span>
-                                        <a href="#" class="portfolio_item-edit"></a>
+                                        <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="top"></a>
                                     </div>
                                     <div class="portfolio_item-percent">
                                         <span>7%</span>
@@ -498,6 +498,54 @@
                         <!-- /.portfilio_history -->
                     </div>
                     <!-- /.portfolio -->
+                    <!-- /.==================================POPOVER-=================== -->
+                    <div class="popover-edit" id="popover">
+                        <div class="popover_close">
+                            <a href="#"></a>
+                        </div>
+                        <div class="popover-edit_header popover-edit_header--XMR">
+                            <span>Редактировать</span>
+                            <span class="popover-edit_name">Monero · <b>XMR</b></span>
+                        </div>
+                        <div class="popover-edit_form">
+                            <form action="#" class="edit-form">
+                                <fieldset>
+                                    <div class="edit-form_wrapper">
+                                        <div class="edit-form_amount">
+                                            <label for="amount">Количество</label>
+                                            <input type="number" name="amount" id="amount" placeholder="">
+                                        </div>
+                                        <div class="edit-form_price">
+                                            <label for="price">Цена</label>
+                                            <input type="text" name="price" id="price" placeholder="3 430">
+                                        </div>
+                                        <div class="edit-form_currency">
+                                            <label for="currency">Валюта</label>
+                                            <select size="1" name="" id="currency">
+                                                  <option value=""><a href="#">USD</a></option>
+                                                  <option value=""><a href="#">EUR</a></option>
+                                                  <option value=""><a href="#">RUR</a></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- /.edit-form_wrapper -->
+                                </fieldset>
+                                <fieldset class="fieldset">
+                                    <div class="edit-form_textarea">
+                                        <label for="textarea"><a href="#">Удалить комментарий</a></label>
+                                        <textarea placeholder="комментарий" id="textarea"></textarea>
+                                    </div>
+                                    <div class="edit-form_buttons">
+                                        <button class="btn btn-primary" type="submit" name="button">Сохранить</button>
+                                        <a href="#">Удалить монету</a>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <!-- /.add-coin-form -->
+                        </div>
+                        <!-- /.popover-edit_form -->
+                    </div>
+                    <!-- /.popover-edit -->
               </div>
               <!-- /.col-9 -->
           </div>

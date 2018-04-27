@@ -345,12 +345,22 @@ button {
 	&--hidden {
 		display: none;
 	}
+	a {
+		text-decoration: none;
+	}
 	&_block {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 	}
 	&_icon {
-		margin-right: 13px;
+		margin-right: 10px;
+		display: flex;
+		padding: 2px;
+		border: 2px solid red;
+		border-radius: 50%;
+		img {
+			margin: auto;
+		}
 		&--ico {
 			position: relative;
 			&::before {

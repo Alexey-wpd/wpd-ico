@@ -1,0 +1,182 @@
+.latest-wrapper {
+  padding-bottom: 60px;
+  background-color: #e0e6ed;
+}
+.latest-wrapper .latest {
+  position: relative;
+  background-color: #e0e6ed;
+  height: 880px;
+  overflow: hidden;
+}
+.latest-wrapper .latest h2 {
+  margin-top: 34px;
+  margin-bottom: 26px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.latest-wrapper .latest-forum .forum-subsection-content {
+  margin-top: 0;
+}
+.latest-wrapper .latest-forum .forum-topic_numbers {
+  width: 100px;
+  justify-content: space-between;
+}
+.latest-wrapper .latest-review {
+  height: 850px;
+}
+.latest-wrapper .latest-review::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  width: 100%;
+  height: 72px;
+  background-image: linear-gradient(to top, #e0e6ed 0%, rgba(224, 230, 237, 0) 100%);
+  z-index: 55;
+}
+.latest-wrapper .latest-review_item {
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+}
+.latest-wrapper .latest-review_item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 33px 13px 24px;
+  background-image: linear-gradient(225deg, #8392d9 0%, #3841ba 100%);
+}
+.latest-wrapper .latest-review_item-title h3 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.latest-wrapper .latest-review_item-title span {
+  padding: 1px 6px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: -0.03px;
+}
+.latest-wrapper .latest-review_item-discription {
+  position: relative;
+  padding: 16px 24px 0px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+.latest-wrapper .latest-review_item-discription p {
+  position: relative;
+  padding-bottom: 20px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.latest-wrapper .latest-review_item .markets-item_characteristics {
+  background-color: #fff;
+  padding: 18px 28px 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  border-top: 1px solid #e0e6ed;
+}
+.latest-wrapper .latest-review_item .user {
+  padding: 14px 24px;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  background-color: #fafbfc;
+}
+.latest-wrapper .latest-review_item .user_block {
+  align-items: flex-start;
+}
+.latest-wrapper .latest-review_item .user_rating {
+  color: #44af36;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.latest-wrapper .latest-review_item .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.latest-wrapper .latest-review_item .rating_tag {
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 20px;
+  background-color: #44af36;
+}
+.latest-wrapper .latest-review_item .rating_tag::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border: 10px solid #fafbfc;
+  border-left-width: 0px;
+  border-right-width: 10px;
+  border-right-color: transparent;
+}
+.latest-wrapper .latest-review_item .rating_tag span {
+  margin: auto;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.latest-wrapper .latest-review_item-date {
+  margin-top: 5px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 9px;
+}
+.latest-wrapper .latest-review_item .dropdown {
+  cursor: pointer;
+  position: relative;
+}
+.latest-wrapper .latest-review_item .dropdown::before {
+  background-image: none;
+}
+.latest-wrapper .latest-review_item .dropdown span {
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c1c1c1;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 22;
+}
+.latest-wrapper .latest-review_item .dropdown span::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: rotate(45deg);
+}
+.latest-wrapper .latest-review_item .dropdown span::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 7px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: rotate(-45deg);
+}

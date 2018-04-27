@@ -18,7 +18,7 @@
   margin-right: 60px;
 }
 .footer_intro p {
-  max-width: 260px;
+  max-width: 255px;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -65,9 +65,10 @@
 }
 .footer_nav {
   display: flex;
+  margin-left: 60px;
 }
 .footer_nav-menu {
-  margin-right: 44px;
+  margin-right: 50px;
 }
 .footer_nav-menu-item {
   margin-bottom: 15px;
@@ -76,12 +77,27 @@
   color: #44af36;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1px;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: rgba(68, 175, 54, 0.25);
+}
+.footer_nav-menu-item a:hover {
+  text-decoration: none;
+}
+.footer_nav-menu-item--bold a {
+  font-weight: 500;
+}
+.footer_nav-menu-item--grey a {
+  color: #8f96a1;
+  text-decoration-color: rgba(143, 150, 161, 0.25);
 }
 .footer_search {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .footer_search form {
   margin-bottom: 32px;
@@ -92,14 +108,14 @@
   width: 21px;
   height: 21px;
   right: 12px;
-  top: 4px;
+  top: 8px;
   background-image: url('../img/search-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
 }
 .footer_search input {
-  padding: 5px 40px 5px 15px;
+  padding: 8px 40px 8px 15px;
   width: 284px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -109,6 +125,30 @@
   border-radius: 4px;
   border: 1px solid #c5d0de;
   background-color: #ffffff;
+}
+.footer_search .worldpokerdeals {
+  margin-top: auto;
+  margin-right: 100px;
+  align-self: center;
+}
+.footer_search .worldpokerdeals a {
+  position: relative;
+  color: #8f96a1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.footer_search .worldpokerdeals a::before {
+  content: "";
+  position: absolute;
+  width: 151px;
+  height: 24px;
+  left: 67px;
+  top: -7px;
+  background-image: url('../img/wpd.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .footer .terms {
   margin: 0;

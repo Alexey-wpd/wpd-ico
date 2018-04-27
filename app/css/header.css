@@ -22,6 +22,7 @@
   flex-wrap: wrap;
 }
 .header .main-nav_item {
+  width: 78px;
   margin-right: 38px;
 }
 .header .main-nav_item a {
@@ -33,6 +34,8 @@
   font-weight: 500;
   line-height: 20px;
   white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: rgba(68, 175, 54, 0.25);
 }
 .header .main-nav_faq {
   display: block;
@@ -41,10 +44,11 @@
   padding: 0 10px;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1px;
+  text-decoration-color: rgba(143, 150, 161, 0.25);
 }
 .header .main-nav_user-menu {
   display: flex;
@@ -231,7 +235,7 @@
 .header_slider-item {
   height: 400px;
   background-image: url('../img/slider-image.png');
-  background-position: 95% 50%;
+  background-position: 90% 50%;
   background-repeat: no-repeat;
 }
 .header_slider-title {
@@ -245,14 +249,14 @@
   line-height: 36px;
 }
 .header_slider-intro {
-  width: 355px;
+  width: 400px;
   padding-top: 25px;
   padding-bottom: 48px;
-  color: #fafbfc;
   font-family: 'Roboto', sans-serif;
+  color: #fafbfc;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
 }
 .header .cabinet-nav {
   background-color: #525c6c;

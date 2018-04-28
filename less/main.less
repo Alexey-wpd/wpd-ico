@@ -356,8 +356,13 @@ button {
 		margin-right: 10px;
 		display: flex;
 		padding: 2px;
-		border: 2px solid red;
+		border: 2px solid @accent-color;
 		border-radius: 50%;
+		&--small {
+			padding: 0;
+			border: 1px solid @accent-color;
+			position: relative;
+		}
 		img {
 			margin: auto;
 		}
@@ -369,7 +374,7 @@ button {
 				width: 22px;
 				height: 18px;
 				left: 1px;
-				top: -3px;
+				top: -8px;
 				background-image: @img-ico;
 				background-position: center;
 				background-repeat: no-repeat;

@@ -7,6 +7,10 @@
 		$(".dropdown-subsection").slideToggle();
 	});
 
+	$(".portfolio_item-dropdown").click(function() {
+		$(".portfolio_dropdown").slideToggle();
+	});
+
 
 //============language==============================
 
@@ -49,3 +53,23 @@ $(function(){
     	content: $('#popover')
     });
 });
+
+
+//======================COLLAPSE==============
+
+  var linkRestore = document.querySelector(".js-restore");
+  var linkCollapse = document.querySelector(".js-collapse");
+  var slider = document.querySelector(".header_slider");
+  var collapse = document.querySelector(".header_collapse");
+
+  linkRestore.addEventListener("click", function(event) {
+    event.preventDefault();
+    slider.classList.add("header_slider--show");
+    collapse.classList.add("header_collapse--close");
+  });
+
+  linkCollapse.addEventListener("click", function(event) {
+    event.preventDefault();
+    slider.classList.add("header_slider--close");
+    collapse.classList.add("header_collapse--show");
+  });

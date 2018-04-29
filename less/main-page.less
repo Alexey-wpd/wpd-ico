@@ -68,20 +68,6 @@
         display: flex;
         margin-bottom: 1px;
         position: relative;
-        &--sponsored {
-            &::before {
-                content: "";
-    			position: absolute;
-    			width: 109px;
-    			height: 29px;
-    			right: -7px;
-    			top: 7px;
-    			background-image: @img-sponsored;
-    			background-position: center;
-    			background-repeat: no-repeat;
-    			z-index: 11;
-            }
-        }
         .rating {
             position: absolute;
             top: 14px;
@@ -144,6 +130,40 @@
                 line-height: 20px;
             }
         }
+        &_sponsored {
+            position: relative;
+            margin-right: -22px;
+            padding: 5px 10px 2px 14px;
+            box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #f3b325;
+            background-color: #ffffff;
+            color: #f7981c;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 10px;
+            text-transform: uppercase;
+            &::before {
+    			content: "";
+    			position: absolute;
+    			width: 35px;
+    			height:26px;
+    			left: -18px;
+    			top: -5px;
+    			background-image: @img-sponsored;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+            &::after {
+                content: "";
+                position: absolute;
+                right: -1px;
+                bottom: 17px;
+                border: 3px solid transparent;
+                border-bottom: 3px solid #f3b325;
+                border-left: 3px solid #f3b325;
+            }
+        }
         &_category {
             padding: 5px 6px 0px;
             border-radius: 4px;
@@ -164,6 +184,8 @@
             display: flex;
             margin-bottom: 10px;
             p {
+                height: 32px;
+                overflow: hidden;
                 color: #707986;
                 font-family: @main-font;
                 font-size: 12px;
@@ -195,6 +217,42 @@
                 line-height: 20px;
                 letter-spacing: -0.4px;
             }
+            &-status {
+                margin-left: 28px;
+                position: relative;
+                color: @accent-color;
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 11px;
+                text-transform: uppercase;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 13px;
+                    left: -23px;
+                    top: -4px;
+                    background-image: @img-thumbs-up-green;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 11;
+                }
+                &--canseled {
+                    color: #ff3657;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 15px;
+                        height: 13px;
+                        left: -23px;
+                        top: -1px;
+                        background-image: @img-thumbs-up-red;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 11;
+                    }
+                }
+            }
             &-trading-time-left {
                 color: #8f96a1;
                 font-family: @main-font;
@@ -208,6 +266,9 @@
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 12px;
+                &--canseled {
+                    color: #ff3657;
+                }
             }
             &-current-percent {
                 margin-left: 10px;
@@ -255,9 +316,16 @@
         text-align: center;
         margin-top: 36px;
         margin-bottom: 42px;
-        .btn {
+        a {
+            padding: 18px 24px 14px;
             background-color: @accent-color;
             box-shadow: 0 4px 0 darken(@accent-color, 10%);
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: -0.17px;
         }
     }
 }

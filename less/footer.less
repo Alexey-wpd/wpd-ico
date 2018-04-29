@@ -4,15 +4,10 @@
      background-color: #ffffff;
     &-wrapper {
         display: flex;
-        justify-content: space-between;
         padding: 35px 0 25px;
         box-shadow: 0 -1px 0 #e0e6ed;
     }
-    &-content {
-        display: flex;
-    }
     &_about-us {
-
     }
     &_logo {
         margin-bottom: 20px;
@@ -79,7 +74,7 @@
                 a {
                     color: @accent-color;
                     font-family: @main-font;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 400;
                     line-height: 20px;
                     letter-spacing: -0.1px;
@@ -92,11 +87,13 @@
                 }
                 &--bold {
                     a {
+                        font-size: 16px;
                         font-weight: 500;
                     }
                 }
                 &--grey {
                     a {
+                        font-size: 16px;
                         color: #8f96a1;
                         text-decoration-color: rgba(143, 150, 161, 0.25);
                     }
@@ -108,6 +105,8 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        margin-left: auto;
+        width: 20%;
         form {
             margin-bottom: 32px;
             &::before {
@@ -125,7 +124,7 @@
         }
         input {
             padding: 8px 40px 8px 15px;
-            width: 284px;
+            width: 100%;
             color: #333f52;
             font-family: @main-font;
             font-size: 14px;
@@ -135,35 +134,15 @@
             border: 1px solid #c5d0de;
             background-color: #ffffff;
         }
-        .worldpokerdeals {
-            margin-top: auto;
-            margin-right: 100px;
-            align-self: center;
-            a {
-                position: relative;
-                color: #8f96a1;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 16px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 151px;
-                    height: 24px;
-                    left: 67px;
-                    top: -7px;
-                    background-image: @img-wpd;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    z-index: 11;
-                }
-            }
-        }
     }
-    .terms {
-        margin: 0;
-        padding: 16px 0;
+    .footer-terms {
         background-color: #fafbfc;
+        &_wrapper {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 16px 0;
+        }
         a {
             margin-right: 32px;
             color: #8f96a1;
@@ -176,6 +155,25 @@
             &:hover {
                 text-decoration: none;
                 color: darken(#8f96a1, 10%);
+            }
+        }
+        .worldpokerdeals {
+            margin-left: auto;
+            justify-content: flex-end;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+                margin-right: 0;
+                color: #8f96a1;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+            }
+            img {
+                margin: auto;
+                margin-left: 10px;
             }
         }
     }

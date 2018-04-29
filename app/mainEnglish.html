@@ -107,11 +107,16 @@
           <section class="header_slider">
               <div class="container-fluid">
                   <div class="header_slider-item">
+                      <div class="header_slider-collapse-icon  js-collapse">
+                          <span></span>
+                      </div>
                       <h2 class="header_slider-title">Your own ICO tracker and calendar!</h2>
                       <p class="header_slider-intro">
                           Get smart notifications about upcoming events, add important dates to your personalized timeline, create and share your portfolio with community!
                       </p>
-                      <a href="#" class="btn btn--slider">Sign Up for Free</a>
+                      <div class="header_slider-button">
+                          <a href="#" class="btn" >Sign Up for Free</a>
+                      </div>
                   </div>
                   <!-- /.header_slider-item -->
               </div>
@@ -125,7 +130,7 @@
                       <div class="header_collapse-button">
                           <a href="#" class="btn">Sign Up for Free</a>
                       </div>
-                      <div class="header_collapse-icon">
+                      <div class="header_collapse-icon js-restore">
                           <span></span>
                       </div>
                   </div>
@@ -142,7 +147,7 @@
                   <div class="col-4">
                       <h2>TOP-5 Upcoming ICO</h2>
                       <div class="top5-ico_upcoming-list">
-                          <div class="ico-item ico-item--sponsored">
+                          <div class="ico-item">
                               <div class="ico-item_logo" style="background-image: linear-gradient(225deg, #8392d9 0%, #3841ba 100%)">
                                   <img src="img/aurora-logo.png" alt="">
                               </div>
@@ -153,7 +158,7 @@
                               <div class="ico-item_content ico-item_content--sponsored">
                                   <div class="ico-item_title">
                                       <h3>Aurora</h3>
-                                      <span class="ico-item_category ico-item_category--sponsored"></span>
+                                      <span class="ico-item_sponsored">SPONSORED</span>
                                   </div>
                                   <div class="ico-item_description">
                                       <p>
@@ -291,15 +296,15 @@
                                   </div>
                                   <div class="ico-item_description">
                                       <p>
-                                          Travel Booking Marketplace Travel Booking Marketplace Booking Marketplace
+                                          Travel Booking Marketplace
                                       </p>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-token-x"><span>x</span> 2.56</span>
+                                      <span></span>
                                       <span class="ico-item_data-full-amount">$ 9 000 000</span>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-trading-time-left">$ 5978</span>
+                                      <span class="ico-item_data-status">COMPLETED</span>
                                       <span class="ico-item_data-current-amount">$ 9 000 000<span class="ico-item_data-current-percent">100%</span></span>
                                   </div>
                               </div>
@@ -325,12 +330,12 @@
                                       </p>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-token-x"><span>x</span> 1.09</span>
+                                      <span></span>
                                       <span class="ico-item_data-full-amount">$ 1 000 000</span>
                                   </div>
                                   <div class="ico-item_data">
-                                      <span class="ico-item_data-trading-time-left">$ 524</span>
-                                      <span class="ico-item_data-current-amount">$ 660 000<span class="ico-item_data-current-percent">9.3%</span></span>
+                                      <span class="ico-item_data-status ico-item_data-status--canseled">CANCELED</span>
+                                      <span class="ico-item_data-current-amount ico-item_data-current-amount--canseled">$ 660 000<span class="ico-item_data-current-percent">9.3%</span></span>
                                   </div>
                               </div>
                               <!-- /.ico-item_content -->
@@ -577,7 +582,6 @@
               <div class="row">
                   <div class="col">
                       <div class="footer-wrapper">
-                          <div class="footer-content">
                               <div class="footer_about-us">
                                   <div class="footer_logo">
                                       <img src="img/logo.svg" alt="ICOPAPA" />
@@ -617,8 +621,6 @@
                                   </ul>
                               </div>
                               <!-- /.footer_main-nav -->
-                          </div>
-                          <!-- /.footer_content -->
                           <div class="footer_search">
                               <form>
                                   <input type="text" placeholder="" name="search">
@@ -648,9 +650,6 @@
                                   </div>
                               </div>
                               <!-- /.language -->
-                              <div class="worldpokerdeals">
-                                  <a href="#">Created by</a>
-                              </div>
                           </div>
                           <!-- /.footer_search -->
                       </div>
@@ -661,14 +660,20 @@
               <!-- /.row -->
           </div>
           <!-- /.container-fluid -->
-          <div class="terms">
+          <div class="footer-terms">
               <div class="container-fluid">
-                  <a href="#" data-toggle="tooltip" title="Что-то не сработало?">Условия использования</a>
-                  <a href="#">Политика конфиденциальности </a>
-                  <a href="#">Предложения о сотрудничестве, реклама</a>
+                  <div class="footer-terms_wrapper">
+                      <a href="#">Условия использования</a>
+                      <a href="#">Политика конфиденциальности </a>
+                      <a href="#">Предложения о сотрудничестве, реклама</a>
+                      <div class="worldpokerdeals">
+                          <a href="#">Created by  <img src="img/wpd.svg" alt=""></a>
+                      </div>
+                  </div>
+                  <!-- /.terms_wrapper -->
               </div>
           </div>
-          <!-- /.terms -->
+          <!-- /.footer-terms -->
       </footer>
       <!-- /.footer -->
 

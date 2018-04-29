@@ -229,10 +229,37 @@
   background-color: #ffffff;
 }
 .header_slider {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(187deg, #64b61e 0%, #74bd49 30%, #0086ca 100%);
+  display: none;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  background-image: radial-gradient(72% 51%, #C86DD7 0%, #3023AE 89%);
+}
+.header_slider--show {
+  display: block;
+}
+.header_slider--close {
+  display: none;
+}
+.header_slider-collapse-icon {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+.header_slider-collapse-icon span {
+  position: relative;
+}
+.header_slider-collapse-icon span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  background-image: url('../img/collapse.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+  cursor: pointer;
 }
 .header_slider-item {
+  position: relative;
   height: 400px;
   background-image: url('../img/slider-image.png');
   background-position: 90% 50%;
@@ -258,8 +285,39 @@
   font-weight: 400;
   line-height: 24px;
 }
+.header_slider-button a {
+  position: relative;
+  padding: 20px 24px 12px 52px;
+  background-image: radial-gradient(42% -82%, #3BB54F 87%, #268B87 100%);
+  box-shadow: 0 0 36px #854dc5, 0 4px 0 #24827e;
+  border-radius: 4px;
+  text-shadow: 1px 1px 0 #268b86;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.17px;
+}
+.header_slider-button a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  left: 19px;
+  top: 17px;
+  background-image: url('../img/sigh-up.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .header_collapse {
-  background-image: linear-gradient(187deg, #64b61e 0%, #74bd49 30%, #0086ca 100%);
+  background-image: radial-gradient(27% -160%, #3BB54F 100%, #268B87 100%);
+}
+.header_collapse--close {
+  display: none;
+}
+.header_collapse--show {
+  display: block;
 }
 .header_collapse h2 {
   color: #fafbfc;
@@ -1045,6 +1103,7 @@
 }
 .forum-subsection-content_topic .topic-statistic {
   display: flex;
+  align-items: center;
   margin-left: 5px;
   margin-top: 4px;
 }
@@ -1518,6 +1577,7 @@
 }
 .choosing-form {
   margin-top: 32px;
+  margin-bottom: 32px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 4px;
@@ -1906,18 +1966,6 @@
   margin-bottom: 1px;
   position: relative;
 }
-.top5-ico .ico-item--sponsored::before {
-  content: "";
-  position: absolute;
-  width: 109px;
-  height: 29px;
-  right: -7px;
-  top: 7px;
-  background-image: url('../img/sponsored.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .top5-ico .ico-item .rating {
   position: absolute;
   top: 14px;
@@ -1979,6 +2027,40 @@
   font-weight: 700;
   line-height: 20px;
 }
+.top5-ico .ico-item_sponsored {
+  position: relative;
+  margin-right: -22px;
+  padding: 5px 10px 2px 14px;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3b325;
+  background-color: #ffffff;
+  color: #f7981c;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+.top5-ico .ico-item_sponsored::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 26px;
+  left: -18px;
+  top: -5px;
+  background-image: url('../img/sponsored.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.top5-ico .ico-item_sponsored::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 17px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #f3b325;
+  border-left: 3px solid #f3b325;
+}
 .top5-ico .ico-item_category {
   padding: 5px 6px 0px;
   border-radius: 4px;
@@ -2000,6 +2082,8 @@
   margin-bottom: 10px;
 }
 .top5-ico .ico-item_description p {
+  height: 32px;
+  overflow: hidden;
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -2031,6 +2115,42 @@
   line-height: 20px;
   letter-spacing: -0.4px;
 }
+.top5-ico .ico-item_data-status {
+  margin-left: 28px;
+  position: relative;
+  color: #44af36;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.top5-ico .ico-item_data-status::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: -23px;
+  top: -4px;
+  background-image: url('../img/thumbs-up-green.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.top5-ico .ico-item_data-status--canseled {
+  color: #ff3657;
+}
+.top5-ico .ico-item_data-status--canseled::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: -23px;
+  top: -1px;
+  background-image: url('../img/thumbs-up-red.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .top5-ico .ico-item_data-trading-time-left {
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -2044,6 +2164,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+}
+.top5-ico .ico-item_data-current-amount--canseled {
+  color: #ff3657;
 }
 .top5-ico .ico-item_data-current-percent {
   margin-left: 10px;
@@ -2090,9 +2213,16 @@
   margin-top: 36px;
   margin-bottom: 42px;
 }
-.top5-ico_button .btn {
+.top5-ico_button a {
+  padding: 18px 24px 14px;
   background-color: #44af36;
   box-shadow: 0 4px 0 #35882a;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.17px;
 }
 .latest {
   background-color: #e0e6ed;
@@ -2236,12 +2366,8 @@
 }
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
   padding: 35px 0 25px;
   box-shadow: 0 -1px 0 #e0e6ed;
-}
-.footer-content {
-  display: flex;
 }
 .footer_logo {
   margin-bottom: 20px;
@@ -2309,7 +2435,7 @@
 .footer_nav-menu-item a {
   color: #44af36;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1px;
@@ -2321,9 +2447,11 @@
   text-decoration: none;
 }
 .footer_nav-menu-item--bold a {
+  font-size: 16px;
   font-weight: 500;
 }
 .footer_nav-menu-item--grey a {
+  font-size: 16px;
   color: #8f96a1;
   text-decoration-color: rgba(143, 150, 161, 0.25);
 }
@@ -2331,6 +2459,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  width: 20%;
 }
 .footer_search form {
   margin-bottom: 32px;
@@ -2349,7 +2479,7 @@
 }
 .footer_search input {
   padding: 8px 40px 8px 15px;
-  width: 284px;
+  width: 100%;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -2359,36 +2489,16 @@
   border: 1px solid #c5d0de;
   background-color: #ffffff;
 }
-.footer_search .worldpokerdeals {
-  margin-top: auto;
-  margin-right: 100px;
-  align-self: center;
-}
-.footer_search .worldpokerdeals a {
-  position: relative;
-  color: #8f96a1;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
-.footer_search .worldpokerdeals a::before {
-  content: "";
-  position: absolute;
-  width: 151px;
-  height: 24px;
-  left: 67px;
-  top: -7px;
-  background-image: url('../img/wpd.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
-.footer .terms {
-  margin: 0;
-  padding: 16px 0;
+.footer .footer-terms {
   background-color: #fafbfc;
 }
-.footer .terms a {
+.footer .footer-terms_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 16px 0;
+}
+.footer .footer-terms a {
   margin-right: 32px;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -2398,9 +2508,28 @@
   text-decoration: underline;
   white-space: nowrap;
 }
-.footer .terms a:hover {
+.footer .footer-terms a:hover {
   text-decoration: none;
   color: #737c8a;
+}
+.footer .footer-terms .worldpokerdeals {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.footer .footer-terms .worldpokerdeals a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-right: 0;
+  color: #8f96a1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.footer .footer-terms .worldpokerdeals img {
+  margin: auto;
+  margin-left: 10px;
 }
 .events {
   margin-top: 32px;
@@ -2983,11 +3112,12 @@
   text-decoration: none;
 }
 .popover {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 14px;
+  max-width: 400px;
 }
 .popover-body {
-  padding: 0;
+  padding: 5px;
   margin: 0;
   border: none;
 }
@@ -4470,16 +4600,6 @@ button {
   background-repeat: no-repeat;
   z-index: 11;
 }
-.btn--slider {
-  padding: 18px 24px 16px;
-  background-color: #f7981b;
-  box-shadow: 0 4px 0 #d87a00;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 14px;
-}
 .btn--prymary {
   padding: 12px 20px 12px 54px;
   background-color: #44af36;
@@ -4576,8 +4696,7 @@ button {
 }
 .forum-topic {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .forum-topic--dropdown {

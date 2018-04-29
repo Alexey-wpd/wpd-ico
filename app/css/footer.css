@@ -3,12 +3,8 @@
 }
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
   padding: 35px 0 25px;
   box-shadow: 0 -1px 0 #e0e6ed;
-}
-.footer-content {
-  display: flex;
 }
 .footer_logo {
   margin-bottom: 20px;
@@ -76,7 +72,7 @@
 .footer_nav-menu-item a {
   color: #44af36;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1px;
@@ -88,9 +84,11 @@
   text-decoration: none;
 }
 .footer_nav-menu-item--bold a {
+  font-size: 16px;
   font-weight: 500;
 }
 .footer_nav-menu-item--grey a {
+  font-size: 16px;
   color: #8f96a1;
   text-decoration-color: rgba(143, 150, 161, 0.25);
 }
@@ -98,6 +96,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  width: 20%;
 }
 .footer_search form {
   margin-bottom: 32px;
@@ -116,7 +116,7 @@
 }
 .footer_search input {
   padding: 8px 40px 8px 15px;
-  width: 284px;
+  width: 100%;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -126,36 +126,16 @@
   border: 1px solid #c5d0de;
   background-color: #ffffff;
 }
-.footer_search .worldpokerdeals {
-  margin-top: auto;
-  margin-right: 100px;
-  align-self: center;
-}
-.footer_search .worldpokerdeals a {
-  position: relative;
-  color: #8f96a1;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
-.footer_search .worldpokerdeals a::before {
-  content: "";
-  position: absolute;
-  width: 151px;
-  height: 24px;
-  left: 67px;
-  top: -7px;
-  background-image: url('../img/wpd.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
-.footer .terms {
-  margin: 0;
-  padding: 16px 0;
+.footer .footer-terms {
   background-color: #fafbfc;
 }
-.footer .terms a {
+.footer .footer-terms_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 16px 0;
+}
+.footer .footer-terms a {
   margin-right: 32px;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -165,7 +145,26 @@
   text-decoration: underline;
   white-space: nowrap;
 }
-.footer .terms a:hover {
+.footer .footer-terms a:hover {
   text-decoration: none;
   color: #737c8a;
+}
+.footer .footer-terms .worldpokerdeals {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.footer .footer-terms .worldpokerdeals a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-right: 0;
+  color: #8f96a1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.footer .footer-terms .worldpokerdeals img {
+  margin: auto;
+  margin-left: 10px;
 }

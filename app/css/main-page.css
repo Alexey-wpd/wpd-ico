@@ -60,18 +60,6 @@
   margin-bottom: 1px;
   position: relative;
 }
-.top5-ico .ico-item--sponsored::before {
-  content: "";
-  position: absolute;
-  width: 109px;
-  height: 29px;
-  right: -7px;
-  top: 7px;
-  background-image: url('../img/sponsored.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .top5-ico .ico-item .rating {
   position: absolute;
   top: 14px;
@@ -133,6 +121,40 @@
   font-weight: 700;
   line-height: 20px;
 }
+.top5-ico .ico-item_sponsored {
+  position: relative;
+  margin-right: -22px;
+  padding: 5px 10px 2px 14px;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3b325;
+  background-color: #ffffff;
+  color: #f7981c;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+.top5-ico .ico-item_sponsored::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 26px;
+  left: -18px;
+  top: -5px;
+  background-image: url('../img/sponsored.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.top5-ico .ico-item_sponsored::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 17px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #f3b325;
+  border-left: 3px solid #f3b325;
+}
 .top5-ico .ico-item_category {
   padding: 5px 6px 0px;
   border-radius: 4px;
@@ -154,6 +176,8 @@
   margin-bottom: 10px;
 }
 .top5-ico .ico-item_description p {
+  height: 32px;
+  overflow: hidden;
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -185,6 +209,42 @@
   line-height: 20px;
   letter-spacing: -0.4px;
 }
+.top5-ico .ico-item_data-status {
+  margin-left: 28px;
+  position: relative;
+  color: #44af36;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.top5-ico .ico-item_data-status::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: -23px;
+  top: -4px;
+  background-image: url('../img/thumbs-up-green.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.top5-ico .ico-item_data-status--canseled {
+  color: #ff3657;
+}
+.top5-ico .ico-item_data-status--canseled::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: -23px;
+  top: -1px;
+  background-image: url('../img/thumbs-up-red.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .top5-ico .ico-item_data-trading-time-left {
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -198,6 +258,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+}
+.top5-ico .ico-item_data-current-amount--canseled {
+  color: #ff3657;
 }
 .top5-ico .ico-item_data-current-percent {
   margin-left: 10px;
@@ -244,9 +307,16 @@
   margin-top: 36px;
   margin-bottom: 42px;
 }
-.top5-ico_button .btn {
+.top5-ico_button a {
+  padding: 18px 24px 14px;
   background-color: #44af36;
   box-shadow: 0 4px 0 #35882a;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.17px;
 }
 .latest {
   background-color: #e0e6ed;

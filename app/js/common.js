@@ -11,6 +11,14 @@
 		$(".portfolio_dropdown").slideToggle();
 	});
 
+	$(".js-replies-dropdown").click(function() {
+		$(".user-reviews_item-replies").slideToggle();
+	});
+
+	$(".js-hide-details").click(function() {
+		$(".table-wrapper").slideToggle();
+	});
+
 
 //============language==============================
 

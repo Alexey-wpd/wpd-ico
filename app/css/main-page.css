@@ -137,10 +137,10 @@
 .top5-ico .ico-item_sponsored::before {
   content: "";
   position: absolute;
-  width: 35px;
+  width: 40px;
   height: 26px;
-  left: -18px;
-  top: -5px;
+  left: -27px;
+  top: -3px;
   background-image: url('../img/sponsored.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -381,18 +381,18 @@
   font-weight: 500;
   line-height: 22px;
 }
-.latest-reviews_ico .rating {
+.latest-reviews_ico-rating {
   display: flex;
   justify-content: flex-end;
 }
-.latest-reviews_ico .rating_tag {
+.latest-reviews_ico-rating .rating_tag {
   position: relative;
   display: flex;
   width: 40px;
   height: 20px;
   background-color: #44af36;
 }
-.latest-reviews_ico .rating_tag::before {
+.latest-reviews_ico-rating .rating_tag::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -401,7 +401,7 @@
   border-right-width: 10px;
   border-right-color: transparent;
 }
-.latest-reviews_ico .rating_tag span {
+.latest-reviews_ico-rating .rating_tag span {
   margin: auto;
   white-space: nowrap;
   color: #fff;
@@ -454,4 +454,46 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
+}
+.add-review h3 {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.add-review form {
+  width: 100%;
+}
+.add-review_form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 2;
+}
+.add-review_selects {
+  background-color: #e0e6ed;
+}
+.add-review_selects-item {
+  display: flex;
+  align-items: center;
+}
+.add-review_selects-item label {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.add-review_selects-item select {
+  padding: 10px 36px 7px 12px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  box-shadow: 0 1px 0 #c5d0de;
+  border-radius: 4px;
+  border: 1px solid #c5d0de;
+  background-color: #ffffff;
 }

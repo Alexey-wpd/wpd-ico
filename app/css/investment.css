@@ -496,97 +496,61 @@
   padding: 0 12px 0 28px;
   width: 40%;
 }
-.portfolio_markets {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
+.portfolio_table-wrapper {
   padding: 0 12px 0 0;
+  flex-grow: 2;
 }
-.portfolio_markets-table-head {
-  display: flex;
-  align-items: center;
-  padding: 0 16px 0 12px;
+.portfolio table {
+  width: 100%;
+}
+.portfolio table th {
+  width: 25%;
+  padding: 9px 16px 9px 12px;
   border-bottom: 1px solid #e9ecee;
-  height: auto;
-  background-color: transparent;
-}
-.portfolio_markets-table-head span {
   color: #525c6c;
   font-size: 13px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 13px;
 }
-.portfolio_markets-table-market {
-  width: 25%;
-}
-.portfolio_markets-table-price {
-  padding: 8px 12px;
-  width: 25%;
+.portfolio table th:nth-child(2) {
   text-align: right;
-  border-right: 1px solid #e9ecee;
-}
-.portfolio_markets-table-volume {
-  padding: 8px 12px;
-  width: 25%;
-}
-.portfolio_market {
-  display: flex;
-  flex-grow: 2;
-  height: 44px;
-  padding: 0 16px 0 12px;
-  background-color: rgba(232, 237, 242, 0.44);
-}
-.portfolio_market:nth-child(even) {
-  background-color: #fff;
-}
-.portfolio_market-name {
-  display: flex;
-  align-items: center;
-  width: 25%;
-}
-.portfolio_market-price {
-  display: flex;
-  align-items: center;
-  width: 25%;
-  justify-content: flex-end;
-  border-right: 1px solid #e9ecee;
   padding-right: 12px;
+  border-right: 1px solid #e9ecee;
 }
-.portfolio_market-price span {
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: -0.2px;
-}
-.portfolio_market-price b {
-  font-size: 12px;
-}
-.portfolio_market-volume {
-  display: flex;
-  align-items: center;
-  width: 25%;
+.portfolio table th:nth-child(3) {
   padding-left: 12px;
 }
-.portfolio_market-volume span {
-  color: #707986;
+.portfolio tr {
+  background-color: rgba(232, 237, 242, 0.44);
+}
+.portfolio tr:first-child {
+  background-color: #fff;
+}
+.portfolio tr:nth-child(even) {
+  background-color: #fff;
+}
+.portfolio tr td {
+  padding: 12px 12px 10px 12px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.2px;
 }
-.portfolio_market-volume b {
-  font-size: 12px;
+.portfolio tr td:nth-child(2) {
+  text-align: right;
+  color: #333f52;
+  padding-right: 12px;
+  border-right: 1px solid #e9ecee;
 }
-.portfolio_market-button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 25%;
+.portfolio tr td:nth-child(3) {
+  padding-left: 12px;
+  color: #707986;
 }
-.portfolio_market-button .btn {
+.portfolio tr td:nth-child(4) {
+  text-align: right;
+}
+.portfolio tr td:nth-child(4) a {
   position: relative;
   padding: 6px 8px 5px 22px;
   background-color: #1991eb;
@@ -596,7 +560,7 @@
   font-weight: 500;
   line-height: 11px;
 }
-.portfolio_market-button .btn::before {
+.portfolio tr td:nth-child(4) a::before {
   content: "";
   position: absolute;
   width: 10px;

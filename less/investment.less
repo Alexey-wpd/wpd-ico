@@ -532,115 +532,78 @@
         padding: 0 12px 0 28px;
         width: 40%;
     }
-    &_markets {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 2;
+    &_table-wrapper {
         padding: 0 12px 0 0;
-        //margin-left: -5px;
-        &-table-head {
-            display: flex;
-            align-items: center;
-            padding: 0 16px 0 12px;
+        flex-grow: 2;
+    }
+    table {
+        width: 100%;
+        th {
+            width: 25%;
+            padding: 9px 16px 9px 12px;
             border-bottom: 1px solid #e9ecee;
-            height:auto;
-            background-color: transparent;
-            span {
-                color: #525c6c;
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 12px;
+            color: #525c6c;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 13px;
+            &:nth-child(2) {
+                text-align: right;
+                padding-right: 12px;
+                border-right: 1px solid #e9ecee;
+            }
+            &:nth-child(3) {
+                padding-left: 12px;
             }
         }
-        &-table-market {
-            width: 25%;
-        }
-        &-table-price {
-            padding: 8px 12px;
-            width: 25%;
-            text-align: right;
-            border-right: 1px solid #e9ecee;
-        }
-        &-table-volume {
-            padding: 8px 12px;
-            width: 25%;
-        }
     }
-    &_market {
-        display: flex;
-        flex-grow: 2;
-        height: 44px;
-        padding: 0 16px 0 12px;
+    tr {
         background-color: rgba(232, 237, 242, 0.44);
+        &:first-child {
+            background-color: #fff;
+        }
         &:nth-child(even) {
             background-color: #fff;
         }
-        &-name {
-            display: flex;
-            align-items: center;
-            width: 25%;
-        }
-        &-price {
-            display: flex;
-            align-items: center;
-            width: 25%;
-            justify-content: flex-end;
-            border-right: 1px solid #e9ecee;
-            padding-right: 12px;
-            span {
+        td {
+            padding: 12px 12px 10px 12px;
+            font-family: @main-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.2px;
+            &:nth-child(2) {
+                text-align: right;
                 color: #333f52;
-                font-family: @main-font;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 16px;
-                letter-spacing: -0.2px;
+                padding-right: 12px;
+                border-right: 1px solid #e9ecee;
             }
-            b {
-                font-size: 12px;
-            }
-        }
-        &-volume {
-            display: flex;
-            align-items: center;
-            width: 25%;
-            padding-left: 12px;
-            span {
+            &:nth-child(3) {
+                padding-left: 12px;
                 color: #707986;
-                font-family: @main-font;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 16px;
-                letter-spacing: -0.2px;
             }
-            b {
-                font-size: 12px;
-            }
-        }
-        &-button {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 25%;
-            .btn {
-                position: relative;
-                padding: 6px 8px 5px 22px;
-                background-color: @main-color;
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                box-shadow: 0 1px 0 darken(@main-color, 10%);
-                font-size: 11px;
-                font-weight: 500;
-                line-height: 11px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 10px;
-                    height: 9px;
-                    left: 7px;
-                    top: 6px;
-                    background-image: @img-wallet;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    z-index: 11;
+            &:nth-child(4) {
+                text-align: right;
+                a {
+                    position: relative;
+                    padding: 6px 8px 5px 22px;
+                    background-color: @main-color;
+                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 1px 0 darken(@main-color, 10%);
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: 11px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 9px;
+                        left: 7px;
+                        top: 6px;
+                        background-image: @img-wallet;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 11;
+                    }
                 }
             }
         }

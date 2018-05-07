@@ -359,6 +359,9 @@
   font-family: 'Roboto', sans-serif;
   letter-spacing: -0.13px;
 }
+.ico-item_bottom-line a:last-child {
+  margin-right: 0;
+}
 .ico-item_bottom-line a sup {
   top: -7px;
   margin-left: 4px;

@@ -1,0 +1,483 @@
+.ico-catalogue {
+  margin-top: 28px;
+}
+.ico-catalogue_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ico-catalogue_nav-wrapper {
+  display: flex;
+}
+.ico-catalogue_nav-item a {
+  padding: 10px 27px 8px 27px;
+  box-shadow: 0 2px 0 #c5d0de;
+  background-color: #ffffff;
+  border-right: 1px solid #c5d0de;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.ico-catalogue_nav-item:last-child a {
+  border-radius: 0 4px 4px 0;
+  border-right: none;
+}
+.ico-catalogue_nav-item--active a {
+  box-shadow: 0 2px 0 #3e9532, inset 0 2px 4px rgba(1, 1, 1, 0.3);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px 0 0 4px;
+  background-color: #44af36;
+}
+.ico-catalogue_select {
+  position: relative;
+}
+.ico-catalogue_select select {
+  padding: 10px 32px 9px 12px;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  box-shadow: 0 1px 0 #c5d0de;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #c5d0de;
+  background-color: #ffffff;
+  outline: none;
+}
+.ico-catalogue_select::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 37px;
+  box-shadow: 0 1px 0 #c5d0de;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #c5d0de;
+  background-color: #ffffff;
+  left: -39px;
+  top: 0px;
+  background-image: url('../img/topic-select-icon.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.ico-catalogue_select::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  right: 16px;
+  top: 17px;
+  background-image: url('../img/select-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-catalogue_ico-amount {
+  margin-bottom: 7px;
+}
+.ico-catalogue_ico-amount span {
+  margin-bottom: 7px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.ico-catalogue_tags-wrapper {
+  margin-bottom: 24px;
+}
+.ico-catalogue_tag {
+  display: inline-block;
+  padding: 1px 9px 1px 6px;
+  border-radius: 2px;
+  border: 1px solid #44af36;
+  background-color: #7cc772;
+}
+.ico-catalogue_tag a {
+  display: inline-block;
+  text-indent: -9999px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/cross.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.ico-catalogue_tag span {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 500;
+}
+.ico-item {
+  margin-bottom: 20px;
+}
+.ico-item_content-wrapper {
+  display: flex;
+  background-color: #fafbfc;
+}
+.ico-item_logo {
+  display: flex;
+  min-width: 180px;
+  min-height: 152px;
+  border-radius: 4px 0 0 0;
+}
+.ico-item_logo img {
+  margin: auto;
+  padding: 10px;
+}
+.ico-item_discription {
+  width: 33%;
+  padding: 12px 0 0 28px;
+}
+.ico-item_title {
+  margin-bottom: 4px;
+  display: flex;
+  justify-catalogue: space-between;
+  align-items: center;
+}
+.ico-item_title h2 {
+  color: #333f52;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.ico-item_category {
+  display: flex;
+  margin-bottom: 5px;
+}
+.ico-item_category span {
+  padding: 3px 5px 1px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e2;
+  background-color: #ffffff;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+.ico-item_discribe {
+  margin-bottom: 12px;
+}
+.ico-item_discribe p {
+  max-width: 270px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.ico-item_platforms {
+  margin-bottom: 17px;
+}
+.ico-item_platforms-pl {
+  margin-right: 16px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ico-item_platforms-name {
+  margin-right: 12px;
+  color: #333f52;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.ico-item_fundraising {
+  padding: 20px 0 0 28px;
+  width: 24%;
+}
+.ico-item_cap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+.ico-item_cap-type {
+  margin-bottom: 5px;
+  color: #8f96a1;
+  font-family: "Roboto Medium";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ico-item_cap-goal {
+  margin-bottom: 10px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+}
+.ico-item_cap-goal sup {
+  font-size: 14px;
+  letter-spacing: -0.4px;
+}
+.ico-item_cap-current {
+  display: flex;
+  justify-content: space-between;
+}
+.ico-item_cap-current-usd {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.ico-item_cap-current-usd sup {
+  font-size: 10px;
+}
+.ico-item_cap-current-percent {
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ico-item_scale {
+  position: relative;
+  margin-bottom: 10px;
+  height: 6px;
+  border-radius: 4px;
+  border: 1px solid #ced8e3;
+  background-color: #ffffff;
+}
+.ico-item_scale::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  left: 50px;
+  top: -10px;
+  background-image: url('../img/scale-drop.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-item_scale-inner {
+  width: 21%;
+  height: 4px;
+  border-radius: 4px 0 0 4px;
+  background-color: #c5d0de;
+}
+.ico-item_price {
+  display: flex;
+  flex-direction: column;
+}
+.ico-item_price-token {
+  margin-bottom: 6px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ico-item_price-token-usd {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.ico-item_timeframe {
+  flex-grow: 2;
+  padding: 20px 0 0 28px;
+}
+.ico-item_start,
+.ico-item_end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 9px;
+}
+.ico-item_start-st,
+.ico-item_end-st,
+.ico-item_start-en,
+.ico-item_end-en {
+  margin-bottom: 7px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ico-item_start-date,
+.ico-item_end-date {
+  margin-bottom: 6px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+}
+.ico-item_start-time-remain,
+.ico-item_end-time-remain,
+.ico-item_start-time-left,
+.ico-item_end-time-left {
+  padding: 2px 4px 2px;
+  border-radius: 2px;
+  background-color: #c5d0de;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+}
+.ico-item_bottom-line {
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  border-radius: 0 0 0 4px;
+}
+.ico-item_bottom-line a {
+  position: relative;
+  margin-right: 30px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.13px;
+}
+.ico-item_bottom-line a sup {
+  top: -7px;
+  margin-left: 4px;
+  margin-top: -22px;
+  padding: 1px 5px 1px 4px;
+  border-radius: 8px;
+  background-color: #5bb0d5;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 9px;
+}
+.ico-item_bottom-line .to-discuss {
+  padding-left: 45px;
+  color: #525c6c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.ico-item_bottom-line .to-discuss::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 20px;
+  top: 0px;
+  background-image: url('../img/discuss-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-item_bottom-line .to-rate {
+  padding-left: 45px;
+  color: #525c6c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.ico-item_bottom-line .to-rate::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 20px;
+  top: 0px;
+  background-image: url('../img/to-rate-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-item_bottom-line .add-calendar {
+  padding-left: 45px;
+  color: #525c6c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.ico-item_bottom-line .add-calendar::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 20px;
+  top: 0px;
+  background-image: url('../img/calendar-small.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-item_bottom-line .add-calendar--active {
+  color: #44af36;
+}
+.ico-item_bottom-line .add-calendar--active::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 20px;
+  top: 0px;
+  background-image: url('../img/green-check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-item_button {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 23%;
+}
+.ico-item_button .btn {
+  border-radius: 0;
+}
+.ico-item_button-details {
+  flex-grow: 2;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0;
+  padding: 17px 1px 15px 20px;
+  box-shadow: inset 0px -2px 0 #35882a;
+  background-color: #44af36;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.ico-item_button-details::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 56px;
+  top: 15px;
+  background-image: url('../img/white-check-big.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}

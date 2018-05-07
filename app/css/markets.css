@@ -41,10 +41,10 @@
 .choosing-form form fieldset .choosing-form_list li:last-child {
   margin-bottom: 10px;
 }
-.markets-content {
+.markets-catalogue {
   margin-top: 32px;
 }
-.markets-content h1 {
+.markets-catalogue h1 {
   margin-bottom: 20px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -52,23 +52,26 @@
   font-weight: 700;
   line-height: 24px;
 }
-.markets-content_intro {
+.markets-catalogue_intro {
   margin-bottom: 20px;
 }
-.markets-content_intro p {
+.markets-catalogue_intro p {
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
 }
-.markets-content_top-line {
+.markets-catalogue_top-line {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 24px;
 }
-.markets-content_markets-amount {
+.markets-catalogue_markets-amount {
+  margin-bottom: 7px;
+}
+.markets-catalogue_markets-amount span {
   margin-bottom: 7px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -76,17 +79,14 @@
   line-height: 18px;
   font-weight: 400;
 }
-.markets-content_markets-amount span {
-  font-weight: 700;
-}
-.markets-content_tag {
+.markets-catalogue_tag {
   display: inline-block;
   padding: 1px 9px 1px 6px;
   border-radius: 2px;
   border: 1px solid #44af36;
   background-color: #7cc772;
 }
-.markets-content_tag a {
+.markets-catalogue_tag a {
   display: inline-block;
   text-indent: -9999px;
   font-size: 11px;
@@ -98,17 +98,17 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.markets-content_tag span {
+.markets-catalogue_tag span {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   line-height: 12px;
   font-weight: 500;
 }
-.markets-content_topics-select {
+.markets-catalogue_topics-select {
   position: relative;
 }
-.markets-content_topics-select select {
+.markets-catalogue_topics-select select {
   padding: 6px 70px 6px 12px;
   color: #707986;
   font-family: 'Roboto', sans-serif;
@@ -121,7 +121,7 @@
   background-color: #ffffff;
   outline: none;
 }
-.markets-content_topics-select::before {
+.markets-catalogue_topics-select::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -136,7 +136,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.markets-content_topics-select::after {
+.markets-catalogue_topics-select::after {
   content: "";
   position: absolute;
   width: 8px;

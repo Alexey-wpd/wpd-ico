@@ -368,7 +368,7 @@
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0;
   padding: 17px 1px 15px 20px;
-  box-shadow: 0 2px 0 #1175c0;
+  box-shadow: inset 0px -2px 0 #1175c0;
   background-color: #1991eb;
 }
 .markets-item_buttons-website::before {
@@ -389,7 +389,7 @@
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   padding: 17px 0px 15px 0px;
-  box-shadow: 0 2px 0 #35882a;
+  box-shadow: inset 0px -2px 0 #35882a;
   background-color: #44af36;
 }
 .rating-wrapper {

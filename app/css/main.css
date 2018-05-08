@@ -6776,12 +6776,12 @@ button {
   background-image: url('../img/arrow-left-circle.svg');
   background-repeat: no-repeat;
 }
-label input[type=checkbox] {
+label.checkbox input[type=checkbox] {
   display: none;
   position: relative;
   top: 2px;
 }
-label span {
+label.checkbox span {
   position: relative;
   display: block;
   padding-left: 22px;
@@ -6792,7 +6792,7 @@ label span {
   font-weight: 400;
   line-height: 19px;
 }
-label span::before {
+label.checkbox span::before {
   content: '';
   position: absolute;
   top: 0;
@@ -6831,12 +6831,12 @@ label.checkbox input[type=checkbox]:checked + .start-ico::after {
 label.checkbox input[type=checkbox]:checked + .ending-ico::after {
   background-image: url('../img/purple-checkbox.svg');
 }
-label input[type=radio] {
+label.radio input[type=radio] {
   display: none;
   position: relative;
   top: 2px;
 }
-label span {
+label.radio span {
   position: relative;
   display: block;
   padding-left: 22px;
@@ -6847,7 +6847,7 @@ label span {
   font-weight: 400;
   line-height: 19px;
 }
-label span::before {
+label.radio span::before {
   content: '';
   position: absolute;
   top: 0;
@@ -6859,7 +6859,7 @@ label span::before {
   border: 1px solid #c5d0de;
   background-color: #ffffff;
 }
-label.checkbox input[type=radio]:checked + span::after {
+label.radio input[type=radio]:checked + span::after {
   content: '';
   position: absolute;
   top: 0;

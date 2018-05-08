@@ -444,3 +444,41 @@
   white-space: nowrap;
   text-decoration: none;
 }
+.header .catalogue-header {
+  padding: 28px 0;
+  background-color: #525c6c;
+}
+.header .catalogue-header h1 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.17px;
+}
+.header .catalogue-header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .catalogue-header_intro p {
+  margin-right: 50px;
+  max-width: 600px;
+  color: #c5d0de;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.header .catalogue-header_links a {
+  margin-right: 28px;
+  color: #7dc773;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.header .catalogue-header_links a:last-child {
+  margin-right: 0;
+}

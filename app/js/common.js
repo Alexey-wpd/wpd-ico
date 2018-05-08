@@ -19,6 +19,18 @@
 		$(".table-wrapper").slideToggle();
 	});
 
+	$(".js-show-more-category").click(function() {
+		$(".js-choosing-form_category--hidden").slideToggle();
+	});
+
+	$(".js-show-more-overall-score").click(function() {
+		$(".js-choosing-form_overall-score--hidden").slideToggle();
+	});
+	
+	$(".js-show-more-team-score").click(function() {
+		$(".js-choosing-form_team-score--hidden").slideToggle();
+	});
+
 
 //============language==============================
 

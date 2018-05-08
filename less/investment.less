@@ -10,6 +10,39 @@
         font-weight: 500;
         line-height: 20px;
     }
+    &_filter {
+    	display: flex;
+    	label {
+    		text-align: center;
+    		&:first-child {
+    			b {
+    				border-radius: 2px 0 0 2px;
+    			}
+    		}
+    		&:last-child {
+    			b {
+    				border-radius: 0 2px 2px 0;
+    			}
+    		}
+    		input[type=checkbox] {
+    			display: none;
+    			position: relative;
+    			top: 2px;
+    		}
+    		b {
+    			display: block;
+    			padding: 6px 8px 5px;
+    			margin-left: -1px;
+    			color: @accent-color;
+    			background-color: #fff;
+    			border: 1px solid @accent-color;
+    			font-family: @main-font;
+    			font-size: 11px;
+    			font-weight: 500;
+    			line-height: 11px;
+    		}
+    	}
+    }
     &_graph {
             margin-top: 40px;
             padding-left: 28px;

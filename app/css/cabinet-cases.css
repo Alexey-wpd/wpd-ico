@@ -2,14 +2,15 @@
   margin-top: 32px;
 }
 .events .events-filter {
-  padding: 20px 24px 8px;
+  padding: 0 24px;
   border-top: 4px solid #c5d0de;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 4px;
   background-color: #ffffff;
 }
 .events .events-filter form legend {
-  margin-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   color: #525c6c;
   font-size: 14px;
   font-weight: 700;
@@ -19,7 +20,7 @@
 }
 .events .events-filter form .dropdown::before {
   right: 5px;
-  top: 7px;
+  top: 23px;
 }
 .events .events-filter form .choosing-form_list li {
   display: flex;
@@ -577,4 +578,36 @@
 }
 .timeline_next24 a:hover {
   text-decoration: none;
+}
+.radio-buttons {
+  display: flex;
+}
+.radio-buttons label {
+  flex-grow: 1;
+  text-align: center;
+}
+.radio-buttons label:first-child b {
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #44af36;
+}
+.radio-buttons label:last-child b {
+  border-radius: 0 2px 2px 0;
+  border: 1px solid #44af36;
+}
+.radio-buttons label input[type=radio] {
+  display: none;
+  position: relative;
+  top: 2px;
+}
+.radio-buttons label b {
+  display: block;
+  padding: 10px 0px;
+  margin-left: -1px;
+  color: #44af36;
+  background-color: #fff;
+  border: 1px solid #44af36;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
 }

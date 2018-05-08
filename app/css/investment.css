@@ -9,6 +9,35 @@
   font-weight: 500;
   line-height: 20px;
 }
+.portfolio-view_filter {
+  display: flex;
+}
+.portfolio-view_filter label {
+  text-align: center;
+}
+.portfolio-view_filter label:first-child b {
+  border-radius: 2px 0 0 2px;
+}
+.portfolio-view_filter label:last-child b {
+  border-radius: 0 2px 2px 0;
+}
+.portfolio-view_filter label input[type=checkbox] {
+  display: none;
+  position: relative;
+  top: 2px;
+}
+.portfolio-view_filter label b {
+  display: block;
+  padding: 6px 8px 5px;
+  margin-left: -1px;
+  color: #44af36;
+  background-color: #fff;
+  border: 1px solid #44af36;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+}
 .portfolio-view_graph {
   margin-top: 40px;
   padding-left: 28px;

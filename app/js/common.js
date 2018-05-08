@@ -26,9 +26,21 @@
 	$(".js-show-more-overall-score").click(function() {
 		$(".js-choosing-form_overall-score--hidden").slideToggle();
 	});
-	
+
 	$(".js-show-more-team-score").click(function() {
 		$(".js-choosing-form_team-score--hidden").slideToggle();
+	});
+
+	$(".js-show-more-platforms").click(function() {
+		$(".js-choosing-form_platforms--hidden").slideToggle();
+	});
+
+	$(".js-show-more-exchanges").click(function() {
+		$(".js-choosing-form_exchanges--hidden").slideToggle();
+	});
+
+	$(".js-show-exchanges").click(function() {
+		$(".js-choosing-form_list--hidden").slideToggle();
 	});
 
 

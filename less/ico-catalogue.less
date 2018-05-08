@@ -1,7 +1,7 @@
 @import "vars";
 
 .ico-catalogue {
-    margin-top: 28px;
+    margin-top: 39px;
     &_nav {
         display: flex;
         justify-content: space-between;
@@ -21,6 +21,11 @@
                 font-weight: 400;
                 line-height: 18px;
             }
+            &:first-child {
+                a {
+                    border-radius: 4px 0 0 4px;
+                }
+            }
             &:last-child {
                 a {
                     border-radius: 0 4px 4px 0;
@@ -33,7 +38,6 @@
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
                     color: #fff;
                     font-weight: 700;
-                    border-radius: 4px 0 0 4px;
                     background-color: @accent-color;
                 }
             }
@@ -150,8 +154,10 @@
         }
     }
     &_discription {
+        display: flex;
+        flex-direction: column;
         width: 33%;
-        padding: 12px 0 0 28px;
+        padding: 12px 0 18px 28px;
         //flex-grow: 1;
     }
     &_title {
@@ -193,7 +199,7 @@
         }
     }
     &_platforms {
-        margin-bottom: 17px;
+        margin-top: auto;
         &-pl {
             margin-right: 16px;
             color: #8f96a1;
@@ -210,16 +216,19 @@
             font-size: 14px;
             line-height: 16px;
             text-transform: uppercase;            font-family: @main-font;
-            font-weight: 700;
+            font-weight: 500;
         }
     }
     &_fundraising {
-        padding: 20px 0 0 28px;
+        padding: 20px 0 18px 28px;
+        display: flex;
+        flex-direction: column;
         width: 24%;
     }
     &_cap {
         display: flex;
         flex-direction: column;
+        flex-grow: 2;
         margin-bottom: 13px;
         &-type {
             margin-bottom: 5px;
@@ -249,6 +258,12 @@
             display: flex;
             justify-content: space-between;
             &-usd {
+                &--canceled {
+                    color: #ff3657;
+                }
+                &--reached {
+                    color: @accent-color;
+                }
                 color: #707986;
                 font-family: @main-font;
                 font-size: 12px;
@@ -291,12 +306,59 @@
             width: 21%;
             height: 4px;
             border-radius: 4px 0 0 4px;
-            background-color: #c5d0de;
+            &--grey {
+                background-color: #c5d0de;
+            }
+            &--green {
+                background-color: @accent-color;
+            }
+            &--red {
+                background-color: #ff3657;
+            }
+        }
+    }
+    &_status-wrapper {
+        margin-top: auto;
+        padding-left: 24px;
+        max-width: 140px;
+    }
+    &_status {
+        position: relative;
+        color: #707986;
+        font-family: @main-font;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 11px;
+        text-transform: uppercase;
+        &::before {
+            content: "";
+			position: absolute;
+			width: 16px;
+			height: 14px;
+			left: -22px;
+			top: 2px;
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: 11;
+        }
+        &--canceled {
+            color: #ff3657;
+            &::before {
+                background-image: @img-thumbs-down-red;
+            }
+        }
+        &--reached {
+            color: @accent-color;
+            &::before {
+                height: 24px;
+                background-image: @img-watch;
+            }
         }
     }
     &_price {
         display: flex;
         flex-direction: column;
+        margin-top: auto;
         &-token {
             margin-bottom: 6px;
             color: #8f96a1;
@@ -317,8 +379,10 @@
         }
     }
     &_timeframe {
+        display: flex;
+        flex-direction: column;
         flex-grow: 2;
-        padding: 20px 0 0 28px;
+        padding: 20px 0 18px 28px;
     }
     &_start,
     &_end {
@@ -362,6 +426,15 @@
                 background-color: #ff3657;
             }
         }
+        &-time-left {
+            &--soon {
+                background-color: #ff3657;
+            }
+        }
+    }
+    &_end {
+        margin-bottom: 0;
+        margin-top: auto;
     }
     &_bottom-line {
         align-items: center;
@@ -427,6 +500,21 @@
     			background-position: center;
     			background-repeat: no-repeat;
     			z-index: 11;
+            }
+            &--active {
+                color: #45af37;
+                &::before {
+                    content: "";
+        			position: absolute;
+        			width: 14px;
+        			height: 14px;
+                    left: 20px;
+        			top: 0px;
+        			background-image: @img-green-check;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+                }
             }
         }
         .add-calendar {
@@ -505,7 +593,7 @@
 }
 
 .ico-choosing-form {
-    margin-top: 32px;
+    margin-top: 28px;
     margin-bottom: 32px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
@@ -532,6 +620,9 @@
                 }
             }
             .choosing-form_list {
+                &--inner {
+                    padding-left: 25px;
+                }
                 &-show-more {
                     margin-bottom: 10px;
                     a {
@@ -554,6 +645,24 @@
                         font-size: 10px;
                         letter-spacing: -0.1px;
                     }
+                }
+            }
+            .choosing-form_search-category {
+                margin-bottom: 18px;
+                input {
+                    width: 100%;
+                    margin-right: 5px;
+                    padding: 11px 8px 9px 12px;
+                    border-radius: 4px;
+                    border: 1px solid #c5d0de;
+                    background-color: #ffffff;
+                    box-sizing: border-box;
+                    color: #525c6c;
+                    font-family: @main-font;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 15px;
+                    letter-spacing: -0.1px;
                 }
             }
             .choosing-form_inputs-wrapper {

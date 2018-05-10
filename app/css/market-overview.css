@@ -57,7 +57,7 @@
   background-color: #1991eb;
 }
 .market-topline .market-card_social {
-  padding: 30px 44px 24px;
+  padding: 22px 44px 24px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   text-align: center;
@@ -268,13 +268,13 @@
   letter-spacing: 1.3px;
 }
 .market-topline .markets-characteristics-feature {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .market-topline .markets-characteristics-feature:last-child {
   margin-bottom: 0;
 }
 .market-topline .markets-characteristics-feature_wrapper {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -333,13 +333,13 @@
   margin-right: 0;
 }
 .market-bottom-line .market-brief-info_tables table td {
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   width: 70%;
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 16px;
 }
 .market-bottom-line .market-brief-info_tables table td:nth-child(even) {
   width: 30%;

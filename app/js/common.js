@@ -16,7 +16,7 @@
 	});
 
 	$(".js-hide-details").click(function() {
-		$(".table-wrapper").slideToggle();
+		$(".table-score-wrapper").slideToggle();
 	});
 
 	$(".js-show-more-category").click(function() {

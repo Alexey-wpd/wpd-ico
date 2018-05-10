@@ -5364,6 +5364,7 @@
 .user-reviews_count {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   margin-left: auto;
 }
@@ -5372,7 +5373,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 16px;
 }
 .user-reviews_select {
   position: relative;
@@ -5452,7 +5453,7 @@
 .user-reviews_item-rating {
   display: flex;
   align-items: center;
-  width: 65%;
+  width: 60%;
 }
 .user-reviews_item-rating .rating_tag {
   margin-right: 16px;
@@ -5570,24 +5571,24 @@
   font-weight: 400;
   line-height: 20px;
 }
-.user-reviews_item-text .table-wrapper {
+.user-reviews_item-text .table-score-wrapper {
   margin-left: 50px;
-  width: 30%;
+  width: 35%;
 }
-.user-reviews_item-text .table-wrapper table {
+.user-reviews_item-text .table-score-wrapper table {
   width: 100%;
 }
-.user-reviews_item-text .table-wrapper table td {
-  padding-bottom: 1px;
+.user-reviews_item-text .table-score-wrapper table td {
+  padding-bottom: 2px;
 }
-.user-reviews_item-text .table-wrapper table td:nth-child(odd) {
+.user-reviews_item-text .table-score-wrapper table td:nth-child(odd) {
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
 }
-.user-reviews_item-text .table-wrapper table td:nth-child(even) {
+.user-reviews_item-text .table-score-wrapper table td:nth-child(even) {
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -5690,7 +5691,7 @@
   padding: 12px 16px;
   margin-bottom: 16px;
   min-height: 122px;
-  color: #c5d0de;
+  color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -6982,6 +6983,11 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
+}
+.paginator-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .breadcrumbs a {
   position: relative;

@@ -431,6 +431,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.1px;
+  white-space: nowrap;
 }
 .page-tabs_nav-item a sup {
   top: -7px;

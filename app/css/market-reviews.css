@@ -238,6 +238,7 @@
   line-height: 12px;
 }
 .user-reviews_item-text .table-score-wrapper table td:nth-child(even) {
+  text-align: right;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;

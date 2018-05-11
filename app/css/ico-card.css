@@ -23,10 +23,11 @@
   top: -16px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .ico-topline .ico-card_rating-wrapper .our-rating {
   width: 48px;
-  height: 32px;
+  height: 33px;
   border-radius: 2px;
   border-right: none;
 }
@@ -181,10 +182,10 @@
   background-image: url('../img/m-icon.svg');
 }
 .ico-topline .ico-data {
-  padding: 22px 0 30px;
+  padding: 20px 0 30px;
 }
 .ico-topline .ico-data_roi-table {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .ico-topline .ico-data_roi-table th {
@@ -207,7 +208,7 @@
   letter-spacing: 0.3px;
 }
 .ico-topline .ico-data_roi-table td {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -223,7 +224,7 @@
   font-size: 16px;
 }
 .ico-topline .ico-data_price-table {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .ico-topline .ico-data_price-table th {
@@ -288,7 +289,6 @@
 }
 .ico-topline .ico-characteristics {
   position: absolute;
-  padding: 20px 24px 20px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 4px;
@@ -299,6 +299,7 @@
   position: relative;
 }
 .ico-topline .ico-characteristics h3 {
+  padding: 20px 24px 0;
   margin-bottom: 16px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -310,12 +311,19 @@
 }
 .ico-topline .ico-characteristics-feature {
   margin-bottom: 16px;
+  padding: 0 24px;
 }
 .ico-topline .ico-characteristics-feature--average {
   background-color: #e0e6ed;
 }
 .ico-topline .ico-characteristics-feature:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
   margin-bottom: 0;
+  padding: 20px 24px 17px;
+  background-color: #e0e6ed;
 }
 .ico-topline .ico-characteristics-feature_wrapper {
   margin-bottom: 5px;
@@ -351,6 +359,16 @@
   font-weight: 700;
   line-height: 16px;
 }
+.ico-topline .ico-characteristics-score--average {
+  padding: 3px 8px;
+  border-radius: 2px;
+  background-color: #707986;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
 .ico-bottom-line {
   padding: 24px 0 36px;
   background-color: #333f52;
@@ -378,15 +396,16 @@
 }
 .ico-bottom-line .ico-brief-info_tables table td {
   padding-bottom: 6px;
-  width: 70%;
+  width: 60%;
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  white-space: nowrap;
 }
 .ico-bottom-line .ico-brief-info_tables table td:nth-child(even) {
-  width: 30%;
+  width: 40%;
   text-align: right;
 }
 .ico-bottom-line .ico-brief-info_tables table td .icon-yes {
@@ -465,4 +484,173 @@
 .ico-bottom-line .ico-brief-info_buttons-review::before {
   top: 8px;
   background-image: url('../img/to-rate-icon-white.svg');
+}
+.ico-exchanges {
+  padding: 32px 0 40px;
+  background-color: #525c6c;
+}
+.ico-exchanges h4 {
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.ico-exchanges_periods {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.ico-exchanges_periods-item {
+  margin-right: 1px;
+  padding: 2px 7px;
+  background-color: rgba(197, 208, 222, 0.25);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.ico-exchanges_periods-item--active {
+  color: #525c6c;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.ico-exchanges_periods span {
+  margin-left: auto;
+}
+.ico-exchanges_periods span::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 16px;
+  top: 35px;
+  background-image: url('../img/increase-img.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-exchanges_img {
+  margin-bottom: 30px;
+}
+.ico-exchanges_img img {
+  width: 100%;
+}
+.ico-exchanges_button button {
+  position: relative;
+  padding: 12px 16px 10px 44px;
+  margin-right: 1px;
+  box-shadow: 0 2px 0 #3a962e;
+  background-color: #44af36;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.15px;
+}
+.ico-exchanges_button button::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background-image: url('../img/portfolio.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-exchanges_markets table {
+  width: 100%;
+  background-color: #fff;
+}
+.ico-exchanges_markets table tr:nth-child(even) {
+  background-color: rgba(232, 237, 242, 0.5);
+}
+.ico-exchanges_markets table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.ico-exchanges_markets table tr:first-child {
+  background-color: #e0e6ed;
+  border-bottom: 2px solid #c5d0de;
+}
+.ico-exchanges_markets th {
+  padding: 18px 14px 14px 20px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ico-exchanges_markets td {
+  padding: 11px 14px 11px 20px;
+  border-right: 1px solid #e0e6ed;
+}
+.ico-exchanges_markets td:last-child {
+  width: 15%;
+  text-align: center;
+  border-right: none;
+}
+.ico-exchanges_markets td a {
+  position: relative;
+  padding: 6px 8px 5px 22px;
+  background-color: #1991eb;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 #1175c0;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+}
+.ico-exchanges_markets td a::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 9px;
+  left: 7px;
+  top: 6px;
+  background-image: url('../img/wallet.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-exchanges_markets-price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ico-exchanges_markets-price-usd {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+}
+.ico-exchanges_markets-price-usd b {
+  font-size: 12px;
+}
+.ico-exchanges_markets-price-percent {
+  color: #ff3657;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: -0.09px;
+}
+.ico-exchanges_markets-volume {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+}
+.ico-exchanges_markets-volume b {
+  font-size: 12px;
 }

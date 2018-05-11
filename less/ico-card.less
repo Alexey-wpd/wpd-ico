@@ -23,9 +23,10 @@
             top: -16px;
             display: flex;
             justify-content: center;
+            align-items: center;
             .our-rating {
                 width: 48px;
-                height: 32px;
+                height: 33px;
                 border-radius: 2px;
                 //border: none;
                 border-right: none;
@@ -195,9 +196,9 @@
         }
     }
     .ico-data {
-        padding: 22px 0 30px;
+        padding: 20px 0 30px;
         &_roi-table {
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             width: 100%;
             th {
                 padding-bottom: 5px;
@@ -219,7 +220,7 @@
                 }
             }
             td {
-                padding-bottom: 12px;
+                padding-bottom: 10px;
                 color: #ffffff;
                 font-family: @main-font;
                 font-size: 20px;
@@ -236,7 +237,7 @@
             }
         }
         &_price-table {
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             width: 100%;
             th {
                 padding-bottom: 5px;
@@ -302,7 +303,7 @@
     }
     .ico-characteristics {
         position: absolute;
-        padding: 20px 24px 20px;
+        //padding: 20px 24px 20px;
         width: 100%;
         box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
         border-radius: 4px;
@@ -312,6 +313,7 @@
             position: relative;
         }
         h3 {
+            padding: 20px 24px 0;
             margin-bottom: 16px;
             color: #333f52;
             font-family: @main-font;
@@ -323,11 +325,19 @@
         }
         &-feature {
             margin-bottom: 16px;
+            padding: 0 24px;
             &--average {
                 background-color: #e0e6ed;
             }
             &:last-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                white-space: nowrap;
                 margin-bottom: 0;
+                padding: 20px 24px 17px;
+                background-color: #e0e6ed;
+
             }
             &_wrapper {
                 margin-bottom: 5px;
@@ -363,6 +373,16 @@
             font-size: 16px;
             font-weight: 700;
             line-height: 16px;
+            &--average {
+                padding: 3px 8px;
+                border-radius: 2px;
+                background-color: #707986;
+                color: #ffffff;
+                font-family: @main-font;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 12px;
+            }
         }
     }
 }
@@ -392,14 +412,15 @@
                 width: 50%;
                 td {
                     padding-bottom: 6px;
-                    width: 70%;
+                    width: 60%;
                     color: rgba(255,255,255, 0.8);
                     font-family: @main-font;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 16px;
+                    white-space: nowrap;
                     &:nth-child(even) {
-                        width: 30%;
+                        width: 40%;
                         text-align: right;
                     }
                     .icon-yes {
@@ -489,6 +510,184 @@
                     background-image: @img-to-rate-icon-white;
                 }
             }
+        }
+    }
+}
+
+.ico-exchanges {
+    padding: 32px 0 40px;
+    background-color: #525c6c;
+    h4 {
+        margin-bottom: 16px;
+        color: #ffffff;
+        font-family: @main-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+    &_periods {
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+        &-item {
+            margin-right: 1px;
+            padding: 2px 7px;
+            background-color: rgba(197, 208, 222, 0.25);
+            color: #ffffff;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 11px;
+            text-transform: uppercase;
+            &--active {
+                color: #525c6c;
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+        }
+        span {
+            margin-left: auto;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                right: 16px;
+                top: 35px;
+                background-image: @img-increase-img;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 11;
+            }
+        }
+    }
+    &_img {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    &_button {
+        button {
+            position: relative;
+            padding: 12px 16px 10px 44px;
+            margin-right: 1px;
+            box-shadow: 0 2px 0 #3a962e;
+            background-color: @accent-color;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            color: #ffffff;
+            font-family: @main-font;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            letter-spacing: -0.15px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 18px;
+                left: 16px;
+                top: 8px;
+                background-image: @img-portfolio;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 11;
+            }
+        }
+    }
+}
+.ico-exchanges_markets {
+    table {
+        width: 100%;
+        background-color: #fff;
+        tr {
+            &:nth-child(even) {
+                background-color: rgba(232, 237, 242, 0.5);
+            }
+            &:nth-child(odd) {
+                background-color: #ffffff;
+            }
+            &:first-child {
+                background-color: #e0e6ed;
+                border-bottom: 2px solid #c5d0de;
+            }
+        }
+    }
+    th {
+        padding: 18px 14px 14px 20px;
+        color: #525c6c;
+        font-family: @main-font;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 12px;
+    }
+    td {
+        padding: 11px 14px 11px 20px;
+        border-right: 1px solid #e0e6ed;
+        &:last-child {
+            width: 15%;
+            text-align: center;
+            border-right: none;
+        }
+        a {
+            position: relative;
+            padding: 6px 8px 5px 22px;
+            background-color: #1991eb;
+            color: #fff;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 0 #1175c0;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 11px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 9px;
+                left: 7px;
+                top: 6px;
+                background-image: @img-wallet;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 11;
+            }
+        }
+    }
+    &-price-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-price {
+        &-usd {
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.2px;
+            b {
+                font-size: 12px;
+            }
+        }
+        &-percent {
+            color: #ff3657;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 11px;
+            letter-spacing: -0.09px;
+        }
+    }
+    &-volume {
+        color: #707986;
+        font-family: @main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.2px;
+        b {
+            font-size: 12px;
         }
     }
 }

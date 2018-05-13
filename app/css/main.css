@@ -6863,6 +6863,14 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
+.ico-topline .ico-data_scale-inner {
+  width: 75%;
+  height: 4px;
+  border-radius: 4px 0 0 4px;
+}
+.ico-topline .ico-data_scale-inner--white {
+  background-color: #ffffff;
+}
 .ico-topline .ico-data_scale-wrapper {
   width: 80%;
 }
@@ -7122,6 +7130,18 @@
   text-transform: uppercase;
 }
 .ico-bottom-line .ico-brief-info_tables table td .status--upcoming {
+  width: auto;
+  padding: 3px 8px 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.ico-bottom-line .ico-brief-info_tables table td .status--active {
   width: auto;
   padding: 3px 8px 2px;
   background-color: #fff;
@@ -7567,6 +7587,80 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
+}
+.ico-roadmap {
+  padding: 32px 0 44px;
+}
+.ico-roadmap h2 {
+  margin-bottom: 20px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.ico-roadmap p {
+  margin-bottom: 28px;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.ico-roadmap_item-list {
+  display: flex;
+  flex-direction: column;
+}
+.ico-roadmap_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding: 16px 28px 20px;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  background-color: #fafbfc;
+  border-left: 1px solid #5cb0d5;
+}
+.ico-roadmap_item--green {
+  border-left: 1px solid #44af36;
+}
+.ico-roadmap_item-year {
+  margin-bottom: 5px;
+}
+.ico-roadmap_item-year span {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.ico-roadmap_item-number {
+  position: absolute;
+  top: 14px;
+  left: -10px;
+}
+.ico-roadmap_item-number span {
+  padding: 3px 7px 1px;
+  border-radius: 4px;
+  background-color: #5cb0d5;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+.ico-roadmap_item-number--green span {
+  background-color: #44af36;
+}
+.ico-roadmap_item-text p {
+  margin-bottom: 0;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 body {
   background-color: #eff3f6;

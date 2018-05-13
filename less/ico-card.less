@@ -257,6 +257,14 @@
     			background-repeat: no-repeat;
     			z-index: 11;
     		}
+            &-inner {
+                width: 75%;
+                height: 4px;
+                border-radius: 4px 0 0 4px;
+                &--white {
+                    background-color: #ffffff;
+                }
+            }
             &-wrapper {
                 width: 80%;
             }
@@ -518,6 +526,18 @@
                             text-transform: uppercase;
                         }
                         &--upcoming {
+                            width: auto;
+                            padding: 3px 8px 2px;
+                            background-color: #fff;
+                            border-radius: 2px;
+                            color: #333f52;
+                            font-family: @main-font;
+                            font-size: 11px;
+                            font-weight: 700;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                        }
+                        &--active {
                             width: auto;
                             padding: 3px 8px 2px;
                             background-color: #fff;

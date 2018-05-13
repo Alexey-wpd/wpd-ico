@@ -121,6 +121,12 @@
   font-weight: 400;
   line-height: 18px;
 }
+.ico-topline .ico-card_description--upcoming p {
+  height: 85px;
+}
+.ico-topline .ico-card_description--active p {
+  height: 85px;
+}
 .ico-topline .ico-card_description a {
   position: relative;
   bottom: -14px;

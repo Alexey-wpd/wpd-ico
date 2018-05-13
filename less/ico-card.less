@@ -196,8 +196,77 @@
         }
     }
     .ico-data {
-        padding: 20px 0 30px;
-        &_roi-table {
+        padding: 23px 0 30px;
+        &_upcoming-table {
+            margin-bottom: 20px;
+            width: 100%;
+            &--right {
+                margin-top: 23px;
+                margin-bottom: 16px;
+            }
+            th {
+                width: 33%;
+                padding-bottom: 5px;
+                color: rgba(255, 255, 255, 0.75);
+                font-family: "Roboto Medium";
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 11px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+            }
+            td {
+                color: #ffffff;
+                font-family: @main-font;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 24px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                sup {
+                    font-size: 14px;
+                }
+                span {
+                    color: #ffffff;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    sup {
+                        margin-left: 4px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &_scale {
+            position: relative;
+            margin-bottom: 10px;
+            height: 6px;
+            border-radius: 4px;
+            border: 1px solid #ced8e3;
+            &::before {
+    			content: "";
+    			position: absolute;
+    			width: 20px;
+    			height: 22px;
+    			left: 44px;
+    			top: -9px;
+    			background-image: @img-scale-drop;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+            &-wrapper {
+                width: 80%;
+            }
+        }
+        &_cap-current {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_trading-table {
             margin-bottom: 20px;
             width: 100%;
             th {
@@ -209,7 +278,7 @@
                 line-height: 11px;
                 text-transform: uppercase;
                 &:first-child {
-                    width: 30%;
+                    width: 33%;
                     color: #ffffff;
                     font-family: @main-font;
                     font-size: 11px;
@@ -231,8 +300,8 @@
                 &:first-child {
                     border-bottom: none;
                 }
-                span {
-                    font-size: 16px;
+                sup {
+                    font-size: 14px;
                 }
             }
         }
@@ -241,7 +310,7 @@
             width: 100%;
             th {
                 padding-bottom: 5px;
-                width: 35%;
+                width: 33%;
                 color: rgba(255, 255, 255, 0.75);
                 font-family: @main-font;
                 font-size: 11px;
@@ -250,7 +319,7 @@
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
                 &:first-child {
-                    width: 30%;
+                    width: 33%;
                 }
             }
             td {
@@ -261,8 +330,8 @@
                 line-height: 24px;
                 text-transform: uppercase;
                 letter-spacing: -1px;
-                span {
-                    font-size: 16px;
+                sup {
+                    font-size: 14px;
                 }
             }
         }
@@ -270,7 +339,7 @@
             width: 100%;
             th {
                 padding-bottom: 6px;
-                width: 35%;
+                width: 33%;
                 color: rgba(255, 255, 255, 0.75);
                 font-family: @main-font;
                 font-size: 11px;
@@ -279,19 +348,20 @@
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
                 &:first-child {
-                    width: 30%;
+                    width: 33%;
                 }
             }
             td {
                 color: rgba(255, 255, 255, 0.75);
                 font-family: @main-font;
                 font-size: 20px;
-                font-weight: 700;
+                font-weight: 500;
                 line-height: 20px;
                 letter-spacing: -0.7px;
                 span {
                     padding: 3px 4px 2px;
                     border-radius: 2px;
+                    color: #fff;
                     background-color: rgba(255, 255, 255, 0.75);
                     font-family: @main-font;
                     font-size: 11px;
@@ -423,32 +493,42 @@
                         width: 40%;
                         text-align: right;
                     }
-                    .icon-yes {
-                        display: inline-block;
-                        width: 16px;
-                        height: 16px;
-                        background-image: @img-icon-yes;
-            			background-position: center;
-            			background-repeat: no-repeat;
-                    }
-                    .icon-no {
-                        display: inline-block;
-                        width: 16px;
-                        height: 16px;
-                        background-image: @img-icon-no;
-            			background-position: center;
-            			background-repeat: no-repeat;
-                    }
                     .status {
-                        padding: 3px 8px 2px;
-                        background-color: @accent-color;
-                        border-radius: 2px;
-                        color: #ffffff;
-                        font-family: @main-font;
-                        font-size: 11px;
-                        font-weight: 700;
-                        line-height: 12px;
-                        text-transform: uppercase;
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+            			background-position: center;
+            			background-repeat: no-repeat;
+                        &--yes {
+                            background-image: @img-icon-yes;
+                        }
+                        &--no {
+                            background-image: @img-icon-no;
+                        }
+                        &--trading {
+                            width: auto;
+                            padding: 3px 8px 2px;
+                            background-color: @accent-color;
+                            border-radius: 2px;
+                            color: #ffffff;
+                            font-family: @main-font;
+                            font-size: 11px;
+                            font-weight: 700;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                        }
+                        &--upcoming {
+                            width: auto;
+                            padding: 3px 8px 2px;
+                            background-color: #fff;
+                            border-radius: 2px;
+                            color: #333f52;
+                            font-family: @main-font;
+                            font-size: 11px;
+                            font-weight: 700;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                        }
                     }
                 }
             }

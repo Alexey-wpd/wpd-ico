@@ -182,13 +182,82 @@
   background-image: url('../img/m-icon.svg');
 }
 .ico-topline .ico-data {
-  padding: 20px 0 30px;
+  padding: 23px 0 30px;
 }
-.ico-topline .ico-data_roi-table {
+.ico-topline .ico-data_upcoming-table {
   margin-bottom: 20px;
   width: 100%;
 }
-.ico-topline .ico-data_roi-table th {
+.ico-topline .ico-data_upcoming-table--right {
+  margin-top: 23px;
+  margin-bottom: 16px;
+}
+.ico-topline .ico-data_upcoming-table th {
+  width: 33%;
+  padding-bottom: 5px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Roboto Medium";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ico-topline .ico-data_upcoming-table td {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.ico-topline .ico-data_upcoming-table td sup {
+  font-size: 14px;
+}
+.ico-topline .ico-data_upcoming-table td span {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ico-topline .ico-data_upcoming-table td span sup {
+  margin-left: 4px;
+  font-size: 10px;
+}
+.ico-topline .ico-data_scale {
+  position: relative;
+  margin-bottom: 10px;
+  height: 6px;
+  border-radius: 4px;
+  border: 1px solid #ced8e3;
+}
+.ico-topline .ico-data_scale::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  left: 44px;
+  top: -9px;
+  background-image: url('../img/scale-drop.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-topline .ico-data_scale-wrapper {
+  width: 80%;
+}
+.ico-topline .ico-data_cap-current {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ico-topline .ico-data_trading-table {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.ico-topline .ico-data_trading-table th {
   padding-bottom: 5px;
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Roboto', sans-serif;
@@ -197,8 +266,8 @@
   line-height: 11px;
   text-transform: uppercase;
 }
-.ico-topline .ico-data_roi-table th:first-child {
-  width: 30%;
+.ico-topline .ico-data_trading-table th:first-child {
+  width: 33%;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -207,7 +276,7 @@
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
-.ico-topline .ico-data_roi-table td {
+.ico-topline .ico-data_trading-table td {
   padding-bottom: 10px;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -217,11 +286,11 @@
   letter-spacing: -0.5px;
   border-bottom: 1px solid rgba(206, 216, 227, 0.5);
 }
-.ico-topline .ico-data_roi-table td:first-child {
+.ico-topline .ico-data_trading-table td:first-child {
   border-bottom: none;
 }
-.ico-topline .ico-data_roi-table td span {
-  font-size: 16px;
+.ico-topline .ico-data_trading-table td sup {
+  font-size: 14px;
 }
 .ico-topline .ico-data_price-table {
   margin-bottom: 20px;
@@ -229,7 +298,7 @@
 }
 .ico-topline .ico-data_price-table th {
   padding-bottom: 5px;
-  width: 35%;
+  width: 33%;
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -239,7 +308,7 @@
   letter-spacing: 0.3px;
 }
 .ico-topline .ico-data_price-table th:first-child {
-  width: 30%;
+  width: 33%;
 }
 .ico-topline .ico-data_price-table td {
   color: #ffffff;
@@ -250,15 +319,15 @@
   text-transform: uppercase;
   letter-spacing: -1px;
 }
-.ico-topline .ico-data_price-table td span {
-  font-size: 16px;
+.ico-topline .ico-data_price-table td sup {
+  font-size: 14px;
 }
 .ico-topline .ico-data_timeframe-table {
   width: 100%;
 }
 .ico-topline .ico-data_timeframe-table th {
   padding-bottom: 6px;
-  width: 35%;
+  width: 33%;
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -268,19 +337,20 @@
   letter-spacing: 0.3px;
 }
 .ico-topline .ico-data_timeframe-table th:first-child {
-  width: 30%;
+  width: 33%;
 }
 .ico-topline .ico-data_timeframe-table td {
   color: rgba(255, 255, 255, 0.75);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.7px;
 }
 .ico-topline .ico-data_timeframe-table td span {
   padding: 3px 4px 2px;
   border-radius: 2px;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.75);
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -408,27 +478,37 @@
   width: 40%;
   text-align: right;
 }
-.ico-bottom-line .ico-brief-info_tables table td .icon-yes {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/icon-yes.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.ico-bottom-line .ico-brief-info_tables table td .icon-no {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/icon-no.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .ico-bottom-line .ico-brief-info_tables table td .status {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-bottom-line .ico-brief-info_tables table td .status--yes {
+  background-image: url('../img/icon-yes.svg');
+}
+.ico-bottom-line .ico-brief-info_tables table td .status--no {
+  background-image: url('../img/icon-no.svg');
+}
+.ico-bottom-line .ico-brief-info_tables table td .status--trading {
+  width: auto;
   padding: 3px 8px 2px;
   background-color: #44af36;
   border-radius: 2px;
   color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.ico-bottom-line .ico-brief-info_tables table td .status--upcoming {
+  width: auto;
+  padding: 3px 8px 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 700;

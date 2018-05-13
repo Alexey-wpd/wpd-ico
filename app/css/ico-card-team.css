@@ -29,13 +29,10 @@
   margin-bottom: 44px;
 }
 .ico-team_item-photo {
-  display: flex;
   background-color: #fafbfc;
 }
 .ico-team_item-photo img {
   width: 100%;
-  max-height: 208px;
-  margin: auto;
 }
 .ico-team_item-content {
   padding: 18px 20px 30px;

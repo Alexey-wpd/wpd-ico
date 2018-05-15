@@ -121,8 +121,9 @@
   font-weight: 400;
   line-height: 18px;
 }
-.ico-topline .ico-card_description--upcoming p {
-  height: 85px;
+.ico-topline .ico-card_description--upcoming p,
+.ico-topline .ico-card_description--canceled p {
+  height: 90px;
 }
 .ico-topline .ico-card_description--active p {
   height: 85px;
@@ -190,6 +191,44 @@
 .ico-topline .ico-data {
   padding: 23px 0 30px;
 }
+.ico-topline .ico-data_canceled-table {
+  width: 33%;
+  margin-bottom: 20px;
+}
+.ico-topline .ico-data_canceled-table th {
+  width: 33%;
+  padding-bottom: 5px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Roboto Medium";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ico-topline .ico-data_canceled-table td {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.ico-topline .ico-data_canceled-table td sup {
+  font-size: 14px;
+}
+.ico-topline .ico-data_canceled-table td span {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ico-topline .ico-data_canceled-table td span sup {
+  margin-left: 4px;
+  font-size: 10px;
+}
 .ico-topline .ico-data_upcoming-table {
   margin-bottom: 20px;
   width: 100%;
@@ -234,7 +273,7 @@
 }
 .ico-topline .ico-data_scale {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   height: 6px;
   border-radius: 4px;
   border: 1px solid #ced8e3;
@@ -259,8 +298,12 @@
 .ico-topline .ico-data_scale-inner--white {
   background-color: #ffffff;
 }
+.ico-topline .ico-data_scale-inner--red {
+  background-color: #ff3657;
+}
 .ico-topline .ico-data_scale-wrapper {
-  width: 80%;
+  width: 90%;
+  margin-top: 8px;
 }
 .ico-topline .ico-data_cap-current {
   display: flex;
@@ -535,6 +578,18 @@
   background-color: #fff;
   border-radius: 2px;
   color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.ico-bottom-line .ico-brief-info_tables table td .status--canceled {
+  width: auto;
+  padding: 3px 8px 2px;
+  background-color: #ff3657;
+  border-radius: 2px;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 700;

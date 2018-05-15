@@ -86,3 +86,99 @@
 .main-forum .forum-section_subsection .topic-count--dropdown {
   padding-left: 29px;
 }
+.main-forum .forum-section .forum-topic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.main-forum .forum-section .forum-topic--dropdown {
+  padding-top: 20px;
+}
+.main-forum .forum-section .forum-topic_title {
+  margin-right: 15px;
+  margin-left: 38px;
+  display: flex;
+}
+.main-forum .forum-section .forum-topic_title a {
+  color: #1991eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.main-forum .forum-section .forum-topic_title a:hover {
+  text-decoration: underline;
+  color: #1175c0;
+}
+.main-forum .forum-section .forum-topic_comments-count {
+  margin-right: 16px;
+  margin-left: 15px;
+}
+.main-forum .forum-section .forum-topic_comments-count span {
+  padding: 1px 4px;
+  background-color: red;
+  border-radius: 7px;
+  background-color: #9ea4ad;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10px;
+}
+.main-forum .forum-section .forum-topic_rating {
+  margin-right: 16px;
+}
+.main-forum .forum-section .forum-topic_rating span {
+  color: #b64ad4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+}
+.main-forum .forum-section .forum-topic_numbers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-forum .forum-section .forum-topic_icon-whatisthat {
+  width: 9px;
+  height: 11px;
+  background-image: url('../img/admin-icon.svg');
+}
+.main-forum .forum-section .topic-author {
+  display: flex;
+  margin-left: 38px;
+  margin-top: 2px;
+}
+.main-forum .forum-section .topic-author_time {
+  margin-right: 12px;
+}
+.main-forum .forum-section .topic-author_time span {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+}
+.main-forum .forum-section .topic-author_name span {
+  position: relative;
+  padding-left: 15px;
+  margin-right: 7px;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.main-forum .forum-section .topic-author_name span::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 1px;
+  top: 1px;
+  background-image: url('../img/topic_author_name.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}

@@ -219,7 +219,12 @@
   margin-bottom: 18px;
 }
 .sidebar .top-10_topics .forum-topic {
-  justify-content: flex-start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sidebar .top-10_topics .forum-topic--dropdown {
+  padding-top: 20px;
 }
 .sidebar .top-10_topics .forum-topic_title {
   display: block;
@@ -242,10 +247,25 @@
   margin-right: 6px;
   margin-left: 10px;
 }
+.sidebar .top-10_topics .forum-topic_comments-count span {
+  padding: 1px 4px;
+  border-radius: 7px;
+  background-color: #9ea4ad;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10px;
+}
 .sidebar .top-10_topics .forum-topic_rating {
   display: inline;
-  margin-right: 0;
-  margin-left: 0;
+}
+.sidebar .top-10_topics .forum-topic_rating span {
+  color: #b64ad4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
 }
 .sidebar .top-10_topics .forum-topic_icon-whatisthat {
   width: 9px;
@@ -253,20 +273,48 @@
   background-image: url('../img/admin-icon.svg');
 }
 .sidebar .top-10_topics .topic-author {
+  display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  margin-right: 0px;
-  margin-left: 0;
-  margin-top: 6px;
 }
 .sidebar .top-10_topics .topic-author_time {
   margin-right: 12px;
 }
+.sidebar .top-10_topics .topic-author_time span {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+}
 .sidebar .top-10_topics .topic-author_name {
   margin-right: 10px;
 }
+.sidebar .top-10_topics .topic-author_name span {
+  position: relative;
+  padding-left: 15px;
+  margin-right: 7px;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.sidebar .top-10_topics .topic-author_name span::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 1px;
+  top: 1px;
+  background-image: url('../img/user-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .sidebar .top-5 {
-  padding: 25px 20px 1px 25px;
+  padding: 25px 20px 15px 25px;
   margin-top: 30px;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 4px;

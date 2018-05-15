@@ -1,6 +1,6 @@
 @import "vars";
 
-.main-forum{
+.main-forum {
     margin-top: 32px;
     .forum-section {
         padding-bottom: 18px;
@@ -91,6 +91,110 @@
                     padding-left: 29px;
                 }
             }
+        }
+        .forum-topic {
+        	display: flex;
+        	align-items: flex-start;
+        	justify-content: space-between;
+        	&--dropdown {
+        		padding-top: 20px;
+        	}
+        	&_title {
+        		margin-right: 15px;
+        		margin-left: 38px;
+        		display: flex;
+        		a {
+        			color: @main-color;
+        			font-family: @main-font;
+        			font-size: 12px;
+        			font-weight: 400;
+        			//line-height: 12px;
+        			&:hover {
+        				text-decoration: underline;
+        				color: darken(@main-color, 10%);
+        			}
+        		}
+        	}
+        	&_comments-count {
+        		margin-right: 16px;
+        		margin-left: 15px;
+        		span {
+        			padding: 1px 4px;
+        			background-color: red;
+        			border-radius: 7px;
+        			background-color: #9ea4ad;
+        			color: #ffffff;
+        			font-family: @main-font;
+        			font-size: 9px;
+        			font-weight: 500;
+        			line-height: 10px;
+        		}
+        	}
+        	&_rating {
+        		margin-right: 16px;
+        		span {
+        			color: #b64ad4;
+        			font-family: @main-font;
+        			font-size: 12px;
+        			font-weight: 700;
+        			line-height: 12px;
+        		}
+        	}
+        	&_numbers {
+        		display: flex;
+        		justify-content: flex-start;
+        		align-items: center;
+        		img {
+        			//width: 16px;
+        			//height: 16px;
+        			//background-image: url("../img/star.png");
+        		}
+        	}
+        	&_icon-whatisthat {
+        		width: 9px;
+        		height: 11px;
+        		background-image: @img-admin-icon;
+        	}
+        }
+        .topic-author {
+        	display: flex;
+        	margin-left: 38px;
+        	margin-top: 2px;
+        	&_time {
+        		margin-right: 12px;
+        		span {
+        			color: #333f52;
+        			font-family: @main-font;
+        			font-size: 12px;
+        			font-weight: 400;
+        			line-height: 12px;
+        			white-space: nowrap;
+        		}
+        	}
+        	&_name {
+        		span {
+        			position: relative;
+        			padding-left: 15px;
+        			margin-right: 7px;
+        			color: #707986;
+        			font-family: @main-font;
+        			font-size: 12px;
+        			font-weight: 500;
+        			line-height: 12px;
+        			&::before {
+        				content: "";
+        				position: absolute;
+        				width: 11px;
+        				height: 11px;
+        				left: 1px;
+        				top: 1px;
+        				background-image: @img-topic_author_name;
+        				background-position: center;
+        				background-repeat: no-repeat;
+        				z-index: 11;
+        			}
+        		}
+        	}
         }
     }
 }

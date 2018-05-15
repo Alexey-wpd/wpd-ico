@@ -128,26 +128,37 @@
             }
         }
         .forum-topic {
+            display: flex;
+        	align-items: flex-start;
+        	justify-content: space-between;
         	&_title {
+                display: flex;
+                margin-right: 15px;
         		margin-left: 5px;
         		a {
+                    color: @main-color;
+        			font-family: @main-font;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 20px;
                     letter-spacing: -0.11px;
                     max-width: 490px;
         			&:hover {
+                        text-decoration: underline;
         				color: darken(@main-color, 20%);
         			}
         		}
         	}
         	&_comments-count {
         		margin-right: 0px;
-        		//margin-left: 15px;
+        		margin-left: 15px;
         		span {
                     position: relative;
         			padding: 3px 6px;
         			border-radius: 8px;
+                    background-color: #9ea4ad;
+        			color: #ffffff;
+        			font-family: @main-font;
                     font-size: 11px;
                     font-weight: 700;
                     line-height: 10px;
@@ -166,8 +177,9 @@
         	}
         	&_rating {
         		margin-right: 0px;
-                //margin-left: 48px;
         		span {
+                    color: #b64ad4;
+        			font-family: @main-font;
                     font-size: 14px;
                     font-weight: 700;
                     line-height: 12px;
@@ -175,6 +187,8 @@
         	}
         	&_numbers {
                 width: 150px;
+                display: flex;
+        		align-items: center;
                 justify-content: space-around;
         		img {
                     //margin-left: 32px;

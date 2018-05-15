@@ -121,9 +121,10 @@
                 font-weight: 400;
                 line-height: 18px;
             }
-            &--upcoming {
+            &--upcoming,
+            &--canceled {
                 p {
-                    height: 85px;
+                    height: 90px;
                 }
             }
             &--active {
@@ -207,6 +208,44 @@
     }
     .ico-data {
         padding: 23px 0 30px;
+        &_canceled-table {
+            width: 33%;
+            margin-bottom: 20px;
+            th {
+                width: 33%;
+                padding-bottom: 5px;
+                color: rgba(255, 255, 255, 0.75);
+                font-family: "Roboto Medium";
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 11px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+            }
+            td {
+                color: #ffffff;
+                font-family: @main-font;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 24px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                sup {
+                    font-size: 14px;
+                }
+                span {
+                    color: #ffffff;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    sup {
+                        margin-left: 4px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
         &_upcoming-table {
             margin-bottom: 20px;
             width: 100%;
@@ -251,7 +290,7 @@
         }
         &_scale {
             position: relative;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             height: 6px;
             border-radius: 4px;
             border: 1px solid #ced8e3;
@@ -274,9 +313,13 @@
                 &--white {
                     background-color: #ffffff;
                 }
+                &--red {
+                    background-color: #ff3657;
+                }
             }
             &-wrapper {
-                width: 80%;
+                width: 90%;
+                margin-top: 8px;
             }
         }
         &_cap-current {
@@ -553,6 +596,18 @@
                             background-color: #fff;
                             border-radius: 2px;
                             color: #333f52;
+                            font-family: @main-font;
+                            font-size: 11px;
+                            font-weight: 700;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                        }
+                        &--canceled {
+                            width: auto;
+                            padding: 3px 8px 2px;
+                            background-color: #ff3657;
+                            border-radius: 2px;
+                            color: #fff;
                             font-family: @main-font;
                             font-size: 11px;
                             font-weight: 700;

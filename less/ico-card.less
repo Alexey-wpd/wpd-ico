@@ -64,7 +64,7 @@
                     font-family: @main-font;
                     font-size: 22px;
                     font-weight: 900;
-                    line-height: 27px;
+                    line-height: 34px;
                     sup {
                         padding: 0;
                         opacity: 0.8;
@@ -348,6 +348,9 @@
                     text-transform: uppercase;
                     letter-spacing: 0.3px;
                 }
+                &:last-child {
+                    text-align: center;
+                }
             }
             td {
                 padding-bottom: 10px;
@@ -360,6 +363,30 @@
                 border-bottom: 1px solid rgba(206, 216, 227, 0.5);
                 &:first-child {
                     border-bottom: none;
+                }
+                &:last-child {
+                    text-align: center;
+                    color: #ffffff;
+                    font-family: @main-font;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    letter-spacing: -1px;
+                    span {
+                        position: relative;
+                        &::before {
+                            content: "";
+                			position: absolute;
+                			width: 11px;
+                			height: 8px;
+                			left: -17px;
+                			top: 12px;
+                			background-image: @img-triengle-red;
+                			background-position: center;
+                			background-repeat: no-repeat;
+                			z-index: 11;
+                        }
+                    }
                 }
                 sup {
                     font-size: 14px;

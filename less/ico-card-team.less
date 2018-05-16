@@ -117,6 +117,44 @@
 .related-ico {
     padding-bottom: 50px;
     background-color: #e0e6ed;
+    .rating {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        display: flex;
+        width: 72px;
+        height: 28px;
+        background-color: #f7981b;
+        border-radius: 0 2px 2px 0;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            border: 8px solid #fff;
+            border-top-width: 14px;
+            border-bottom-width: 14px;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-right-width: 0;
+        }
+        span {
+            margin: auto;
+            white-space: nowrap;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            font-family: "RobotoBold";
+            font-size: 18px;
+            line-height: 18px;
+            sup {
+                padding: 0;
+                color: rgba(255, 255, 255, 0.8);
+                font-family: "RobotoMedium";
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+        }
+    }
     &_title {
         display: flex;
         align-items: center;
@@ -158,14 +196,20 @@
             border-radius: 0 0 4px 4px;
             background-color: #ffffff;
         }
-        &-name {
+        &-title {
             margin-bottom: 7px;
-            span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-name {
                 color: #333f52;
                 font-family: @main-font;
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 24px;
+            }
+            .ico-item_sponsored {
+                margin-right: -26px;
             }
         }
         &-category {

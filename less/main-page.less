@@ -130,40 +130,6 @@
                 line-height: 20px;
             }
         }
-        &_sponsored {
-            position: relative;
-            margin-right: -22px;
-            padding: 5px 10px 2px 14px;
-            box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
-            border: 1px solid #f3b325;
-            background-color: #ffffff;
-            color: #f7981c;
-            font-size: 10px;
-            font-weight: 700;
-            line-height: 10px;
-            text-transform: uppercase;
-            &::before {
-    			content: "";
-    			position: absolute;
-    			width: 40px;
-    			height:26px;
-    			left: -27px;
-    			top: -3px;
-    			background-image: @img-sponsored;
-    			background-position: center;
-    			background-repeat: no-repeat;
-    			z-index: 11;
-    		}
-            &::after {
-                content: "";
-                position: absolute;
-                right: -1px;
-                bottom: 17px;
-                border: 3px solid transparent;
-                border-bottom: 3px solid #f3b325;
-                border-left: 3px solid #f3b325;
-            }
-        }
         &_category {
             padding: 5px 6px 0px;
             border-radius: 4px;
@@ -517,5 +483,40 @@
                 background-color: #ffffff;
             }
         }
+    }
+}
+
+.ico-item_sponsored {
+    position: relative;
+    margin-right: -22px;
+    padding: 5px 10px 2px 14px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f3b325;
+    background-color: #ffffff;
+    color: #f7981c;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 10px;
+    text-transform: uppercase;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 28px;
+        left: -27px;
+        top: -4px;
+        background-image: @img-sponsored;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 11;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: -1px;
+        bottom: 17px;
+        border: 3px solid transparent;
+        border-bottom: 3px solid #f3b325;
+        border-left: 3px solid #f3b325;
     }
 }

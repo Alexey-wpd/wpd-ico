@@ -255,7 +255,7 @@
         border-bottom: 2px solid #ced8e3;
     }
     &_roi {
-        width: 65%;
+        width: 100%;
         th {
             color: #525c6c;
             font-family: @main-font;
@@ -264,6 +264,9 @@
             line-height: 11px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
+            &:last-child {
+                text-align: center;
+            }
         }
         td {
             color: #333f52;
@@ -271,6 +274,55 @@
             font-size: 16px;
             font-weight: 700;
             line-height: 20px;
+            span {
+                font-size: 12px;
+            }
+            &:last-child {
+                text-align: center;
+                color: #45af37;
+                font-family: @main-font;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: -0.4px;
+                span {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 11px;
+                        height: 8px;
+                        left: -22px;
+                        top: 1px;
+                        background-image: @img-triangle-green;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 11;
+                    }
+                }
+            }
+        }
+        &--negative {
+            td {
+                &:last-child {
+                    color: #ff3657;
+                    span {
+                        position: relative;
+                        &::before {
+                            content: "";
+                			position: absolute;
+                			width: 11px;
+                			height: 8px;
+                			left: -22px;
+                			top: 1px;
+                			background-image: @img-triengle-red;
+                			background-position: center;
+                			background-repeat: no-repeat;
+                			z-index: 11;
+                        }
+                    }
+                }
+            }
         }
     }
     &_fundraising {

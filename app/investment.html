@@ -28,18 +28,14 @@
                          </div>
                          <div class="main-nav_wrapper">
                              <ul class="main-nav_menu">
-                              <li class="main-nav_item"><a href="#">Каталог<br>ICO</a></li>
-                                 <li class="main-nav_item"><a href="#">Наши<br>рейтинги</a></li>
-                                 <li class="main-nav_item"><a href="#">Биржи<br>и обменники</a></li>
-                                 <li class="main-nav_item"><a href="#">Форум</a></li>
-                                 <li class="main-nav_item">
-                                     <ul class="main-nav_faq">
-                                         <li class="main-nav_faq-item"><a href="vk">Наша команда</a></li>
-                                         <li class="main-nav_faq-item"><a href="#">FAQ</a></li>
-                                     </ul>
-                                 </li>
+                              <li class="main-nav_item"><a href="#">ICOs</a></li>
+                                 <li class="main-nav_item"><a href="#">Our ratings</a></li>
+                                 <li class="main-nav_item"><a href="#">Exchanges</a></li>
+                                 <li class="main-nav_item main-nav_item--active"><a href="#">Forum</a></li>
+                                 <li class="main-nav_item main-nav_faq-item"><a href="vk">Our team</a></li>
+                                 <li class="main-nav_item main-nav_faq-item"><a href="#">FAQ</a></li>
                              </ul>
-                             <ul class="main-nav_user-menu main-nav_user-menu--hidden">
+                             <ul class="main-nav_user-menu main-nav_user-menu--hiddenn">
                                  <li class="main-nav_user-search">
                                      <form>
                                          <input type="text" placeholder="" name="search">
@@ -73,11 +69,11 @@
                                      <!-- /.language -->
                                  </li>
                                  <li class="main-nav_user-login">
-                                     <a href="#" class="btn btn--login">Войти</a>
+                                     <a href="#" class="btn btn--login">Sign In</a>
                                  </li>
                              </ul>
                              <!-- /.main-nav_user-menu -->
-                             <div class="user user--hiddenn">
+                             <div class="user user--hidden">
                                 <div class="main-nav_user-search">
                                     <form>
                                         <input type="text" placeholder="" name="search">
@@ -113,12 +109,12 @@
                   <div class="row">
                       <div class="col">
                           <ul class="cabinet-nav_menu">
-                              <li class="cabinet-nav_item"><a>Кабинет инвестора</a></li>
-                              <li class="cabinet-nav_item cabinet-nav_item--cases"><a href="#">Дела на сегодня</a></li>
-                              <li class="cabinet-nav_item cabinet-nav_item--calendar"><a href="#">Календарь ICO</a></li>
-                              <li class="cabinet-nav_item cabinet-nav_item--investment cabinet-nav_item--active"><a href="#">Мои инвестиции</a></li>
-                              <li class="cabinet-nav_item cabinet-nav_item--statistic"><a href="#">Статистика</a></li>
-                              <li class="cabinet-nav_item cabinet-nav_item--marked-ico"><a href="#">Отмеченные ICO</a></li>
+                              <li class="cabinet-nav_item"><a>Investor Dashboard</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--cases"><a href="#">Today</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--calendar"><a href="#">ICO Calendar</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--investment cabinet-nav_item--active"><a href="#">Portfolio</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--statistic"><a href="#">ICO Stats</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--marked-ico"><a href="#">Favourite ICO</a></li>
                           </ul>
                       </div>
                       <!-- /.col -->
@@ -132,9 +128,31 @@
       <!-- /.header -->
       <div class="container-fluid">
           <div class="row">
+              <div class="col">
+                  <div class="portfolio-nav">
+                      <ul class="portfolio-nav_menu">
+                          <li class="portfolio-nav_menu-item portfolio-nav_menu-item--active"><a href="#">Portfolio #1</a></li>
+                          <li class="portfolio-nav_menu-item portfolio-nav_menu-item--private"><a href="#">Private Invest</a></li>
+                          <li class="portfolio-nav_menu-item"><a href="#">Shared</a></li>
+                      </ul>
+                      <div class="portfolio-nav_add-portfolio">
+                          <a href="#">Add portfolio</a>
+                      </div>
+                      <div class="portfolio-nav_button">
+                          <a href="#" class="btn">Add/Delete Coin</a>
+                      </div>
+                  </div>
+                  <!-- /.portfolio-nav -->
+              </div>
+              <!-- /.col -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+      <div class="container-fluid">
+          <div class="row">
               <div class="col-3">
                   <div class="portfolio-view">
-                      <h2>Портфель инвестора</h2>
                       <div class="portfolio-view_filter">
                           <label>
                               <input name="portfolio-filter-usd" type="checkbox" value="usd" checked>
@@ -154,9 +172,6 @@
                           </label>
                       </div>
                       <!-- /.portfolio-view_filter -->
-                      <div class="portfolio-view_graph">
-                          <a href="#">График изменений стоимости<br> портфеля</a>
-                      </div>
                       <div class="portfolio-view_public">
                           <a>Публичный портфель<sup class="tooltip-mark"></sup></a>
                           <div class="portfolio-view_toggle">
@@ -170,32 +185,32 @@
               <div class="col-9">
                     <div class="portfolio">
                         <div class="portfolio_bottom-line">
-                            <div class="portfolio_worth">
-                                <span class="portfolio_worth-price">СТОИМОСТЬ ПОРТФЕЛЯ<sup class="tooltip-mark" data-toggle="tooltip" data-placement="right" data-original-title="Данные обновляются раз в сутки"></sup></span>
-                                <span class="portfolio_worth-usd">$ 293 091.09</span>
-                                <span class="portfolio_worth-btc">38.612110038 BTC</span>
+                            <div class="portfolio_cost">
+                                <span class="portfolio_cost-price">Acquisition Cost<sup class="tooltip-mark" data-toggle="tooltip" data-placement="right" data-original-title="Данные обновляются раз в сутки"></sup></span>
+                                <span class="portfolio_cost-usd">$ 293 091.09</span>
+                                <span class="portfolio_cost-btc">38.612110038 BTC</span>
                             </div>
                             <!-- /.portfolio_worth -->
                             <div class="portfolio_deviation">
-                                <span class="portfolio_deviation-24hours">ИЗМЕНЕНИЕ ЗА 24 ЧАСА</span>
+                                <span class="portfolio_deviation-24hours">24H CHANGE</span>
                                 <span class="portfolio_deviation-percent">+3.4 <sup>%</sup></span>
                                 <span class="portfolio_deviation-usd">$ 9 079.76</span>
                             </div>
                             <!-- /.portfolio_deviation -->
-                            <div class="portfolio_button">
-                                <a href="#" class="btn">Добавить/убрать монету</a>
+                            <div class="portfolio_changes">
+                                <a href="#">Portfolio Changes <br> Chart</a>
                             </div>
                         </div>
                         <!-- /.portfolio_bottom-line -->
                         <div class="portfolio_form">
                             <div class="portfolio_form-close">
                             </div>
-                            <h3>Добавить/убрать монету</h3>
+                            <h3>Add/Delete Coin</h3>
                             <form action="#" class="add-coin-form">
-                                <fieldset class="fieldset-left">
+
                                     <div class="add-coin-form_wrapper">
                                         <div class="add-coin-form_name">
-                                            <label for="name">Название</label>
+                                            <label for="name">Coin</label>
                                             <select size="1" name="name[]" id="name">
                                                   <option value=""><a href="#">NEO</a></option>
                                                   <option value=""><a href="#">BTC</a></option>
@@ -203,235 +218,336 @@
                                             </select>
                                         </div>
                                         <div class="add-coin-form_amount">
-                                            <label for="amount">Количество</label>
+                                            <label for="amount">Quantity</label>
                                             <input type="number" name="amount" id="amount" placeholder="">
                                         </div>
                                         <div class="add-coin-form_price">
-                                            <label>Цена</label>
+                                            <label for="price">Price</label>
+                                            <div class="add-coin-form_price-input-wrapper">
+                                                <input type="text" name="price" id="price" placeholder="">
+                                                <select size="1" name="name[]" id="name">
+                                                      <option value=""><a href="#">USD</a></option>
+                                                      <option value=""><a href="#">EUR</a></option>
+                                                      <option value=""><a href="#">RUR</a></option>
+                                                </select>
+                                            </div>
+                                            <div class="add-coin-form_price-links">
+                                                <a href="#" class="add-coin-form_price-ico">ICO PRICE</a>
+                                                <a href="#" class="add-coin-form_price-market">MARKET PRICE</a>
+                                            </div>
+                                        </div>
+                                        <div class="add-coin-form_total">
+                                            <label>Total</label>
                                             <span><b>$</b> 7 619.89</span>
                                         </div>
                                     </div>
                                     <!-- /.add-coin-form_wrapper -->
                                     <div class="add-coin-form_buttons">
-                                            <button class="btn btn-primary" type="submit" name="button">Сохранить</button>
-                                            <a href="#">Удалить монету</a>
+                                            <button class="btn" type="submit" name="button">Save</button>
                                     </div>
                                     <!-- /.add-coin-form_buttons -->
-                                </fieldset>
-                                <fieldset class="fieldset-right">
-                                    <div class="add-coin-form_textarea">
-                                        <label for="textarea"><a href="#">Удалить комментарий</a></label>
-                                        <textarea placeholder="комментарий" id="textarea"></textarea>
-                                    </div>
-                                </fieldset>
+
                             </form>
                             <!-- /.add-coin-form -->
                         </div>
                         <!-- /.portfolio_form -->
                         <div class="portfolio_list">
-                            <div class="portfolio_head">
-                                <div class="portfolio_head-item portfolio_head-item--name">
-                                    <span>Название</span>
+                            <div class="portfolio_list-head">
+                                <div class="portfolio_list-head-item portfolio_list-head-item--name">
+                                    <span>Name</span>
                                 </div>
-                                <div class="portfolio_head-item portfolio_head-item--amount">
-                                    <span>В портфеле</span>
+                                <div class="portfolio_list-head-item portfolio_list-head-item--amount">
+                                    <span>Ammount</span>
                                 </div>
-                                <div class="portfolio_head-item portfolio_head-item--percent">
+                                <div class="portfolio_list-head-item portfolio_list-head-item--percent">
                                     <span>%</span>
                                 </div>
-                                <div class="portfolio_head-item portfolio_head-item--price">
-                                    <span>Цена</span>
+                                <div class="portfolio_list-head-item portfolio_list-head-item--price">
+                                    <span>Total Value</span>
                                 </div>
-                                <div class="portfolio_head-item portfolio_head-item--24hour">
-                                    <span>24ч</span>
+                                <div class="portfolio_list-head-item portfolio_list-head-item--24hour">
+                                    <span>24 Change</span>
                                 </div>
-                                <div class="portfolio_head-item portfolio_head-item--capitalizations">
-                                    <span>Капитализация</span>
+                                <div class="portfolio_list-head-item portfolio_list-head-item--capitalizations">
+                                    <span>Capitalization</span>
                                 </div>
-                                <div class="portfolio_head-item portfolio_head-item--volume">
-                                    <span>Объем (24ч)</span>
+                                <div class="portfolio_list-head-item portfolio_list-head-item--volume">
+                                    <span>24H Volume</span>
                                 </div>
                             </div>
                             <!-- /.portfolio_list-head -->
-                            <div class="portfolio_item portfolio_item--bts">
-                                <div class="portfolio_item-name">
-                                    <div class="portfolio_item-logo">
-                                        <img src="img/btc-logo.png" alt="btc">
-                                    </div>
-                                    <span>Bitcoin · <b>BTC</b></span>
-                                </div>
-                                <div class="portfolio_item-amount">
-                                    <span>0.0013603 <b>BTC</b></span>
-                                    <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
-                                </div>
-                                <div class="portfolio_item-percent">
-                                    <span>31%</span>
-                                </div>
-                                <div class="portfolio_item-price">
-                                    <span class="portfolio_item-price-usd">$ 7 619.89</span>
-                                    <span class="portfolio_item-price-bts">0.0013603 BTC</span>
-                                </div>
-                                <div class="portfolio_item-24hour">
-                                    <span>+5.44%</span>
-                                </div>
-                                <div class="portfolio_item-capitalizations">
-                                    <span><b>$</b> 130.02 B</span>
-                                </div>
-                                <div class="portfolio_item-volume">
-                                    <span><b>$</b> 4.14 B</span>
-                                    <a href="#" class="portfolio_item-dropdown"></a>
-                                </div>
-                            </div>
+                            <table class="portfolio_item">
+                                <thead>
+                                    <tr>
+                                      <th class="portfolio_item-name portfolio_item-name--bts"><div class="portfolio_item-logo">
+                                          <img src="img/btc-logo.png" alt="btc">
+                                      </div>
+                                      <span>Bitcoin · <b>BTC</b></span></th>
+                                      <th class="portfolio_item-amount"><div class="portfolio_item-amount-wrapper">
+                                          <span>0.0013603 <b>BTC</b></span>
+                                          <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
+                                      </div></th>
+                                      <th class="portfolio_item-percent"><span>31%</span></th>
+                                      <th class="portfolio_item-price"><span class="portfolio_item-price-usd">$ 7 619.89</span>
+                                      <span class="portfolio_item-price-bts">0.0013603 BTC</span></th>
+                                      <th class="portfolio_item-24hour"><span>+5.44%</span></th>
+                                      <th class="portfolio_item-capitalizations"><span><b>$</b> 130.02 B</span></th>
+                                      <th class="portfolio_item-volume"><div class="portfolio_item-volume-wrapper">
+                                          <span><b>$</b> 4.14 B</span>
+                                          <a href="#" class="portfolio_item-dropdown js-thead-show"></a>
+                                      </div></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody tbody--bts js-tbody">
+                                    <tr>
+                                      <td><span>Operation</span></td>
+                                      <td><span>Quantity</span></td>
+                                      <td colspan="2"><span>Price</span></td>
+                                      <td colspan="3"><span>Price per coin</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><span class="bought">Bought</span></td>
+                                      <td><span>8290 <b>EOS</b></span></td>
+                                      <td colspan="2"><span><b>$</b> 15 456</span></td>
+                                      <td colspan="2"><span><b>$</b> 12 666</span></td>
+                                      <td><a href="#" class="edit">edit</a><a href="#" class="delete">delete</a></td>
+                                   </tr>
+                                    <tr>
+                                      <td><span class="sold">Sold</span></td>
+                                      <td><span>18 290 <b>EOS</b></span></td>
+                                      <td colspan="2"><span><b>$</b> 205 548</span></td>
+                                      <td colspan="2"><span><b>$</b> 546</span></td>
+                                      <td><a href="#" class="edit">edit</a><a href="#" class="delete">delete</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="7">
+
+                                          <div class="portfolio_form">
+                                              <a href="#" class="btn btn-add-record">Add Record</a>
+                                              <form action="#" class="add-coin-form">
+
+                                                      <div class="add-coin-form_wrapper">
+                                                          <div class="add-coin-form_name">
+                                                              <label for="name">Operation</label>
+                                                              <select size="1" name="name[]" id="name">
+                                                                    <option value=""><a href="#">Buy</a></option>
+                                                                    <option value=""><a href="#">Sell</a></option>
+                                                              </select>
+                                                          </div>
+                                                          <div class="add-coin-form_amount">
+                                                              <label for="amount">Quantity</label>
+                                                              <input type="number" name="amount" id="amount" placeholder="">
+                                                          </div>
+                                                          <div class="add-coin-form_price">
+                                                              <label for="price">Price</label>
+                                                              <div class="add-coin-form_price-input-wrapper">
+                                                                  <input type="text" name="price" id="price" placeholder="">
+                                                                  <select size="1" name="name[]" id="name">
+                                                                        <option value=""><a href="#">USD</a></option>
+                                                                        <option value=""><a href="#">EUR</a></option>
+                                                                        <option value=""><a href="#">RUR</a></option>
+                                                                  </select>
+                                                              </div>
+                                                              <div class="add-coin-form_price-links">
+                                                                  <a href="#" class="add-coin-form_price-ico">ICO PRICE</a>
+                                                                  <a href="#" class="add-coin-form_price-market">MARKET PRICE</a>
+                                                              </div>
+                                                          </div>
+                                                          <div class="add-coin-form_total">
+                                                              <label>Total</label>
+                                                              <span><b>$</b> 7 619.89</span>
+                                                          </div>
+                                                      </div>
+                                                      <!-- /.add-coin-form_wrapper -->
+                                                      <div class="add-coin-form_buttons">
+                                                              <button class="btn" type="submit" name="button">Save</button>
+                                                      </div>
+                                                      <!-- /.add-coin-form_buttons -->
+
+                                              </form>
+                                              <!-- /.add-coin-form -->
+                                          </div>
+                                          <!-- /.portfolio_form -->
+                                      </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="js-tfoot">
+                                    <tr>
+                                      <td colspan="2" rowspan="5">
+                                          <div class="portfolio_graph">
+                                              <img src="img/graph.png" alt="">
+                                          </div>
+                                      </td>
+                                      <td colspan="2"><span>Exchange</span></td>
+                                      <td><span>Price</span></td>
+                                      <td colspan="2"><span>Volume</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                      <tr>
+                                        <td colspan="7"></td>
+                                      </tr>
+                                    </tr>
+                                </tfoot>
+                            </table>
                             <!-- /.portfolio_item -->
-                            <div class="portfolio_item portfolio_item--XMR">
-                                <div class="portfolio_item-name">
-                                    <div class="portfolio_item-logo">
-                                        <img src="img/monero-logo.png" alt="btc">
-                                    </div>
-                                    <span>Monero · <b>XMR</b></span>
-                                </div>
-                                <div class="portfolio_item-amount">
-                                    <span>201  <b>XMR</b></span>
-                                    <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
-                                </div>
-                                <div class="portfolio_item-percent">
-                                    <span>14%</span>
-                                </div>
-                                <div class="portfolio_item-price">
-                                    <span class="portfolio_item-price-usd">$ 186.12</span>
-                                    <span class="portfolio_item-price-bts">0.00001208 BTC</span>
-                                </div>
-                                <div class="portfolio_item-24hour">
-                                    <span>-7.04%</span>
-                                </div>
-                                <div class="portfolio_item-capitalizations">
-                                    <span><b>$</b> 2.93 B</span>
-                                </div>
-                                <div class="portfolio_item-volume">
-                                    <span><b>$</b> 44 700 000</span>
-                                    <a href="#" class="portfolio_item-dropdown"></a>
-                                </div>
-                            </div>
+                            <table class="portfolio_item portfolio_item--active">
+                                <thead>
+                                    <tr>
+                                      <th class="portfolio_item-name portfolio_item-name--NEO"><div class="portfolio_item-logo">
+                                          <img src="img/btc-logo.png" alt="btc">
+                                      </div>
+                                      <span>NEO  · <b>NEO </b></span></th>
+                                      <th class="portfolio_item-amount"><div class="portfolio_item-amount-wrapper">
+                                          <span>305 <b>NEO</b></span>
+                                          <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
+                                      </div></th>
+                                      <th class="portfolio_item-percent"><span>7%</span></th>
+                                      <th class="portfolio_item-price"><span class="portfolio_item-price-usd">$ 55.12</span>
+                                      <span class="portfolio_item-price-bts">0.0000000090 BTC</span></th>
+                                      <th class="portfolio_item-24hour"><b>ICO</b></th>
+                                      <th class="portfolio_item-capitalizations"><span><b>$</b> 3.71 B</span></th>
+                                      <th class="portfolio_item-volume"><div class="portfolio_item-volume-wrapper">
+                                          <span><b>$</b> 83.15 M</span>
+                                          <a href="#" class="portfolio_item-dropdown js-thead-show"></a>
+                                      </div></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody tbody--NEO js-tbody">
+                                    <tr>
+                                      <td><span>Operation</span></td>
+                                      <td><span>Quantity</span></td>
+                                      <td colspan="2"><span>Price</span></td>
+                                      <td colspan="3"><span>Price per coin</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><span class="bought">Bought</span></td>
+                                      <td><span>8290 <b>EOS</b></span></td>
+                                      <td colspan="2"><span><b>$</b> 15 456</span></td>
+                                      <td colspan="2"><span><b>$</b> 12 666</span></td>
+                                      <td><a href="#" class="edit">edit</a><a href="#" class="delete">delete</a></td>
+                                   </tr>
+                                    <tr>
+                                      <td><span class="sold">Sold</span></td>
+                                      <td><span>18 290 <b>EOS</b></span></td>
+                                      <td colspan="2"><span><b>$</b> 205 548</span></td>
+                                      <td colspan="2"><span><b>$</b> 546</span></td>
+                                      <td><a href="#" class="edit">edit</a><a href="#" class="delete">delete</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="7">
+
+                                          <div class="portfolio_form">
+                                              <a href="#" class="btn btn-add-record">Add Record</a>
+                                              <form action="#" class="add-coin-form">
+
+                                                      <div class="add-coin-form_wrapper">
+                                                          <div class="add-coin-form_name">
+                                                              <label for="name">Operation</label>
+                                                              <select size="1" name="name[]" id="name">
+                                                                    <option value=""><a href="#">Buy</a></option>
+                                                                    <option value=""><a href="#">Sell</a></option>
+                                                              </select>
+                                                          </div>
+                                                          <div class="add-coin-form_amount">
+                                                              <label for="amount">Quantity</label>
+                                                              <input type="number" name="amount" id="amount" placeholder="">
+                                                          </div>
+                                                          <div class="add-coin-form_price">
+                                                              <label for="price">Price</label>
+                                                              <div class="add-coin-form_price-input-wrapper">
+                                                                  <input type="text" name="price" id="price" placeholder="">
+                                                                  <select size="1" name="name[]" id="name">
+                                                                        <option value=""><a href="#">USD</a></option>
+                                                                        <option value=""><a href="#">EUR</a></option>
+                                                                        <option value=""><a href="#">RUR</a></option>
+                                                                  </select>
+                                                              </div>
+                                                              <div class="add-coin-form_price-links">
+                                                                  <a href="#" class="add-coin-form_price-ico">ICO PRICE</a>
+                                                                  <a href="#" class="add-coin-form_price-market">MARKET PRICE</a>
+                                                              </div>
+                                                          </div>
+                                                          <div class="add-coin-form_total">
+                                                              <label>Total</label>
+                                                              <span><b>$</b> 7 619.89</span>
+                                                          </div>
+                                                      </div>
+                                                      <!-- /.add-coin-form_wrapper -->
+                                                      <div class="add-coin-form_buttons">
+                                                              <button class="btn" type="submit" name="button">Save</button>
+                                                      </div>
+                                                      <!-- /.add-coin-form_buttons -->
+
+                                              </form>
+                                              <!-- /.add-coin-form -->
+                                          </div>
+                                          <!-- /.portfolio_form -->
+                                      </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="js-tfoot">
+                                    <tr>
+                                      <td colspan="2" rowspan="5">
+                                          <div class="portfolio_graph">
+                                              <img src="img/graph.png" alt="">
+                                          </div>
+                                      </td>
+                                      <td colspan="2"><span>Exchange</span></td>
+                                      <td><span>Price</span></td>
+                                      <td colspan="2"><span>Volume</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
+                                      <td><span><b>$</b> 4.36</span></td>
+                                      <td><span><b>$</b> 10 010 000</span></td>
+                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                      <tr>
+                                        <td colspan="7"></td>
+                                      </tr>
+                                    </tr>
+                                </tfoot>
+                            </table>
                             <!-- /.portfolio_item -->
-                            <div class="portfolio_item-wrapper">
-                                <div class="portfolio_item portfolio_item--NEO portfolio_item--active">
-                                    <div class="portfolio_item-name">
-                                        <div class="portfolio_item-logo">
-                                            <img src="img/neo-logo.png" alt="btc">
-                                        </div>
-                                        <span>NEO · <b>NEO</b></span>
-                                    </div>
-                                    <div class="portfolio_item-amount">
-                                        <span>305  <b>NEO </b></span>
-                                        <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
-                                    </div>
-                                    <div class="portfolio_item-percent">
-                                        <span>7%</span>
-                                    </div>
-                                    <div class="portfolio_item-price">
-                                        <span class="portfolio_item-price-usd">$ 55.12</span>
-                                        <span class="portfolio_item-price-bts">0.0000000090 BTC</span>
-                                    </div>
-                                    <div class="portfolio_item-24hour">
-                                        <b>ICO</b>
-                                    </div>
-                                    <div class="portfolio_item-capitalizations">
-                                        <span><b>$</b> 3.71 B</span>
-                                    </div>
-                                    <div class="portfolio_item-volume">
-                                        <span><b>$</b> 83.15 M</span>
-                                        <a href="#" class="portfolio_item-dropdown"></a>
-                                    </div>
-                                </div>
-                                <!-- /.portfolio_item -->
-                                <div class="portfolio_dropdown portfolio_dropdown--NEO">
-                                    <div class="portfolio_graph">
-                                        <img src="img/graph.png" alt="">
-                                    </div>
-                                    <div class="portfolio_table-wrapper">
-                                        <table class="portfolio_markets">
-                                            <tr class="portfolio_markets-table-head">
-                                                <th class="portfolio_markets-table-market">
-                                                    <span>Биржа</span>
-                                                </th>
-                                                <th class="portfolio_markets-table-price">
-                                                    <span>Цена</span>
-                                                </th>
-                                                <th class="portfolio_markets-table-volume">
-                                                    <span>Объём</span>
-                                                </th>
-                                                <th class="portfolio_markets-table-button">
-                                                </th>
-                                            </tr>
-                                            <!-- /.portfolio_markets-table-head -->
-                                            <tr class="portfolio_market">
-                                                <td class="portfolio_market-name">
-                                                    <img src="img/kraken-logo-small.png" alt="">
-                                                </td>
-                                                <td class="portfolio_market-price">
-                                                    <span><b>$</b> 4.36</span>
-                                                </td>
-                                                <td class="portfolio_market-volume">
-                                                    <span><b>$</b> 10 010 000</span>
-                                                </td>
-                                                <td class="portfolio_market-button">
-                                                    <a href="#" class="btn btn-primary">Торговать</a>
-                                                </td>
-                                            </tr>
-                                            <!-- /.portfolio_market -->
-                                            <tr class="portfolio_market">
-                                                <td class="portfolio_market-name">
-                                                    <img src="img/poloniex-log.png" alt="">
-                                                </td>
-                                                <td class="portfolio_market-price">
-                                                    <span><b>$</b> 4.34</span>
-                                                </td>
-                                                <td class="portfolio_market-volume">
-                                                    <span><b>$</b> 156 011 000</span>
-                                                </td>
-                                                <td class="portfolio_market-button">
-                                                    <a href="#" class="btn btn-primary">Торговать</a>
-                                                </td>
-                                            </tr>
-                                            <!-- /.portfolio_market -->
-                                            <tr class="portfolio_market">
-                                                <td class="portfolio_market-name">
-                                                    <img src="img/bittrex-logo.png" alt="">
-                                                </td>
-                                                <td class="portfolio_market-price">
-                                                    <span><b>$</b> 4.32</span>
-                                                </td>
-                                                <td class="portfolio_market-volume">
-                                                    <span><b>$</b> 10 010 000</span>
-                                                </td>
-                                                <td class="portfolio_market-button">
-                                                    <a href="#" class="btn btn-primary">Торговать</a>
-                                                </td>
-                                            </tr>
-                                            <!-- /.portfolio_market -->
-                                            <tr class="portfolio_market">
-                                                <td class="portfolio_market-name">
-                                                    <img src="img/huobi-logo.png" alt="">
-                                                </td>
-                                                <td class="portfolio_market-price">
-                                                    <span><b>$</b> 4.22</span>
-                                                </td>
-                                                <td class="portfolio_market-volume">
-                                                    <span><b>$</b> 93 B</span>
-                                                </td>
-                                                <td class="portfolio_market-button">
-                                                    <a href="#" class="btn btn-primary">Торговать</a>
-                                                </td>
-                                            </tr>
-                                            <!-- /.portfolio_market -->
-                                        </table>
-                                        <!-- /.table -->
-                                    </div>
-                                    <!-- /.portfolio_table-wrapper -->
-                                </div>
-                                <!-- /.portfolio_item-dropdown -->
-                            </div>
-                            <!-- /.portfolio_item-wrapper -->
                         </div>
                         <!-- /.portfolio_list -->
                         <div class="portfolio_button portfolio_button--bottom">
@@ -654,7 +770,10 @@
           <!-- /.footer-terms -->
       </footer>
       <!-- /.footer -->
+      <div class="portfolio_item-wrapper">
 
+      </div>
+      <!-- /.portfolio_item-wrapper -->
 
       <!-- Bootstrap core JavaScript ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->

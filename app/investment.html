@@ -11,7 +11,7 @@
 
     <!-- Bootstrap grid CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
@@ -324,7 +324,7 @@
 
                                           <div class="portfolio_form">
                                               <a href="#" class="btn btn-add-record">Add Record</a>
-                                              <form action="#" class="add-coin-form">
+                                              <form action="#" class="add-coin-form add-coin-form--hidden">
 
                                                       <div class="add-coin-form_wrapper">
                                                           <div class="add-coin-form_name">
@@ -459,7 +459,7 @@
                                       <td colspan="7">
 
                                           <div class="portfolio_form">
-                                              <a href="#" class="btn btn-add-record">Add Record</a>
+                                              <a href="#" class="btn btn-add-record btn-add-record--active">Add Record</a>
                                               <form action="#" class="add-coin-form">
 
                                                       <div class="add-coin-form_wrapper">
@@ -551,67 +551,45 @@
                         </div>
                         <!-- /.portfolio_list -->
                         <div class="portfolio_button portfolio_button--bottom">
-                            <a href="#" class="btn">Добавить/убрать монету</a>
+                            <a href="#" class="btn">Add/Delete Coin</a>
                         </div>
                         <div class="portfolio_history">
-                            <h3>история изменений</h3>
-                            <div class="history_items">
-                                <div class="history_item history_item--deleted">
+                            <h3>Change history</h3>
+                            <ul class="history_items">
+                                <li class="history_item history_item--sold">
                                     <div class="history_item-data">
                                         <span class="history_item-name">MiniApps</span>
-                                        <span class="history_item-result">– 13 MAP</span>
-                                        <span class="history_item-usd"></span>
-                                    </div>
-                                    <div class="history_item-data">
+                                        <span class="history_item-amount">
+                                            – 13 MAP
+                                            <span class="history_item-amount-usd">($ 790.61)</span>
+                                        </span>
                                         <span class="history_item-time">Удалено 7 минут назад</span>
                                     </div>
-                                    <div class="history_item-data">
-                                        <a href="#" class="history_item-restore">Восстановить</a>
-                                    </div>
-                                </div>
+                                </li>
                                 <!-- /.history-item -->
-                                <div class="history_item history_item--added">
-                                    <div class="history_item-data">
-                                        <span class="history_item-name">DigiCash</span>
-                                        <span class="history_item-result">+ 871 DASH</span>
-                                        <span class="history_item-usd">($ 790.61)</span>
-                                    </div>
-                                    <div class="history_item-data">
-                                        <span class="history_item-time">Добавлено 11 минут назад</span>
-                                    </div>
-                                    <div class="history_item-data">
-                                        <a href="#" class="history_item-restore"></a>
-                                    </div>
-                                </div>
-                                <div class="history_item history_item--added">
-                                    <div class="history_item-data">
-                                        <span class="history_item-name">NEO</span>
-                                        <span class="history_item-result">+ 305 NEO</span>
-                                        <span class="history_item-usd">($ 55.12)</span>
-                                    </div>
-                                    <div class="history_item-data">
-                                        <span class="history_item-time">Добавлено 1 час назад</span>
-                                    </div>
-                                    <div class="history_item-data">
-                                        <a href="#" class="history_item-restore"></a>
-                                    </div>
-                                </div>
-                                <!-- /.history-item -->
-                                <div class="history_item history_item--added">
+                                <li class="history_item history_item--bought">
                                     <div class="history_item-data">
                                         <span class="history_item-name">MiniApps</span>
-                                        <span class="history_item-result">– 13 MAP</span>
-                                        <span class="history_item-usd"></span>
-                                    </div>
-                                    <div class="history_item-data">
+                                        <span class="history_item-amount">
+                                            + 13 MAP
+                                            <span class="history_item-amount-usd">($ 790.61)</span>
+                                        </span>
                                         <span class="history_item-time">Удалено 7 минут назад</span>
                                     </div>
-                                    <div class="history_item-data">
-                                        <a href="#" class="history_item-restore">Восстановить</a>
-                                    </div>
-                                </div>
+                                </li>
                                 <!-- /.history-item -->
-                            </div>
+                                <li class="history_item history_item--bought">
+                                    <div class="history_item-data">
+                                        <span class="history_item-name">MiniApps</span>
+                                        <span class="history_item-amount">
+                                            + 13 MAP
+                                            <span class="history_item-amount-usd">($ 790.61)</span>
+                                        </span>
+                                        <span class="history_item-time">Удалено 7 минут назад</span>
+                                    </div>
+                                </li>
+                                <!-- /.history-item -->
+                            </ul>
                             <!-- /.history-items -->
                         </div>
                         <!-- /.portfilio_history -->

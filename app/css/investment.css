@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /* font-family: "RobotoRegular"; */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face {
   font-family: "RobotoRegular";
   src: url("../fonts/RobotoRegular/RobotoRegular.eot");
@@ -382,7 +384,45 @@
   width: 20%;
 }
 .portfolio_list-head-item--percent {
+  position: relative;
   width: 6%;
+}
+.portfolio_list-head-item--percent .arrow {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.portfolio_list-head-item--percent .arrow::before {
+  content: "";
+  display: inline-block;
+  border: 5px solid #c5d0de;
+  border-right-width: 4px;
+  border-left-width: 4px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.portfolio_list-head-item--percent .arrow--active::before {
+  content: "";
+  display: inline-block;
+  border: 5px solid #8f96a1;
+  border-right-width: 4px;
+  border-left-width: 4px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.portfolio_list-head-item--percent .arrow-up {
+  top: 21px;
+  right: 25px;
+}
+.portfolio_list-head-item--percent .arrow-up::before {
+  border-bottom-width: 0;
+}
+.portfolio_list-head-item--percent .arrow-down {
+  top: 14px;
+  right: 25px;
+}
+.portfolio_list-head-item--percent .arrow-down::before {
+  border-top-width: 0;
 }
 .portfolio_list-head-item--price {
   width: 12%;
@@ -527,13 +567,12 @@
 .portfolio_item-24hour {
   width: 10%;
   display: table-cell;
-  text-align: center;
   padding: 12px 12px 20px;
   border-right: 1px solid #e9ecee;
   border-left: 1px solid #e9ecee;
 }
 .portfolio_item-24hour b {
-  padding: 3px 6px 2px;
+  padding: 2px 8px 2px;
   color: #8f96a1;
   border-radius: 9px;
   border: 1px solid #8f96a1;
@@ -545,7 +584,7 @@
 .portfolio_item-24hour span {
   position: relative;
   margin: auto;
-  padding-left: 10px;
+  padding-left: 18px;
   color: #707986;
   font-family: "RobotoRegular";
   font-size: 14px;
@@ -556,12 +595,15 @@
   position: absolute;
   width: 20px;
   height: 16px;
-  left: -14px;
-  top: 0px;
+  left: -4px;
+  top: 3px;
   background-image: url('../img/triangle-green.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
+}
+.portfolio_item-24hour--down span::before {
+  background-image: url('../img/triengle-red.svg');
 }
 .portfolio_item-24hour--negative span::before {
   content: "";
@@ -730,6 +772,7 @@
   background-color: #ffffff;
 }
 .portfolio_form .add-coin-form_amount {
+  position: relative;
   margin-right: 30px;
   display: flex;
   flex-direction: column;
@@ -745,6 +788,53 @@
   border-radius: 4px;
   border: 1px solid #c5d0de;
   background-color: #ffffff;
+}
+.portfolio_form .add-coin-form_amount .count {
+  position: absolute;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: #c5d0de;
+  cursor: pointer;
+}
+.portfolio_form .add-coin-form_amount .count--down {
+  top: 44px;
+  right: 9px;
+}
+.portfolio_form .add-coin-form_amount .count--down::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background-color: #fff;
+  top: 4px;
+  left: 2px;
+}
+.portfolio_form .add-coin-form_amount .count:hover {
+  background-color: #8f96a1;
+}
+.portfolio_form .add-coin-form_amount .count--up {
+  top: 32px;
+  right: 9px;
+}
+.portfolio_form .add-coin-form_amount .count--up::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background-color: #fff;
+  top: 4px;
+  left: 2px;
+}
+.portfolio_form .add-coin-form_amount .count--up::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background-color: #fff;
+  top: 4px;
+  left: 2px;
+  transform: rotate(90deg);
 }
 .portfolio_form .add-coin-form_price {
   position: relative;
@@ -853,7 +943,7 @@
   width: 17px;
   height: 17px;
   left: 0px;
-  top: 0px;
+  top: -1px;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -862,13 +952,13 @@
   color: #ff3657;
 }
 .portfolio_history .history_item--sold::before {
-  background-image: url('../img/deleted.svg');
+  background-image: url('../img/sold.svg');
 }
 .portfolio_history .history_item--bought .history_item-amount {
   color: #44af36;
 }
 .portfolio_history .history_item--bought::before {
-  background-image: url('../img/added.svg');
+  background-image: url('../img/bought.svg');
 }
 .portfolio_history .history_item-data {
   display: flex;
@@ -1006,8 +1096,8 @@ table .tbody tr td:first-child .bought::before {
   width: 17px;
   height: 17px;
   left: -1px;
-  top: 1px;
-  background-image: url('../img/added.svg');
+  top: 2px;
+  background-image: url('../img/bought.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -1023,8 +1113,8 @@ table .tbody tr td:first-child .sold::before {
   width: 17px;
   height: 17px;
   left: -1px;
-  top: 1px;
-  background-image: url('../img/added.svg');
+  top: 2px;
+  background-image: url('../img/sold.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -1063,8 +1153,8 @@ table .tbody tr td .edit::before {
   width: 12px;
   height: 12px;
   left: -1px;
-  top: -1px;
-  background-image: url('../img/edit.svg');
+  top: 0px;
+  background-image: url('../img/edit-green.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -1084,7 +1174,7 @@ table .tbody tr td .delete::before {
   height: 12px;
   left: -1px;
   top: 0px;
-  background-image: url('../img/delete-icon.svg');
+  background-image: url('../img/delete-grey.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;

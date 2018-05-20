@@ -61,6 +61,7 @@
 }
 .portfolio-view_filter label {
   text-align: center;
+  margin-bottom: 0;
 }
 .portfolio-view_filter label:first-child b {
   border-radius: 2px 0 0 2px;

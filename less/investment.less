@@ -1,7 +1,5 @@
 @import "vars";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 .portfolio-view {
     margin-top: 32px;
     &_filter {
@@ -31,7 +29,8 @@
     			color: #525c6c;
     			background-color: #fff;
     			border: 1px solid #c5d0de;
-    			font-family: "RobotoMedium";
+    			font-family: @main-font;
+                font-weight: 500;
     			font-size: 11px;
     			line-height: 12px;
     		}
@@ -45,7 +44,8 @@
         a {
             position: relative;
             color: #333f52;
-            font-family: "RobotoRegular";
+            font-family: @main-font;
+            font-weight: 400;
             font-size: 14px;
             line-height: 18px;
             &::before {
@@ -83,7 +83,8 @@
                 display: inline-block;
                 padding: 14px 0;
                 color: #707986;
-                font-family: "RobotoRegular";
+                font-family: @main-font;
+                font-weight: 400;;
                 font-size: 20px;
                 line-height: 18px;
             }
@@ -100,7 +101,8 @@
                 }
                 a {
                     color: #333f52;
-                    font-family: "RobotoMedium";
+                    font-family: @main-font;
+                    font-weight: 500;
                 }
             }
             &--private {
@@ -127,7 +129,8 @@
             padding-left: 26px;
             position: relative;
             color: #45af37;
-            font-family: "RobotoRegular";
+            font-family: @main-font;
+            font-weight: 400;
             font-size: 14px;
             line-height: 12px;
             text-decoration: underline;
@@ -155,8 +158,8 @@
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
             color: #ffffff;
             font-family: @main-font;
+            font-weight: 500;
             font-size: 13px;
-            font-family: "RobotoMedium";
             line-height: 11px;
             letter-spacing: -0.22px;
             &::before {
@@ -187,7 +190,8 @@
         a {
             position: relative;
             color: @main-color;
-            font-family: "RobotoRegular";
+            font-family: @main-font;
+            font-weight: 400;
             font-size: 14px;
             line-height: 18px;
             text-decoration: underline;
@@ -214,7 +218,8 @@
         &-price {
             margin-bottom: 9px;
             color: #707986;
-            font-family: "RobotoMedium";
+            font-family: @main-font;
+            font-weight: 500;
             font-size: 11px;
             line-height: 11px;
             letter-spacing: 0.3px;
@@ -222,7 +227,8 @@
         &-usd {
             margin-bottom: 4px;
             color: #333f52;
-            font-family: "RobotoBold";
+            font-family: @main-font;
+            font-weight: 700;
             font-size: 24px;
             line-height: 24px;
             letter-spacing: -0.5px;
@@ -230,7 +236,8 @@
         &-btc {
             opacity: 0.6;
             color: #525c6c;
-            font-family: "RobotoMedium";
+            font-family: @main-font;
+            font-weight: 500;
             font-size: 11px;
             line-height: 12px;
             text-transform: uppercase;
@@ -243,7 +250,8 @@
         &-24hours {
             margin-bottom: 9px;
             color: #707986;
-            font-family: "RobotoMedium";
+            font-family: @main-font;
+            font-weight: 500;
             font-size: 11px;
             line-height: 11px;
             letter-spacing: 0.3px;
@@ -253,7 +261,8 @@
             padding-left: 15px;
             margin-bottom: 4px;
             color: @accent-color;
-            font-family: "RobotoRegular";
+            font-family: @main-font;
+            font-weight: 400;
             font-size: 24px;
             line-height: 24px;
             letter-spacing: -0.5px;
@@ -277,7 +286,8 @@
         &-usd {
             opacity: 0.6;
             color: #525c6c;
-            font-family: "RobotoMedium";
+            font-family: @main-font;
+            font-weight: 500;
             font-size: 11px;
             line-height: 11px;
         }
@@ -294,7 +304,8 @@
             background-image: linear-gradient(180deg, #358c29 0%, #45af36 100%);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
             color: #ffffff;
-            font-family: "RobotoMedium";
+            font-family: @main-font;
+            font-weight: 500;
             font-size: 13px;
             line-height: 11px;
             letter-spacing: -0.22px;
@@ -323,7 +334,7 @@
         width: 100%;
         background-color: #e0e6ed;
         border-bottom: 2px solid #c5d0de;
-        &-item {
+        &-cell {
             display: table-cell;
             padding: 18px 12px 14px 12px;
             border-right: 1px solid #e9ecee;
@@ -332,72 +343,73 @@
             }
             span {
                 color: #525c6c;
-                font-family: "RobotoRegular";
+                font-family: @main-font;
+                font-weight: 400;
                 font-size: 13px;
                 line-height: 13px;
             }
-            &--name {
-                padding: 18px 12px 14px 22px;
-                width: 20%;
-            }
-            &--amount {
-                width: 20%;
-            }
-            &--percent {
-                position: relative;
-                width: 6%;
-                .arrow {
-                    display: block;
-                    position: absolute;
-                    cursor: pointer;
+        }
+        &-name {
+            padding: 18px 12px 14px 22px;
+            width: 20%;
+        }
+        &-amount {
+            width: 20%;
+        }
+        &-percent {
+            position: relative;
+            width: 6%;
+            .arrow {
+                display: block;
+                position: absolute;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    border: 5px solid #c5d0de;
+                    border-right-width: 4px;
+                    border-left-width: 4px;
+                    border-right-color: transparent;
+                    border-left-color: transparent;
+                }
+                &--active {
                     &::before {
                         content: "";
                         display: inline-block;
-                        border: 5px solid #c5d0de;
+                        border: 5px solid #8f96a1;
                         border-right-width: 4px;
                         border-left-width: 4px;
                         border-right-color: transparent;
                         border-left-color: transparent;
                     }
-                    &--active {
-                        &::before {
-                            content: "";
-                            display: inline-block;
-                            border: 5px solid #8f96a1;
-                            border-right-width: 4px;
-                            border-left-width: 4px;
-                            border-right-color: transparent;
-                            border-left-color: transparent;
-                        }
-                    }
-                }
-                .arrow-up {
-                    top:21px;
-                    right: 25px;
-                    &::before {
-                        border-bottom-width: 0;
-                    }
-                }
-                .arrow-down {
-                    top: 14px;
-                    right: 25px;
-                    &::before {
-                        border-top-width: 0;
-                    }
                 }
             }
-            &--price {
-                width: 12%;
+            .arrow-up {
+                top:21px;
+                right: 25px;
+                &::before {
+                    border-bottom-width: 0;
+                }
             }
-            &--24hour {
-                width: 10%;
+            .arrow-down {
+                top: 14px;
+                right: 25px;
+                &::before {
+                    border-top-width: 0;
+                }
             }
-            &--capitalizations {
-                width: 13%;
-            }
-            &--volume {
-                width: 19%;
-            }
+        }
+        &-price {
+            width: 12%;
+        }
+        &-24hour {
+            width: 10%;
+        }
+        &-capitalizations {
+            width: 13%;
+        }
+        &-volume {
+            width: 19%;
         }
     }
     &_item {
@@ -407,6 +419,13 @@
         position: relative;
         background-color: #fafbfc;
         //height: 52px;
+        &-cell {
+            padding: 14px 12px;
+            border-right: 1px solid #e9ecee;
+            &:last-child {
+                border-right: none;
+            }
+        }
         &:hover {
             background-color: #fff;
             box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
@@ -424,16 +443,17 @@
             position: relative;
             display: table-cell;
             padding: 0px 10px 0 24px;
-            border-right: 1px solid #e9ecee;
             span {
                 color: #333f52;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 14px;
                 line-height: 14px;
                 letter-spacing: -0.2px;
             }
             b {
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 color: #8f96a1;
                 letter-spacing: -0.2px;
             }
@@ -490,22 +510,21 @@
         &-amount {
             width: 20%;
             display: table-cell;
-            padding: 12px 12px 20px;
-            border-right: 1px solid #e9ecee;
             &-wrapper {
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
             }
             span {
                 color: #333f52;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
                 text-transform: uppercase;
             }
             b {
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 12px;
             }
         }
@@ -518,12 +537,11 @@
             width: 6%;
             display: table-cell;
             text-align: center;
-            padding: 12px 12px 20px;
-            border-right: 1px solid #e9ecee;
             span {
                 //margin: auto;
                 color: #333f52;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
             }
@@ -531,19 +549,21 @@
         &-price {
             width: 12%;
             display: table-cell;
-            padding: 12px 12px 3px;
+            padding: 14px 12px 0px 12px;
             &-usd {
                 display: block;
                 white-space: nowrap;
                 color: #333f52;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
             }
             &-bts {
                 opacity: 0.6;
                 color: #8f96a1;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 9px;
                 line-height: 12px;
                 text-transform: uppercase;
@@ -552,15 +572,13 @@
         &-24hour {
             width: 10%;
             display: table-cell;
-            padding: 12px 12px 20px;
-            border-right: 1px solid #e9ecee;
-            border-left: 1px solid #e9ecee;
             b {
                 padding: 2px 8px 2px;
                 color: #8f96a1;
                 border-radius: 9px;
                 border: 1px solid #8f96a1;
-                font-family: "RobotoBold";
+                font-family: @main-font;
+                font-weight: 700;
                 font-size: 11px;
                 line-height: 11px;
                 text-transform: uppercase;
@@ -570,7 +588,8 @@
                 margin: auto;
                 padding-left: 18px;
                 color: #707986;
-                font-family: "RobotoRegular";
+                font-family: @main-font;
+                font-weight: 400;
                 font-size: 14px;
                 line-height: 16px;
                 &::before {
@@ -599,11 +618,10 @@
         &-capitalizations {
             width: 13%;
             display: table-cell;
-            padding: 12px 12px 20px;
-            border-right: 1px solid #e9ecee;
             span {
                 color: #707986;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
                 text-transform: uppercase;
@@ -615,7 +633,7 @@
         &-volume {
             width: 19%;
             display: table-cell;
-            padding: 12px 17px 20px 12px;
+            padding: 14px 22px 14px 12px;
             &-wrapper {
                 display: flex;
                 align-items: center;
@@ -623,7 +641,8 @@
             }
             span {
                 color: #707986;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
                 text-transform: uppercase;
@@ -681,7 +700,8 @@
         h3 {
             margin-bottom: 16px;
             color: #525c6c;
-            font-family: "RobotoBold";
+            font-family: @main-font;
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
         }
@@ -694,7 +714,8 @@
             text-align: left;
             label {
                 color: #333f52;
-                font-family: "RobotoRegular";
+                font-family: @main-font;
+                font-weight: 400;
                 font-size: 14px;
                 line-height: 16px;
             }
@@ -715,7 +736,8 @@
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
                     background-color: @accent-color;
                     color: #ffffff;
-                    font-family: "RobotoMedium";
+                    font-family: @main-font;
+                    font-weight: 500;
                     font-size: 14px;
                     line-height: 14px;
                 }
@@ -742,7 +764,8 @@
                     max-width: 264px;
                     padding: 10px 32px 8px 12px;
                     color: #525c6c;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     font-size: 15px;
                     line-height: 16px;
                     text-transform: uppercase;
@@ -762,7 +785,8 @@
                     width: 104px;
                     height: 36px;
                     font-size: 15px;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     line-height: 16px;
                     text-transform: uppercase;
                     border-radius: 4px;
@@ -840,7 +864,8 @@
                 &-ico {
                     margin-right: 16px;
                     color: @main-color;
-                    font-family: "RobotoBold";
+                    font-family: @main-font;
+                    font-weight: 700;
                     font-size: 10px;
                     line-height: 16px;
                     text-transform: uppercase;
@@ -849,7 +874,8 @@
                 }
                 &-market {
                     color: #8f96a1;
-                    font-family: "RobotoBold";
+                    font-family: @main-font;
+                    font-weight: 700;
                     font-size: 10px;
                     line-height: 16px;
                     text-transform: uppercase
@@ -859,7 +885,8 @@
                     width: 154px;
                     height: 36px;
                     font-size: 15px;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     line-height: 16px;
                     text-transform: uppercase;
                     border-radius: 4px 0 0 4px;
@@ -870,7 +897,8 @@
                     margin-left: -1px;
                     padding: 0px 32px 0px 12px;
                     color: #525c6c;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     font-size: 15px;
                     line-height: 15px;
                     text-transform: uppercase;
@@ -886,7 +914,8 @@
                 margin-right: auto;;
                 span {
                     color: #333f52;
-                    font-family: "RobotoMedium";
+                    font-family: @main-font;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 37px;
                     white-space: nowrap;
@@ -909,7 +938,8 @@
             margin-bottom: 20px;
             color: #707986;
             font-size: 14px;
-            font-family: "RobotoBold";
+            font-family: @main-font;
+            font-weight: 700;
             line-height: 18px;
             text-transform: uppercase;
             letter-spacing: 1.3px;
@@ -956,7 +986,8 @@
             }
             &-name {
                 color: #525c6c;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 14px;
                 line-height: 16px;
             }
@@ -964,14 +995,16 @@
                 display: flex;
                 align-items: center;
                 color: #333f52;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
                 text-transform: uppercase;
                 &-usd {
                     margin-left: 6px;
                     color: #8f96a1;
-                    font-family: "RobotoMedium";
+                    font-family: @main-font;
+                    font-weight: 500;
                     font-size: 12px;
                     line-height: 12px;
                     letter-spacing: -0.15px;
@@ -979,13 +1012,15 @@
             }
             &-time {
                 color: #707986;
-                font-family: "RobotoRegular";
+                font-family: @main-font;
+                font-weight: 400;
                 font-size: 12px;
                 line-height: 16px;
             }
             &-restore {
                 color: @main-color;
-                font-family: "RobotoRegular";
+                font-family: @main-font;
+                font-weight: 400;
                 font-size: 12px;
                 line-height: 12px;
                 text-decoration: underline;
@@ -1068,7 +1103,8 @@ table {
                     border-right: 1px solid #e9ecee;
                     span {
                         color: #525c6c;
-                        font-family: "RobotoRegular";
+                        font-family: @main-font;
+                        font-weight: 400;
                         font-size: 13px;
                         line-height: 12px;
                     }
@@ -1142,7 +1178,8 @@ table {
                 }
                 span {
                     color: #333f52;
-                    font-family: "RobotoMedium";
+                    font-family: @main-font;
+                    font-weight: 500;;
                     font-size: 16px;
                     line-height: 16px;
                     b {
@@ -1155,7 +1192,8 @@ table {
                     margin-right: 28px;
                     padding-left: 15px;
                     color: #45af37;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     font-size: 12px;
                     line-height: 12px;
                     text-decoration: underline;
@@ -1177,7 +1215,8 @@ table {
                     position: relative;
                     padding-left: 15px;
                     color: #8f96a1;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     font-size: 10px;
                     line-height: 14px;
                     &::before {
@@ -1209,7 +1248,8 @@ table {
                 background-color: #45af37;
                 text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
                 color: #ffffff;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 14px;
                 line-height: 11px;
                 letter-spacing: -0.23px;
@@ -1220,7 +1260,8 @@ table {
                     background-color: #8f96a1;
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
                     color: #ffffff;
-                    font-family: "RobotoMedium";
+                    font-family: @main-font;
+                    font-weight: 500;
                     font-size: 14px;
                     line-height: 11px;
                     letter-spacing: -0.23px;
@@ -1234,7 +1275,8 @@ table {
             td {
                 padding: 12px 12px 12px 12px;
                 color: #707986;
-                font-family: "RobotoMedium";
+                font-family: @main-font;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 16px;
                 b {
@@ -1257,7 +1299,8 @@ table {
                 border-bottom: 1px solid #e9ecee;
                 td {
                     color: #525c6c;
-                    font-family: "RobotoRegular";
+                    font-family: @main-font;
+                    font-weight: 400;
                     font-size: 13px;
                     line-height: 12px;
                     &:nth-child(2) {
@@ -1286,7 +1329,8 @@ table {
             box-shadow: 0 1px 0 #1175c0;
             color: #fff;
             font-size: 11px;
-            font-family: "RobotoMedium";
+            font-family: @main-font;
+            font-weight: 500;
             line-height: 11px;
             &::before {
                 content: "";

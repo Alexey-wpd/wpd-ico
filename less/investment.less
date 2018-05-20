@@ -326,6 +326,9 @@
             display: table-cell;
             padding: 18px 12px 14px 12px;
             border-right: 1px solid #e9ecee;
+            &:last-child {
+                border-right: none;
+            }
             span {
                 color: #525c6c;
                 font-family: "RobotoRegular";
@@ -403,8 +406,12 @@
         position: relative;
         background-color: #fafbfc;
         //height: 52px;
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
+        }
         &--active {
-            border-top: 1px solid #e9ecee;
+            box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
             background-color: #fff;
         }
         &-logo {
@@ -433,7 +440,7 @@
                 content: "";
                 position: absolute;
                 width: 4px;
-                height: 97%;
+                height: 98%;
                 left: 0px;
                 top: 0px;
                 z-index: 11;
@@ -578,26 +585,12 @@
         			z-index: 11;
         		}
             }
-            &--down {
-                span {
-                    &::before {
-                        background-image: @img-triengle-red;
-                    }
-                }
-            }
             &--negative {
                 span {
                     &::before {
-            			content: "";
-            			position: absolute;
-            			width: 20px;
-            			height: 16px;
-            			left: -14px;
-            			top: 0px;
+                        left: -4px;
+            			top: 3px;
             			background-image: @img-triengle-red;
-            			background-position: center;
-            			background-repeat: no-repeat;
-            			z-index: 11;
             		}
                 }
             }

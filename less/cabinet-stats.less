@@ -1,1 +1,221 @@
 @import "vars";
+
+.ico-stats {
+    &_header {
+        padding: 32px 0 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            margin-bottom: 4px;
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+        span {
+            color: #707986;
+            font-family: @main-font;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+    &_table {
+        width: 100%;
+        margin-bottom: 52px;
+        box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+        border-radius: 4px;
+        background-color: #fafbfc;
+        &-header {
+            background-color: #e0e6ed;
+            border-bottom: 2px solid #c5d0de;
+            &-cell {
+                padding: 18px 12px 14px;
+                border-right: 1px solid #e9ecee;
+                &:last-child {
+                    border-right: none;
+                }
+                &--name {
+                    padding-left: 22px;
+                    width: 23%;
+                }
+                &--24h {
+                    width: 11%;
+                }
+                &--roi {
+                    width: 12%;
+                }
+                &--date {
+                    width: 15%;
+                }
+                &--price {
+                    width: 13%;
+                }
+                span {
+                    color: #525c6c;
+                    font-family: @main-font;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+    &_item {
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
+        }
+        &-cell {
+            padding: 14px 12px;
+            border-right: 1px solid #e9ecee;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        &-logo {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        &-name {
+            position: relative;
+            span {
+                color: #333f52;
+                font-family: "RobotoMedium";
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: -0.2px;
+            }
+            b {
+                font-family: "RobotoMedium";
+                color: #8f96a1;
+                letter-spacing: -0.2px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 98%;
+                left: 0px;
+                top: 0px;
+                z-index: 11;
+            }
+            &--bts {
+                &::before {
+                    background-color: #8f5bc0;
+                }
+            }
+            &--MON {
+                &::before {
+                    background-color: #c28f58;
+                }
+            }
+            &--OPA {
+                &::before {
+                    background-color: #429db0;
+                }
+            }
+            &--EOS {
+                &::before {
+                    background-color: #ffa635;
+                }
+            }
+            &--XMR {
+                &::before {
+                    background-color: #6982fc;
+                }
+            }
+            &--DASH {
+                &::before {
+                    background-color: #ff6d71;
+                }
+            }
+            &--NEO {
+                &::before {
+                    background-color: #bcbdbc;
+                }
+            }
+            &--ETH {
+                &::before {
+                    background-color: #85b222;
+                }
+            }
+        }
+        &-24h,
+        &-roi-week,
+        &-roi-month {
+            b {
+                padding: 2px 8px 2px;
+                color: #8f96a1;
+                border-radius: 9px;
+                border: 1px solid #8f96a1;
+                font-family: "RobotoBold";
+                font-size: 11px;
+                line-height: 11px;
+                text-transform: uppercase;
+            }
+            span {
+                position: relative;
+                margin: auto;
+                padding-left: 18px;
+                color: #707986;
+                font-family: "RobotoRegular";
+                font-size: 14px;
+                line-height: 16px;
+                &::before {
+        			content: "";
+        			position: absolute;
+        			width: 20px;
+        			height: 16px;
+        			left: -4px;
+        			top: 3px;
+        			background-image: @img-triangle-green;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+        		}
+            }
+            &--negative {
+                span {
+                    &::before {
+                        left: -4px;
+            			top: 3px;
+            			background-image: @img-triengle-red;
+            		}
+                }
+            }
+        }
+        &-date {
+            span {
+                color: #707986;
+                font-family: @main-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: -0.2px;
+            }
+        }
+        &-price,
+        &-current-price {
+            padding: 12px 12px 0px 12px;
+            &-usd {
+                display: block;
+                white-space: nowrap;
+                color: #333f52;
+                font-family: "RobotoMedium";
+                font-size: 16px;
+                line-height: 16px;
+            }
+            &-btc {
+                opacity: 0.6;
+                color: #8f96a1;
+                font-family: "RobotoMedium";
+                font-size: 9px;
+                line-height: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -368,7 +368,7 @@
 }
 .portfolio_list-head-item {
   display: table-cell;
-  padding: 17px 12px;
+  padding: 18px 12px 14px 12px;
   border-right: 1px solid #e9ecee;
 }
 .portfolio_list-head-item span {
@@ -378,6 +378,7 @@
   line-height: 13px;
 }
 .portfolio_list-head-item--name {
+  padding: 18px 12px 14px 22px;
   width: 20%;
 }
 .portfolio_list-head-item--amount {
@@ -888,7 +889,7 @@
 }
 .portfolio_form .add-coin-form_price select {
   margin-left: -1px;
-  padding: 10px 32px 8px 12px;
+  padding: 0px 32px 0px 12px;
   color: #525c6c;
   font-family: "RobotoRegular";
   font-size: 15px;

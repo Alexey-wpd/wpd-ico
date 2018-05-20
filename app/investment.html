@@ -255,27 +255,27 @@
                         <!-- /.portfolio_form -->
                         <div class="portfolio_list">
                             <div class="portfolio_list-head">
-                                <div class="portfolio_list-head-item portfolio_list-head-item--name">
+                                <div class="portfolio_list-head-cell portfolio_list-head-name">
                                     <span>Name</span>
                                 </div>
-                                <div class="portfolio_list-head-item portfolio_list-head-item--amount">
+                                <div class="portfolio_list-head-cell portfolio_list-head-amount">
                                     <span>Ammount</span>
                                 </div>
-                                <div class="portfolio_list-head-item portfolio_list-head-item--percent">
+                                <div class="portfolio_list-head-cell portfolio_list-head-percent">
                                     <span>%</span>
                                     <span class="arrow arrow-up"></span>
                                     <span class="arrow arrow-down arrow--active"></span>
                                 </div>
-                                <div class="portfolio_list-head-item portfolio_list-head-item--price">
+                                <div class="portfolio_list-head-cell portfolio_list-head-price">
                                     <span>Total Value</span>
                                 </div>
-                                <div class="portfolio_list-head-item portfolio_list-head-item--24hour">
+                                <div class="portfolio_list-head-cell portfolio_list-head-24hour">
                                     <span>24 Change</span>
                                 </div>
-                                <div class="portfolio_list-head-item portfolio_list-head-item--capitalizations">
+                                <div class="portfolio_list-head-cell portfolio_list-head-capitalizations">
                                     <span>Capitalization</span>
                                 </div>
-                                <div class="portfolio_list-head-item portfolio_list-head-item--volume">
+                                <div class="portfolio_list-head-cell portfolio_list-head-volume">
                                     <span>24H Volume</span>
                                 </div>
                             </div>
@@ -283,45 +283,88 @@
                             <table class="portfolio_item">
                                 <thead>
                                     <tr>
-                                      <th class="portfolio_item-name portfolio_item-name--bts"><div class="portfolio_item-logo">
+                                      <th class="portfolio_item-cell portfolio_item-name portfolio_item-name--bts">
+                                          <div class="portfolio_item-logo">
                                           <img src="img/btc-logo.png" alt="btc">
                                       </div>
                                       <span>Bitcoin · <b>BTC</b></span></th>
-                                      <th class="portfolio_item-amount"><div class="portfolio_item-amount-wrapper">
+                                      <th class="portfolio_item-cell portfolio_item-amount">
+                                          <div class="portfolio_item-amount-wrapper">
                                           <span>0.0013603 <b>BTC</b></span>
                                           <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
-                                      </div></th>
-                                      <th class="portfolio_item-percent"><span>31%</span></th>
-                                      <th class="portfolio_item-price"><span class="portfolio_item-price-usd">$ 7 619.89</span>
-                                      <span class="portfolio_item-price-bts">0.0013603 BTC</span></th>
-                                      <th class="portfolio_item-24hour portfolio_item-24hour--negative"><span>+5.44%</span></th>
-                                      <th class="portfolio_item-capitalizations"><span><b>$</b> 130.02 B</span></th>
-                                      <th class="portfolio_item-volume"><div class="portfolio_item-volume-wrapper">
+                                          </div>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-percent">
+                                          <span>31%</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-price">
+                                          <span class="portfolio_item-price-usd">$ 7 619.89</span>
+                                          <span class="portfolio_item-price-bts">0.0013603 BTC</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-24hour portfolio_item-24hour--negative">
+                                          <span>+5.44%</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-capitalizations">
+                                          <span><b>$</b> 130.02 B</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-volume">
+                                          <div class="portfolio_item-volume-wrapper">
                                           <span><b>$</b> 4.14 B</span>
                                           <a href="#" class="portfolio_item-dropdown js-thead-show"></a>
-                                      </div></th>
+                                          </div>
+                                      </th>
                                     </tr>
                                 </thead>
                                 <tbody class="tbody tbody--bts js-tbody">
                                     <tr>
-                                      <td><span>Operation</span></td>
-                                      <td><span>Quantity</span></td>
-                                      <td colspan="2"><span>Price</span></td>
-                                      <td colspan="3"><span>Price per coin</span></td>
+                                      <td>
+                                          <span>Operation</span>
+                                      </td>
+                                      <td>
+                                          <span>Quantity</span>
+                                      </td>
+                                      <td colspan="2">
+                                          <span>Price</span>
+                                      </td>
+                                      <td colspan="3">
+                                          <span>Price per coin</span>
+                                      </td>
                                     </tr>
                                     <tr>
-                                      <td><span class="bought">Bought</span></td>
-                                      <td><span>8290 <b>EOS</b></span></td>
-                                      <td colspan="2"><span><b>$</b> 15 456</span></td>
-                                      <td colspan="2"><span><b>$</b> 12 666</span></td>
-                                      <td><a href="#" class="edit">edit</a><a href="#" class="delete">delete</a></td>
-                                   </tr>
+                                      <td>
+                                          <span class="bought">Bought</span>
+                                      </td>
+                                      <td>
+                                          <span>8290 <b>EOS</b></span>
+                                      </td>
+                                      <td colspan="2">
+                                          <span><b>$</b> 15 456</span>
+                                      </td>
+                                      <td colspan="2">
+                                          <span><b>$</b> 12 666</span>
+                                      </td>
+                                      <td>
+                                          <a href="#" class="edit">edit</a>
+                                          <a href="#" class="delete">delete</a>
+                                      </td>
+                                    </tr>
                                     <tr>
-                                      <td><span class="sold">Sold</span></td>
-                                      <td><span>18 290 <b>EOS</b></span></td>
-                                      <td colspan="2"><span><b>$</b> 205 548</span></td>
-                                      <td colspan="2"><span><b>$</b> 546</span></td>
-                                      <td><a href="#" class="edit">edit</a><a href="#" class="delete">delete</a></td>
+                                      <td>
+                                          <span class="sold">Sold</span>
+                                      </td>
+                                      <td>
+                                          <span>18 290 <b>EOS</b></span>
+                                      </td>
+                                      <td colspan="2">
+                                          <span><b>$</b> 205 548</span>
+                                      </td>
+                                      <td colspan="2">
+                                          <span><b>$</b> 546</span>
+                                      </td>
+                                      <td>
+                                          <a href="#" class="edit">edit</a>
+                                          <a href="#" class="delete">delete</a>
+                                      </td>
                                     </tr>
                                     <tr>
                                       <td colspan="7">
@@ -384,33 +427,71 @@
                                               <img src="img/graph.png" alt="">
                                           </div>
                                       </td>
-                                      <td colspan="2"><span>Exchange</span></td>
-                                      <td><span>Price</span></td>
-                                      <td colspan="2"><span>Volume</span></td>
+                                      <td colspan="2">
+                                          <span>Exchange</span>
+                                      </td>
+                                      <td>
+                                          <span>Price</span>
+                                      </td>
+                                      <td colspan="2">
+                                          <span>Volume</span>
+                                      </td>
                                     </tr>
                                     <tr>
-                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
-                                      <td><span><b>$</b> 4.36</span></td>
-                                      <td><span><b>$</b> 10 010 000</span></td>
-                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                      <td colspan="2">
+                                          <img src="img/kraken-logo-small.png" alt="">
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 4.36</span>
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 10 010 000</span>
+                                      </td>
+                                      <td>
+                                          <a href="#" class="btn btn-trade">Trade</a>
+                                      </td>
                                     </tr>
                                     <tr>
-                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
-                                      <td><span><b>$</b> 4.36</span></td>
-                                      <td><span><b>$</b> 10 010 000</span></td>
-                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                      <td colspan="2">
+                                          <img src="img/kraken-logo-small.png" alt="">
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 4.36</span>
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 10 010 000</span>
+                                      </td>
+                                      <td>
+                                          <a href="#" class="btn btn-trade">Trade</a>
+                                      </td>
                                     </tr>
                                     <tr>
-                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
-                                      <td><span><b>$</b> 4.36</span></td>
-                                      <td><span><b>$</b> 10 010 000</span></td>
-                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                      <td colspan="2">
+                                          <img src="img/kraken-logo-small.png" alt="">
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 4.36</span>
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 10 010 000</span>
+                                      </td>
+                                      <td>
+                                          <a href="#" class="btn btn-trade">Trade</a>
+                                      </td>
                                     </tr>
                                     <tr>
-                                      <td colspan="2"><img src="img/kraken-logo-small.png" alt=""></td>
-                                      <td><span><b>$</b> 4.36</span></td>
-                                      <td><span><b>$</b> 10 010 000</span></td>
-                                      <td><a href="#" class="btn btn-trade">Trade</a></td>
+                                      <td colspan="2">
+                                          <img src="img/kraken-logo-small.png" alt="">
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 4.36</span>
+                                      </td>
+                                      <td>
+                                          <span><b>$</b> 10 010 000</span>
+                                      </td>
+                                      <td>
+                                          <a href="#" class="btn btn-trade">Trade</a>
+                                      </td>
                                       <tr>
                                         <td colspan="7"></td>
                                       </tr>
@@ -421,24 +502,37 @@
                             <table class="portfolio_item portfolio_item--active">
                                 <thead>
                                     <tr>
-                                      <th class="portfolio_item-name portfolio_item-name--NEO"><div class="portfolio_item-logo">
-                                          <img src="img/btc-logo.png" alt="btc">
-                                      </div>
-                                      <span>NEO  · <b>NEO </b></span></th>
-                                      <th class="portfolio_item-amount"><div class="portfolio_item-amount-wrapper">
-                                          <span>305 <b>NEO</b></span>
-                                          <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
-                                      </div></th>
-                                      <th class="portfolio_item-percent"><span>7%</span>
+                                      <th class="portfolio_item-cell portfolio_item-name portfolio_item-name--NEO">
+                                          <div class="portfolio_item-logo">
+                                              <img src="img/btc-logo.png" alt="btc">
+                                          </div>
+                                          <span>NEO  · <b>NEO </b></span>
                                       </th>
-                                      <th class="portfolio_item-price"><span class="portfolio_item-price-usd">$ 55.12</span>
-                                      <span class="portfolio_item-price-bts">0.0000000090 BTC</span></th>
-                                      <th class="portfolio_item-24hour portfolio_item-24hour--down"><b>ICO</b></th>
-                                      <th class="portfolio_item-capitalizations"><span><b>$</b> 3.71 B</span></th>
-                                      <th class="portfolio_item-volume"><div class="portfolio_item-volume-wrapper">
-                                          <span><b>$</b> 83.15 M</span>
-                                          <a href="#" class="portfolio_item-dropdown js-thead-show"></a>
-                                      </div></th>
+                                      <th class="portfolio_item-cell portfolio_item-amount">
+                                          <div class="portfolio_item-amount-wrapper">
+                                              <span>305 <b>NEO</b></span>
+                                              <a href="#" class="portfolio_item-edit" data-toggle="popover" data-placement="right"></a>
+                                          </div>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-percent">
+                                          <span>7%</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-price">
+                                          <span class="portfolio_item-price-usd">$ 55.12</span>
+                                          <span class="portfolio_item-price-bts">0.0000000090 BTC</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-24hour portfolio_item-24hour--down">
+                                          <b>ICO</b>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-capitalizations">
+                                          <span><b>$</b> 3.71 B</span>
+                                      </th>
+                                      <th class="portfolio_item-cell portfolio_item-volume">
+                                          <div class="portfolio_item-volume-wrapper">
+                                              <span><b>$</b> 83.15 M</span>
+                                              <a href="#" class="portfolio_item-dropdown js-thead-show"></a>
+                                          </div>
+                                      </th>
                                     </tr>
                                 </thead>
                                 <tbody class="tbody tbody--NEO js-tbody">

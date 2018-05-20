@@ -43,6 +43,11 @@
 		$(".js-choosing-form_list--hidden").slideToggle();
 	});
 
+	$(".js-thead-show").click(function() {
+		$(".js-tbody").slideToggle();
+		$(".js-tfoot").slideToggle();
+	});
+
 
 //============language==============================
 

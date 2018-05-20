@@ -4350,8 +4350,11 @@
 }
 .portfolio_list-head-item {
   display: table-cell;
-  padding: 17px 12px;
+  padding: 18px 12px 14px 12px;
   border-right: 1px solid #e9ecee;
+}
+.portfolio_list-head-item:last-child {
+  border-right: none;
 }
 .portfolio_list-head-item span {
   color: #525c6c;
@@ -4360,6 +4363,7 @@
   line-height: 13px;
 }
 .portfolio_list-head-item--name {
+  padding: 18px 12px 14px 22px;
   width: 20%;
 }
 .portfolio_list-head-item--amount {
@@ -4425,8 +4429,12 @@
   position: relative;
   background-color: #fafbfc;
 }
+.portfolio_item:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
+}
 .portfolio_item--active {
-  border-top: 1px solid #e9ecee;
+  box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
   background-color: #fff;
 }
 .portfolio_item-logo {
@@ -4456,7 +4464,7 @@
   content: "";
   position: absolute;
   width: 4px;
-  height: 97%;
+  height: 98%;
   left: 0px;
   top: 0px;
   z-index: 11;
@@ -4584,20 +4592,10 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.portfolio_item-24hour--down span::before {
-  background-image: url('../img/triengle-red.svg');
-}
 .portfolio_item-24hour--negative span::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 16px;
-  left: -14px;
-  top: 0px;
+  left: -4px;
+  top: 3px;
   background-image: url('../img/triengle-red.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
 }
 .portfolio_item-capitalizations {
   width: 13%;
@@ -4870,7 +4868,7 @@
 }
 .portfolio_form .add-coin-form_price select {
   margin-left: -1px;
-  padding: 10px 32px 8px 12px;
+  padding: 0px 32px 0px 12px;
   color: #525c6c;
   font-family: "RobotoRegular";
   font-size: 15px;
@@ -8668,6 +8666,205 @@ table tfoot .btn-trade::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
+}
+.ico-stats_header {
+  padding: 32px 0 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ico-stats_header h1 {
+  margin-bottom: 4px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.ico-stats_header span {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.ico-stats_table {
+  width: 100%;
+  margin-bottom: 52px;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+  border-radius: 4px;
+  background-color: #fafbfc;
+}
+.ico-stats_table-header {
+  background-color: #e0e6ed;
+  border-bottom: 2px solid #c5d0de;
+}
+.ico-stats_table-header-cell {
+  padding: 18px 12px 14px;
+  border-right: 1px solid #e9ecee;
+}
+.ico-stats_table-header-cell:last-child {
+  border-right: none;
+}
+.ico-stats_table-header-cell--name {
+  padding-left: 22px;
+  width: 23%;
+}
+.ico-stats_table-header-cell--24h {
+  width: 11%;
+}
+.ico-stats_table-header-cell--roi {
+  width: 12%;
+}
+.ico-stats_table-header-cell--date {
+  width: 15%;
+}
+.ico-stats_table-header-cell--price {
+  width: 13%;
+}
+.ico-stats_table-header-cell span {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.ico-stats_item:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
+}
+.ico-stats_item-cell {
+  padding: 14px 12px;
+  border-right: 1px solid #e9ecee;
+}
+.ico-stats_item-cell:last-child {
+  border-right: none;
+}
+.ico-stats_item-logo {
+  display: inline-block;
+  margin-right: 8px;
+}
+.ico-stats_item-name {
+  position: relative;
+}
+.ico-stats_item-name span {
+  color: #333f52;
+  font-family: "RobotoMedium";
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.2px;
+}
+.ico-stats_item-name b {
+  font-family: "RobotoMedium";
+  color: #8f96a1;
+  letter-spacing: -0.2px;
+}
+.ico-stats_item-name::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 98%;
+  left: 0px;
+  top: 0px;
+  z-index: 11;
+}
+.ico-stats_item-name--bts::before {
+  background-color: #8f5bc0;
+}
+.ico-stats_item-name--MON::before {
+  background-color: #c28f58;
+}
+.ico-stats_item-name--OPA::before {
+  background-color: #429db0;
+}
+.ico-stats_item-name--EOS::before {
+  background-color: #ffa635;
+}
+.ico-stats_item-name--XMR::before {
+  background-color: #6982fc;
+}
+.ico-stats_item-name--DASH::before {
+  background-color: #ff6d71;
+}
+.ico-stats_item-name--NEO::before {
+  background-color: #bcbdbc;
+}
+.ico-stats_item-name--ETH::before {
+  background-color: #85b222;
+}
+.ico-stats_item-24h b,
+.ico-stats_item-roi-week b,
+.ico-stats_item-roi-month b {
+  padding: 2px 8px 2px;
+  color: #8f96a1;
+  border-radius: 9px;
+  border: 1px solid #8f96a1;
+  font-family: "RobotoBold";
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.ico-stats_item-24h span,
+.ico-stats_item-roi-week span,
+.ico-stats_item-roi-month span {
+  position: relative;
+  margin: auto;
+  padding-left: 18px;
+  color: #707986;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+  line-height: 16px;
+}
+.ico-stats_item-24h span::before,
+.ico-stats_item-roi-week span::before,
+.ico-stats_item-roi-month span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  left: -4px;
+  top: 3px;
+  background-image: url('../img/triangle-green.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.ico-stats_item-24h--negative span::before,
+.ico-stats_item-roi-week--negative span::before,
+.ico-stats_item-roi-month--negative span::before {
+  left: -4px;
+  top: 3px;
+  background-image: url('../img/triengle-red.svg');
+}
+.ico-stats_item-date span {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+}
+.ico-stats_item-price,
+.ico-stats_item-current-price {
+  padding: 12px 12px 0px 12px;
+}
+.ico-stats_item-price-usd,
+.ico-stats_item-current-price-usd {
+  display: block;
+  white-space: nowrap;
+  color: #333f52;
+  font-family: "RobotoMedium";
+  font-size: 16px;
+  line-height: 16px;
+}
+.ico-stats_item-price-btc,
+.ico-stats_item-current-price-btc {
+  opacity: 0.6;
+  color: #8f96a1;
+  font-family: "RobotoMedium";
+  font-size: 9px;
+  line-height: 12px;
+  text-transform: uppercase;
 }
 body {
   background-color: #eff3f6;

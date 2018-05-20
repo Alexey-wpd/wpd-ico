@@ -371,6 +371,9 @@
   padding: 18px 12px 14px 12px;
   border-right: 1px solid #e9ecee;
 }
+.portfolio_list-head-item:last-child {
+  border-right: none;
+}
 .portfolio_list-head-item span {
   color: #525c6c;
   font-family: "RobotoRegular";
@@ -444,8 +447,12 @@
   position: relative;
   background-color: #fafbfc;
 }
+.portfolio_item:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
+}
 .portfolio_item--active {
-  border-top: 1px solid #e9ecee;
+  box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
   background-color: #fff;
 }
 .portfolio_item-logo {
@@ -475,7 +482,7 @@
   content: "";
   position: absolute;
   width: 4px;
-  height: 97%;
+  height: 98%;
   left: 0px;
   top: 0px;
   z-index: 11;
@@ -603,20 +610,10 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.portfolio_item-24hour--down span::before {
-  background-image: url('../img/triengle-red.svg');
-}
 .portfolio_item-24hour--negative span::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 16px;
-  left: -14px;
-  top: 0px;
+  left: -4px;
+  top: 3px;
   background-image: url('../img/triengle-red.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
 }
 .portfolio_item-capitalizations {
   width: 13%;

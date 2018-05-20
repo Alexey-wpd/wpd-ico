@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>cabinet-favourite TRADING</title>
+
+    <!-- Bootstrap grid CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <header class="header">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <nav class="main-nav">
+                         <div class="logo">
+                             <img src="img/logo.svg" alt="ICOPAPA" />
+                         </div>
+                         <div class="main-nav_wrapper">
+                             <ul class="main-nav_menu">
+                              <li class="main-nav_item"><a href="#">ICOs</a></li>
+                                 <li class="main-nav_item"><a href="#">Our ratings</a></li>
+                                 <li class="main-nav_item"><a href="#">Exchanges</a></li>
+                                 <li class="main-nav_item main-nav_item--active"><a href="#">Forum</a></li>
+                                 <li class="main-nav_item main-nav_faq-item"><a href="vk">Our team</a></li>
+                                 <li class="main-nav_item main-nav_faq-item"><a href="#">FAQ</a></li>
+                             </ul>
+                             <ul class="main-nav_user-menu main-nav_user-menu--hiddenn">
+                                 <li class="main-nav_user-search">
+                                     <form>
+                                         <input type="text" placeholder="" name="search">
+                                     </form>
+                                 </li>
+                                 <li class="main-nav_user-language">
+                                     <div class="language">
+                                         <div class="language-header_current">
+                                             <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                         </div>
+                                         <div class="language-header_list">
+                                              <ul>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                                 <li class="language_list-item">
+                                                      <a href="#">
+                                                         <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                                      </a>
+                                                 </li>
+                                              </ul>
+                                         </div>
+                                     </div>
+                                     <!-- /.language -->
+                                 </li>
+                                 <li class="main-nav_user-login">
+                                     <a href="#" class="btn btn--login">Sign In</a>
+                                 </li>
+                             </ul>
+                             <!-- /.main-nav_user-menu -->
+                             <div class="user user--hidden">
+                                <div class="main-nav_user-search">
+                                    <form>
+                                        <input type="text" placeholder="" name="search">
+                                    </form>
+                                </div>
+                                <ul>
+                                    <li class="user_name">achubais.1965</li>
+                                    <li class="user_notification">
+                                        <ul class="user_notification-wrapper">
+                                            <li class="user_notification-message"><a href="#"></a></li>
+                                            <li class="user_notification-bell"><a></a></li>
+                                            <li class="user_notification-num"><a href="#">2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="user_icon user_icon--ico">
+                                    <img src="img/user-icon.png" alt="" height="36" width="36">
+                                </div>
+                             </div>
+                             <!-- /.user -->
+                         </div>
+                         <!-- /.main-nav_wrapper -->
+                     </nav>
+                      <!-- /.main-nav -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+          <div class="cabinet-nav">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col">
+                          <ul class="cabinet-nav_menu">
+                              <li class="cabinet-nav_item"><a>Investor Dashboard</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--cases"><a href="#">Today</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--calendar"><a href="#">ICO Calendar</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--investment"><a href="#">Portfolio</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--statistic"><a href="#">ICO Stats</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--marked-ico cabinet-nav_item--active"><a href="#">Favourite ICO</a></li>
+                          </ul>
+                      </div>
+                      <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+              </div>
+              <!-- /.container-fluid -->
+          </div>
+          <!-- /.header_cabinet-nav -->
+      </header>
+      <!-- /.header -->
+      <div class="ico-favourite">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-3">
+                      <div class="ico-favourite_title">
+                          <h1>Favourite ICO</h1>
+                      </div>
+                  </div>
+                  <!-- /.col-3 -->
+                  <div class="col-9">
+                      <div class="ico-catalogue_nav">
+                          <ul class="ico-catalogue_nav-wrapper">
+                              <li class="ico-catalogue_nav-item"><a href="#">Active</a></li>
+                              <li class="ico-catalogue_nav-item"><a href="#">Upcoming</a></li>
+                              <li class="ico-catalogue_nav-item"><a href="#">Ended</a></li>
+                              <li class="ico-catalogue_nav-item ico-catalogue_nav-item--active"><a href="#">Trading</a></li>
+                          </ul>
+                          <div class="portfolio-view_filter">
+                              <label>
+                                  <input name="portfolio-filter-usd" type="checkbox" value="usd" checked>
+                                  <b>USD</b>
+                              </label>
+                              <label>
+                                  <input name="portfolio-filter-btc" type="checkbox" value="bts">
+                                  <b>BTC</b>
+                              </label>
+                              <label>
+                                  <input name="portfolio-filter-ETH" type="checkbox" value="ETH">
+                                  <b>ETH</b>
+                              </label>
+                              <label>
+                                  <input name="portfolio-filter-WAVES" type="checkbox" value="WAVES">
+                                  <b>WAVES</b>
+                              </label>
+                          </div>
+                          <!-- /.portfolio-view_filter -->
+                          <div class="ico-catalogue_select">
+                              <select size="1" name="name[]">
+                                    <option value=""><a href="#">Hard CAP</a></option>
+                                    <option value=""><a href="#">Something</a></option>
+                                    <option value=""><a href="#">В гугле</a></option>
+                              </select>
+                          </div>
+                      </div>
+                      <!-- /.ico-catalogue_nav -->
+                  </div>
+                  <!-- /.col-9 -->
+              </div>
+              <!-- /.row -->
+              <div class="row">
+                  <div class="col">
+                      <div class="ico-favourite_list">
+                          <div class="ico-item">
+                              <div class="ico-item_content-wrapper ico-item_content-wrapper--sponsored">
+                                  <div class="ico-item_logo" style="background-image: linear-gradient(225deg, #e55f6e 0%, #b12a39 100%)">
+                                      <img src="img/miniApps-logo.png" alt="">
+                                  </div>
+                                  <div class="ico-item_discription">
+                                      <div class="ico-item_title">
+                                          <h2>MiniApps</h2>
+                                         <div class="rating-wrapper">
+                                             <div class="rating">
+                                                 <span>9.2 <sup>/10</sup></span>
+                                             </div>
+                                         </div>
+                                         <!-- /.rating-wrapper -->
+                                      </div>
+                                      <!-- /.ico-item_title -->
+                                      <div class="ico-item_category">
+                                          <span>Blockchain</span>
+                                          <span>Blockchain</span>
+                                      </div>
+                                      <!-- /.ico-item_category -->
+                                      <div class="ico-item_time-wrapper">
+                                          <table class="ico-item_time">
+                                              <tr>
+                                                  <th>STARTED</th>
+                                                  <th>ENDED</th>
+                                              </tr>
+                                              <tr>
+                                                  <td>17.10.2017</td>
+                                                  <td>05.06.2018</td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                      <!-- /.ico-item_features -->
+
+                                  </div>
+                                  <!-- /.ico-item_discription -->
+                                  <div class="ico-item_trading">
+                                      <div class="ico-item_roi-wrapper">
+                                          <table class="ico-item_roi">
+                                              <tr>
+                                                  <th>USD ROI</th>
+                                                  <th>BTC ROI</th>
+                                                  <th>ETH ROI</th>
+                                                  <th>24H ROI</th>
+                                              </tr>
+                                              <tr>
+                                                  <td><span>x</span> 3.11</td>
+                                                  <td><span>x</span> 5.96</td>
+                                                  <td><span>x</span> 1.19</td>
+                                                  <td><span></span>54%</td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                      <!-- /.ico-item_return-investments -->
+                                      <div class="ico-item_totall-price-wrapper">
+                                          <table class="ico-item_totall-price">
+                                              <tr>
+                                                  <th>MARKET CAP</th>
+                                                  <th>ICO PRICE</th>
+                                                  <th>MARKET PRICE</th>
+                                              </tr>
+                                              <tr>
+                                                  <td>30 000 000 <b>USD</b></td>
+                                                  <td>0.26 <b>USD</b></td>
+                                                  <td>1.98 <b>USD</b></td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                      <!-- /.ico-item_status-wrapper -->
+                                  </div>
+                                  <!-- /.ico-item_trading -->
+                              </div>
+                              <!-- /.ico-item_content-wrapper -->
+                              <div class="ico-item_bottom-line">
+                                  <a class="to-discuss" href="#">Discuss on forum<sup>2</sup></a>
+                                  <a class="to-rate" href="#">Reviews<sup>4</sup></a>
+                                  <a class="add-calendar" href="#">Add to ICO calendar</a>
+                                  <a class="buy-sell" href="#">Buy/Sell</a>
+                                  <div class="ico-item_button">
+                                      <a href="#" class="btn ico-item_button-details">ICO Details</a>
+                                  </div>
+                                  <!-- /.ico-item_button -->
+                              </div>
+                              <!-- /.ico-item-bottom-line -->
+                          </div>
+                          <!-- /.ico_item -->
+                          <div class="ico-item">
+                              <div class="ico-item_content-wrapper">
+                                  <div class="ico-item_logo" style="background-image: linear-gradient(225deg, #e55f6e 0%, #b12a39 100%)">
+                                      <img src="img/miniApps-logo.png" alt="">
+                                  </div>
+                                  <div class="ico-item_discription">
+                                      <div class="ico-item_title">
+                                          <h2>MiniApps</h2>
+                                         <div class="rating-wrapper">
+                                             <div class="rating">
+                                                 <span>9.2 <sup>/10</sup></span>
+                                             </div>
+                                         </div>
+                                         <!-- /.rating-wrapper -->
+                                      </div>
+                                      <!-- /.ico-item_title -->
+                                      <div class="ico-item_category">
+                                          <span>Blockchain</span>
+                                          <span>Blockchain</span>
+                                      </div>
+                                      <!-- /.ico-item_category -->
+                                      <div class="ico-item_time-wrapper">
+                                          <table class="ico-item_time">
+                                              <tr>
+                                                  <th>STARTED</th>
+                                                  <th>ENDED</th>
+                                              </tr>
+                                              <tr>
+                                                  <td>17.10.2017</td>
+                                                  <td>05.06.2018</td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                      <!-- /.ico-item_features -->
+
+                                  </div>
+                                  <!-- /.ico-item_discription -->
+                                  <div class="ico-item_trading">
+                                      <div class="ico-item_roi-wrapper">
+                                          <table class="ico-item_roi ico-item_roi--negative">
+                                              <tr>
+                                                  <th>USD ROI</th>
+                                                  <th>BTC ROI</th>
+                                                  <th>ETH ROI</th>
+                                                  <th>24H ROI</th>
+                                              </tr>
+                                              <tr>
+                                                  <td><span>x</span> 3.11</td>
+                                                  <td><span>x</span> 5.96</td>
+                                                  <td><span>x</span> 1.19</td>
+                                                  <td><span></span>33%</td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                      <!-- /.ico-item_return-investments -->
+                                      <div class="ico-item_totall-price-wrapper">
+                                          <table class="ico-item_totall-price">
+                                              <tr>
+                                                  <th>MARKET CAP</th>
+                                                  <th>ICO PRICE</th>
+                                                  <th>MARKET PRICE</th>
+                                              </tr>
+                                              <tr>
+                                                  <td>30 000 000 <b>USD</b></td>
+                                                  <td>0.26 <b>USD</b></td>
+                                                  <td>1.98 <b>USD</b></td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                      <!-- /.ico-item_status-wrapper -->
+                                  </div>
+                                  <!-- /.ico-item_trading -->
+                              </div>
+                              <!-- /.ico-item_content-wrapper -->
+                              <div class="ico-item_bottom-line">
+                                  <a class="to-discuss" href="#">Discuss on forum<sup>2</sup></a>
+                                  <a class="to-rate to-rate--active" href="#">Reviews<sup>4</sup></a>
+                                  <a class="your-review" href="#">Your review</a>
+                                  <a class="add-calendar" href="#">Add to ICO calendar</a>
+                                  <a class="buy-sell" href="#">Buy/Sell</a>
+                                  <div class="ico-item_button">
+                                      <a href="#" class="btn ico-item_button-details">ICO Details</a>
+                                  </div>
+                                  <!-- /.ico-item_button -->
+                              </div>
+                              <!-- /.ico-item-bottom-line -->
+                          </div>
+                          <!-- /.ico_item -->
+                      </div>
+                      <!-- /.ico-catalogue_list -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+      </div>
+      <!-- /.ico-favourite -->
+      <footer class="footer">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <div class="footer-wrapper">
+                              <div class="footer_about-us">
+                                  <div class="footer_logo">
+                                      <img src="img/logo.svg" alt="ICOPAPA" />
+                                  </div>
+                                  <div class="footer_intro">
+                                      <p>Nam luctus commodo turpis at mattis. Cras ullamcorper sodales massa consequat volutpat. </p>
+                                  </div>
+                                  <div class="footer_social">
+                                      <a href="#" class="footer_social-fb">fb</a>
+                                      <a href="#" class="footer_social-tw">tw</a>
+                                      <a href="#" class="footer_social-vk">vk</a>
+                                  </div>
+                              </div>
+                              <!-- /.footer_about-us -->
+                              <div class="footer_nav">
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item footer_nav-menu-item--bold"><a href="#">ICOs</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Active</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Upcoming</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Ended</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Trading</a></li>
+                                  </ul>
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item footer_nav-menu-item--bold"><a href="#">Exchanges</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Second level</a></li>
+                                      <li class="footer_nav-menu-item"><a href="#">Third level</a></li>
+                                  </ul>
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item footer_nav-menu-item--bold"><a href="#">Our ratings</a></li>
+                                  </ul>
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item footer_nav-menu-item--bold"><a href="#">Forum</a></li>
+                                  </ul>
+                                  <ul class="footer_nav-menu">
+                                      <li class="footer_nav-menu-item footer_nav-menu-item--grey"><a href="#">Our team</a></li>
+                                      <li class="footer_nav-menu-item footer_nav-menu-item--grey"><a href="#">FAQ</a></li>
+                                  </ul>
+                              </div>
+                              <!-- /.footer_main-nav -->
+                          <div class="footer_search">
+                              <form>
+                                  <input type="text" placeholder="" name="search">
+                              </form>
+                              <div class="language">
+                                  <div class="language_current">
+                                      <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                  </div>
+                                  <div class="language_list">
+                                       <ul>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                          <li class="language_list-item">
+                                               <a href="#">
+                                                  <img src="img/rus-icon.svg" alt="" height="12" width="18">
+                                               </a>
+                                          </li>
+                                       </ul>
+                                  </div>
+                              </div>
+                              <!-- /.language -->
+                          </div>
+                          <!-- /.footer_search -->
+                      </div>
+                      <!-- /.footer-wrapper -->
+                  </div>
+                  <!-- /.col -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+          <div class="footer-terms">
+              <div class="container-fluid">
+                  <div class="footer-terms_wrapper">
+                      <a href="#">Условия использования</a>
+                      <a href="#">Политика конфиденциальности </a>
+                      <a href="#">Предложения о сотрудничестве, реклама</a>
+                      <div class="worldpokerdeals">
+                          <a href="#">Created by  <img src="img/wpd.svg" alt=""></a>
+                      </div>
+                  </div>
+                  <!-- /.terms_wrapper -->
+              </div>
+          </div>
+          <!-- /.footer-terms -->
+      </footer>
+      <!-- /.footer -->
+
+
+      <!-- Bootstrap core JavaScript ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+
+
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+      <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+      <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="js/common.js"></script>
+  </body>
+</html>

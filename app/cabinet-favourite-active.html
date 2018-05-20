@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>ICO-CATALOGUI UNPOMING</title>
+    <title>cabinet-favourite ACTIVE</title>
 
     <!-- Bootstrap grid CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -104,409 +104,80 @@
               <!-- /.row -->
           </div>
           <!-- /.container-fluid -->
-          <div class="catalogue-header">
+          <div class="cabinet-nav">
               <div class="container-fluid">
-                  <div class="row align-items-center">
-                      <div class="col-3">
-                          <h1>ICO Catalogue</h1>
+                  <div class="row">
+                      <div class="col">
+                          <ul class="cabinet-nav_menu">
+                              <li class="cabinet-nav_item"><a>Investor Dashboard</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--cases"><a href="#">Today</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--calendar"><a href="#">ICO Calendar</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--investment"><a href="#">Portfolio</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--statistic"><a href="#">ICO Stats</a></li>
+                              <li class="cabinet-nav_item cabinet-nav_item--marked-ico cabinet-nav_item--active"><a href="#">Favourite ICO</a></li>
+                          </ul>
                       </div>
-                      <!-- /.col-3 -->
-                      <div class="col-9">
-                          <div class="catalogue-header_wrapper">
-                              <div class="catalogue-header_intro">
-                                  <p>
-                                      Donec ultrices interdum risus. Donec enim dui, rhoncus eu nisi quis, eleifend efficitur ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ornare quam
-                                  </p>
-                              </div>
-                              <!-- /.catalogue-header_intro -->
-                              <div class="catalogue-header_links">
-                                  <a href="#">Add ICO</a>
-                                  <a href="#">Premium</a>
-                                  <a href="#">Button</a>
-                              </div>
-                              <!-- /.catalogue-header_links -->
-                          </div>
-                          <!-- /.catalogue-header_wrapper -->
-                      </div>
-                      <!-- /.col-9 -->
+                      <!-- /.col -->
                   </div>
                   <!-- /.row -->
               </div>
               <!-- /.container-fluid -->
           </div>
-          <!-- /.catalogue-header -->
+          <!-- /.header_cabinet-nav -->
       </header>
       <!-- /.header -->
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-3">
-                 <section class="ico-choosing-form">
-                     <form action="#" method="#">
-                         <fieldset>
-                             <legend class="dropdown">Category</legend>
-                             <ul class="choosing-form_list">
-                                 <li class="choosing-form_search-category">
-                                        <input type="text" name="search-category" value="" placeholder="Search category">
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>All<sup>468</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>Finance<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>Gaming<sup>5</sup></span>
-         							</label>
-                                 </li>
-                                 <li class="choosing-form_list-show-more"><a href="#" class="js-show-more-category">Show more 30</a></li>
-                                 <li>
-                                     <ul class="choosing-form_list js-choosing-form_category--hidden">
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>All<sup>468</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>Finance<sup>12</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>Gaming<sup>5</sup></span>
-                 							</label>
-                                         </li>
-                                         <li class="choosing-form_list-show-more"><a href="#" class="js-show-less">Show less</a></li>
-                                     </ul>
-                                     <!-- /.choosing-form_list -->
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">Hard cap</legend>
-                             <div class="choosing-form_inputs-wrapper">
-                                    <input type="text" name="hard-cap-bottom" value="">
-                                    <input type="text" name="hard-cap-top" value="">
-                             </div>
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">Start</legend>
-                             <div class="choosing-form_inputs-wrapper">
-                                 <select size="1" name="">
-                                       <option value=""><a href="#">After</a></option>
-                                       <option value=""><a href="#">Something</a></option>
-                                       <option value=""><a href="#">В гугле</a></option>
-                                 </select>
-                                 <input type="date" name="start" value="">
-                             </div>
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">End</legend>
-                             <div class="choosing-form_inputs-wrapper">
-                                 <select size="1" name="">
-                                       <option value=""><a href="#">Before</a></option>
-                                       <option value=""><a href="#">Something</a></option>
-                                       <option value=""><a href="#">В гугле</a></option>
-                                 </select>
-                                 <input type="date" name="start" value="">
-                             </div>
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">overall score</legend>
-                             <ul class="choosing-form_list">
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1" checked>
-         								<span>Any<sup>403</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>9-10<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>8-9<sup>5</sup></span>
-         							</label>
-                                 </li>
-                                 <li class="choosing-form_list-show-more"><a href="#" class="js-show-more-overall-score">Show more</a></li>
-                                 <li>
-                                     <ul class="choosing-form_list js-choosing-form_overall-score--hidden">
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>7-8<sup>999</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>6-7<sup>7</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>5-6<sup>53</sup></span>
-                 							</label>
-                                         </li>
-                                         <li class="choosing-form_list-show-more"><a href="#" class="js-show-less">Show less</a></li>
-                                     </ul>
-                                     <!-- /.choosing-form_list -->
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">team score</legend>
-                             <ul class="choosing-form_list">
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1" checked>
-         								<span>Any<sup>403</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>9-10<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>8-9<sup>5</sup></span>
-         							</label>
-                                 </li>
-                                 <li class="choosing-form_list-show-more"><a href="#" class="js-show-more-team-score">Show more</a></li>
-                                 <li>
-                                     <ul class="choosing-form_list js-choosing-form_team-score--hidden">
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>7-8<sup>999</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>6-7<sup>7</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>5-6<sup>53</sup></span>
-                 							</label>
-                                         </li>
-                                         <li class="choosing-form_list-show-more"><a href="#" class="js-show-less">Show less</a></li>
-                                     </ul>
-                                     <!-- /.choosing-form_list -->
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">Users rating overall</legend>
-                             <div class="choosing-form_inputs-wrapper">
-                                 <div class="choosing-form_scale">
-                                     <div class="choosing-form_scale-inner"></div>
-                                 </div>
-                             </div>
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">Know Your Customer (KYC)</legend>
-                             <ul class="choosing-form_list">
-                                 <li>
-                                     <label class="radio">
-         								<input type="radio" name="name1" value="1" checked>
-         								<span>Any<sup>403</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="radio">
-         								<input type="radio" name="name1" value="1">
-         								<span>Yes<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="radio">
-         								<input type="radio" name="name1" value="1">
-         								<span>No<sup>135</sup></span>
-         							</label>
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">White List (WL)</legend>
-                             <ul class="choosing-form_list">
-                                 <li>
-                                     <label class="radio">
-         								<input type="radio" name="name" value="1" checked>
-         								<span>Any<sup>403</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="radio">
-         								<input type="radio" name="name" value="1">
-         								<span>Yes<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="radio">
-         								<input type="radio" name="name" value="1">
-         								<span>No<sup>135</sup></span>
-         							</label>
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">Platform</legend>
-                             <ul class="choosing-form_list">
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1" checked>
-         								<span>Any<sup>403</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>ETH<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>NEO<sup>5</sup></span>
-         							</label>
-                                 </li>
-                                 <li class="choosing-form_list-show-more"><a href="#" class="js-show-more-platforms">Other platforms</a></li>
-                                 <li>
-                                     <ul class="choosing-form_list js-choosing-form_platforms--hidden">
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>EOS<sup>999</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>ICX<sup>7</sup></span>
-                 							</label>
-                                         </li>
-                                         <li>
-                                             <label class="checkbox">
-                 								<input type="checkbox" name="name" value="1">
-                 								<span>WAVES<sup>53</sup></span>
-                 							</label>
-                                         </li>
-                                         <li class="choosing-form_list-show-more"><a href="#" class="js-show-less">Show less</a></li>
-                                     </ul>
-                                     <!-- /.choosing-form_list -->
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                         <fieldset>
-                             <legend class="dropdown">Accepted currencies</legend>
-                             <ul class="choosing-form_list">
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1" checked>
-         								<span>Any<sup>403</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>USD<sup>12</sup></span>
-         							</label>
-                                 </li>
-                                 <li>
-                                     <label class="checkbox">
-         								<input type="checkbox" name="name" value="1">
-         								<span>BTC<sup>5</sup></span>
-         							</label>
-                                 </li>
-                             </ul>
-                             <!-- /.choosing-form_list -->
-                         </fieldset>
-                         <!-- /.fieldset -->
-                     </form>
-                     <!-- /.form -->
-                 </section>
-                 <!-- /.choosing-form -->
-              </div>
-              <!-- /.col-3 -->
-              <div class="col-9">
-                  <div class="ico-catalogue">
+      <div class="ico-favourite">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-3">
+                      <div class="ico-favourite_title">
+                          <h1>Favourite ICO</h1>
+                      </div>
+                  </div>
+                  <!-- /.col-3 -->
+                  <div class="col-9">
                       <div class="ico-catalogue_nav">
                           <ul class="ico-catalogue_nav-wrapper">
-                              <li class="ico-catalogue_nav-item"><a href="#">Active</a></li>
-                              <li class="ico-catalogue_nav-item ico-catalogue_nav-item--active"><a href="#">Upcoming</a></li>
+                              <li class="ico-catalogue_nav-item ico-catalogue_nav-item--active"><a href="#">Active</a></li>
+                              <li class="ico-catalogue_nav-item"><a href="#">Upcoming</a></li>
                               <li class="ico-catalogue_nav-item"><a href="#">Ended</a></li>
                               <li class="ico-catalogue_nav-item"><a href="#">Trading</a></li>
                           </ul>
+                          <div class="portfolio-view_filter">
+                              <label>
+                                  <input name="portfolio-filter-usd" type="checkbox" value="usd" checked>
+                                  <b>USD</b>
+                              </label>
+                              <label>
+                                  <input name="portfolio-filter-btc" type="checkbox" value="bts">
+                                  <b>BTC</b>
+                              </label>
+                              <label>
+                                  <input name="portfolio-filter-ETH" type="checkbox" value="ETH">
+                                  <b>ETH</b>
+                              </label>
+                              <label>
+                                  <input name="portfolio-filter-WAVES" type="checkbox" value="WAVES">
+                                  <b>WAVES</b>
+                              </label>
+                          </div>
+                          <!-- /.portfolio-view_filter -->
                           <div class="ico-catalogue_select">
                               <select size="1" name="name[]">
-                                    <option value=""><a href="#">Overall score</a></option>
+                                    <option value=""><a href="#">Hard CAP</a></option>
                                     <option value=""><a href="#">Something</a></option>
                                     <option value=""><a href="#">В гугле</a></option>
                               </select>
                           </div>
                       </div>
                       <!-- /.ico-catalogue_nav -->
-                      <div class="ico-catalogue_tags-wrapper">
-                          <div class="ico-catalogue_ico-amount">
-                              <span>Filtered <b>14</b> of <b>90</b> of upcoming ICO</span>
-                          </div>
-                          <div class="ico-catalogue_tag">
-                              <a href="#">X</a>
-                              <span>White list: YES</span>
-                          </div>
-                          <!-- /.ico-content_tag -->
-                          <div class="ico-catalogue_tag">
-                              <a href="#">X</a>
-                              <span>Start: After 15.01.18</span>
-                          </div>
-                          <!-- /.ico-content_tag -->
-                          <div class="ico-catalogue_tag">
-                              <a href="#">X</a>
-                              <span>Hard Cap: 6 000 000 — 15 000 000</span>
-                          </div>
-                          <!-- /.ico-content_tag -->
-                      </div>
-                      <!-- /.ico-content_tags-wrapper -->
-                      <div class="ico-catalogue_list">
+                  </div>
+                  <!-- /.col-9 -->
+              </div>
+              <!-- /.row -->
+              <div class="row">
+                  <div class="col">
+                      <div class="ico-favourite_list">
                           <div class="ico-item">
                               <div class="ico-item_content-wrapper ico-item_content-wrapper--sponsored">
                                   <div class="ico-item_logo" style="background-image: linear-gradient(225deg, #e55f6e 0%, #b12a39 100%)">
@@ -516,9 +187,6 @@
                                       <div class="ico-item_title">
                                           <h2>MiniApps</h2>
                                          <div class="rating-wrapper">
-                                             <div class="our-rating" data-toggle="tooltip" data-placement="bottom" data-original-title="Users Score">
-                                                 <span>7.2</span>
-                                             </div>
                                              <div class="rating">
                                                  <span>9.2 <sup>/10</sup></span>
                                              </div>
@@ -552,23 +220,23 @@
                                               <div class="ico-item_scale-inner ico-item_scale-inner--grey"></div>
                                           </div>
                                           <div class="ico-item_cap-current">
-                                              <span class="ico-item_cap-current-usd">0 <sup>USD</sup></span>
-                                              <span class="ico-item_cap-current-percent">0%</span>
+                                              <span class="ico-item_cap-current-usd">560 012 <sup>USD</sup></span>
+                                              <span class="ico-item_cap-current-percent">25.2%</span>
                                           </div>
                                       </div>
                                       <!-- /.ico-item_cap -->
                                       <div class="ico-item_price">
-                                          <span class="ico-item_price-token"></span>
-                                          <span class="ico-item_price-token-usd"></span>
+                                          <span class="ico-item_price-token">ICO TOKEN PRICE</span>
+                                          <span class="ico-item_price-token-usd">0.25 USD</span>
                                       </div>
                                       <!-- /.ico-item_price -->
                                   </div>
                                   <!-- /.ico-item_fundraising -->
                                   <div class="ico-item_timeframe">
                                       <div class="ico-item_start">
-                                          <span class="ico-item_start-st">STARTs</span>
+                                          <span class="ico-item_start-st">STARTED</span>
                                           <span class="ico-item_start-date">17.10.2017</span>
-                                          <span class="ico-item_start-time-left ico-item_start-time-left--soon">in 3H 11M <b>ago</b></span>
+                                          <span class="ico-item_start-time-left">2M 5D <b>ago</b></span>
                                       </div>
                                       <!-- /.ico-item_start -->
                                       <div class="ico-item_end">
@@ -602,9 +270,6 @@
                                       <div class="ico-item_title">
                                           <h2>MiniApps</h2>
                                          <div class="rating-wrapper">
-                                             <div class="our-rating" data-toggle="tooltip" data-placement="bottom" data-original-title="Users Score">
-                                                 <span>7.2</span>
-                                             </div>
                                              <div class="rating">
                                                  <span>9.2 <sup>/10</sup></span>
                                              </div>
@@ -624,8 +289,8 @@
                                       <!-- /.ico-item_features -->
                                       <div class="ico-item_platforms">
                                           <span class="ico-item_platforms-pl">PLATFORM</span>
-                                          <span class="ico-item_platforms-name">EOS</span>
-                                          <span class="ico-item_platforms-name"></span>
+                                          <span class="ico-item_platforms-name">ETH</span>
+                                          <span class="ico-item_platforms-name">WAVES</span>
                                       </div>
                                       <!-- /.ico-item_features -->
                                   </div>
@@ -635,7 +300,7 @@
                                           <span class="ico-item_cap-type">HARD CAP</span>
                                           <span class="ico-item_cap-goal">700 000 <sup>USD</sup></span>
                                           <div class="ico-item_scale">
-                                              <div class="ico-item_scale-inner ico-item_scale-inner--grey"></div>
+                                              <div class="ico-item_scale-inner ico-item_scale-inner--green"></div>
                                           </div>
                                           <div class="ico-item_cap-current">
                                               <span class="ico-item_cap-current-usd">560 012 <sup>USD</sup></span>
@@ -652,7 +317,7 @@
                                   <!-- /.ico-item_fundraising -->
                                   <div class="ico-item_timeframe">
                                       <div class="ico-item_start">
-                                          <span class="ico-item_start-st">STARS</span>
+                                          <span class="ico-item_start-st">STARTED</span>
                                           <span class="ico-item_start-date">17.10.2017</span>
                                           <span class="ico-item_start-time-left">2M 5D <b>ago</b></span>
                                       </div>
@@ -660,7 +325,7 @@
                                       <div class="ico-item_end">
                                           <span class="ico-item_end-en">ENDS</span>
                                           <span class="ico-item_end-date">17.12.2017</span>
-                                          <span class="ico-item_end-time-remain"><b>in</b> 5D 11H</span>
+                                          <span class="ico-item_end-time-remain ico-item_end-time-remain--soon"><b>in</b> 5D 11H</span>
                                       </div>
                                       <!-- /.ico-item_start -->
                                   </div>
@@ -670,6 +335,7 @@
                               <div class="ico-item_bottom-line">
                                   <a class="to-discuss" href="#">Discuss on forum<sup>2</sup></a>
                                   <a class="to-rate" href="#">Reviews<sup>4</sup></a>
+                                  <a class="your-review" href="#">Your review</a>
                                   <a class="add-calendar add-calendar--active" href="#">Added to your ICO calendar</a>
                                   <div class="ico-item_button">
                                       <a href="#" class="btn ico-item_button-details">ICO Details</a>
@@ -682,29 +348,13 @@
                       </div>
                       <!-- /.ico-catalogue_list -->
                   </div>
-                  <!-- /.ico-catalogue -->
-                  <div class="paginator">
-                      <a class="first" href="#">1</a>
-                      <a class="current" href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a class="next" href="#">Next</a>
-                      <div class="paginator_page-list">
-                          <select size="1" name="name[]">
-                                <option value=""><a href="#">20</a></option>
-                                <option value=""><a href="#">19</a></option>
-                                <option value=""><a href="#">18</a></option>
-                          </select>
-                      </div>
-                  </div>
-                  <!-- /.paginator -->
+                  <!-- /.col -->
               </div>
-              <!-- /.col-9 -->
+              <!-- /.row -->
           </div>
-          <!-- /.row -->
+          <!-- /.container-fluid -->
       </div>
-      <!-- /.container-fluid -->
+      <!-- /.ico-favourite -->
       <footer class="footer">
           <div class="container-fluid">
               <div class="row">

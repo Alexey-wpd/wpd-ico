@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 /* font-family: "RobotoRegular"; */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face {
   font-family: "RobotoRegular";
   src: url("../fonts/RobotoRegular/RobotoRegular.eot");
@@ -4063,7 +4062,8 @@
   color: #525c6c;
   background-color: #fff;
   border: 1px solid #c5d0de;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 11px;
   line-height: 12px;
 }
@@ -4076,7 +4076,8 @@
 .portfolio-view_public a {
   position: relative;
   color: #333f52;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
@@ -4114,7 +4115,8 @@
   display: inline-block;
   padding: 14px 0;
   color: #707986;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 18px;
 }
@@ -4132,7 +4134,8 @@
 }
 .portfolio-nav_menu-item--active a {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 .portfolio-nav_menu-item--private a {
   position: relative;
@@ -4153,7 +4156,8 @@
   padding-left: 26px;
   position: relative;
   color: #45af37;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 12px;
   text-decoration: underline;
@@ -4181,8 +4185,8 @@
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 13px;
-  font-family: "RobotoMedium";
   line-height: 11px;
   letter-spacing: -0.22px;
 }
@@ -4213,7 +4217,8 @@
 .portfolio_changes a {
   position: relative;
   color: #1991eb;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-decoration: underline;
@@ -4240,7 +4245,8 @@
 .portfolio .portfolio_cost-price {
   margin-bottom: 9px;
   color: #707986;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.3px;
@@ -4248,7 +4254,8 @@
 .portfolio .portfolio_cost-usd {
   margin-bottom: 4px;
   color: #333f52;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: -0.5px;
@@ -4256,7 +4263,8 @@
 .portfolio .portfolio_cost-btc {
   opacity: 0.6;
   color: #525c6c;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 11px;
   line-height: 12px;
   text-transform: uppercase;
@@ -4269,7 +4277,8 @@
 .portfolio_deviation-24hours {
   margin-bottom: 9px;
   color: #707986;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.3px;
@@ -4279,7 +4288,8 @@
   padding-left: 15px;
   margin-bottom: 4px;
   color: #44af36;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: -0.5px;
@@ -4303,7 +4313,8 @@
 .portfolio_deviation-usd {
   opacity: 0.6;
   color: #525c6c;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 11px;
   line-height: 11px;
 }
@@ -4320,7 +4331,8 @@
   background-image: linear-gradient(180deg, #358c29 0%, #45af36 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 13px;
   line-height: 11px;
   letter-spacing: -0.22px;
@@ -4349,37 +4361,38 @@
   background-color: #e0e6ed;
   border-bottom: 2px solid #c5d0de;
 }
-.portfolio_list-head-item {
+.portfolio_list-head-cell {
   display: table-cell;
   padding: 18px 12px 14px 12px;
   border-right: 1px solid #e9ecee;
 }
-.portfolio_list-head-item:last-child {
+.portfolio_list-head-cell:last-child {
   border-right: none;
 }
-.portfolio_list-head-item span {
+.portfolio_list-head-cell span {
   color: #525c6c;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 13px;
 }
-.portfolio_list-head-item--name {
+.portfolio_list-head-name {
   padding: 18px 12px 14px 22px;
   width: 20%;
 }
-.portfolio_list-head-item--amount {
+.portfolio_list-head-amount {
   width: 20%;
 }
-.portfolio_list-head-item--percent {
+.portfolio_list-head-percent {
   position: relative;
   width: 6%;
 }
-.portfolio_list-head-item--percent .arrow {
+.portfolio_list-head-percent .arrow {
   display: block;
   position: absolute;
   cursor: pointer;
 }
-.portfolio_list-head-item--percent .arrow::before {
+.portfolio_list-head-percent .arrow::before {
   content: "";
   display: inline-block;
   border: 5px solid #c5d0de;
@@ -4388,7 +4401,7 @@
   border-right-color: transparent;
   border-left-color: transparent;
 }
-.portfolio_list-head-item--percent .arrow--active::before {
+.portfolio_list-head-percent .arrow--active::before {
   content: "";
   display: inline-block;
   border: 5px solid #8f96a1;
@@ -4397,30 +4410,30 @@
   border-right-color: transparent;
   border-left-color: transparent;
 }
-.portfolio_list-head-item--percent .arrow-up {
+.portfolio_list-head-percent .arrow-up {
   top: 21px;
   right: 25px;
 }
-.portfolio_list-head-item--percent .arrow-up::before {
+.portfolio_list-head-percent .arrow-up::before {
   border-bottom-width: 0;
 }
-.portfolio_list-head-item--percent .arrow-down {
+.portfolio_list-head-percent .arrow-down {
   top: 14px;
   right: 25px;
 }
-.portfolio_list-head-item--percent .arrow-down::before {
+.portfolio_list-head-percent .arrow-down::before {
   border-top-width: 0;
 }
-.portfolio_list-head-item--price {
+.portfolio_list-head-price {
   width: 12%;
 }
-.portfolio_list-head-item--24hour {
+.portfolio_list-head-24hour {
   width: 10%;
 }
-.portfolio_list-head-item--capitalizations {
+.portfolio_list-head-capitalizations {
   width: 13%;
 }
-.portfolio_list-head-item--volume {
+.portfolio_list-head-volume {
   width: 19%;
 }
 .portfolio_item {
@@ -4429,6 +4442,13 @@
   table-layout: fixed;
   position: relative;
   background-color: #fafbfc;
+}
+.portfolio_item-cell {
+  padding: 14px 12px;
+  border-right: 1px solid #e9ecee;
+}
+.portfolio_item-cell:last-child {
+  border-right: none;
 }
 .portfolio_item:hover {
   background-color: #fff;
@@ -4447,17 +4467,18 @@
   position: relative;
   display: table-cell;
   padding: 0px 10px 0 24px;
-  border-right: 1px solid #e9ecee;
 }
 .portfolio_item-name span {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.2px;
 }
 .portfolio_item-name b {
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: #8f96a1;
   letter-spacing: -0.2px;
 }
@@ -4497,23 +4518,22 @@
 .portfolio_item-amount {
   width: 20%;
   display: table-cell;
-  padding: 12px 12px 20px;
-  border-right: 1px solid #e9ecee;
 }
 .portfolio_item-amount-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .portfolio_item-amount span {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
 }
 .portfolio_item-amount b {
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 .portfolio_item-edit {
@@ -4525,32 +4545,33 @@
   width: 6%;
   display: table-cell;
   text-align: center;
-  padding: 12px 12px 20px;
-  border-right: 1px solid #e9ecee;
 }
 .portfolio_item-percent span {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
 .portfolio_item-price {
   width: 12%;
   display: table-cell;
-  padding: 12px 12px 3px;
+  padding: 14px 12px 0px 12px;
 }
 .portfolio_item-price-usd {
   display: block;
   white-space: nowrap;
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
 .portfolio_item-price-bts {
   opacity: 0.6;
   color: #8f96a1;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 9px;
   line-height: 12px;
   text-transform: uppercase;
@@ -4558,16 +4579,14 @@
 .portfolio_item-24hour {
   width: 10%;
   display: table-cell;
-  padding: 12px 12px 20px;
-  border-right: 1px solid #e9ecee;
-  border-left: 1px solid #e9ecee;
 }
 .portfolio_item-24hour b {
   padding: 2px 8px 2px;
   color: #8f96a1;
   border-radius: 9px;
   border: 1px solid #8f96a1;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 11px;
   line-height: 11px;
   text-transform: uppercase;
@@ -4577,7 +4596,8 @@
   margin: auto;
   padding-left: 18px;
   color: #707986;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
@@ -4601,12 +4621,11 @@
 .portfolio_item-capitalizations {
   width: 13%;
   display: table-cell;
-  padding: 12px 12px 20px;
-  border-right: 1px solid #e9ecee;
 }
 .portfolio_item-capitalizations span {
   color: #707986;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -4617,7 +4636,7 @@
 .portfolio_item-volume {
   width: 19%;
   display: table-cell;
-  padding: 12px 17px 20px 12px;
+  padding: 14px 22px 14px 12px;
 }
 .portfolio_item-volume-wrapper {
   display: flex;
@@ -4626,7 +4645,8 @@
 }
 .portfolio_item-volume span {
   color: #707986;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -4682,7 +4702,8 @@
 .portfolio_form h3 {
   margin-bottom: 16px;
   color: #525c6c;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
@@ -4696,7 +4717,8 @@
 }
 .portfolio_form .add-coin-form label {
   color: #333f52;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
@@ -4716,7 +4738,8 @@
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #44af36;
   color: #ffffff;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 14px;
 }
@@ -4743,7 +4766,8 @@
   max-width: 264px;
   padding: 10px 32px 8px 12px;
   color: #525c6c;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
@@ -4763,7 +4787,8 @@
   width: 104px;
   height: 36px;
   font-size: 15px;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -4841,7 +4866,8 @@
 .portfolio_form .add-coin-form_price-ico {
   margin-right: 16px;
   color: #1991eb;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 10px;
   line-height: 16px;
   text-transform: uppercase;
@@ -4850,7 +4876,8 @@
 }
 .portfolio_form .add-coin-form_price-market {
   color: #8f96a1;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 10px;
   line-height: 16px;
   text-transform: uppercase;
@@ -4860,7 +4887,8 @@
   width: 154px;
   height: 36px;
   font-size: 15px;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   border-radius: 4px 0 0 4px;
@@ -4871,7 +4899,8 @@
   margin-left: -1px;
   padding: 0px 32px 0px 12px;
   color: #525c6c;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 15px;
   text-transform: uppercase;
@@ -4887,7 +4916,8 @@
 }
 .portfolio_form .add-coin-form_total span {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 37px;
   white-space: nowrap;
@@ -4907,7 +4937,8 @@
   margin-bottom: 20px;
   color: #707986;
   font-size: 14px;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -4949,7 +4980,8 @@
 }
 .portfolio_history .history_item-name {
   color: #525c6c;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
@@ -4957,7 +4989,8 @@
   display: flex;
   align-items: center;
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -4965,20 +4998,23 @@
 .portfolio_history .history_item-amount-usd {
   margin-left: 6px;
   color: #8f96a1;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: -0.15px;
 }
 .portfolio_history .history_item-time {
   color: #707986;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
 .portfolio_history .history_item-restore {
   color: #1991eb;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-decoration: underline;
@@ -5041,7 +5077,8 @@ table .tbody tr:first-child td {
 }
 table .tbody tr:first-child td span {
   color: #525c6c;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 12px;
 }
@@ -5109,7 +5146,8 @@ table .tbody tr td:nth-last-child(2) {
 }
 table .tbody tr td span {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
@@ -5122,7 +5160,8 @@ table .tbody tr td .edit {
   margin-right: 28px;
   padding-left: 15px;
   color: #45af37;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-decoration: underline;
@@ -5144,7 +5183,8 @@ table .tbody tr td .delete {
   position: relative;
   padding-left: 15px;
   color: #8f96a1;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 10px;
   line-height: 14px;
 }
@@ -5174,7 +5214,8 @@ table .tbody .portfolio_form .btn-add-record {
   background-color: #45af37;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 11px;
   letter-spacing: -0.23px;
@@ -5186,7 +5227,8 @@ table .tbody .portfolio_form .btn-add-record--active {
   background-color: #8f96a1;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 11px;
   letter-spacing: -0.23px;
@@ -5197,7 +5239,8 @@ table tfoot {
 table tfoot tr td {
   padding: 12px 12px 12px 12px;
   color: #707986;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
@@ -5221,7 +5264,8 @@ table tfoot tr:first-child {
 }
 table tfoot tr:first-child td {
   color: #525c6c;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 12px;
 }
@@ -5248,7 +5292,8 @@ table tfoot .btn-trade {
   box-shadow: 0 1px 0 #1175c0;
   color: #fff;
   font-size: 11px;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   line-height: 11px;
 }
 table tfoot .btn-trade::before {
@@ -8752,13 +8797,15 @@ table tfoot .btn-trade::before {
 }
 .ico-stats_item-name span {
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.2px;
 }
 .ico-stats_item-name b {
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: #8f96a1;
   letter-spacing: -0.2px;
 }
@@ -8802,7 +8849,8 @@ table tfoot .btn-trade::before {
   color: #8f96a1;
   border-radius: 9px;
   border: 1px solid #8f96a1;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 11px;
   line-height: 11px;
   text-transform: uppercase;
@@ -8814,7 +8862,8 @@ table tfoot .btn-trade::before {
   margin: auto;
   padding-left: 18px;
   color: #707986;
-  font-family: "RobotoRegular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
@@ -8856,7 +8905,8 @@ table tfoot .btn-trade::before {
   display: block;
   white-space: nowrap;
   color: #333f52;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
@@ -8864,7 +8914,8 @@ table tfoot .btn-trade::before {
 .ico-stats_item-current-price-btc {
   opacity: 0.6;
   color: #8f96a1;
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 9px;
   line-height: 12px;
   text-transform: uppercase;

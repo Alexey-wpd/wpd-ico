@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
 /* font-family: "RobotoRegular"; */
 @font-face {
   font-family: "RobotoRegular";
@@ -184,6 +185,7 @@
   background-color: #e0e6ed;
 }
 .ico-item_logo {
+  position: relative;
   display: flex;
   min-width: 180px;
   min-height: 152px;
@@ -192,6 +194,9 @@
 .ico-item_logo img {
   margin: auto;
   padding: 10px;
+}
+.ico-item_sponsored {
+  position: absolute;
 }
 .ico-item_discription {
   display: flex;
@@ -231,7 +236,6 @@
   margin-bottom: 12px;
 }
 .ico-item_discribe p {
-  max-width: 270px;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -779,7 +783,7 @@
   padding-top: 18px;
   padding-bottom: 15px;
   color: #333f52;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condenced', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -831,11 +835,11 @@
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper {
+.ico-choosing-form form fieldset .choosing-form_hard-cap {
   display: flex;
   margin-bottom: 20px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper input[type="text"] {
+.ico-choosing-form form fieldset .choosing-form_hard-cap input[type="text"] {
   width: 50%;
   margin-right: 5px;
   padding: 11px 8px 9px 8px;
@@ -850,10 +854,65 @@
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper input[type="text"]:last-child {
+.ico-choosing-form form fieldset .choosing-form_hard-cap input[type="text"]:last-child {
   margin-right: 0;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper input[type="date"] {
+.ico-choosing-form form fieldset .choosing-form_date {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+.ico-choosing-form form fieldset .choosing-form_date-icon {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  cursor: pointer;
+  z-index: 1;
+}
+.ico-choosing-form form fieldset .choosing-form_date-icon::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 16px;
+  background-image: url('../img/calendar-input-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 12px;
+  right: 11px;
+  border-radius: 16px;
+  background-color: #c5d0de;
+  cursor: pointer;
+  z-index: 1;
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset:hover {
+  background-color: #849bb9;
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  top: 6px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  top: 6px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+.ico-choosing-form form fieldset .choosing-form_date input[type="text"] {
   width: 65%;
   padding: 11px 8px 9px 12px;
   border-radius: 0 4px 4px 0;
@@ -867,7 +926,7 @@
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper select {
+.ico-choosing-form form fieldset .choosing-form_date select {
   padding: 11px 8px 9px 13px;
   margin-right: -1px;
   width: 35%;
@@ -882,6 +941,7 @@
   letter-spacing: -0.07px;
 }
 .ico-choosing-form form fieldset .choosing-form_scale {
+  margin-bottom: 20px;
   width: 100%;
   height: 4px;
   border-radius: 4px;

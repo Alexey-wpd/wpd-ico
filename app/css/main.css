@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
 /* font-family: "RobotoRegular"; */
 @font-face {
   font-family: "RobotoRegular";
@@ -2217,65 +2218,6 @@
   box-shadow: inset 0px -2px 0 #35882a;
   background-color: #44af36;
 }
-.rating-wrapper {
-  display: flex;
-  margin-left: auto;
-}
-.our-rating {
-  display: flex;
-  width: 36px;
-  height: 28px;
-  border: 1px solid #44af36;
-  border-right: none;
-  background-color: #ffffff;
-}
-.our-rating span {
-  margin: auto;
-  white-space: nowrap;
-  color: #45af37;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 17px;
-}
-.rating {
-  position: relative;
-  display: flex;
-  width: 69px;
-  height: 28px;
-  background-color: #f7981b;
-}
-.rating::before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  border: 9px solid #fff;
-  border-top-width: 14px;
-  border-bottom-width: 14px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-right-width: 0;
-}
-.rating span {
-  margin: auto;
-  white-space: nowrap;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 18px;
-}
-.rating span sup {
-  padding: 0;
-  opacity: 0.8;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-}
 .features {
   padding: 32px 0;
   box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15);
@@ -2338,35 +2280,41 @@
   margin-bottom: 1px;
   position: relative;
 }
+.top5-ico .ico-item_sponsored {
+  top: 16px;
+  right: -5px;
+}
 .top5-ico .ico-item .rating {
   position: absolute;
   top: 14px;
   display: flex;
-  width: 30px;
-  height: 18px;
-  background-color: #f7981b;
   z-index: 55;
 }
 .top5-ico .ico-item .rating::before {
   content: "";
   display: inline-block;
   position: absolute;
-  right: -7px;
-  border: 7px solid transparent;
+  right: -6px;
+  left: 0;
+  border: 6px solid transparent;
   border-top-width: 9px;
   border-bottom-width: 9px;
   border-top-color: #f7981b;
   border-bottom-color: #f7981b;
   border-left-width: 0;
+  transform: rotate(0deg);
 }
 .top5-ico .ico-item .rating span {
   margin: auto;
-  white-space: nowrap;
+  padding: 2px 3px 1px 5px;
   color: #fff;
+  background-color: #f7981b;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 15px;
+  white-space: nowrap;
+  z-index: 1;
 }
 .top5-ico .ico-item_logo {
   position: relative;
@@ -2742,8 +2690,9 @@
   background-color: #ffffff;
 }
 .ico-item_sponsored {
-  position: relative;
-  margin-right: -22px;
+  position: absolute;
+  top: 16px;
+  right: -6px;
   padding: 5px 10px 2px 14px;
   box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #f3b325;
@@ -4193,10 +4142,10 @@
 .portfolio-nav_button a::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   left: 10px;
-  top: 11px;
+  top: 9px;
   background-image: url('../img/coin.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -4340,11 +4289,11 @@
 .portfolio_button .btn::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   left: 10px;
-  top: 11px;
-  background-image: url('../img/dollar.svg');
+  top: 9px;
+  background-image: url('../img/coin.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -5311,7 +5260,8 @@ table tfoot .btn-trade::before {
 .market-topline {
   position: relative;
   padding: 20px 0 0px;
-  background-color: grey;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+  background: radial-gradient(farthest-side at 75% -75%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .market-topline .market-card {
   position: absolute;
@@ -5323,6 +5273,7 @@ table tfoot .btn-trade::before {
   display: flex;
   height: 140px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+  background: radial-gradient(farthest-side at 75% -75%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .market-topline .market-card_logo img {
   margin: auto;
@@ -5482,58 +5433,34 @@ table tfoot .btn-trade::before {
   letter-spacing: -1px;
 }
 .market-topline .market-data .rating-wrapper {
-  margin-left: auto;
-}
-.market-topline .market-data .rating-wrapper .our-rating {
-  width: 48px;
-  height: 32px;
-  border-radius: 2px;
-  border: none;
-  border-right: none;
-}
-.market-topline .market-data .rating-wrapper .our-rating span {
-  color: #44af36;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-}
-.market-topline .market-data .rating-wrapper .rating {
   position: relative;
-  display: flex;
-  width: 90px;
-  height: 32px;
-  background-color: #f7981b;
-  border-radius: 0 2px 2px 0;
+  margin-left: auto;
 }
 .market-topline .market-data .rating-wrapper .rating::before {
   content: "";
-  display: inline-block;
-  position: relative;
-  border: 9px solid #fff;
-  border-top-width: 14px;
-  border-bottom-width: 14px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-right-width: 0;
+  position: absolute;
+  left: -10px;
+  border: 10px solid transparent;
+  border-top-width: 16px;
+  border-bottom-width: 16px;
+  border-top-color: #f7981b;
+  border-bottom-color: #f7981b;
+  border-left-width: 0;
+  transform: rotate(180deg);
 }
 .market-topline .market-data .rating-wrapper .rating span {
-  margin: auto;
-  white-space: nowrap;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  padding: 6px 6px 4px 10px;
   font-size: 22px;
   font-weight: 900;
-  line-height: 27px;
+  line-height: 22px;
+  white-space: nowrap;
 }
-.market-topline .market-data .rating-wrapper .rating span sup {
-  padding: 0;
-  opacity: 0.8;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+.market-topline .market-data .rating-wrapper .our-rating {
+  border: none;
+  border-radius: 2px;
+}
+.market-topline .market-data .rating-wrapper .our-rating span {
+  font-size: 20px;
   font-weight: 500;
   line-height: 20px;
 }
@@ -6556,6 +6483,7 @@ table tfoot .btn-trade::before {
   background-color: #e0e6ed;
 }
 .ico-item_logo {
+  position: relative;
   display: flex;
   min-width: 180px;
   min-height: 152px;
@@ -6564,6 +6492,9 @@ table tfoot .btn-trade::before {
 .ico-item_logo img {
   margin: auto;
   padding: 10px;
+}
+.ico-item_sponsored {
+  position: absolute;
 }
 .ico-item_discription {
   display: flex;
@@ -6603,7 +6534,6 @@ table tfoot .btn-trade::before {
   margin-bottom: 12px;
 }
 .ico-item_discribe p {
-  max-width: 270px;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -7151,7 +7081,7 @@ table tfoot .btn-trade::before {
   padding-top: 18px;
   padding-bottom: 15px;
   color: #333f52;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condenced', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -7203,11 +7133,11 @@ table tfoot .btn-trade::before {
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper {
+.ico-choosing-form form fieldset .choosing-form_hard-cap {
   display: flex;
   margin-bottom: 20px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper input[type="text"] {
+.ico-choosing-form form fieldset .choosing-form_hard-cap input[type="text"] {
   width: 50%;
   margin-right: 5px;
   padding: 11px 8px 9px 8px;
@@ -7222,10 +7152,65 @@ table tfoot .btn-trade::before {
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper input[type="text"]:last-child {
+.ico-choosing-form form fieldset .choosing-form_hard-cap input[type="text"]:last-child {
   margin-right: 0;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper input[type="date"] {
+.ico-choosing-form form fieldset .choosing-form_date {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+.ico-choosing-form form fieldset .choosing-form_date-icon {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  cursor: pointer;
+  z-index: 1;
+}
+.ico-choosing-form form fieldset .choosing-form_date-icon::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 16px;
+  background-image: url('../img/calendar-input-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 12px;
+  right: 11px;
+  border-radius: 16px;
+  background-color: #c5d0de;
+  cursor: pointer;
+  z-index: 1;
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset:hover {
+  background-color: #849bb9;
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  top: 6px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+.ico-choosing-form form fieldset .choosing-form_date-reset:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  top: 6px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+.ico-choosing-form form fieldset .choosing-form_date input[type="text"] {
   width: 65%;
   padding: 11px 8px 9px 12px;
   border-radius: 0 4px 4px 0;
@@ -7239,7 +7224,7 @@ table tfoot .btn-trade::before {
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_inputs-wrapper select {
+.ico-choosing-form form fieldset .choosing-form_date select {
   padding: 11px 8px 9px 13px;
   margin-right: -1px;
   width: 35%;
@@ -7254,6 +7239,7 @@ table tfoot .btn-trade::before {
   letter-spacing: -0.07px;
 }
 .ico-choosing-form form fieldset .choosing-form_scale {
+  margin-bottom: 20px;
   width: 100%;
   height: 4px;
   border-radius: 4px;
@@ -7267,7 +7253,10 @@ table tfoot .btn-trade::before {
 .ico-topline {
   position: relative;
   padding: 20px 0 0px;
-  background-color: purple;
+  background: radial-gradient(farthest-side at 75% -75%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: url('../img/gr.svg');
+  background-size: cover;
+  background-position: right bottom;
 }
 .ico-topline .ico-card {
   position: absolute;
@@ -7279,67 +7268,37 @@ table tfoot .btn-trade::before {
   display: flex;
   height: 140px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
-  background-image: linear-gradient(225deg, #a650ff 0%, #753dad 100%);
+  background: radial-gradient(farthest-side at 75% -75%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .ico-topline .ico-card_logo img {
   margin: auto;
 }
-.ico-topline .ico-card_rating-wrapper {
+.ico-topline .ico-card .rating-wrapper {
   position: relative;
   top: -16px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.ico-topline .ico-card_rating-wrapper .our-rating {
-  width: 48px;
-  height: 33px;
-  border-radius: 2px;
-  border-right: none;
-}
-.ico-topline .ico-card_rating-wrapper .our-rating span {
-  color: #44af36;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-}
-.ico-topline .ico-card_rating-wrapper .rating {
-  position: relative;
-  display: flex;
-  width: 90px;
-  height: 32px;
-  background-color: #f7981b;
-  border-radius: 0 2px 2px 0;
-}
-.ico-topline .ico-card_rating-wrapper .rating::before {
+.ico-topline .ico-card .rating-wrapper .rating::before {
   content: "";
-  display: inline-block;
-  position: relative;
-  border: 9px solid #fff;
+  position: absolute;
+  left: -10px;
+  border: 10px solid transparent;
   border-top-width: 16px;
   border-bottom-width: 16px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-right-width: 0;
+  border-top-color: #f7981b;
+  border-bottom-color: #f7981b;
+  border-left-width: 0;
+  transform: rotate(180deg);
 }
-.ico-topline .ico-card_rating-wrapper .rating span {
-  margin: auto;
-  white-space: nowrap;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+.ico-topline .ico-card .rating-wrapper .rating span {
   font-size: 22px;
   font-weight: 900;
-  line-height: 34px;
+  line-height: 22px;
+  white-space: nowrap;
 }
-.ico-topline .ico-card_rating-wrapper .rating span sup {
-  padding: 0;
-  opacity: 0.8;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+.ico-topline .ico-card .rating-wrapper .our-rating span {
+  font-size: 20px;
   font-weight: 500;
   line-height: 20px;
 }
@@ -7576,6 +7535,12 @@ table tfoot .btn-trade::before {
   justify-content: space-between;
   align-items: center;
 }
+.ico-topline .ico-data_cap-current-usd {
+  display: flex;
+}
+.ico-topline .ico-data_cap-current sup {
+  margin-top: 10px;
+}
 .ico-topline .ico-data_trading-table {
   margin-bottom: 20px;
   width: 100%;
@@ -7701,7 +7666,7 @@ table tfoot .btn-trade::before {
   padding: 3px 4px 2px;
   border-radius: 2px;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 500;
@@ -8225,33 +8190,30 @@ table tfoot .btn-trade::before {
 }
 .related-ico .rating {
   position: absolute;
-  right: 15px;
   top: 12px;
-  display: flex;
-  width: 72px;
-  height: 28px;
-  background-color: #f7981b;
-  border-radius: 0 2px 2px 0;
+  right: 0;
 }
 .related-ico .rating::before {
   content: "";
-  display: inline-block;
-  position: relative;
-  border: 8px solid #fff;
+  position: absolute;
+  left: -6px;
+  border: 6px solid transparent;
   border-top-width: 14px;
   border-bottom-width: 14px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-right-width: 0;
+  border-top-color: #f7981b;
+  border-bottom-color: #f7981b;
+  border-left-width: 0;
+  transform: rotate(180deg);
 }
 .related-ico .rating span {
   margin: auto;
+  padding: 6px 6px 4px 11px;
   white-space: nowrap;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "RobotoBold";
   font-size: 18px;
-  line-height: 18px;
+  line-height: 16px;
 }
 .related-ico .rating span sup {
   padding: 0;
@@ -8288,6 +8250,7 @@ table tfoot .btn-trade::before {
   letter-spacing: -0.15px;
 }
 .related-ico_item-logo {
+  position: relative;
   width: 100%;
   height: 120px;
   display: flex;
@@ -8296,6 +8259,7 @@ table tfoot .btn-trade::before {
   margin: auto;
 }
 .related-ico_item-content {
+  position: relative;
   padding: 16px 20px 22px;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 0 0 4px 4px;
@@ -8313,9 +8277,6 @@ table tfoot .btn-trade::before {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-}
-.related-ico_item-title .ico-item_sponsored {
-  margin-right: -26px;
 }
 .related-ico_item-category {
   margin-bottom: 4px;
@@ -10017,11 +9978,11 @@ label.checkbox span::before {
   top: 0;
   left: 0;
   width: 16px;
-  height: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 2px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
+  height: 21px;
+  background-image: url('../img/check-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 33;
 }
 label.checkbox input[type=checkbox]:checked + span::after {
   content: '';
@@ -10072,20 +10033,20 @@ label.radio span::before {
   top: 0;
   left: 0;
   width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
+  height: 21px;
+  background-image: url('../img/radio-inactive.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 33;
 }
 label.radio input[type=radio]:checked + span::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/radio.svg');
+  top: -1px;
+  left: -1px;
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/radio-active.svg');
   background-repeat: no-repeat;
   background-position: center;
   z-index: 33;
@@ -10154,4 +10115,82 @@ label.radio input[type=radio]:checked + span::after {
 .bs-tooltip-left .arrow::before {
   border-left-color: #ffffff;
   left: -1px;
+}
+.rating-wrapper {
+  display: flex;
+  margin-left: auto;
+}
+.our-rating {
+  display: flex;
+  border: 1px solid #44af36;
+  border-right: none;
+  background-color: #ffffff;
+}
+.our-rating span {
+  margin: auto;
+  padding: 0px 18px 0px 9px;
+  white-space: nowrap;
+  color: #45af37;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.rating {
+  position: relative;
+  display: flex;
+}
+.rating::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  border: 10px solid transparent;
+  border-top-width: 14px;
+  border-bottom-width: 14px;
+  border-top-color: #f7981b;
+  border-bottom-color: #f7981b;
+  border-left-width: 0;
+  transform: rotate(180deg);
+}
+.rating span {
+  margin: auto;
+  padding: 6px 6px 4px 5px;
+  color: #fff;
+  background-color: #f7981b;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.rating span sup {
+  padding: 0;
+  opacity: 0.8;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.add-favourite {
+  position: absolute;
+  cursor: pointer;
+}
+.add-favourite::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  left: 20px;
+  top: 17px;
+  background-image: url('../img/add-favourite.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.add-favourite--active::before {
+  background-image: url('../img/heart-white.svg');
 }

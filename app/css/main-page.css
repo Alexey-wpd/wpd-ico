@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
 /* font-family: "RobotoRegular"; */
 @font-face {
   font-family: "RobotoRegular";
@@ -114,35 +115,41 @@
   margin-bottom: 1px;
   position: relative;
 }
+.top5-ico .ico-item_sponsored {
+  top: 16px;
+  right: -5px;
+}
 .top5-ico .ico-item .rating {
   position: absolute;
   top: 14px;
   display: flex;
-  width: 30px;
-  height: 18px;
-  background-color: #f7981b;
   z-index: 55;
 }
 .top5-ico .ico-item .rating::before {
   content: "";
   display: inline-block;
   position: absolute;
-  right: -7px;
-  border: 7px solid transparent;
+  right: -6px;
+  left: 0;
+  border: 6px solid transparent;
   border-top-width: 9px;
   border-bottom-width: 9px;
   border-top-color: #f7981b;
   border-bottom-color: #f7981b;
   border-left-width: 0;
+  transform: rotate(0deg);
 }
 .top5-ico .ico-item .rating span {
   margin: auto;
-  white-space: nowrap;
+  padding: 2px 3px 1px 5px;
   color: #fff;
+  background-color: #f7981b;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 15px;
+  white-space: nowrap;
+  z-index: 1;
 }
 .top5-ico .ico-item_logo {
   position: relative;
@@ -518,8 +525,9 @@
   background-color: #ffffff;
 }
 .ico-item_sponsored {
-  position: relative;
-  margin-right: -22px;
+  position: absolute;
+  top: 16px;
+  right: -6px;
   padding: 5px 10px 2px 14px;
   box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #f3b325;

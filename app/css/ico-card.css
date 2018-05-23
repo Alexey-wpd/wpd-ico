@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
 /* font-family: "RobotoRegular"; */
 @font-face {
   font-family: "RobotoRegular";
@@ -55,7 +56,10 @@
 .ico-topline {
   position: relative;
   padding: 20px 0 0px;
-  background-color: purple;
+  background: radial-gradient(farthest-side at 75% -75%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: url('../img/gr.svg');
+  background-size: cover;
+  background-position: right bottom;
 }
 .ico-topline .ico-card {
   position: absolute;
@@ -67,67 +71,37 @@
   display: flex;
   height: 140px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
-  background-image: linear-gradient(225deg, #a650ff 0%, #753dad 100%);
+  background: radial-gradient(farthest-side at 75% -75%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .ico-topline .ico-card_logo img {
   margin: auto;
 }
-.ico-topline .ico-card_rating-wrapper {
+.ico-topline .ico-card .rating-wrapper {
   position: relative;
   top: -16px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.ico-topline .ico-card_rating-wrapper .our-rating {
-  width: 48px;
-  height: 33px;
-  border-radius: 2px;
-  border-right: none;
-}
-.ico-topline .ico-card_rating-wrapper .our-rating span {
-  color: #44af36;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-}
-.ico-topline .ico-card_rating-wrapper .rating {
-  position: relative;
-  display: flex;
-  width: 90px;
-  height: 32px;
-  background-color: #f7981b;
-  border-radius: 0 2px 2px 0;
-}
-.ico-topline .ico-card_rating-wrapper .rating::before {
+.ico-topline .ico-card .rating-wrapper .rating::before {
   content: "";
-  display: inline-block;
-  position: relative;
-  border: 9px solid #fff;
+  position: absolute;
+  left: -10px;
+  border: 10px solid transparent;
   border-top-width: 16px;
   border-bottom-width: 16px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-right-width: 0;
+  border-top-color: #f7981b;
+  border-bottom-color: #f7981b;
+  border-left-width: 0;
+  transform: rotate(180deg);
 }
-.ico-topline .ico-card_rating-wrapper .rating span {
-  margin: auto;
-  white-space: nowrap;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+.ico-topline .ico-card .rating-wrapper .rating span {
   font-size: 22px;
   font-weight: 900;
-  line-height: 34px;
+  line-height: 22px;
+  white-space: nowrap;
 }
-.ico-topline .ico-card_rating-wrapper .rating span sup {
-  padding: 0;
-  opacity: 0.8;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+.ico-topline .ico-card .rating-wrapper .our-rating span {
+  font-size: 20px;
   font-weight: 500;
   line-height: 20px;
 }
@@ -364,6 +338,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.ico-topline .ico-data_cap-current-usd {
+  display: flex;
+}
+.ico-topline .ico-data_cap-current sup {
+  margin-top: 10px;
+}
 .ico-topline .ico-data_trading-table {
   margin-bottom: 20px;
   width: 100%;
@@ -489,7 +469,7 @@
   padding: 3px 4px 2px;
   border-radius: 2px;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 500;

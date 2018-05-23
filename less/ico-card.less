@@ -3,7 +3,10 @@
 .ico-topline {
     position: relative;
     padding: 20px 0 0px;
-    background-color: purple;
+    background: radial-gradient(farthest-side at 75% -75%,rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.00) 100%);
+    background-image: @img-gr;
+    background-size: cover;
+    background-position: right bottom;
     .ico-card {
         position: absolute;
         &_wrapper {
@@ -13,68 +16,41 @@
             display: flex;
             height: 140px;
             box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
-            background-image: linear-gradient(225deg, #a650ff 0%, #753dad 100%);
+            background: radial-gradient(farthest-side at 75% -75%,rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.00) 100%);
             img {
                 margin: auto;
             }
         }
-        &_rating-wrapper {
+        .rating-wrapper {
             position: relative;
             top: -16px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            .our-rating {
-                width: 48px;
-                height: 33px;
-                border-radius: 2px;
-                //border: none;
-                border-right: none;
+            .rating {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -10px;
+                    border: 10px solid transparent;
+                    border-top-width: 16px;
+                    border-bottom-width: 16px;
+                    border-top-color: #f7981b;
+                    border-bottom-color: #f7981b;
+                    border-left-width: 0;
+                    transform: rotate(180deg);
+                }
                 span {
-                    color: @accent-color;
-                    font-family: @main-font;
+                    font-size: 22px;
+                    font-weight: 900;
+                    line-height: 22px;
+                    white-space: nowrap;
+                }
+            }
+            .our-rating {
+                span {
                     font-size: 20px;
                     font-weight: 500;
                     line-height: 20px;
-                }
-            }
-            .rating {
-                position: relative;
-                display: flex;
-                width: 90px;
-                height: 32px;
-                background-color: #f7981b;
-                border-radius: 0 2px 2px 0;
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    position: relative;
-                    border: 9px solid #fff;
-                    border-top-width: 16px;
-                    border-bottom-width: 16px;
-                    border-top-color: transparent;
-                    border-bottom-color: transparent;
-                    border-right-width: 0;
-                }
-                span {
-                    margin: auto;
-                    white-space: nowrap;
-                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                    color: #ffffff;
-                    font-family: @main-font;
-                    font-size: 22px;
-                    font-weight: 900;
-                    line-height: 34px;
-                    sup {
-                        padding: 0;
-                        opacity: 0.8;
-                        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                        color: #ffffff;
-                        font-family: @main-font;
-                        font-size: 15px;
-                        font-weight: 500;
-                        line-height: 20px;
-                    }
                 }
             }
         }
@@ -326,6 +302,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            &-usd {
+                display: flex;
+            }
+            sup {
+                margin-top: 10px;
+            }
         }
         &_trading-table {
             margin-bottom: 20px;
@@ -450,7 +432,7 @@
                     padding: 3px 4px 2px;
                     border-radius: 2px;
                     color: #fff;
-                    background-color: rgba(255, 255, 255, 0.75);
+                    background-color: rgba(255, 255, 255, 0.5);
                     font-family: @main-font;
                     font-size: 11px;
                     font-weight: 500;

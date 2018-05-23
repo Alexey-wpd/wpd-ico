@@ -476,15 +476,15 @@ label.checkbox {
 		}
 		&::before {
 			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 16px;
-			height: 16px;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-			border-radius: 2px;
-			border: 1px solid #c5d0de;
-			background-color: #ffffff;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 16px;
+		    height: 21px;
+		    background-image: @img-check-inactive;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    z-index: 33;
 		}
 	}
 }
@@ -535,26 +535,26 @@ label.radio {
 		line-height: 19px;
 		&::before {
 			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 16px;
-			height: 16px;
-			border-radius: 50%;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-			border: 1px solid #c5d0de;
-			background-color: #ffffff;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 16px;
+		    height: 21px;
+		    background-image: @img-radio-inactive;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    z-index: 33;
 		}
 	}
 }
 label.radio input[type=radio]:checked + span::after {
 	content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background-image: @img-radio;
+    top:-1px;
+    left:-1px;
+    width: 17px;
+    height: 17px;
+    background-image: @img-radio-active;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 33;
@@ -629,4 +629,87 @@ label.radio input[type=radio]:checked + span::after {
 .bs-tooltip-left .arrow::before {
   border-left-color: rgba(255, 255, 255, 1);
   left: -1px;
+}
+
+//==================================RATING=================
+.rating-wrapper {
+    display: flex;
+    margin-left: auto;
+}
+.our-rating {
+    display: flex;
+    border: 1px solid #44af36;
+    border-right: none;
+    background-color: #ffffff;
+    span {
+        margin: auto;
+        padding: 0px 18px 0px 9px;
+        white-space: nowrap;
+        color: #45af37;
+        font-family: @main-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+    }
+}
+.rating {
+    position: relative;
+    display: flex;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        border: 10px solid transparent;
+        border-top-width: 14px;
+        border-bottom-width: 14px;
+        border-top-color: #f7981b;
+        border-bottom-color: #f7981b;
+        border-left-width: 0;
+        transform: rotate(180deg);
+    }
+    span {
+        margin: auto;
+        padding: 6px 6px 4px 5px;
+        color: #fff;
+        background-color: #f7981b;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+        font-family: @main-font;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 16px;
+        white-space: nowrap;
+        sup {
+            padding: 0;
+            opacity: 0.8;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            font-family: @main-font;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+    }
+}
+
+.add-favourite {
+	position: absolute;
+	cursor: pointer;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 11px;
+		height: 10px;
+		left: 20px;
+		top: 17px;
+		background-image: @img-add-favourite;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: 11;
+	}
+	&--active {
+		&::before {
+			background-image: @img-heart-white;
+		}
+	}
 }

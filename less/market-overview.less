@@ -3,7 +3,8 @@
 .market-topline {
     position: relative;
     padding: 20px 0 0px;
-    background-color: grey;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+    background: radial-gradient(farthest-side at 75% -75%,rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.00) 100%);
     .market-card {
         position: absolute;
         &_wrapper {
@@ -13,6 +14,7 @@
             display: flex;
             height: 140px;
             box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+            background: radial-gradient(farthest-side at 75% -75%,rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.00) 100%);
             img {
                 margin: auto;
             }
@@ -185,58 +187,36 @@
             }
         }
         .rating-wrapper {
+            position: relative;
             margin-left: auto;
-            .our-rating {
-                width: 48px;
-                height: 32px;
-                border-radius: 2px;
-                border: none;
-                border-right: none;
+            .rating {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -10px;
+                    border: 10px solid transparent;
+                    border-top-width: 16px;
+                    border-bottom-width: 16px;
+                    border-top-color: #f7981b;
+                    border-bottom-color: #f7981b;
+                    border-left-width: 0;
+                    transform: rotate(180deg);
+                }
                 span {
-                    color: @accent-color;
-                    font-family: @main-font;
+                    padding: 6px 6px 4px 10px;
+                    font-size: 22px;
+                    font-weight: 900;
+                    line-height: 22px;
+                    white-space: nowrap;
+                }
+            }
+            .our-rating {
+                border: none;
+                border-radius: 2px;
+                span {
                     font-size: 20px;
                     font-weight: 500;
                     line-height: 20px;
-                }
-            }
-            .rating {
-                position: relative;
-                display: flex;
-                width: 90px;
-                height: 32px;
-                background-color: #f7981b;
-                border-radius: 0 2px 2px 0;
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    position: relative;
-                    border: 9px solid #fff;
-                    border-top-width: 14px;
-                    border-bottom-width: 14px;
-                    border-top-color: transparent;
-                    border-bottom-color: transparent;
-                    border-right-width: 0;
-                }
-                span {
-                    margin: auto;
-                    white-space: nowrap;
-                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                    color: #ffffff;
-                    font-family: @main-font;
-                    font-size: 22px;
-                    font-weight: 900;
-                    line-height: 27px;
-                    sup {
-                        padding: 0;
-                        opacity: 0.8;
-                        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                        color: #ffffff;
-                        font-family: @main-font;
-                        font-size: 15px;
-                        font-weight: 500;
-                        line-height: 20px;
-                    }
                 }
             }
         }

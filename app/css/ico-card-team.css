@@ -191,14 +191,16 @@
   white-space: nowrap;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-family: "RobotoBold";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
   font-size: 18px;
   line-height: 16px;
 }
 .related-ico .rating span sup {
   padding: 0;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "RobotoMedium";
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;

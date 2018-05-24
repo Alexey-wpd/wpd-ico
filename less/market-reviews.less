@@ -69,28 +69,98 @@
         }
     }
     &_item {
-        //padding: 18px 24px 20px 16px;
+        position: relative;
+        margin-bottom: 20px;
         box-shadow: 0 1px 0 #e0e6ed;
         background-color: #ffffff;
-        &-wrapper {
-            display: flex;
-            position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 74px;
+            bottom: -11px;
+            border: 6px solid transparent;
+            border-left: 6px solid #fff;
+            border-top: 6px solid #fff;
+        }
+        &-review {
             box-shadow: 0 2px 4px #e0e6ed;
             border-radius: 4px 4px 0 0;
-            &::before {
-                content: "";
-                position: absolute;
-                left: 74px;
-                bottom: -11px;
-                border: 6px solid transparent;
-                border-left: 6px solid #fff;
-                border-top: 6px solid #fff;
+            margin-bottom: 4px;
+        }
+        &-wrapper {
+            display: flex;
+        }
+        &-social {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px 28px;
+            border-top: 1px solid #e0e6ed;
+            a {
+                margin-right: 4px;
+                position: relative;
+                width: 24px;
+                height: 24px;
+                border-radius: 2px;
+                &:first-child {
+                    margin-right: 24px;
+                    width: auto;
+                    height: auto;
+                    color: #45af37;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    text-decoration: underline;
+                    text-decoration-style: dashed;
+                }
+                &::before {
+                    content: "";
+        			position: absolute;
+        			width: 21px;
+        			height: 21px;
+        			left: 1px;
+        			top: 1px;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+                }
+            }
+            &-fb {
+                background-color: #345c94;
+                &::before {
+                    background-image: @img-f-icon;
+                }
+            }
+            &-tw {
+                background-color: #00b0e9;
+                &::before {
+                    background-image: @img-tw-icon;
+                }
+            }
+            &-google {
+                background-color: #e34245;
+                &::before {
+                    background-image: @img-G-icon;
+                }
+            }
+            &-in {
+                background-color: #0086ba;
+                &::before {
+                    background-image: @img-in-icon;
+                }
+            }
+            &-vk {
+                background-color: #4c75a3;
+                &::before {
+                    background-image: @img-wk-icon;
+                }
             }
         }
         .user {
-            padding: 18px 0 20px 16px;
+            padding: 18px 10px 20px 16px;
             display: flex;
-            min-width: 210px;
+            min-width: 22%;
             align-items: flex-start;
             sup {
                 color: @accent-color;
@@ -162,11 +232,6 @@
             display: flex;
             align-items: center;
             white-space: nowrap;
-            a {
-                margin-left: 4px;
-                width: 18px;
-                height: 18px;
-            }
             span {
                 margin-left: 4px;
                 color: @accent-color;
@@ -176,16 +241,46 @@
                 line-height: 12px;
             }
             .thumbs-up {
-                text-indent: -9999px;
-                background-image: @img-thumbs-up;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
+                position: relative;
+                margin-left: 4px;
+                cursor: pointer;
+                &::before {
+                    content: "";
+        			position: absolute;
+                    left: -15px;
+                    top: -6px;
+                    width: 13px;
+                    height: 11px;
+                    background-image: @img-thumbs-up;
+                    background-position: center;
+            		background-repeat: no-repeat;
+                }
+                &--active {
+                    &::before {
+                        background-image: @img-thumbs-up-green-review;
+                    }
+                }
             }
             .thumbs-down {
-                text-indent: -9999px;
-                background-image: @img-thumbs-down;
-                background-repeat: no-repeat;
-                background-position: 50% 80%;
+                position: relative;
+                margin-left: 4px;
+                cursor: pointer;
+                &::before {
+                    content: "";
+        			position: absolute;
+                    left: 3px;
+                    top: -4px;
+                    width: 13px;
+                    height: 11px;
+                    background-image: @img-thumbs-down;
+                    background-position: center;
+            		background-repeat: no-repeat;
+                }
+                &--active {
+                    &::before {
+                        background-image: @img-thumbs-down-red-review;
+                    }
+                }
             }
         }
         &-details {
@@ -256,6 +351,8 @@
             }
         }
         &-bottomline {
+            margin-top: 15px;
+            display: flex;
             a {
                 position: relative;
                 padding-left: 16px;
@@ -278,7 +375,7 @@
                     z-index: 11;
                 }
             }
-            span {
+            &-replies {
                 position: relative;
                 color: #707986;
                 font-family: @main-font;
@@ -297,6 +394,28 @@
                     background-color: #959ca7;
                     top: 5px;
                     left: -20px;
+                }
+            }
+            &-share-review {
+                position: relative;
+                margin-left: auto;
+                color: #f7981c;
+                font-family: @main-font;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 12px;
+                    left: -18px;
+                    top: 0px;
+                    background-image: @img-share;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 11;
                 }
             }
         }

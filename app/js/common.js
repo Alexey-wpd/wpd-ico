@@ -48,6 +48,10 @@
 		$(".js-tfoot").slideToggle();
 	});
 
+	$(".js-share-social-dropdown").click(function() {
+		$(".user-reviews_item-social").slideToggle();
+	});
+
 
 //============language==============================
 

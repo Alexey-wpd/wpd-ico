@@ -176,6 +176,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding-right: 15px;
 }
 .forum-subsection-content_topic .forum-topic_title {
   display: flex;
@@ -198,10 +199,8 @@
 .forum-subsection-content_topic .forum-topic_comments-count {
   margin-right: 0px;
   margin-left: 15px;
-}
-.forum-subsection-content_topic .forum-topic_comments-count span {
   position: relative;
-  padding: 3px 6px;
+  padding: 4px 6px 2px;
   border-radius: 8px;
   background-color: #9ea4ad;
   color: #ffffff;
@@ -210,32 +209,50 @@
   font-weight: 700;
   line-height: 10px;
 }
-.forum-subsection-content_topic .forum-topic_comments-count span::before {
+.forum-subsection-content_topic .forum-topic_comments-count::before {
   content: "";
   position: absolute;
   width: 11px;
   height: 6px;
   right: 50%;
   margin-right: -4px;
-  top: 18px;
+  top: 15px;
   background-image: url('../img/tail.svg');
   background-repeat: no-repeat;
 }
 .forum-subsection-content_topic .forum-topic_rating {
   margin-right: 0px;
-}
-.forum-subsection-content_topic .forum-topic_rating span {
   color: #b64ad4;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 12px;
+  line-height: 15px;
 }
 .forum-subsection-content_topic .forum-topic_numbers {
-  width: 150px;
+  width: 140px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.forum-subsection-content_topic .forum-topic_star {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.forum-subsection-content_topic .forum-topic_star::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  background-image: url('../img/star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.forum-subsection-content_topic .forum-topic_star--active::before {
+  background-image: url('../img/star_active.svg');
 }
 .forum-subsection-content_topic .topic-statistic {
   display: flex;

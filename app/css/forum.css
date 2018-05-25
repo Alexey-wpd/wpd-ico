@@ -89,6 +89,8 @@
   width: 13px;
   height: 10px;
   background-image: url('../img/subsection-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 .main-forum .forum-section_subsection .forum-subsection_icon--lock {
@@ -99,6 +101,9 @@
   width: 12px;
   height: 7px;
   background-image: url('../img/subsection-icon-small.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: default;
 }
 .main-forum .forum-section_subsection .forum-subsection_title {
   margin-right: 16px;
@@ -143,8 +148,8 @@
 }
 .main-forum .forum-section .forum-topic {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: center;
 }
 .main-forum .forum-section .forum-topic--dropdown {
   padding-top: 20px;
@@ -181,13 +186,31 @@
 }
 .main-forum .forum-section .forum-topic_rating {
   margin-right: 16px;
-}
-.main-forum .forum-section .forum-topic_rating span {
   color: #b64ad4;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
+}
+.main-forum .forum-section .forum-topic_star {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.main-forum .forum-section .forum-topic_star::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  background-image: url('../img/star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.main-forum .forum-section .forum-topic_star--active::before {
+  background-image: url('../img/star_active.svg');
 }
 .main-forum .forum-section .forum-topic_numbers {
   display: flex;
@@ -232,7 +255,19 @@
   height: 11px;
   left: 1px;
   top: 1px;
-  background-image: url('../img/topic_author_name.svg');
+  background-image: url('../img/user-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.main-forum .forum-section .topic-author_name--admin span::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  right: -15px;
+  top: 1px;
+  background-image: url('../img/admin-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;

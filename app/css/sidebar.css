@@ -303,7 +303,7 @@
   margin-left: 10px;
 }
 .sidebar .top-10_topics .forum-topic_comments-count span {
-  padding: 1px 4px;
+  padding: 1px 4px 1px 3px;
   border-radius: 7px;
   background-color: #9ea4ad;
   color: #ffffff;
@@ -364,6 +364,18 @@
   left: 1px;
   top: 1px;
   background-image: url('../img/user-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.sidebar .top-10_topics .topic-author_name--admin span::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  right: -15px;
+  top: 1px;
+  background-image: url('../img/admin-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;

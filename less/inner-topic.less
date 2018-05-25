@@ -98,7 +98,7 @@
                     margin-left: 5px;
                     background-color: #9ea4ad;
                     position: relative;
-        			padding: 3px 6px;
+        			padding: 3px 6px 1px 5px;
         			border-radius: 8px;
                     font-size: 11px;
                     font-weight: 700;
@@ -111,7 +111,7 @@
                         height: 6px;
                         right: 50%;
                         margin-right: -4px;
-                        top: 18px;
+                        top: 15px;
                         background-image: @img-tail;
                         background-repeat: no-repeat;
                     }
@@ -123,7 +123,7 @@
         }
         .topic-rating {
             display: flex;
-            //align-items: center;
+            align-items: center;
             &_count {
                 color: #707986;
                 font-family: @main-font;
@@ -142,10 +142,9 @@
             }
             &_add-rating {
                 margin-left: 12px;
-                a {
-    				display: inline-block;
-    				text-align: center;
-    				vertical-align: middle;
+                span {
+    				display: flex;
+                    justify-content: center;
     				width: 24px;
     				height: 24px;
     				border-radius: 12px;
@@ -154,6 +153,7 @@
     				font-weight: 900;
     				line-height: 25px;
     				color: #fff;
+                    cursor: pointer;
     			}
                 &--nocolor {
                     a {
@@ -164,10 +164,10 @@
                     }
                 }
             }
-            &_icon-star {
+            &_add-favourite {
                 display: flex;
                 align-items: center;
-                margin-left: 28px;
+                margin-left: 24px;
                 span {
                     margin-left: 8px;
                     color: #707986;
@@ -175,6 +175,19 @@
                     font-size: 12px;
                     font-weight: 400;
                     line-height: 12px;
+                }
+            }
+            &_icon-star {
+                margin-left: 24px;
+                width: 24px;
+                height: 24px;
+                position: relative;
+                background-image: @img-star;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &--active {
+                    background-image: @img-star-active;
                 }
             }
         }

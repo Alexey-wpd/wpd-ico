@@ -12,7 +12,7 @@
             margin-left: 17px;
             position: relative;
             background-color: #9ea4ad;
-            padding: 3px 6px;
+            padding: 3px 6px 1px 5px;
             border-radius: 8px;
             font-size: 11px;
             font-weight: 700;
@@ -25,7 +25,7 @@
                 height: 6px;
                 right: 50%;
                 margin-right: -4px;
-                top: 18px;
+                top: 15px;
                 background-image: @img-tail;
                 background-repeat: no-repeat;
             }
@@ -38,6 +38,49 @@
         margin-top: 20px;
     }
     &_button-set {
+        .btn-add-comments {
+    		margin-right: 24px;
+    		border: 1px solid #c5d0de;
+    		background-color: #ffffff;
+    		color: @main-color;
+    		padding: 11px 12px 11px 34px;
+    		&:hover {
+    			color: @main-color;
+    		}
+    		&::before {
+    			content: "";
+    			position: absolute;
+    			width: 14px;
+    			height: 10px;
+    			left: 13px;
+    			top: 11px;
+    			background-image: @img-arrow-button-icon;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+    	}
+        .btn-invite {
+    		border: 1px solid #c5d0de;
+    		background-color: #ffffff;
+    		color: #525c6c;
+    		padding: 11px 12px 11px 34px;
+    		&:hover {
+    			color: #525c6c;
+    		}
+    		&::before {
+    			content: "";
+    			position: absolute;
+    			width: 14px;
+    			height: 10px;
+    			left: 13px;
+    			top: 12px;
+    			background-image: @img-button-hat-icon;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			z-index: 11;
+    		}
+    	}
     }
     &_checkbox-set {
         display: flex;
@@ -117,32 +160,39 @@
             display: flex;
             align-items: center;
             white-space: nowrap;
-            a {
-                margin-left: 4px;
-                width: 18px;
-                height: 18px;
-            }
             .thumbs-up {
-                text-indent: -9999px;
-        		background-image: @img-thumbs-up;
-        		background-repeat: no-repeat;
-        		background-position: 50% 50%;
+                width: 13px;
+                height: 11px;
+                background-image: @img-thumbs-up;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                &--active {
+                    background-image: @img-thumbs-up-green-review;
+                }
             }
             .thumbs-down {
-                text-indent: -9999px;
+                width: 13px;
+                height: 11px;
         		background-image: @img-thumbs-down;
-        		background-repeat: no-repeat;
-        		background-position: 50% 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                &--active {
+                    background-image: @img-thumbs-down-red-review;
+                }
             }
             .ellipsis {
-                margin-left: 24px;
-                text-indent: -9999px;
+                width: 18px;
+                height: 11px;
+                margin-left: 32px;
         		background-image: @img-ellipsis;
-        		background-repeat: no-repeat;
-        		background-position: 50% 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
             }
             span {
-                margin-left: 4px;
+                margin-left: 8px;
                 color: @accent-color;
                 font-family: @main-font;
                 font-size: 12px;

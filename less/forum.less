@@ -32,6 +32,8 @@
                     width: 13px;
                     height: 10px;
                     background-image: @img-subsection-icon;
+                    background-position: center;
+        			background-repeat: no-repeat;
                     cursor: pointer;
                     &--lock {
                         height: 16px;
@@ -41,6 +43,9 @@
                         width: 12px;
                         height: 7px;
                         background-image: @img-subsection-icon-small;
+                        background-position: center;
+            			background-repeat: no-repeat;
+                        cursor: default;
                     }
                 }
                 &_title {
@@ -94,8 +99,8 @@
         }
         .forum-topic {
         	display: flex;
-        	align-items: flex-start;
         	justify-content: space-between;
+            align-items: center;
         	&--dropdown {
         		padding-top: 20px;
         	}
@@ -132,23 +137,38 @@
         	}
         	&_rating {
         		margin-right: 16px;
-        		span {
-        			color: #b64ad4;
-        			font-family: @main-font;
-        			font-size: 12px;
-        			font-weight: 700;
-        			line-height: 12px;
-        		}
+                color: #b64ad4;
+                font-family: @main-font;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 12px;
         	}
+            &_star {
+                width: 16px;
+                height: 16px;
+                position: relative;
+                &::before {
+                    content: "";
+        			position: absolute;
+        			width: 16px;
+        			height: 16px;
+        			left: 0px;
+        			top: 0px;
+        			background-image: @img-star;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+                }
+                &--active {
+                    &::before {
+                        background-image: @img-star-active;
+                    }
+                }
+            }
         	&_numbers {
         		display: flex;
         		justify-content: flex-start;
-        		align-items: center;
-        		img {
-        			//width: 16px;
-        			//height: 16px;
-        			//background-image: url("../img/star.png");
-        		}
+                align-items: center;
         	}
         	&_icon-whatisthat {
         		width: 9px;
@@ -188,12 +208,28 @@
         				height: 11px;
         				left: 1px;
         				top: 1px;
-        				background-image: @img-topic_author_name;
+        				background-image: @img-user-icon;
         				background-position: center;
         				background-repeat: no-repeat;
         				z-index: 11;
         			}
         		}
+                &--admin {
+                    span {
+                        &::after {
+                            content: "";
+            				position: absolute;
+            				width: 11px;
+            				height: 11px;
+            				right: -15px;
+            				top: 1px;
+            				background-image: @img-admin-icon;
+            				background-position: center;
+            				background-repeat: no-repeat;
+            				z-index: 11;
+                        }
+                    }
+                }
         	}
         }
     }

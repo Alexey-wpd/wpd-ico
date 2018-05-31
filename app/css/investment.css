@@ -462,7 +462,7 @@
   background-color: #fafbfc;
 }
 .portfolio_item-cell {
-  padding: 14px 12px;
+  padding: 19px 12px 15px;
   border-right: 1px solid #e9ecee;
 }
 .portfolio_item-cell:last-child {
@@ -625,7 +625,7 @@
   width: 20px;
   height: 16px;
   left: -4px;
-  top: 3px;
+  top: 1px;
   background-image: url('../img/triangle-green.svg');
   background-position: center;
   background-repeat: no-repeat;

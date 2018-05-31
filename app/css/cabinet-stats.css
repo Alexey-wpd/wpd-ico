@@ -120,7 +120,7 @@
   box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
 }
 .ico-stats_item-cell {
-  padding: 14px 12px;
+  padding: 15px 12px 12px;
   border-right: 1px solid #e9ecee;
 }
 .ico-stats_item-cell:last-child {
@@ -213,7 +213,7 @@
   width: 20px;
   height: 16px;
   left: -4px;
-  top: 3px;
+  top: 1px;
   background-image: url('../img/triangle-green.svg');
   background-position: center;
   background-repeat: no-repeat;

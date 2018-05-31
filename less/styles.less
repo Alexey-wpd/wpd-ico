@@ -445,6 +445,57 @@ label.checkbox input[type=checkbox]:checked + .ending-ico::after {
     background-image: @img-purple-checkbox;
 }
 
+
+label.toggle {
+	margin-bottom: 0;
+	input[type=checkbox] {
+		display: none;
+		position: relative;
+		top: 2px;
+	}
+	span {
+		position: relative;
+		display: inline-block;
+		width: 48px;
+		height: 20px;
+		&::before {
+			content: '';
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 48px;
+		    height: 20px;
+		    background-image: @img-tumbler-inactive;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    z-index: 33;
+		}
+	}
+}
+label.toggle input[type=checkbox]:checked + span::after {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 48px;
+	height: 20px;
+    background-image: @img-tumbler-active;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 33;
+}
+
+.portfolio-view_filter label input[type=checkbox]:checked+b {
+	background: @accent-color;
+    color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.profile-usersrating_filter label input[type=checkbox]:checked+b {
+	background: #8f96a1;
+    color: #fff;
+	font-weight: 500;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
 //============================radio-buttons========================//
 label.radio {
 	input[type=radio] {
@@ -489,8 +540,7 @@ label.radio input[type=radio]:checked + span::after {
     z-index: 33;
 }
 
-.radio-buttons label input[type=radio]:checked+b,
-.portfolio-view_filter label input[type=checkbox]:checked+b{
+.radio-buttons label input[type=radio]:checked+b {
 	background: @accent-color;
     color: #fff;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);

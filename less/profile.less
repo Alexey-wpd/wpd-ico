@@ -177,6 +177,9 @@
             font-size: 16px;
             font-weight: 700;
             line-height: 20px;
+            &--zero {
+                color: #8f96a1;
+            }
         }
     }
 }
@@ -236,7 +239,7 @@
     			margin-left: -1px;
     			color: #525c6c;
     			background-color: #fff;
-    			border: 1px solid #8f96a1;
+    			border: 1px solid #ced8e3;
     			font-family: @main-font;
                 font-weight: 500;
     			font-size: 13px;
@@ -259,14 +262,21 @@
                 color: #ff3657;
             }
         }
+        &-norating {
+            color: #707986;
+            font-family: @main-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
         &-data {
             display: flex;
             align-items: center;
         }
         &-avatar {
             margin-right: 8px;
-            width: 20px;
-            height: 20px;
+            width: 21px;
+            height: 21px;
             border-radius: 50%;
             border: 1px solid #c5d0de;
             img {
@@ -432,6 +442,13 @@
     padding: 40px 0 44px;
     &-intro {
         margin-bottom: 30px;
+        span {
+            color: #333f52;
+            font-family: @main-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
         p {
             color: #333f52;
             font-family: @main-font;
@@ -571,6 +588,13 @@
         &:last-child {
             border-bottom: none;
         }
+        &-noreviews {
+            color: #707986;
+            font-family: @main-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
         &-name {
             display: flex;
             align-items: center;
@@ -587,16 +611,16 @@
             position: relative;
             display: flex;
             margin-left: auto;
-            width: 40px;
-            height: 20px;
+            width: 30px;
+            height: 17px;
             background-color: @accent-color;
             &::before {
                 content: "";
                 display: inline-block;
                 position: relative;
-                border: 10px solid @body-bg;
+                border: 8px solid @body-bg;
                 border-left-width: 0px;
-                border-right-width: 10px;
+                border-right-width: 6px;
                 border-right-color: transparent;
             }
             span {
@@ -604,9 +628,9 @@
                 white-space: nowrap;
                 color: #fff;
                 font-family: @main-font;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 700;
-                line-height: 21px;
+                line-height: 12px;
             }
         }
         &-rating {
@@ -647,6 +671,7 @@
         &-comment {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 6px;
             p {
                 color: #707986;
                 font-family: @main-font;
@@ -664,7 +689,7 @@
             }
         }
         &-date {
-            text-align: right;
+            margin-bottom: 5px;
             span {
                 color: #8f96a1;
                 font-family: @main-font;
@@ -708,6 +733,41 @@
         &-thread {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 5px;
+            a {
+                color: #1991eb;
+                font-family: @main-font;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: -0.1px;
+            }
+            span {
+                margin-left: 22px;
+                color: #b64ad4;
+                font-family: @main-font;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 12px;
+            }
+        }
+        &-date {
+            margin-right: 28px;
+            color: #8f96a1;
+            font-family: @main-font;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 12px;
+        }
+        &-views {
+            color: #8f96a1;
+            font-family: @main-font;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 12px;
+            b {
+                font-size: 14px;
+            }
         }
     }
 }

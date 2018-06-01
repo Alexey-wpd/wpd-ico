@@ -233,6 +233,9 @@
   font-weight: 700;
   line-height: 20px;
 }
+.profile-user_rating-points--zero {
+  color: #8f96a1;
+}
 .profile-usersrating {
   padding: 24px;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
@@ -287,7 +290,7 @@
   margin-left: -1px;
   color: #525c6c;
   background-color: #fff;
-  border: 1px solid #8f96a1;
+  border: 1px solid #ced8e3;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -305,14 +308,21 @@
 .profile-usersrating_item--negative .profile-usersrating_item-points {
   color: #ff3657;
 }
+.profile-usersrating_item-norating {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
 .profile-usersrating_item-data {
   display: flex;
   align-items: center;
 }
 .profile-usersrating_item-avatar {
   margin-right: 8px;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   border: 1px solid #c5d0de;
 }
@@ -481,6 +491,13 @@
 .profile-intro {
   margin-bottom: 30px;
 }
+.profile-intro span {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
 .profile-intro p {
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -609,6 +626,13 @@
 .profile-reviews_item:last-child {
   border-bottom: none;
 }
+.profile-reviews_item-noreviews {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
 .profile-reviews_item-name {
   display: flex;
   align-items: center;
@@ -625,17 +649,17 @@
   position: relative;
   display: flex;
   margin-left: auto;
-  width: 40px;
-  height: 20px;
+  width: 30px;
+  height: 17px;
   background-color: #44af36;
 }
 .profile-reviews_item .rating_tag::before {
   content: "";
   display: inline-block;
   position: relative;
-  border: 10px solid #eff3f6;
+  border: 8px solid #eff3f6;
   border-left-width: 0px;
-  border-right-width: 10px;
+  border-right-width: 6px;
   border-right-color: transparent;
 }
 .profile-reviews_item .rating_tag span {
@@ -643,9 +667,9 @@
   white-space: nowrap;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 12px;
 }
 .profile-reviews_item-rating {
   margin-left: 22px;
@@ -683,6 +707,7 @@
 .profile-comments_item-comment {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 6px;
 }
 .profile-comments_item-comment p {
   color: #707986;
@@ -700,7 +725,7 @@
   line-height: 12px;
 }
 .profile-comments_item-date {
-  text-align: right;
+  margin-bottom: 5px;
 }
 .profile-comments_item-date span {
   color: #8f96a1;
@@ -742,4 +767,39 @@
 .profile-threads_item-thread {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
+}
+.profile-threads_item-thread a {
+  color: #1991eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.1px;
+}
+.profile-threads_item-thread span {
+  margin-left: 22px;
+  color: #b64ad4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+}
+.profile-threads_item-date {
+  margin-right: 28px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.profile-threads_item-views {
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.profile-threads_item-views b {
+  font-size: 14px;
 }

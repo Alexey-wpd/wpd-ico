@@ -219,17 +219,28 @@ b {
 .user_icon {
   margin-right: 10px;
   display: flex;
-  padding: 2px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #44af36;
   border-radius: 50%;
 }
+.user_icon img {
+  margin: auto;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 100%;
+}
 .user_icon--small {
-  padding: 0;
+  width: 20px;
+  height: 20px;
   border: 1px solid #44af36;
   position: relative;
 }
-.user_icon img {
+.user_icon--small img {
   margin: auto;
+  border: none;
+  border-radius: 50%;
+  width: 100%;
 }
 .user_icon--ico {
   position: relative;

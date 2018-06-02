@@ -53,218 +53,204 @@
   font-style: normal;
   font-weight: normal;
 }
-.ico-stats_header {
-  padding: 32px 0 26px;
+.profile-following-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 28px 0;
 }
-.ico-stats_header h1 {
-  margin-bottom: 4px;
+.profile-following-title h2 {
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 18px;
 }
-.ico-stats_header span {
-  color: #707986;
+.profile-following-title button {
+  padding: 9px 12px 7px 12px;
+  box-shadow: 0 2px 0 #3b962f;
+  border-radius: 2px;
+  background-color: #45af37;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
 }
-.ico-stats_table {
-  width: 100%;
-  margin-bottom: 52px;
+.profile-following-list {
+  margin-bottom: 50px;
+}
+.profile-following-ico {
+  display: flex;
+  margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 4px;
   background-color: #fafbfc;
 }
-.ico-stats_table-header {
-  background-color: #e0e6ed;
-  border-bottom: 2px solid #c5d0de;
-}
-.ico-stats_table-header-cell {
-  padding: 18px 12px 14px;
-  border-right: 1px solid #e9ecee;
-}
-.ico-stats_table-header-cell:last-child {
-  border-right: none;
-}
-.ico-stats_table-header-cell--name {
-  padding-left: 22px;
-  width: 23%;
-}
-.ico-stats_table-header-cell--24h {
-  width: 11%;
-}
-.ico-stats_table-header-cell--roi {
-  width: 12%;
-}
-.ico-stats_table-header-cell--date {
-  width: 15%;
-}
-.ico-stats_table-header-cell--price {
+.profile-following-ico_logo {
+  position: relative;
+  display: flex;
   width: 13%;
+  height: 68px;
+  margin-right: 18px;
+  border-radius: 4px 0 0 4px;
 }
-.ico-stats_table-header-cell span {
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 12px;
+.profile-following-ico_logo-wrapper {
+  padding: 5px;
+  display: flex;
+  margin: auto;
+  width: 102px;
+  height: 39px;
 }
-.ico-stats_item:hover {
-  background-color: #fff;
-  box-shadow: 0 1px 0 #e0e6ed, 0 -1px 0 #e0e6ed;
-}
-.ico-stats_item-cell {
-  padding: 15px 12px 12px;
-  border-right: 1px solid #e9ecee;
-}
-.ico-stats_item-cell:last-child {
-  border-right: none;
-}
-.ico-stats_item-logo {
-  display: inline-block;
-  margin-right: 8px;
-  width: 24px;
-  height: 24px;
-}
-.ico-stats_item-logo img {
+.profile-following-ico_logo-wrapper img {
   width: 100%;
 }
-.ico-stats_item-name-wrapper {
+.profile-following-ico_discription {
+  position: relative;
+  width: 27%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-right: 28px;
 }
-.ico-stats_item-name {
-  position: relative;
-  padding: 0px 10px 0 22px;
+.profile-following-ico_discription-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-.ico-stats_item-name span {
+.profile-following-ico_discription-status {
+  align-self: flex-start;
+  padding: 2px 4px 0px;
+  margin-top: 14px;
+  border-radius: 2px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+}
+.profile-following-ico_discription-status--upcoming {
+  background-color: #fab760;
+}
+.profile-following-ico_discription-status--active {
+  background-color: #5cb0d5;
+}
+.profile-following-ico_discription-status--trading {
+  background-color: #7dc773;
+}
+.profile-following-ico_discription-status--ended {
+  background-color: #8f96a1;
+}
+.profile-following-ico_discription-name {
+  margin-bottom: 7px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: -0.2px;
-}
-.ico-stats_item-name b {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #8f96a1;
-  letter-spacing: -0.2px;
-}
-.ico-stats_item-name::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 98%;
-  left: 0px;
-  top: 0px;
-  z-index: 11;
-}
-.ico-stats_item-name--bts::before {
-  background-color: #8f5bc0;
-}
-.ico-stats_item-name--MON::before {
-  background-color: #c28f58;
-}
-.ico-stats_item-name--OPA::before {
-  background-color: #429db0;
-}
-.ico-stats_item-name--EOS::before {
-  background-color: #ffa635;
-}
-.ico-stats_item-name--XMR::before {
-  background-color: #6982fc;
-}
-.ico-stats_item-name--DASH::before {
-  background-color: #ff6d71;
-}
-.ico-stats_item-name--NEO::before {
-  background-color: #bcbdbc;
-}
-.ico-stats_item-name--ETH::before {
-  background-color: #85b222;
-}
-.ico-stats_item-24h b,
-.ico-stats_item-roi-week b,
-.ico-stats_item-roi-month b {
-  padding: 2px 8px 2px;
-  color: #8f96a1;
-  border-radius: 9px;
-  border: 1px solid #8f96a1;
-  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 11px;
-  text-transform: uppercase;
+  line-height: 18px;
 }
-.ico-stats_item-24h span,
-.ico-stats_item-roi-week span,
-.ico-stats_item-roi-month span {
-  position: relative;
-  margin: auto;
-  padding-left: 18px;
+.profile-following-ico_discription-category {
+  align-self: flex-start;
+  padding: 3px 5px 2px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e2;
+  background-color: #ffffff;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+.profile-following-ico_timeframe {
+  display: flex;
+  align-items: center;
+  width: 28%;
+}
+.profile-following-ico_timeframe-start,
+.profile-following-ico_timeframe-end {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-following-ico_timeframe-st {
   color: #707986;
   font-family: 'Roboto', sans-serif;
+  font-size: 11px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 12px;
+  text-transform: uppercase;
 }
-.ico-stats_item-24h span::before,
-.ico-stats_item-roi-week span::before,
-.ico-stats_item-roi-month span::before {
+.profile-following-ico_timeframe-date {
+  color: #333f52;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+.profile-following-ico_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 2;
+  margin-right: 16px;
+}
+.profile-following-ico_buttons-added {
+  position: relative;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.profile-following-ico_buttons-added::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 16px;
-  left: -4px;
+  width: 9px;
+  height: 9px;
+  left: -15px;
   top: 1px;
-  background-image: url('../img/triangle-green.svg');
+  background-image: url('../img/added-small-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-stats_item-24h--negative span::before,
-.ico-stats_item-roi-week--negative span::before,
-.ico-stats_item-roi-month--negative span::before {
-  left: -4px;
-  top: 3px;
-  background-image: url('../img/triengle-red.svg');
-}
-.ico-stats_item-date span {
-  color: #707986;
+.profile-following-ico_buttons button {
+  position: relative;
+  padding: 8px 8px 7px 24px;
+  box-shadow: 0 2px 0 #3b962f;
+  border-radius: 2px;
+  background-color: #45af37;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 16px;
-  letter-spacing: -0.2px;
-}
-.ico-stats_item-price,
-.ico-stats_item-current-price {
-  padding: 12px 12px 0px 12px;
-}
-.ico-stats_item-price-usd,
-.ico-stats_item-current-price-usd {
-  display: block;
-  white-space: nowrap;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-}
-.ico-stats_item-price-btc,
-.ico-stats_item-current-price-btc {
-  opacity: 0.6;
-  color: #8f96a1;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 9px;
   line-height: 12px;
-  text-transform: uppercase;
+}
+.profile-following-ico_buttons button::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 10px;
+  top: 9px;
+  background-image: url('../img/calendar-btn-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.profile-following-ico_buttons a {
+  margin-left: 20px;
+  padding: 8px 8px 7px;
+  border-radius: 2px;
+  border: 1px solid #45af37;
+  background-color: #ffffff;
+  color: #45af37;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
 }

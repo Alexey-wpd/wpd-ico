@@ -268,6 +268,7 @@
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 .portfolio .portfolio_cost-usd {
   margin-bottom: 4px;
@@ -277,6 +278,7 @@
   font-size: 24px;
   line-height: 24px;
   letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 .portfolio .portfolio_cost-btc {
   opacity: 0.6;
@@ -430,14 +432,14 @@
 }
 .portfolio_list-head-percent .arrow-up {
   top: 21px;
-  right: 25px;
+  right: 12px;
 }
 .portfolio_list-head-percent .arrow-up::before {
   border-bottom-width: 0;
 }
 .portfolio_list-head-percent .arrow-down {
   top: 14px;
-  right: 25px;
+  right: 12px;
 }
 .portfolio_list-head-percent .arrow-down::before {
   border-top-width: 0;
@@ -462,7 +464,7 @@
   background-color: #fafbfc;
 }
 .portfolio_item-cell {
-  padding: 19px 12px 15px;
+  padding: 18px 12px 15px;
   border-right: 1px solid #e9ecee;
 }
 .portfolio_item-cell:last-child {
@@ -479,6 +481,15 @@
 .portfolio_item-logo {
   display: inline-block;
   margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.portfolio_item-logo img {
+  width: 100%;
+}
+.portfolio_item-name-wrapper {
+  display: flex;
+  align-items: center;
 }
 .portfolio_item-name {
   width: 20%;
@@ -491,7 +502,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 17px;
   letter-spacing: -0.2px;
 }
 .portfolio_item-name b {
@@ -574,7 +585,7 @@
 .portfolio_item-price {
   width: 12%;
   display: table-cell;
-  padding: 14px 12px 0px 12px;
+  padding: 18px 12px 0px 12px;
 }
 .portfolio_item-price-usd {
   display: block;
@@ -1037,15 +1048,11 @@
   line-height: 12px;
   text-decoration: underline;
 }
-table {
-  width: 100%;
-  table-layout: fixed;
-}
-table .tbody {
+.portfolio .tbody {
   position: relative;
   background-color: #fff;
 }
-table .tbody::before {
+.portfolio .tbody::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1053,7 +1060,7 @@ table .tbody::before {
   height: 10px;
   background-image: linear-gradient(180deg, #e0e6ed 0%, rgba(224, 230, 237, 0) 100%);
 }
-table .tbody::after {
+.portfolio .tbody::after {
   content: "";
   position: absolute;
   width: 4px;
@@ -1062,71 +1069,71 @@ table .tbody::after {
   top: 1px;
   z-index: 11;
 }
-table .tbody--bts::after {
+.portfolio .tbody--bts::after {
   background-color: #8f5bc0;
 }
-table .tbody--MON::after {
+.portfolio .tbody--MON::after {
   background-color: #c28f58;
 }
-table .tbody--OPA::after {
+.portfolio .tbody--OPA::after {
   background-color: #429db0;
 }
-table .tbody--EOS::after {
+.portfolio .tbody--EOS::after {
   background-color: #ffa635;
 }
-table .tbody--XMR::after {
+.portfolio .tbody--XMR::after {
   background-color: #6982fc;
 }
-table .tbody--DASH::after {
+.portfolio .tbody--DASH::after {
   background-color: #ff6d71;
 }
-table .tbody--NEO::after {
+.portfolio .tbody--NEO::after {
   background-color: #bcbdbc;
 }
-table .tbody--ETH::after {
+.portfolio .tbody--ETH::after {
   background-color: #85b222;
 }
-table .tbody tr:first-child {
+.portfolio .tbody tr:first-child {
   border-bottom: 1px solid #e9ecee;
 }
-table .tbody tr:first-child td {
+.portfolio .tbody tr:first-child td {
   padding: 30px 12px 9px 12px;
   border-right: 1px solid #e9ecee;
 }
-table .tbody tr:first-child td span {
+.portfolio .tbody tr:first-child td span {
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 12px;
 }
-table .tbody tr:first-child td:first-child {
+.portfolio .tbody tr:first-child td:first-child {
   padding: 30px 12px 9px 58px;
 }
-table .tbody tr:first-child td:nth-last-child(2) {
+.portfolio .tbody tr:first-child td:nth-last-child(2) {
   border-right: 1px solid #e9ecee;
 }
-table .tbody tr:first-child td:last-child {
+.portfolio .tbody tr:first-child td:last-child {
   text-align: left;
   border-right: none;
 }
-table .tbody tr:last-child td:first-child {
+.portfolio .tbody tr:last-child td:first-child {
   padding: 0px 12px 30px 28px;
   text-align: right;
 }
-table .tbody tr td {
+.portfolio .tbody tr td {
   padding: 15px 24px 13px 12px;
   border-right: 1px solid #e9ecee;
 }
-table .tbody tr td:first-child {
+.portfolio .tbody tr td:first-child {
   padding: 12px 12px 9px 58px;
 }
-table .tbody tr td:first-child .bought {
+.portfolio .tbody tr td:first-child .bought {
   position: relative;
   padding-left: 22px;
   color: #45af37;
 }
-table .tbody tr td:first-child .bought::before {
+.portfolio .tbody tr td:first-child .bought::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -1138,12 +1145,12 @@ table .tbody tr td:first-child .bought::before {
   background-repeat: no-repeat;
   z-index: 11;
 }
-table .tbody tr td:first-child .sold {
+.portfolio .tbody tr td:first-child .sold {
   position: relative;
   padding-left: 22px;
   color: #ff3657;
 }
-table .tbody tr td:first-child .sold::before {
+.portfolio .tbody tr td:first-child .sold::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -1155,24 +1162,24 @@ table .tbody tr td:first-child .sold::before {
   background-repeat: no-repeat;
   z-index: 11;
 }
-table .tbody tr td:last-child {
+.portfolio .tbody tr td:last-child {
   text-align: right;
   border-right: none;
 }
-table .tbody tr td:nth-last-child(2) {
+.portfolio .tbody tr td:nth-last-child(2) {
   border-right: none;
 }
-table .tbody tr td span {
+.portfolio .tbody tr td span {
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
-table .tbody tr td span b {
+.portfolio .tbody tr td span b {
   font-size: 12px;
 }
-table .tbody tr td .edit {
+.portfolio .tbody tr td .edit {
   position: relative;
   display: inline-block;
   margin-right: 28px;
@@ -1185,7 +1192,7 @@ table .tbody tr td .edit {
   text-decoration: underline;
   text-decoration-style: dashed;
 }
-table .tbody tr td .edit::before {
+.portfolio .tbody tr td .edit::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -1197,7 +1204,7 @@ table .tbody tr td .edit::before {
   background-repeat: no-repeat;
   z-index: 11;
 }
-table .tbody tr td .delete {
+.portfolio .tbody tr td .delete {
   position: relative;
   padding-left: 15px;
   color: #8f96a1;
@@ -1206,7 +1213,7 @@ table .tbody tr td .delete {
   font-size: 10px;
   line-height: 14px;
 }
-table .tbody tr td .delete::before {
+.portfolio .tbody tr td .delete::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -1218,14 +1225,14 @@ table .tbody tr td .delete::before {
   background-repeat: no-repeat;
   z-index: 11;
 }
-table .tbody .portfolio_form {
+.portfolio .tbody .portfolio_form {
   position: relative;
   padding: 16px 16px 0px 28px;
   background-color: rgba(232, 237, 242, 0.3);
   border-top: none;
   box-shadow: none;
 }
-table .tbody .portfolio_form .btn-add-record {
+.portfolio .tbody .portfolio_form .btn-add-record {
   padding: 13px 16px 10px;
   box-shadow: 0 2px 0 #3b962f;
   border-radius: 4px;
@@ -1238,7 +1245,7 @@ table .tbody .portfolio_form .btn-add-record {
   line-height: 11px;
   letter-spacing: -0.23px;
 }
-table .tbody .portfolio_form .btn-add-record--active {
+.portfolio .tbody .portfolio_form .btn-add-record--active {
   padding: 13px 16px 10px;
   box-shadow: 0 2px 0 #707986, inset 0 2px 4px rgba(1, 1, 1, 0.3);
   border-radius: 4px;
@@ -1251,10 +1258,10 @@ table .tbody .portfolio_form .btn-add-record--active {
   line-height: 11px;
   letter-spacing: -0.23px;
 }
-table tfoot {
+.portfolio tfoot {
   background-color: #fff;
 }
-table tfoot tr td {
+.portfolio tfoot tr td {
   padding: 12px 12px 12px 12px;
   color: #707986;
   font-family: 'Roboto', sans-serif;
@@ -1262,47 +1269,56 @@ table tfoot tr td {
   font-size: 16px;
   line-height: 16px;
 }
-table tfoot tr td b {
+.portfolio tfoot tr td b {
   font-size: 12px;
 }
-table tfoot tr td:nth-child(2) {
+.portfolio tfoot tr td:nth-child(2) {
   text-align: right;
   border-right: 1px solid #e9ecee;
 }
-table tfoot tr td:last-child {
+.portfolio tfoot tr td:last-child {
   text-align: right;
   padding: 12px 28px 12px 12px;
 }
-table tfoot tr:nth-child(odd) {
+.portfolio tfoot tr:nth-child(odd) {
   background-color: rgba(232, 237, 242, 0.44);
 }
-table tfoot tr:first-child {
+.portfolio tfoot tr:first-child {
   background-color: #fff;
   border-bottom: 1px solid #e9ecee;
 }
-table tfoot tr:first-child td {
+.portfolio tfoot tr:first-child td {
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 12px;
 }
-table tfoot tr:first-child td:nth-child(2) {
+.portfolio tfoot tr:first-child td:nth-child(2) {
   text-align: left;
   border-right: none;
 }
-table tfoot tr:first-child td:nth-child(3) {
+.portfolio tfoot tr:first-child td:nth-child(3) {
   text-align: right;
   border-right: 1px solid #e9ecee;
 }
-table tfoot tr:first-child td:last-child {
+.portfolio tfoot tr:first-child td:last-child {
   text-align: left;
 }
-table tfoot tr:last-child {
+.portfolio tfoot tr:last-child {
   background-color: #fff;
   border-bottom: none;
 }
-table tfoot .btn-trade {
+.portfolio tfoot .exchange-logo {
+  display: flex;
+  max-width: 90px;
+  height: 22px;
+}
+.portfolio tfoot .exchange-logo img {
+  margin: auto;
+  width: 100%;
+}
+.portfolio tfoot .btn-trade {
   position: relative;
   padding: 6px 8px 5px 22px;
   background-color: #1991eb;
@@ -1314,7 +1330,7 @@ table tfoot .btn-trade {
   font-weight: 500;
   line-height: 11px;
 }
-table tfoot .btn-trade::before {
+.portfolio tfoot .btn-trade::before {
   content: "";
   position: absolute;
   width: 10px;

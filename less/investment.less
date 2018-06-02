@@ -222,6 +222,7 @@
             font-size: 11px;
             line-height: 11px;
             letter-spacing: 0.3px;
+            text-transform: uppercase;
         }
         &-usd {
             margin-bottom: 4px;
@@ -231,6 +232,7 @@
             font-size: 24px;
             line-height: 24px;
             letter-spacing: -0.5px;
+            text-transform: uppercase;
         }
         &-btc {
             opacity: 0.6;
@@ -385,14 +387,14 @@
             }
             .arrow-up {
                 top:21px;
-                right: 25px;
+                right: 12px;
                 &::before {
                     border-bottom-width: 0;
                 }
             }
             .arrow-down {
                 top: 14px;
-                right: 25px;
+                right: 12px;
                 &::before {
                     border-top-width: 0;
                 }
@@ -419,7 +421,7 @@
         background-color: #fafbfc;
         //height: 52px;
         &-cell {
-            padding: 19px 12px 15px;
+            padding: 18px 12px 15px;
             border-right: 1px solid #e9ecee;
             &:last-child {
                 border-right: none;
@@ -557,7 +559,7 @@
         &-price {
             width: 12%;
             display: table-cell;
-            padding: 14px 12px 0px 12px;
+            padding: 18px 12px 0px 12px;
             &-usd {
                 display: block;
                 white-space: nowrap;
@@ -1035,12 +1037,6 @@
             }
         }
     }
-}
-
-
-table {
-    width: 100%;
-    table-layout: fixed;
     .tbody {
         position: relative;
         background-color: #fff;
@@ -1327,6 +1323,15 @@ table {
             &:last-child {
                 background-color: #fff;
                 border-bottom: none;
+            }
+        }
+        .exchange-logo {
+            display: flex;
+            max-width: 90px;
+            height: 22px;
+            img {
+                margin: auto;
+                width: 100%;
             }
         }
         .btn-trade {

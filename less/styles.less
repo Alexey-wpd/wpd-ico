@@ -497,15 +497,21 @@ label.toggle input[type=checkbox]:checked + span::after {
 }
 
 .portfolio-view_filter label input[type=checkbox]:checked+b {
-	background: @accent-color;
+	background-color: @accent-color;
     color: #fff;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .profile-usersrating_filter label input[type=checkbox]:checked+b {
-	background: #8f96a1;
+	background-color: #8f96a1;
     color: #fff;
 	font-weight: 500;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profile-portfolio-chart_periods label input[type=radio]:checked+b {
+	background-color: #707986;
+	opacity: 0.9;
+    color: #fff;
 }
 //============================radio-buttons========================//
 label.radio {

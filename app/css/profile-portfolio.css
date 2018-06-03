@@ -93,12 +93,12 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.profile-portfolio-data_cost {
+.profile-portfolio-data_item {
   display: flex;
   flex-direction: column;
   margin-right: 88px;
 }
-.profile-portfolio-data_cost-price {
+.profile-portfolio-data_item-name {
   margin-bottom: 9px;
   color: #707986;
   font-family: 'Roboto', sans-serif;
@@ -108,7 +108,7 @@
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
-.profile-portfolio-data_cost-usd {
+.profile-portfolio-data_item-cost {
   margin-bottom: 4px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -117,35 +117,11 @@
   line-height: 20px;
   letter-spacing: -0.5px;
 }
-.profile-portfolio-data_cost-usd b {
+.profile-portfolio-data_item-cost b {
   font-weight: 700;
   font-size: 18px;
 }
-.profile-portfolio-data_cost-btc {
-  opacity: 0.6;
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-.profile-portfolio-data_result {
-  display: flex;
-  flex-direction: column;
-  margin-right: 88px;
-}
-.profile-portfolio-data_result-profit {
-  margin-bottom: 9px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-.profile-portfolio-data_result-usd {
+.profile-portfolio-data_item-profit {
   position: relative;
   padding-left: 15px;
   margin-bottom: 4px;
@@ -156,11 +132,11 @@
   line-height: 20px;
   letter-spacing: -0.5px;
 }
-.profile-portfolio-data_result-usd b {
+.profile-portfolio-data_item-profit b {
   font-weight: 700;
   font-size: 18px;
 }
-.profile-portfolio-data_result-usd::before {
+.profile-portfolio-data_item-profit::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -172,35 +148,12 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.profile-portfolio-data_result-usd--negative::before {
+.profile-portfolio-data_item-profit--negative::before {
   left: -5px;
   top: 6px;
   background-image: url('../img/triengle-red.svg');
 }
-.profile-portfolio-data_result-btc {
-  opacity: 0.6;
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-.profile-portfolio-data_24change {
-  display: flex;
-  flex-direction: column;
-}
-.profile-portfolio-data_24change-24h {
-  margin-bottom: 9px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-.profile-portfolio-data_24change-percent {
+.profile-portfolio-data_item-percent {
   position: relative;
   padding-left: 15px;
   margin-bottom: 4px;
@@ -211,7 +164,7 @@
   line-height: 20px;
   letter-spacing: -0.5px;
 }
-.profile-portfolio-data_24change-percent::before {
+.profile-portfolio-data_item-percent::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -223,19 +176,19 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.profile-portfolio-data_24change-percent--negative {
+.profile-portfolio-data_item-percent--negative {
   color: #ff3657;
 }
-.profile-portfolio-data_24change-percent--negative::before {
+.profile-portfolio-data_item-percent--negative::before {
   left: -5px;
   top: 6px;
   background-image: url('../img/triengle-red.svg');
 }
-.profile-portfolio-data_24change-percent sup {
+.profile-portfolio-data_item-percent sup {
   font-size: 16px;
   letter-spacing: -0.5px;
 }
-.profile-portfolio-data_24change-btc {
+.profile-portfolio-data_item-btc {
   opacity: 0.6;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;

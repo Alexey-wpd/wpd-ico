@@ -79,16 +79,14 @@
                                         <input type="text" placeholder="" name="search">
                                     </form>
                                 </div>
-                                <ul>
-                                    <li class="user_name">achubais.1965</li>
-                                    <li class="user_notification">
-                                        <ul class="user_notification-wrapper">
-                                            <li class="user_notification-message"><a href="#"></a></li>
-                                            <li class="user_notification-bell"><a></a></li>
-                                            <li class="user_notification-num"><a href="#">2</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <div class="user_username-container">
+                                    <div class="user_name">achubais.1965</div>
+                                    <div class="user_notification">
+                                        <span class="user_notification-message"></span>
+                                        <span class="user_notification-bell"></span>
+                                        <span class="user_notification-num">2</span>
+                                    </div>
+                                </div>
                                 <div class="user_icon user_icon--ico">
                                     <img src="img/user-icon.png" alt="" >
                                 </div>
@@ -443,16 +441,23 @@
           <!-- /.container-fluid -->
           <div class="footer-terms">
               <div class="container-fluid">
-                  <div class="footer-terms_wrapper">
-                      <a href="#">Условия использования</a>
-                      <a href="#">Политика конфиденциальности </a>
-                      <a href="#">Предложения о сотрудничестве, реклама</a>
-                      <div class="worldpokerdeals">
-                          <a href="#">Created by  <img src="img/wpd.svg" alt=""></a>
+                  <div class="row">
+                      <div class="col">
+                          <div class="footer-terms_wrapper">
+                              <a href="#">Условия использования</a>
+                              <a href="#">Политика конфиденциальности </a>
+                              <a href="#">Предложения о сотрудничестве, реклама</a>
+                              <div class="worldpokerdeals">
+                                  <a href="#">Created by  <img src="img/wpd.svg" alt=""></a>
+                              </div>
+                          </div>
+                          <!-- /.terms_wrapper -->
                       </div>
+                      <!-- /.col -->
                   </div>
-                  <!-- /.terms_wrapper -->
+                  <!-- /.row -->
               </div>
+              <!-- /.container-fluid -->
           </div>
           <!-- /.footer-terms -->
       </footer>

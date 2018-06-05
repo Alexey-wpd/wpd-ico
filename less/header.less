@@ -18,10 +18,8 @@
         }
         &_menu {
             display: flex;
-            //justify-content: space-between;
             flex-grow: 2;
             flex-wrap: wrap;
-            //margin-right: 30px;
         }
         &_item {
             width: 78px;
@@ -54,7 +52,6 @@
         }
         &_faq {
             display: block;
-            //padding: 20px 10px 20px;
             &-item {
                 a {
                     padding: 0 10px;
@@ -122,75 +119,62 @@
                 margin-left: 10px;
                 margin-right: 0;
             }
-            &_name {
+            &_username-container {
                 margin-left: 60px;
-                text-align: right;
+            }
+            &_name {
                 margin-bottom: 2px;
+                white-space: nowrap;
             }
             &_notification {
-                &-wrapper {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                }
+                display: flex;
+                justify-content: flex-end;
+                //align-items: center;
                 &-bell {
                     margin-left: 20px;
-                    a {
-                        position: relative;
-                        display: inline-block;
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    &::before {
+                        content: "";
+                        position: absolute;
                         width: 16px;
                         height: 16px;
-                        font-size: 0;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: 16px;
-                            height: 16px;
-                            right: 0px;
-                            top: 3px;
-                            background-image: @img-bell;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            z-index: 11;
-                        }
+                        right: 0px;
+                        top: 1px;
+                        background-image: @img-bell;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 11;
                     }
                 }
                 &-message {
-                    a {
-                        position: relative;
-                        display: inline-block;
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    &::before {
+                        content: "";
+                        position: absolute;
                         width: 16px;
                         height: 16px;
-                        font-size: 0;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: 16px;
-                            height: 16px;
-                            right: 0px;
-                            top: 3px;
-                            background-image: @img-message-icon;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            z-index: 11;
-                        }
+                        right: 0px;
+                        top: 2px;
+                        background-image: @img-message-icon;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 11;
                     }
                 }
                 &-num {
+                    align-self: center;
                     margin-left: 6px;
-                    a {
-        				display: inline-block;
-        				text-align: center;
-        				//vertical-align: middle;
-        				width: 16px;
-        				height: 16px;
-        				border-radius: 8px;
-        				background-color: #ff3657;
-        				font-size: 11px;
-        				font-weight: 500;
-        				line-height: 18px;
-        				color: #fff;
-        			}
+                    padding: 2px 4px 1px 4px;
+                    border-radius: 8px;
+                    background-color: #ff3657;
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: 11px;
+                    color: #fff;
                 }
             }
         }

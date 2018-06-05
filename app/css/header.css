@@ -158,70 +158,61 @@
   margin-left: 10px;
   margin-right: 0;
 }
-.header .main-nav .user_name {
+.header .main-nav .user_username-container {
   margin-left: 60px;
-  text-align: right;
-  margin-bottom: 2px;
 }
-.header .main-nav .user_notification-wrapper {
+.header .main-nav .user_name {
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+.header .main-nav .user_notification {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 .header .main-nav .user_notification-bell {
   margin-left: 20px;
-}
-.header .main-nav .user_notification-bell a {
   position: relative;
-  display: inline-block;
   width: 16px;
   height: 16px;
-  font-size: 0;
 }
-.header .main-nav .user_notification-bell a::before {
+.header .main-nav .user_notification-bell::before {
   content: "";
   position: absolute;
   width: 16px;
   height: 16px;
   right: 0px;
-  top: 3px;
+  top: 1px;
   background-image: url('../img/bell.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
 }
-.header .main-nav .user_notification-message a {
+.header .main-nav .user_notification-message {
   position: relative;
-  display: inline-block;
   width: 16px;
   height: 16px;
-  font-size: 0;
 }
-.header .main-nav .user_notification-message a::before {
+.header .main-nav .user_notification-message::before {
   content: "";
   position: absolute;
   width: 16px;
   height: 16px;
   right: 0px;
-  top: 3px;
+  top: 2px;
   background-image: url('../img/message-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
 }
 .header .main-nav .user_notification-num {
+  align-self: center;
   margin-left: 6px;
-}
-.header .main-nav .user_notification-num a {
-  display: inline-block;
-  text-align: center;
-  width: 16px;
-  height: 16px;
+  padding: 2px 4px 1px 4px;
   border-radius: 8px;
   background-color: #ff3657;
   font-size: 11px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 11px;
   color: #fff;
 }
 .header_bottom-line {

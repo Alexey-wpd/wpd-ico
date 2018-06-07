@@ -74,6 +74,9 @@ body {
 .footer {
   min-width: 1280px;
 }
+.form-group {
+  margin-bottom: 0;
+}
 ul,
 li {
   list-style: none;

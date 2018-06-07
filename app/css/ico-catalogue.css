@@ -774,12 +774,12 @@
   box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
   border-radius: 4px;
 }
-.ico-choosing-form form fieldset {
+.ico-choosing-form .form-group {
   position: relative;
   padding: 0 24px;
   border-bottom: 1px solid #e0e6ed;
 }
-.ico-choosing-form form fieldset legend {
+.ico-choosing-form .form-group legend {
   padding-top: 18px;
   padding-bottom: 15px;
   color: #333f52;
@@ -789,17 +789,17 @@
   line-height: 16px;
   text-transform: uppercase;
 }
-.ico-choosing-form form fieldset .dropdown::before {
+.ico-choosing-form .form-group .dropdown::before {
   right: 5px;
   top: 23px;
 }
-.ico-choosing-form form fieldset .choosing-form_list--inner {
+.ico-choosing-form .form-group .choosing-form_list--inner {
   padding-left: 25px;
 }
-.ico-choosing-form form fieldset .choosing-form_list-show-more {
+.ico-choosing-form .form-group .choosing-form_list-show-more {
   margin-bottom: 10px;
 }
-.ico-choosing-form form fieldset .choosing-form_list-show-more a {
+.ico-choosing-form .form-group .choosing-form_list-show-more a {
   color: #5cb0d5;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -808,19 +808,19 @@
   text-decoration: underline;
   text-decoration-style: dashed;
 }
-.ico-choosing-form form fieldset .choosing-form_list li:last-child {
+.ico-choosing-form .form-group .choosing-form_list li:last-child {
   margin-bottom: 15px;
 }
-.ico-choosing-form form fieldset .choosing-form_list li sup {
+.ico-choosing-form .form-group .choosing-form_list li sup {
   margin-left: 5px;
   color: #9096a0;
   font-size: 10px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_search-category {
+.ico-choosing-form .form-group .choosing-form_search-category {
   margin-bottom: 18px;
 }
-.ico-choosing-form form fieldset .choosing-form_search-category input {
+.ico-choosing-form .form-group .choosing-form_search-category input {
   width: 100%;
   margin-right: 5px;
   padding: 11px 8px 9px 12px;
@@ -835,11 +835,11 @@
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_hard-cap {
+.ico-choosing-form .form-group .choosing-form_hard-cap {
   display: flex;
   margin-bottom: 20px;
 }
-.ico-choosing-form form fieldset .choosing-form_hard-cap input[type="text"] {
+.ico-choosing-form .form-group .choosing-form_hard-cap input[type="text"] {
   width: 50%;
   margin-right: 5px;
   padding: 11px 8px 9px 8px;
@@ -854,22 +854,22 @@
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_hard-cap input[type="text"]:last-child {
+.ico-choosing-form .form-group .choosing-form_hard-cap input[type="text"]:last-child {
   margin-right: 0;
 }
-.ico-choosing-form form fieldset .choosing-form_date {
+.ico-choosing-form .form-group .choosing-form_date {
   position: relative;
   display: flex;
   margin-bottom: 20px;
 }
-.ico-choosing-form form fieldset .choosing-form_date-icon {
+.ico-choosing-form .form-group .choosing-form_date-icon {
   position: absolute;
   top: 12px;
   right: 28px;
   cursor: pointer;
   z-index: 1;
 }
-.ico-choosing-form form fieldset .choosing-form_date-icon::before {
+.ico-choosing-form .form-group .choosing-form_date-icon::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -878,7 +878,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.ico-choosing-form form fieldset .choosing-form_date-reset {
+.ico-choosing-form .form-group .choosing-form_date-reset {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -889,10 +889,10 @@
   cursor: pointer;
   z-index: 1;
 }
-.ico-choosing-form form fieldset .choosing-form_date-reset:hover {
+.ico-choosing-form .form-group .choosing-form_date-reset:hover {
   background-color: #849bb9;
 }
-.ico-choosing-form form fieldset .choosing-form_date-reset:before {
+.ico-choosing-form .form-group .choosing-form_date-reset:before {
   content: "";
   position: absolute;
   width: 8px;
@@ -902,7 +902,7 @@
   left: 3px;
   transform: rotate(45deg);
 }
-.ico-choosing-form form fieldset .choosing-form_date-reset:after {
+.ico-choosing-form .form-group .choosing-form_date-reset:after {
   content: "";
   position: absolute;
   width: 8px;
@@ -912,7 +912,7 @@
   left: 3px;
   transform: rotate(-45deg);
 }
-.ico-choosing-form form fieldset .choosing-form_date input[type="text"] {
+.ico-choosing-form .form-group .choosing-form_date input[type="text"] {
   width: 65%;
   padding: 11px 8px 9px 12px;
   border-radius: 0 4px 4px 0;
@@ -926,7 +926,7 @@
   line-height: 15px;
   letter-spacing: -0.1px;
 }
-.ico-choosing-form form fieldset .choosing-form_date select {
+.ico-choosing-form .form-group .choosing-form_date select {
   padding: 11px 8px 9px 13px;
   margin-right: -1px;
   width: 35%;
@@ -940,14 +940,14 @@
   line-height: 15px;
   letter-spacing: -0.07px;
 }
-.ico-choosing-form form fieldset .choosing-form_scale {
+.ico-choosing-form .form-group .choosing-form_scale {
   margin-bottom: 20px;
   width: 100%;
   height: 4px;
   border-radius: 4px;
   background-color: #c5d0de;
 }
-.ico-choosing-form form fieldset .choosing-form_scale-inner {
+.ico-choosing-form .form-group .choosing-form_scale-inner {
   width: 33%;
   height: 4px;
   background-color: #45af37;

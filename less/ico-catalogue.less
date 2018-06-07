@@ -737,190 +737,188 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
     border-radius: 4px;
-    form {
-        fieldset {
-            position: relative;
-            padding: 0 24px;
-            border-bottom: 1px solid #e0e6ed;
-            legend {
-                padding-top: 18px;
-                padding-bottom: 15px;
-                color: #333f52;
-                font-family: @condenced;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 16px;
-                text-transform: uppercase;
+    .form-group {
+        position: relative;
+        padding: 0 24px;
+        border-bottom: 1px solid #e0e6ed;
+        legend {
+            padding-top: 18px;
+            padding-bottom: 15px;
+            color: #333f52;
+            font-family: @condenced;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+        .dropdown {
+            &::before {
+                right:5px;
+                top: 23px;
             }
-            .dropdown {
-                &::before {
-                    right:5px;
-                    top: 23px;
-                }
+        }
+        .choosing-form_list {
+            &--inner {
+                padding-left: 25px;
             }
-            .choosing-form_list {
-                &--inner {
-                    padding-left: 25px;
-                }
-                &-show-more {
-                    margin-bottom: 10px;
-                    a {
-                        color: #5cb0d5;
-                        font-family: @main-font;
-                        font-size: 12px;
-                        font-weight: 500;
-                        line-height: 16px;
-                        text-decoration: underline;
-                        text-decoration-style: dashed;
-                    }
-                }
-                li {
-                    &:last-child {
-                        margin-bottom: 15px;
-                    }
-                    sup {
-                        margin-left: 5px;
-                        color: #9096a0;
-                        font-size: 10px;
-                        letter-spacing: -0.1px;
-                    }
-                }
-            }
-            .choosing-form_search-category {
-                margin-bottom: 18px;
-                input {
-                    width: 100%;
-                    margin-right: 5px;
-                    padding: 11px 8px 9px 12px;
-                    border-radius: 4px;
-                    border: 1px solid #c5d0de;
-                    background-color: #ffffff;
-                    box-sizing: border-box;
-                    color: #525c6c;
+            &-show-more {
+                margin-bottom: 10px;
+                a {
+                    color: #5cb0d5;
                     font-family: @main-font;
-                    font-size: 15px;
+                    font-size: 12px;
                     font-weight: 500;
-                    line-height: 15px;
+                    line-height: 16px;
+                    text-decoration: underline;
+                    text-decoration-style: dashed;
+                }
+            }
+            li {
+                &:last-child {
+                    margin-bottom: 15px;
+                }
+                sup {
+                    margin-left: 5px;
+                    color: #9096a0;
+                    font-size: 10px;
                     letter-spacing: -0.1px;
                 }
             }
-            .choosing-form_hard-cap {
-                display: flex;
-                //justify-content: space-between;
-                margin-bottom: 20px;
-                input[type="text"] {
-                    width: 50%;
-                    margin-right: 5px;
-                    padding: 11px 8px 9px 8px;
-                    border-radius: 4px;
-                    border: 1px solid #c5d0de;
-                    background-color: #ffffff;
-                    box-sizing: border-box;
-                    color: #525c6c;
-                    font-family: @main-font;
-                    font-size: 15px;
-                    font-weight: 500;
-                    line-height: 15px;
-                    letter-spacing: -0.1px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
-            .choosing-form_date {
-                position: relative;
-                display: flex;
-                margin-bottom: 20px;
-                &-icon {
-                    position: absolute;
-                    top: 12px;
-                    right: 28px;
-                    cursor: pointer;
-                    z-index: 1;
-                    &::before {
-            			content: "";
-            			position: absolute;
-            			width: 17px;
-            			height: 16px;
-            			background-image: @img-calendar-input-icon;
-            			background-position: center;
-            			background-repeat: no-repeat;
-            		}
-                }
-                &-reset {
-                    position: absolute;
-                    width: 14px;
-                    height: 14px;
-                    top: 12px;
-                    right: 11px;
-                    border-radius: 16px;
-                    background-color: #c5d0de;
-                    cursor: pointer;
-                    z-index: 1;
-                    &:hover {
-                        background-color: darken(#c5d0de, 20%);
-                    }
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        width: 8px;
-                        height: 2px;
-                        background-color: #fff;
-                        top:6px;
-                        left: 3px;
-                        transform: rotate(45deg);
-                    }
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        width: 8px;
-                        height: 2px;
-                        background-color: #fff;
-                        top:6px;
-                        left: 3px;
-                        transform: rotate(-45deg);
-                    }
-                }
-                input[type="text"] {
-                    width: 65%;
-                    padding: 11px 8px 9px 12px;
-                    border-radius: 0 4px 4px 0;
-                    border: 1px solid #c5d0de;
-                    background-color: #ffffff;
-                    box-sizing: border-box;
-                    color: #525c6c;
-                    font-family: @main-font;
-                    font-size: 13px;
-                    font-weight: 500;
-                    line-height: 15px;
-                    letter-spacing: -0.1px;
-                }
-                select {
-                    padding: 11px 8px 9px 13px;
-                    margin-right: -1px;
-                    width: 35%;
-                    border-radius: 4px 0 0 4px;
-                    border: 1px solid #c5d0de;
-                    background-color: #ffffff;
-                    color: #525c6c;
-                    font-family: @main-font;
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 15px;
-                    letter-spacing: -0.07px;
-                }
-            }
-            .choosing-form_scale {
-                margin-bottom: 20px;
+        }
+        .choosing-form_search-category {
+            margin-bottom: 18px;
+            input {
                 width: 100%;
-                height: 4px;
+                margin-right: 5px;
+                padding: 11px 8px 9px 12px;
                 border-radius: 4px;
-                background-color: #c5d0de;
-                &-inner {
-                    width: 33%;
-                    height: 4px;
-                    background-color: #45af37;
+                border: 1px solid #c5d0de;
+                background-color: #ffffff;
+                box-sizing: border-box;
+                color: #525c6c;
+                font-family: @main-font;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: -0.1px;
+            }
+        }
+        .choosing-form_hard-cap {
+            display: flex;
+            //justify-content: space-between;
+            margin-bottom: 20px;
+            input[type="text"] {
+                width: 50%;
+                margin-right: 5px;
+                padding: 11px 8px 9px 8px;
+                border-radius: 4px;
+                border: 1px solid #c5d0de;
+                background-color: #ffffff;
+                box-sizing: border-box;
+                color: #525c6c;
+                font-family: @main-font;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: -0.1px;
+                &:last-child {
+                    margin-right: 0;
                 }
+            }
+        }
+        .choosing-form_date {
+            position: relative;
+            display: flex;
+            margin-bottom: 20px;
+            &-icon {
+                position: absolute;
+                top: 12px;
+                right: 28px;
+                cursor: pointer;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 17px;
+                    height: 16px;
+                    background-image: @img-calendar-input-icon;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+            &-reset {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                top: 12px;
+                right: 11px;
+                border-radius: 16px;
+                background-color: #c5d0de;
+                cursor: pointer;
+                z-index: 1;
+                &:hover {
+                    background-color: darken(#c5d0de, 20%);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 2px;
+                    background-color: #fff;
+                    top:6px;
+                    left: 3px;
+                    transform: rotate(45deg);
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 2px;
+                    background-color: #fff;
+                    top:6px;
+                    left: 3px;
+                    transform: rotate(-45deg);
+                }
+            }
+            input[type="text"] {
+                width: 65%;
+                padding: 11px 8px 9px 12px;
+                border-radius: 0 4px 4px 0;
+                border: 1px solid #c5d0de;
+                background-color: #ffffff;
+                box-sizing: border-box;
+                color: #525c6c;
+                font-family: @main-font;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: -0.1px;
+            }
+            select {
+                padding: 11px 8px 9px 13px;
+                margin-right: -1px;
+                width: 35%;
+                border-radius: 4px 0 0 4px;
+                border: 1px solid #c5d0de;
+                background-color: #ffffff;
+                color: #525c6c;
+                font-family: @main-font;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: -0.07px;
+            }
+        }
+        .choosing-form_scale {
+            margin-bottom: 20px;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #c5d0de;
+            &-inner {
+                width: 33%;
+                height: 4px;
+                background-color: #45af37;
             }
         }
     }

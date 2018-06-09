@@ -529,3 +529,273 @@
   font-weight: 500;
   line-height: 14px;
 }
+.popover-events {
+  width: 268px;
+  box-shadow: -8px 8px 32px rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+}
+.popover-events_item {
+  padding: 14px 24px 12px;
+  border-bottom: 1px solid #e8edf2;
+}
+.popover-events_item:first-child {
+  padding: 28px 24px 14px 24px;
+}
+.popover-events_item:hover {
+  background-color: rgba(232, 237, 242, 0.5);
+}
+.popover-events_item-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.popover-events_item-data a {
+  margin-top: 2px;
+  color: #1991eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: underline;
+}
+.popover-events_item-data a:hover {
+  text-decoration: none;
+}
+.popover-events_item-name {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.popover-events_item-event {
+  padding: 3px 4px 2px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  white-space: nowrap;
+}
+.popover-events_item-event--pre-ico {
+  background-color: #f7981b;
+}
+.popover-events_item-event--KYC {
+  background-color: #59b6b2;
+}
+.popover-events_item-event--ending-ico {
+  background-color: #8f72c7;
+}
+.popover-events_item-event--white-list {
+  background-color: #ff819e;
+}
+.popover-events_item-event--start-ico {
+  background-color: #44af36;
+}
+.popover-events_item-time {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  white-space: nowrap;
+}
+.popover-events_item-time-remain {
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+  white-space: nowrap;
+}
+.popover-notification {
+  width: 268px;
+  box-shadow: -8px 8px 32px rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+}
+.popover-notification-item {
+  padding: 15px 24px 13px;
+  border-bottom: 1px solid #e8edf2;
+}
+.popover-notification-item:first-child {
+  padding: 22px 24px 13px 24px;
+}
+.popover-notification-item:last-child {
+  padding: 10px 13px 13px;
+  text-align: center;
+}
+.popover-notification-item:hover {
+  background-color: rgba(232, 237, 242, 0.5);
+}
+.popover-notification-item_all-notifications {
+  color: #44af36;
+  font-family: #1991eb;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: underline;
+}
+.popover-notification-item_data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.popover-notification-item_avatar {
+  margin-right: 8px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid #c5d0de;
+}
+.popover-notification-item_avatar img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.popover-notification-item_comment-img {
+  margin-right: 8px;
+  width: 21px;
+  height: 21px;
+  background-image: url('../img/comment-img.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.popover-notification-item_name {
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.popover-notification-item_name--blue {
+  color: #1991eb;
+  text-decoration: underline;
+}
+.popover-notification-item_date {
+  margin-left: auto;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.popover-notification-item_content {
+  padding-left: 29px;
+}
+.popover-notification-item_content-message {
+  color: #1991eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.popover-notification-item_content-message-text,
+.popover-notification-item_content-rating-text {
+  display: inline;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.popover-notification-item_content-rating-text {
+  display: block;
+}
+.popover-notification-item_content-thread {
+  color: #1991eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+.popover-notification-item_content-rated {
+  margin-right: 4px;
+  color: #525c6c;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.popover-notification-item_content-rating {
+  display: inline-block;
+  color: #44af36;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+.popover-notification-item_content-rating--negative {
+  color: #ff3657;
+}
+.popover-notification-item_content-rating--thread {
+  color: #b64ad4;
+}
+.popover-notification-item_content b {
+  color: #555b6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.popover-user {
+  width: 195px;
+  box-shadow: -8px 8px 32px rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+}
+.popover-user-head {
+  padding: 26px 23px 16px;
+  border-bottom: 1px solid #e8edf2;
+}
+.popover-user-head span {
+  display: block;
+  color: #707986;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.popover-user-head span big {
+  font-weight: 500;
+}
+.popover-user-content {
+  padding: 12px 24px;
+}
+.popover-user-content_item {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+  padding-left: 26px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.popover-user-content_item:last-child {
+  margin-bottom: 0;
+}
+.popover-user-content_item:hover {
+  color: #44af36;
+  font-weight: 700;
+  text-decoration: none;
+}
+.popover-user-content_item::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  left: 0px;
+  top: -3px;
+  background-image: url('../img/profile-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.popover-user-logout {
+  padding: 14px 24px 16px;
+  border-top: 1px solid #e8edf2;
+}

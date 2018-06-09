@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoCondensedRegular";
+  src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot");
+  src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoCondensedLight";
+  src: url("../fonts/RobotoCondensedLight/RobotoCondensedLight.eot");
+  src: url("../fonts/RobotoCondensedLight/RobotoCondensedLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"), url("../fonts/RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoCondensedBold";
+  src: url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot");
+  src: url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.settings-topline {
+  padding: 32px 0 0;
+  background-color: #e0e6ed;
+}
+.settings-topline h1 {
+  margin-bottom: 30px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.17px;
+}
+.settings-topline_nav {
+  display: flex;
+}
+.settings-topline_nav-item {
+  margin-right: 64px;
+}
+.settings-topline_nav-item a {
+  display: inline-block;
+  padding: 11px 0;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.settings-topline_nav-item--active {
+  position: relative;
+}
+.settings-topline_nav-item--active a {
+  font-weight: 700;
+}
+.settings-topline_nav-item--active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #8f96a1;
+  bottom: -5px;
+}
+.ico-notif h2,
+.social-notif h2 {
+  margin-top: 32px;
+  margin-bottom: 18px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.ico-notif-wrapper,
+.social-notif-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ico-notif-list_item,
+.social-notif-list_item {
+  margin-bottom: 16px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.ico-notif-list_item:first-child,
+.social-notif-list_item:first-child {
+  font-size: 0;
+  margin-bottom: 22px;
+}
+.ico-notif-checkbox-set,
+.social-notif-checkbox-set {
+  margin-left: auto;
+  display: flex;
+}
+.ico-notif-checkbox-set label,
+.social-notif-checkbox-set label {
+  margin-bottom: 12px;
+}
+.ico-notif-checkbox-set ul li,
+.social-notif-checkbox-set ul li {
+  margin-bottom: 16px;
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.ico-notif-checkbox-set ul li:first-child,
+.social-notif-checkbox-set ul li:first-child {
+  margin-bottom: 20px;
+}
+.ico-notif-checkbox-set_email,
+.social-notif-checkbox-set_email {
+  margin-right: 70px;
+}
+.ico-notif-checkbox-set_telegram,
+.social-notif-checkbox-set_telegram {
+  margin-right: 45px;
+}
+.channels-notif h2 {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.channels-notif_email,
+.channels-notif_telegram {
+  display: flex;
+  flex-direction: column;
+}
+.channels-notif_email label,
+.channels-notif_telegram label {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.channels-notif_email input,
+.channels-notif_telegram input {
+  width: 100%;
+  padding: 12px 12px 11px;
+  border-radius: 4px;
+  border: 1px solid #c5d0de;
+  background-color: #ffffff;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.channels-notif_email {
+  margin-bottom: 24px;
+}
+.other-notif h2 {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.other-notif-list {
+  margin-bottom: 26px;
+}
+.other-notif-list_item {
+  margin-bottom: 12px;
+}
+.other-notif label span {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.other-notif .settings-button {
+  margin-bottom: 50px;
+}
+.other-notif .settings-button .btn-settings {
+  padding: 16px 16px 14px;
+  box-shadow: 0 2px 0 #3e9532;
+  border-radius: 4px;
+  background-color: #45af37;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: -0.27px;
+}

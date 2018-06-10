@@ -7,7 +7,7 @@
     <meta name="author" catalogue="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>MARKETS</title>
+    <title>Social Messages</title>
 
     <!-- Bootstrap grid CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
                                  <li class="main-nav_item main-nav_faq-item"><a href="vk">Our team</a></li>
                                  <li class="main-nav_item main-nav_faq-item"><a href="#">FAQ</a></li>
                              </ul>
-                             <ul class="main-nav_user-menu main-nav_user-menu--hidden">
+                             <ul class="main-nav_user-menu main-nav_user-menu--hiddenn">
                                  <li class="main-nav_user-search">
                                      <form>
                                          <input type="text" placeholder="" name="search">
@@ -73,7 +73,7 @@
                                  </li>
                              </ul>
                              <!-- /.main-nav_user-menu -->
-                             <div class="user user--hiddenn">
+                             <div class="user user--hidden">
                                 <div class="main-nav_user-search">
                                     <form>
                                         <input type="text" placeholder="" name="search">
@@ -104,18 +104,14 @@
       </header>
       <!-- /.header -->
       <section class="content">
-          <div class="profile-topline">
+          <div class="settings-topline">
               <div class="container-fluid">
                   <div class="row">
-                      <div class="col-9 offset-3">
-                          <div class="profile-topline_button">
-                              <button class="btn">Write a message</button>
-                          </div>
-                          <ul class="profile-topline_nav">
-                              <li class="profile-topline_nav-item"><a href="#">Profile</a></li>
-                              <li class="profile-topline_nav-item"><a href="#">Portfolio<sup>2</sup></a></li>
-                              <li class="profile-topline_nav-item"><a href="#">ICOs Following</a></li>
-                              <li class="profile-topline_nav-item profile-topline_nav-item--active"><a href="#">Activity</a></li>
+                      <div class="col">
+                          <h1>Social Activity</h1>
+                          <ul class="settings-topline_nav">
+                              <li class="settings-topline_nav-item settings-topline_nav-item--active"><a href="#">Messages</a></li>
+                              <li class="settings-topline_nav-item "><a href="#">Forum Activity</a></li>
                           </ul>
                       </div>
                       <!-- /.col-9 offset-3 -->
@@ -128,185 +124,162 @@
           <div class="container-fluid">
               <div class="row">
                   <div class="col-3">
-                      <div class="profile-user">
-                          <div class="profile-user_avatar">
-                              <img src="img\profile-avatar-gref.png" alt="">
+                      <div class="messages-users-list">
+                          <div class="messages-users-list_item messages-users-list_item--active">
+                              <div class="user">
+                                  <a href="#" class="user_block">
+                                      <div class="user_icon">
+                                          <img src="img/user-icon.png" alt="">
+                                      </div>
+                                      <div class="user_username-container">
+                                          <span class="user_name">elVis1970<sup class="user_rating">+1301</sup></span>
+                                          <span class="user_rank">Друг форума</span>
+                                      </div>
+                                  </a>
+                                  <div class="user_message-date">
+                                      <span>15.05.18</span>
+                                  </div>
+                              </div>
+                              <!-- /.user -->
                           </div>
-                          <div class="profile-user_status">
-                              <span>Advanced Hamster</span>
+                          <!-- /.messages-users-list_item -->
+                          <div class="messages-users-list_item">
+                              <div class="user">
+                                  <a href="#" class="user_block">
+                                      <div class="user_icon">
+                                          <img src="img/user-icon.png" alt="">
+                                      </div>
+                                      <div class="user_username-container">
+                                          <span class="user_name">Mr.Lincoln<sup class="user_rating">+1694</sup></span>
+                                          <span class="user_rank user-rank--boss">Майнинг Босс</span>
+                                      </div>
+                                  </a>
+                                  <div class="user_message-date">
+                                      <span>10.03.18</span>
+                                  </div>
+                              </div>
+                              <!-- /.user -->
                           </div>
-                          <div class="profile-user_name">
-                              <span>German Gref</span>
+                          <!-- /.messages-users-list_item -->
+                          <div class="messages-users-list_item">
+                              <div class="user">
+                                  <a href="#" class="user_block">
+                                      <div class="user_icon">
+                                          <img src="img/user-icon.png" alt="">
+                                      </div>
+                                      <div class="user_username-container">
+                                          <span class="user_name">JediPhilosopher<sup class="user_rating">+606</sup></span>
+                                          <span class="user_rank">Хомяк</span>
+                                      </div>
+                                  </a>
+                                  <div class="user_message-date">
+                                      <span>11.02.18</span>
+                                  </div>
+                              </div>
+                              <!-- /.user -->
                           </div>
-                          <div class="profile-user_nickname">
-                              <span>SberGref2018</span>
+                          <!-- /.messages-users-list_item -->
+                          <div class="messages-users-list_item">
+                              <div class="user">
+                                  <a href="#" class="user_block">
+                                      <div class="user_icon">
+                                          <img src="img/user-icon.png" alt="">
+                                      </div>
+                                      <div class="user_username-container">
+                                          <span class="user_name">elVis1970<sup class="user_rating">+1301</sup></span>
+                                          <span class="user_rank">Друг форума</span>
+                                      </div>
+                                  </a>
+                                  <div class="user_message-date">
+                                      <span>15.05.18</span>
+                                  </div>
+                              </div>
+                              <!-- /.user -->
                           </div>
-                          <div class="profile-user_rating">
-                              <span class="profile-user_rating-rt">Rating</span>
-                              <span class="profile-user_rating-points">112</span>
-                          </div>
+                          <!-- /.messages-users-list_item -->
                       </div>
-                      <!-- /.profile-user -->
+                      <!-- /.users-messages -->
                   </div>
                   <!-- /.col-3 -->
                   <div class="col-9">
-                      <div class="row">
-                          <div class="col">
-                              <div class="profile-activity-title">
-                                  <h2>Activity</h2>
-                                  <div class="profile-activity-filter">
-                                      <label>
-                                          <input name="" type="checkbox" value="" checked>
-                                          <b>All</b>
-                                      </label>
-                                      <label>
-                                          <input name="" type="checkbox" value="">
-                                          <b>Comments</b>
-                                      </label>
-                                      <label>
-                                          <input name="" type="checkbox" value="">
-                                          <b>Threads</b>
-                                      </label>
-                                      <label>
-                                          <input name="" type="checkbox" value="">
-                                          <b>Reviews</b>
-                                      </label>
+                      <div class="users-messaging">
+                          <div class="users-messaging-chat">
+                              <div class="users-messaging-chat_item">
+                                  <div class="user">
+                                      <a href="#" class="user_block">
+                                          <div class="user_icon">
+                                              <img src="img/user-icon.png" alt="">
+                                          </div>
+                                          <div class="user_username-container">
+                                              <span class="user_name">elVis1970</span>
+                                              <span class="user_rank">Друг форума</span>
+                                          </div>
+                                      </a>
                                   </div>
-                                  <!-- /.profile-activity_filter -->
+                                  <!-- /.user -->
+                                  <div class="user-message">
+                                      <p class="user-message_text">
+                                          Ducit, nam quam, sae estios molor rem nonescime re de as ex ent ium fuga. Et ipsa sunt ad quo dunt qui aboreped maionseris estions ecepedit minvenihit, as ut qui restium et ulparum adipsam
+                                      </p>
+                                      <span class="user-message_date">15.05.18</span>
+                                  </div>
                               </div>
-                              <!-- /.profile-activity-title -->
-                          </div>
-                          <!-- /.col -->
-                      </div>
-                      <!-- /.row -->
-                      <div class="row">
-                          <div class="col">
-                              <div class="profile-activity-list">
-                                  <div class="profile-activity-item">
-                                      <div class="row">
-                                          <div class="col-3">
-                                              <div class="profile-activity-item_name profile-activity-item_name--thread">
-                                                  <span>THREAD</span>
-                                              </div>
+                              <!-- /.users-messaging-chat_item -->
+                              <div class="users-messaging-chat_item users-messaging-chat_item--reverse">
+                                  <div class="user">
+                                      <div class="user_block">
+                                          <div class="user_icon">
+                                              <img src="img/user-icon.png" alt="">
                                           </div>
-                                          <!-- /.col-3 -->
-                                          <div class="col-7">
-                                              <div class="profile-activity-item_content">
-                                                  <a href="">At vero eos et accusamus et iusto odio dignissimos</a>
-                                                  <div class="profile-activity-item_content-data">
-                                                      <span class="profile-activity-item_content-date">Today, 12:09pm</span>
-                                                      <span class="profile-activity-item_content-views">32 <b>views</b></span>
-                                                      <span class="readers">5 reading</span>
-                                                  </div>
-                                                  <!-- /.profile-activity-item_content-thread-data -->
-                                              </div>
-                                              <!-- /.profile-activity-item_content -->
-                                          </div>
-                                          <!-- /.col-7 -->
-                                          <div class="col-1">
-                                              <div class="profile-activity-item_comments">
-                                                  <span class="profile-activity-item_comment">79</span>
-                                              </div>
-                                              <!-- /.profile-activity-item_comments -->
-                                          </div>
-                                          <!-- /.col-1 -->
-                                          <div class="col-1">
-                                              <div class="profile-activity-item_ratings">
-                                                  <span class="profile-activity-item_rating profile-activity-item_rating--thread">+267</span>
-                                              </div>
-                                              <!-- /.profile-activity-item_ratings -->
-                                          </div>
-                                          <!-- /.col-1 -->
                                       </div>
-                                      <!-- /.row -->
                                   </div>
-                                  <!-- /.profile-activity-item -->
-                                  <div class="profile-activity-item">
-                                      <div class="row">
-                                          <div class="col-3">
-                                              <div class="profile-activity-item_name profile-activity-item_name--comment">
-                                                  <span>comment</span>
-                                              </div>
-                                          </div>
-                                          <!-- /.col-3 -->
-                                          <div class="col-7">
-                                              <div class="profile-activity-item_content profile-activity-item_content--comment">
-                                                  <p >
-                                                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                                                  </p>
-                                                  <a href="" ><span>on</span> At vero eos et accusamus et iusto odio dignissimos</a>
-                                                  <div class="profile-activity-item_content-data">
-                                                      <span class="profile-activity-item_content-date">Today, 12:09pm</span>
-                                                  </div>
-                                                  <!-- /.profile-activity-item_content-thread-data -->
-                                              </div>
-                                              <!-- /.profile-activity-item_content -->
-                                          </div>
-                                          <!-- /.col-7 -->
-                                          <div class="col-1">
-
-                                          </div>
-                                          <!-- /.col-1 -->
-                                          <div class="col-1">
-                                              <div class="profile-activity-item_ratings">
-                                                  <span class="profile-activity-item_rating">+5</span>
-                                              </div>
-                                              <!-- /.profile-activity-item_ratings -->
-                                          </div>
-                                          <!-- /.col-1 -->
-                                      </div>
-                                      <!-- /.row -->
+                                  <!-- /.user -->
+                                  <div class="user-message user-message--white">
+                                      <p class="user-message_text">
+                                          Ducit, nam quam, sae estios molor rem nonescime re de as ex ent ium fuga. Et ipsa sunt ad quo dunt qui aboreped maionseris estions ecepedit minvenihit, as ut qui restium et ulparum adipsam
+                                      </p>
+                                      <span class="user-message_date">15.05.18</span>
                                   </div>
-                                  <!-- /.profile-activity-item -->
-                                  <div class="profile-activity-item">
-                                      <div class="row">
-                                          <div class="col-3">
-                                              <div class="profile-activity-item_name profile-activity-item_name--review">
-                                                  <span>review</span>
-                                              </div>
-                                          </div>
-                                          <!-- /.col-3 -->
-                                          <div class="col-7">
-                                              <div class="profile-activity-item_content">
-                                                  <a href="" > At vero eos et accusamus et iusto odio dignissimos</a>
-                                                  <div class="profile-activity-item_content-data">
-                                                      <span class="profile-activity-item_content-date">Today, 12:09pm</span>
-                                                  </div>
-                                                  <p >
-                                                      Nullam at elementum nisl. Pellentesque in enim nunc. Suspendisse gravida massa ac tristique bibendum. Nullam vel egestas lectus, non consequat eros. Nunc cursus nec lorem et dignissim. Donec ultrices interdum risus.
-                                                  </p>
-                                              </div>
-                                              <!-- /.profile-activity-item_content -->
-                                          </div>
-                                          <!-- /.col-7 -->
-                                          <div class="col-1">
-                                              <div class="profile-activity-item_ratings">
-                                                  <div class="rating_tag"><span>8.6</span></div>
-                                              </div>
-                                              <!-- /.profile-activity-item_ratings -->
-                                          </div>
-                                          <!-- /.col-1 -->
-                                          <div class="col-1">
-                                              <div class="profile-activity-item_ratings">
-                                                  <span class="profile-activity-item_rating">+135</span>
-                                              </div>
-                                              <!-- /.profile-activity-item_ratings -->
-                                          </div>
-                                          <!-- /.col-1 -->
-                                      </div>
-                                      <!-- /.row -->
-                                  </div>
-                                  <!-- /.profile-activity-item -->
                               </div>
-                              <!-- /.profile-activity-list -->
+                              <!-- /.users-messaging-chat_item -->
+                              <div class="users-messaging-chat_item">
+                                  <div class="user">
+                                      <a href="#" class="user_block">
+                                          <div class="user_icon">
+                                              <img src="img/user-icon.png" alt="">
+                                          </div>
+                                          <div class="user_username-container">
+                                              <span class="user_name">elVis1970</span>
+                                              <span class="user_rank">Друг форума</span>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <!-- /.user -->
+                                  <div class="user-message">
+                                      <p class="user-message_text">
+                                          Nam luctus commodo turpis at mattis. Cras ullamcorper sodales massa consequat volutpat. Morbi ac cursus lectus, at laoreet lorem. Sed elit felis, sollicitudin non volutpat in, elementum id eros. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed in ultrices nunc. Nulla ornare eleifend sodales.
+                                            Sed efficitur viverra sem, eu facilisis massa posuere vel. Nulla varius consectetur commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce tincidunt turpis quis ex volutpat dictum. Sed felis velit, iaculis nec aliquet luctus, convallis at sem. Duis eget orci vel velit cursus consectetur. Duis ut fermentum ex, rutrum aliquet velit. Mauris elit nisi, luctus ut neque sodales, facilisis vestibulum velit. Praesent sit amet magna nunc.
+                                      </p>
+                                      <span class="user-message_date">15.05.18</span>
+                                  </div>
+                              </div>
+                              <!-- /.users-messaging-chat_item -->
                           </div>
-                          <!-- /.col -->
+                          <!-- /.users-messaging-chat -->
+                          <div class="messaging-answer">
+                              <form class="messaging-answer-form" action="#">
+                                  <textarea name="" rows="" cols="" placeholder="Type here…"></textarea>
+                                  <button class="btn btn-send">Send</button>
+                              </form>
+                          </div>
+                          <!-- /.users-messaging-message-form -->
                       </div>
-                      <!-- /.row -->
+                      <!-- /.users-messaging -->
                   </div>
-                  <!-- /.col-9 -->
+                  <!-- /.col-9-->
               </div>
               <!-- /.row -->
+
           </div>
           <!-- /.container-fluid -->
       </section>
@@ -412,7 +385,6 @@
                   </div>
                   <!-- /.row -->
               </div>
-              <!-- /.container-fluid -->
           </div>
           <!-- /.footer-terms -->
       </footer>

@@ -742,14 +742,39 @@
             &::before {
                 content: "";
     			position: absolute;
-    			width: 12px;
+    			width: 18px;
     			height: 16px;
     			left: 0px;
     			top: -3px;
-    			background-image: @img-profile-icon;
-    			background-position: center;
+    			background-image: @img-user-pop;
+    			//background-position: center;
     			background-repeat: no-repeat;
     			z-index: 11;
+            }
+            &-dashboard {
+                &::before {
+                    background-position: 0px 0px;
+                }
+            }
+            &-profile {
+                &::before {
+                    background-position: 0px -16px;
+                }
+            }
+            &-social {
+                &::before {
+                    background-position: 0px -31px;
+                }
+            }
+            &-settings {
+                &::before {
+                    background-position: 0px -47px;
+                }
+            }
+            &-logout {
+                &::before {
+                    background-position: 0px -63px;
+                }
             }
         }
     }

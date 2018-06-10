@@ -388,6 +388,23 @@
   align-items: flex-end;
   width: 100%;
 }
+.profile-settings_email {
+  position: relative;
+}
+.profile-settings_email-change {
+  position: absolute;
+  top: 36px;
+  right: -72px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  cursor: pointer;
+}
 .profile-settings_first-name,
 .profile-settings_last-name,
 .profile-settings_country,
@@ -481,12 +498,27 @@
 .external-links-item {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .external-links-item_social {
   width: 32%;
 }
 .external-links-item_link {
   width: 64%;
+}
+.external-links-item_remove {
+  position: absolute;
+  top: 12px;
+  right: -72px;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  cursor: pointer;
 }
 .external-links-add-link {
   color: #44af36;
@@ -496,6 +528,7 @@
   line-height: 28px;
   letter-spacing: -0.1px;
   text-decoration: underline;
+  text-decoration-style: dashed;
 }
 .other-settings {
   margin-bottom: 36px;
@@ -571,11 +604,27 @@
   letter-spacing: -0.23px;
 }
 .avatar-settings input[type="file"] {
+  display: none;
   margin-bottom: 16px;
   padding: 13px 16px 10px;
   box-shadow: 0 2px 0 #3b962f;
   border-radius: 4px;
   background-color: #45af37;
+}
+.avatar-settings .btn-upload {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 13px 16px 10px;
+  box-shadow: 0 2px 0 #3b962f;
+  border-radius: 4px;
+  background-color: #45af37;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: -0.23px;
 }
 .avatar-settings p {
   padding: 0 75px;

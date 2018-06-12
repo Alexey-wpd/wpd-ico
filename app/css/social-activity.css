@@ -92,7 +92,7 @@
   display: flex;
   margin-bottom: 18px;
 }
-.users-messaging-chat_item--reverse {
+.users-messaging-chat_item--my-message {
   flex-direction: row-reverse;
 }
 .users-messaging-chat_item .user {

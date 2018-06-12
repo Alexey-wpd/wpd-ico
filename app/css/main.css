@@ -7010,11 +7010,11 @@
 }
 .ico-catalogue-item {
   margin-bottom: 20px;
+  background-color: #fafbfc;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
 }
 .ico-catalogue-item_content-wrapper {
   display: flex;
-  background-color: #fafbfc;
-  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
 }
 .ico-catalogue-item_content-wrapper--sponsored {
   background-color: #e0e6ed;
@@ -7022,7 +7022,7 @@
 .ico-catalogue-item_logo {
   position: relative;
   display: flex;
-  min-width: 180px;
+  width: 100%;
   min-height: 152px;
   border-radius: 4px 0 0 0;
 }
@@ -7036,8 +7036,8 @@
 .ico-catalogue-item_discription {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  padding: 12px 0 18px 28px;
+  padding: 12px 0 18px 0px;
+  flex-grow: 1;
 }
 .ico-catalogue-item_title {
   margin-bottom: 4px;
@@ -7068,7 +7068,7 @@
   line-height: 10px;
 }
 .ico-catalogue-item_discribe {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .ico-catalogue-item_discribe p {
   color: #525c6c;
@@ -7203,10 +7203,9 @@
   z-index: 11;
 }
 .ico-catalogue-item_fundraising {
-  padding: 20px 0 18px 28px;
+  padding: 20px 0 18px 0px;
   display: flex;
   flex-direction: column;
-  width: 24%;
 }
 .ico-catalogue-item_cap {
   display: flex;
@@ -7371,7 +7370,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 2;
-  padding: 20px 0 18px 28px;
+  padding: 20px 0 18px 0px;
 }
 .ico-catalogue-item_start,
 .ico-catalogue-item_end {
@@ -7429,26 +7428,29 @@
   margin-top: auto;
 }
 .ico-catalogue-item_bottom-line {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+}
+.ico-catalogue-item_links-wrapper {
   align-items: center;
   display: flex;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
-  border-radius: 0 0 0 4px;
+  padding: 16px 0;
 }
-.ico-catalogue-item_bottom-line a {
+.ico-catalogue-item_links-wrapper a {
+  margin-right: 30px;
   position: relative;
-  margin-left: 35px;
   font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
   letter-spacing: -0.13px;
   white-space: nowrap;
 }
-.ico-catalogue-item_bottom-line a:first-child {
+.ico-catalogue-item_links-wrapper a:first-child {
   margin-left: 20px;
 }
-.ico-catalogue-item_bottom-line a:last-child {
-  margin: auto;
-}
-.ico-catalogue-item_bottom-line a sup {
+.ico-catalogue-item_links-wrapper a sup {
   top: -7px;
   margin-left: 4px;
   margin-top: -22px;
@@ -7461,14 +7463,14 @@
   font-weight: 500;
   line-height: 9px;
 }
-.ico-catalogue-item_bottom-line .to-discuss {
+.ico-catalogue-item_links-wrapper .to-discuss {
   padding-left: 24px;
   color: #525c6c;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
 }
-.ico-catalogue-item_bottom-line .to-discuss::before {
+.ico-catalogue-item_links-wrapper .to-discuss::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -7480,14 +7482,14 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_bottom-line .to-rate {
+.ico-catalogue-item_links-wrapper .to-rate {
   padding-left: 24px;
   color: #525c6c;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
 }
-.ico-catalogue-item_bottom-line .to-rate::before {
+.ico-catalogue-item_links-wrapper .to-rate::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -7499,10 +7501,10 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_bottom-line .to-rate--active {
+.ico-catalogue-item_links-wrapper .to-rate--active {
   color: #45af37;
 }
-.ico-catalogue-item_bottom-line .to-rate--active::before {
+.ico-catalogue-item_links-wrapper .to-rate--active::before {
   content: "";
   position: absolute;
   width: 14px;
@@ -7514,14 +7516,14 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_bottom-line .add-calendar {
+.ico-catalogue-item_links-wrapper .add-calendar {
   padding-left: 24px;
   color: #525c6c;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
 }
-.ico-catalogue-item_bottom-line .add-calendar::before {
+.ico-catalogue-item_links-wrapper .add-calendar::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -7533,10 +7535,10 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_bottom-line .add-calendar--active {
+.ico-catalogue-item_links-wrapper .add-calendar--active {
   color: #44af36;
 }
-.ico-catalogue-item_bottom-line .add-calendar--active::before {
+.ico-catalogue-item_links-wrapper .add-calendar--active::before {
   content: "";
   position: absolute;
   width: 14px;
@@ -7548,7 +7550,7 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_bottom-line .buy-sell {
+.ico-catalogue-item_links-wrapper .buy-sell {
   padding-left: 24px;
   margin-right: 15px;
   color: #525c6c;
@@ -7556,7 +7558,7 @@
   font-weight: 500;
   line-height: 14px;
 }
-.ico-catalogue-item_bottom-line .buy-sell::before {
+.ico-catalogue-item_links-wrapper .buy-sell::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -7569,21 +7571,15 @@
   z-index: 11;
 }
 .ico-catalogue-item_button {
-  margin-left: auto;
   display: flex;
-  width: 23%;
-  box-shadow: inset 0px -2px 0 #35882a;
-  background-color: #44af36;
-}
-.ico-catalogue-item_button .btn {
-  border-radius: 0;
+  justify-content: center;
+  box-shadow: 0 2px 0 #3b962f;
+  border-radius: 0 0 4px;
+  background-color: #45af37;
 }
 .ico-catalogue-item_button-details {
-  display: flex;
   position: relative;
-  margin: auto;
-  padding: 17px 0 15px 20px ;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 18px 0px 13px 16px;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -7595,8 +7591,8 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 0px;
-  top: 15px;
+  left: -6px;
+  top: 16px;
   background-image: url('../img/white-check-big.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -9475,6 +9471,7 @@
 .ico-favourite_list .ico-item_logo {
   position: relative;
   display: flex;
+  width: 100%;
   min-height: 152px;
   border-radius: 4px 0 0 0;
 }
@@ -9497,7 +9494,7 @@
 .ico-favourite_list .ico-item_discription {
   display: flex;
   flex-direction: column;
-  padding: 12px 0px 0px 0px;
+  padding: 12px 0px 18px 0px;
   flex-grow: 1;
 }
 .ico-favourite_list .ico-item_title {
@@ -9529,7 +9526,7 @@
   line-height: 10px;
 }
 .ico-favourite_list .ico-item_discribe {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .ico-favourite_list .ico-item_discribe p {
   max-width: 100%;

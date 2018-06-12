@@ -98,6 +98,7 @@
 .ico-favourite_list .ico-item_logo {
   position: relative;
   display: flex;
+  width: 100%;
   min-height: 152px;
   border-radius: 4px 0 0 0;
 }
@@ -120,7 +121,7 @@
 .ico-favourite_list .ico-item_discription {
   display: flex;
   flex-direction: column;
-  padding: 12px 0px 0px 0px;
+  padding: 12px 0px 18px 0px;
   flex-grow: 1;
 }
 .ico-favourite_list .ico-item_title {
@@ -152,7 +153,7 @@
   line-height: 10px;
 }
 .ico-favourite_list .ico-item_discribe {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .ico-favourite_list .ico-item_discribe p {
   max-width: 100%;

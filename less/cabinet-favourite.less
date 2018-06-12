@@ -28,7 +28,11 @@
         margin-bottom: 52px;
         .ico-item {
             margin-bottom: 20px;
-
+            background-color: #fafbfc;
+            box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
+            &--sponsored {
+                background-color: #e0e6ed;
+            }
             &_content-wrapper {
                 display: flex;
                 background-color: #fafbfc;
@@ -40,7 +44,7 @@
             &_logo {
                 position: relative;
                 display: flex;
-                width: 24%;
+                //width: 24%;
                 min-height: 152px;
                 border-radius: 4px 0 0 0;
                 &::before {
@@ -63,9 +67,9 @@
             &_discription {
                 display: flex;
                 flex-direction: column;
-                width: 37%;
-                padding: 12px 56px 18px 28px;
-                //flex-grow: 1;
+                //width: 37%;
+                padding: 12px 0px 0px 0px;
+                flex-grow: 1;
             }
             &_title {
                 margin-bottom: 4px;
@@ -128,10 +132,10 @@
                 }
             }
             &_time-wrapper {
-                margin-top: auto;
+                margin-top: 30px;
             }
             &_totall-price-wrapper {
-                margin-top: auto;
+                margin-top: 25px;
                 padding-left: 14px;
             }
             &_time,
@@ -236,16 +240,16 @@
                 }
             }
             &_fundraising {
-                padding: 20px 0 18px 0;
+                padding: 20px 0px 0px 28px;
                 display: flex;
                 flex-direction: column;
-                width: 23%;
+                //width: 23%;
             }
             &_cap {
                 display: flex;
                 flex-direction: column;
                 flex-grow: 2;
-                margin-bottom: 13px;
+                margin-bottom: 10px;
                 width: 75%;
                 &-type {
                     margin-bottom: 5px;
@@ -399,13 +403,13 @@
                 display: flex;
                 flex-direction: column;
                 flex-grow: 2;
-                padding: 0 0 18px 14px;
+                padding: 0 0 0px 14px;
             }
             &_timeframe {
                 display: flex;
                 flex-direction: column;
-                flex-grow: 2;
-                padding: 20px 0 18px 28px;
+                //flex-grow: 2;
+                padding: 20px 0 0px 0px;
             }
             &_start,
             &_end {
@@ -460,22 +464,26 @@
                 margin-top: auto;
             }
             &_bottom-line {
+
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+                border-radius: 0 0 4px 4px;
+                background-color: #ffffff;
+            }
+            &_links-wrapper {
                 align-items: center;
                 display: flex;
-                background-color: #fff;
-                box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
-                border-radius: 0 0 0 4px;
+                padding: 16px 0;
                 a {
+                    margin-right: 30px;
                     position: relative;
-                    margin-left: 35px;
                     font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 14px;
                     letter-spacing: -0.13px;
                     white-space: nowrap;
                     &:first-child {
                         margin-left: 20px;
-                    }
-                    &:last-child {
-                        margin: auto;
                     }
                     sup {
                         top: -7px;
@@ -620,20 +628,15 @@
                 }
             }
             &_button {
-                margin-left: auto;
                 display: flex;
-                width: 14%;
-                box-shadow: inset 0px -2px 0 darken(@accent-color, 10%);
-                background-color: @accent-color;
-                .btn {
-                    border-radius: 0;
-                }
+                justify-content: center;
+                //padding: 18px 0px 13px 16px;
+                box-shadow: 0 2px 0 #3b962f;
+                border-radius: 0 0 4px;
+                background-color: #45af37;
                 &-details {
-                    display: flex;
                     position: relative;
-                    margin: auto;
-                    padding: 17px 0 15px 20px ;
-                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+                    padding: 18px 0px 13px 16px;
                     color: #ffffff;
                     font-family: @main-font;
                     font-size: 14px;
@@ -644,8 +647,8 @@
             			position: absolute;
             			width: 15px;
             			height: 15px;
-            			left: 0px;
-            			top: 15px;
+            			left: -6px;
+            			top: 16px;
             			background-image: @img-white-check-big;
             			background-position: center;
             			background-repeat: no-repeat;

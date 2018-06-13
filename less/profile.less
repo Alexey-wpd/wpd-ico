@@ -491,61 +491,32 @@
         }
         &_links {
             display: flex;
-            a {
+            &-item {
                 position: relative;
                 margin-right: 4px;
                 width: 24px;
                 height: 24px;
                 border-radius: 2px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 1px;
-                    top: 1px;
-                    width: 21px;
-                    height: 21px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    z-index: 11;
-                }
-            }
-            &-fb {
-                background-color: #345c94;
-                &::before {
-                    //width: 8px;
-                    //height: 16px;
+                background-position: center;
+                background-repeat: no-repeat;
+                &--fb {
+                    background-color: #345c94;
                     background-image: @img-fb-icon;
                 }
-            }
-            &-tw {
-                background-color: #00b0e9;
-                &::before {
-                    //width: 15px;
-                    //height: 12px;
+                &--tw {
+                    background-color: #00b0e9;
                     background-image: @img-tw-icon;
                 }
-            }
-            &-in {
-                background-color: #0086ba;
-                &::before {
-                    //width: 15px;
-                    //height: 15px;
+                &--in {
+                    background-color: #0086ba;
                     background-image: @img-in-icon;
                 }
-            }
-            &-m {
-                background-color: #00ac68;
-                &::before {
-                    //width: 16px;
-                    //height: 15px;
+                &--m {
+                    background-color: #00ac68;
                     background-image: @img-m-icon;
                 }
-            }
-            &-btc {
-                background-color: #ffb629;
-                &::before {
-                    //width: 13px;
-                    //height: 16px;
+                &--btc {
+                    background-color: #ffb629;
                     background-image: @img-btc-icon;
                 }
             }

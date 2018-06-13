@@ -28,6 +28,44 @@
             left: 0;
         }
     }
+
+    &_social {
+        display: flex;
+        align-items: center;
+        &-item {
+            position: relative;
+            margin-right: 4px;
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            background-position: center;
+            background-repeat: no-repeat;
+            &--fb {
+                background-color: #345c94;
+                background-image: @img-f-icon;
+            }
+            &--tw {
+                background-color: #00b0e9;
+                background-image: @img-tw-icon;
+            }
+            &--g {
+                background-color: #e34346;
+                background-image: @img-G-icon;
+            }
+        }
+        span {
+            margin-left: auto;
+            padding: 3px 6px 2px;
+            border-radius: 2px;
+            border: 1px solid #707986;
+            background-color: #ffffff;
+            color: #707986;
+            font-family: @main-font;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 12px;
+        }
+    }
     &_item {
         margin-bottom: 44px;
         &-photo {
@@ -58,58 +96,6 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 20px;
-        }
-        &-social {
-            display: flex;
-            align-items: center;
-            a {
-                position: relative;
-                margin-right: 4px;
-                width: 24px;
-                height: 24px;
-                border-radius: 2px;
-                &::before {
-        			content: "";
-        			position: absolute;
-        			width: 21px;
-        			height: 21px;
-        			left: 1px;
-        			top: 1px;
-        			background-position: center;
-        			background-repeat: no-repeat;
-        			z-index: 11;
-        		}
-            }
-            &-fb {
-                background-color: #345c94;
-                &::before {
-                    background-image: @img-f-icon;
-                }
-            }
-            &-tw {
-                background-color: #00b0e9;
-                &::before {
-                    background-image: @img-tw-icon;
-                }
-            }
-            &-g {
-                background-color: #e34346;
-                &::before {
-                    background-image: @img-G-icon;
-                }
-            }
-            span {
-                margin-left: auto;
-                padding: 3px 6px 2px;
-                border-radius: 2px;
-                border: 1px solid #707986;
-                background-color: #ffffff;
-                color: #707986;
-                font-family: @main-font;
-                font-size: 11px;
-                font-weight: 400;
-                line-height: 12px;
-            }
         }
     }
 }

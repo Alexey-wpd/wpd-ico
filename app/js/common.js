@@ -3,8 +3,8 @@
 		$(this).next().slideToggle();
 	});
 
-	$(".dropdown-subsection-button").click(function() {
-		$(".dropdown-subsection").slideToggle();
+	$(".js-dropdown-subsection-button").click(function() {
+		$(".js-dropdown-subsection").slideToggle();
 	});
 
 	$(".portfolio_item-dropdown").click(function() {

@@ -541,52 +541,33 @@
 .profile-social_links {
   display: flex;
 }
-.profile-social_links a {
+.profile-social_links-item {
   position: relative;
   margin-right: 4px;
   width: 24px;
   height: 24px;
   border-radius: 2px;
-}
-.profile-social_links a::before {
-  content: "";
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  width: 21px;
-  height: 21px;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 11;
 }
-.profile-social_links-fb {
+.profile-social_links-item--fb {
   background-color: #345c94;
-}
-.profile-social_links-fb::before {
   background-image: url('../img/fb-icon.svg');
 }
-.profile-social_links-tw {
+.profile-social_links-item--tw {
   background-color: #00b0e9;
-}
-.profile-social_links-tw::before {
   background-image: url('../img/tw-icon.svg');
 }
-.profile-social_links-in {
+.profile-social_links-item--in {
   background-color: #0086ba;
-}
-.profile-social_links-in::before {
   background-image: url('../img/in-icon.svg');
 }
-.profile-social_links-m {
+.profile-social_links-item--m {
   background-color: #00ac68;
-}
-.profile-social_links-m::before {
   background-image: url('../img/m-icon.svg');
 }
-.profile-social_links-btc {
+.profile-social_links-item--btc {
   background-color: #ffb629;
-}
-.profile-social_links-btc::before {
   background-image: url('../img/btc-icon.svg');
 }
 .profile h2 {

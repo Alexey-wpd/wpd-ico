@@ -122,6 +122,54 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
+.user-reviews_social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 28px;
+  border-top: 1px solid #e0e6ed;
+}
+.user-reviews_social-item {
+  margin-right: 4px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.user-reviews_social-item:first-child {
+  margin-right: 24px;
+  width: auto;
+  height: auto;
+  color: #45af37;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.user-reviews_social-item--fb {
+  background-color: #345c94;
+  background-image: url('../img/f-icon.svg');
+}
+.user-reviews_social-item--tw {
+  background-color: #00b0e9;
+  background-image: url('../img/tw-icon.svg');
+}
+.user-reviews_social-item--google {
+  background-color: #e34245;
+  background-image: url('../img/G+-icon.svg');
+}
+.user-reviews_social-item--in {
+  background-color: #0086ba;
+  background-image: url('../img/in-icon.svg');
+}
+.user-reviews_social-item--vk {
+  background-color: #4c75a3;
+  background-image: url('../img/wk-icon.svg');
+}
 .user-reviews_item {
   position: relative;
   margin-bottom: 20px;
@@ -144,73 +192,6 @@
 }
 .user-reviews_item-wrapper {
   display: flex;
-}
-.user-reviews_item-social {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 15px 28px;
-  border-top: 1px solid #e0e6ed;
-}
-.user-reviews_item-social a {
-  margin-right: 4px;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 2px;
-}
-.user-reviews_item-social a:first-child {
-  margin-right: 24px;
-  width: auto;
-  height: auto;
-  color: #45af37;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  text-decoration: underline;
-  text-decoration-style: dashed;
-}
-.user-reviews_item-social a::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 1px;
-  top: 1px;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
-.user-reviews_item-social-fb {
-  background-color: #345c94;
-}
-.user-reviews_item-social-fb::before {
-  background-image: url('../img/f-icon.svg');
-}
-.user-reviews_item-social-tw {
-  background-color: #00b0e9;
-}
-.user-reviews_item-social-tw::before {
-  background-image: url('../img/tw-icon.svg');
-}
-.user-reviews_item-social-google {
-  background-color: #e34245;
-}
-.user-reviews_item-social-google::before {
-  background-image: url('../img/G+-icon.svg');
-}
-.user-reviews_item-social-in {
-  background-color: #0086ba;
-}
-.user-reviews_item-social-in::before {
-  background-image: url('../img/in-icon.svg');
-}
-.user-reviews_item-social-vk {
-  background-color: #4c75a3;
-}
-.user-reviews_item-social-vk::before {
-  background-image: url('../img/wk-icon.svg');
 }
 .user-reviews_item .user {
   padding: 18px 10px 20px 16px;

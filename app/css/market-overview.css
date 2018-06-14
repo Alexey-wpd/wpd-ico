@@ -120,42 +120,32 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
-.market-topline .market-card_social a {
+.market-topline .market-card_social-item {
   margin-right: 3px;
   position: relative;
   width: 24px;
   height: 24px;
   border-radius: 24px;
   background-color: #8f96a1;
-}
-.market-topline .market-card_social a::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 1px;
-  top: 1px;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 11;
 }
-.market-topline .market-card_social-fb::before {
+.market-topline .market-card_social-item--fb {
   background-image: url('../img/f-icon.svg');
 }
-.market-topline .market-card_social-tw::before {
+.market-topline .market-card_social-item--tw {
   background-image: url('../img/tw-icon.svg');
 }
-.market-topline .market-card_social-google::before {
+.market-topline .market-card_social-item--google {
   background-image: url('../img/G+-icon.svg');
 }
-.market-topline .market-card_social-in::before {
-  top: 0px;
+.market-topline .market-card_social-item--in {
   background-image: url('../img/in-icon.svg');
 }
-.market-topline .market-card_social-vk::before {
+.market-topline .market-card_social-item--vk {
   background-image: url('../img/wk-icon.svg');
 }
-.market-topline .market-card_social-m::before {
+.market-topline .market-card_social-item--m {
   background-image: url('../img/m-icon.svg');
 }
 .market-topline .market-data {

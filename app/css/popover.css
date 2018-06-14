@@ -797,17 +797,26 @@
 .popover-user-content_item-dashboard::before {
   background-position: 0px 0px;
 }
+.popover-user-content_item-dashboard:hover::before {
+  background-position: 0px -79px;
+}
 .popover-user-content_item-profile::before {
   background-position: 0px -16px;
 }
 .popover-user-content_item-social::before {
   background-position: 0px -31px;
 }
+.popover-user-content_item-social:hover::before {
+  background-position: 0px -110px;
+}
 .popover-user-content_item-settings::before {
   background-position: 0px -47px;
 }
 .popover-user-content_item-logout::before {
   background-position: 0px -63px;
+}
+.popover-user-content_item-logout:hover::before {
+  background-position: 0px -95px;
 }
 .popover-user-logout {
   padding: 14px 24px 16px;

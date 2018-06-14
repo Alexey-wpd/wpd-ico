@@ -172,12 +172,12 @@
   background-color: #1991eb;
 }
 .ico-topline .ico-card_social {
-  padding: 22px 44px 24px;
+  padding: 32px 44px 24px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   text-align: center;
 }
-.ico-topline .ico-card_social a {
+.ico-topline .ico-card_social-item {
   margin-right: 1px;
   position: relative;
   font-size: 0;
@@ -186,34 +186,25 @@
   height: 24px;
   border-radius: 24px;
   background-color: #8f96a1;
-}
-.ico-topline .ico-card_social a::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 1px;
-  top: 1px;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 11;
 }
-.ico-topline .ico-card_social-fb::before {
+.ico-topline .ico-card_social-item--fb {
   background-image: url('../img/f-icon.svg');
 }
-.ico-topline .ico-card_social-tw::before {
+.ico-topline .ico-card_social-item--tw {
   background-image: url('../img/tw-icon.svg');
 }
-.ico-topline .ico-card_social-google::before {
+.ico-topline .ico-card_social-item--google {
   background-image: url('../img/G+-icon.svg');
 }
-.ico-topline .ico-card_social-in::before {
+.ico-topline .ico-card_social-item--in {
   background-image: url('../img/in-icon.svg');
 }
-.ico-topline .ico-card_social-vk::before {
+.ico-topline .ico-card_social-item--vk {
   background-image: url('../img/wk-icon.svg');
 }
-.ico-topline .ico-card_social-m::before {
+.ico-topline .ico-card_social-item--m {
   background-image: url('../img/m-icon.svg');
 }
 .ico-topline .ico-data {

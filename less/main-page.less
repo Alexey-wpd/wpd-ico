@@ -318,13 +318,131 @@
      }
     &-forum {
         margin-bottom: 52px;
-        .forum-subsection-content{
-            margin-top: 0;
-        }
-        .forum-topic {
-            &_numbers {
-                width: 100px;
-                justify-content: space-between;
+        &-item {
+            padding: 18px 28px 18px 16px;
+            margin-bottom: 1px;
+            background-color: #fff;
+            box-shadow: 0 1px 0 #e0e6ed;
+            &:first-child {
+                border-radius: 4px 4px 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 4px 4px;
+            }
+            .user {
+                margin-bottom: 0;
+                &_name {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 12px;
+                    letter-spacing: -0.07px;
+                    .user_rating {
+                        margin-left: 5px;
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                }
+                &_rank {
+                    padding: 2px 4px;
+                }
+            }
+            .forum-topic {
+                &_title {
+                    a {
+                        color: @main-color;
+                        font-family: @main-font;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: -0.11px;
+                        max-width: 490px;
+                        &:hover {
+                            text-decoration: underline;
+                            color: darken(@main-color, 20%);
+                        }
+                    }
+                }
+                &_comments-count {
+                    position: relative;
+                    padding: 4px 6px 2px;
+                    border-radius: 8px;
+                    background-color: #9ea4ad;
+                    color: #ffffff;
+                    font-family: @main-font;
+                    font-size: 11px;
+                    font-weight: 700;
+                    line-height: 10px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 11px;
+                        height: 6px;
+                        right: 50%;
+                        margin-right: -4px;
+                        top: 15px;
+                        background-image: @img-tail;
+                        background-repeat: no-repeat;
+                    }
+                }
+                &_rating {
+                    margin-left: auto;
+                    color: #b64ad4;
+                    font-family: @main-font;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 15px;
+                }
+                &_ratings {
+                    display: flex;
+                    align-items: center;
+                }
+                &_star {
+                    margin-left: 32px;
+                    width: 16px;
+                    height: 16px;
+                    position: relative;
+                    background-image: @img-star;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &--active {
+                        background-image: @img-star-active;
+                    }
+                }
+            }
+            .topic-statistic {
+                margin-top: 4px;
+                &_time {
+                    margin-right: 27px;
+                    position: relative;
+                    color: #333f52;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    white-space: nowrap;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 3px;
+                        height: 3px;
+                        background-color: #959ca7;
+                        top: 5px;
+                        left: 95px;
+                    }
+                }
+                &_veiws {
+                    margin-right: 24px;
+                    color: #8f96a1;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    font-size: 14px;
+                }
+                .readers {
+                    position: relative;
+                    padding-left: 20px;
+                }
             }
         }
     }

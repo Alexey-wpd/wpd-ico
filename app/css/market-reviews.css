@@ -486,7 +486,6 @@
   line-height: 20px;
 }
 .user-reviews_item-replies .reply-form {
-  display: flex;
   background-color: #fafbfc;
 }
 .user-reviews_item-replies .reply-form_content {

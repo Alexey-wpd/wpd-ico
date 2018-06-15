@@ -53,59 +53,59 @@
   font-style: normal;
   font-weight: normal;
 }
-.inner-topic {
+.topic {
   margin-top: 32px;
   padding: 0 28px 42px 28px;
   box-shadow: 0 10px 30px rgba(82, 92, 108, 0.15);
   background-color: #ffffff;
 }
-.inner-topic_top-line {
+.topic_top-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18px;
 }
-.inner-topic_top-line .user {
+.topic_top-line .user {
   justify-content: flex-start;
   margin-bottom: 0;
   padding-top: 20px;
 }
-.inner-topic_top-line .user_block {
+.topic_top-line .user_block {
   margin-right: 8px;
 }
-.inner-topic_top-line .user_block .user_icon {
+.topic_top-line .user_block .user_icon {
   margin-right: 12px;
 }
-.inner-topic_top-line .user_block .user_name {
+.topic_top-line .user_block .user_name {
   font-size: 14px;
   font-weight: 700;
   line-height: 12px;
   letter-spacing: -0.07px;
 }
-.inner-topic_top-line .user_block .user_name .user_rating {
+.topic_top-line .user_block .user_name .user_rating {
   margin-left: 5px;
   font-size: 10px;
   font-weight: 500;
   color: #44af36;
   font-family: 'Roboto', sans-serif;
 }
-.inner-topic_top-line .user_block .user_rank {
+.topic_top-line .user_block .user_rank {
   padding: 2px 4px;
 }
-.inner-topic_topic-info {
+.topic_topic-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18px;
 }
-.inner-topic_topic-info .topic-statistic {
+.topic_topic-info .topic-statistic {
   display: flex;
   margin-left: 58px;
 }
-.inner-topic_topic-info .topic-statistic_time {
+.topic_topic-info .topic-statistic_time {
   margin-right: 27px;
 }
-.inner-topic_topic-info .topic-statistic_time span {
+.topic_topic-info .topic-statistic_time span {
   position: relative;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -114,7 +114,7 @@
   line-height: 12px;
   white-space: nowrap;
 }
-.inner-topic_topic-info .topic-statistic_time span::before {
+.topic_topic-info .topic-statistic_time span::before {
   content: "";
   position: absolute;
   width: 3px;
@@ -123,10 +123,10 @@
   top: 5px;
   left: 95px;
 }
-.inner-topic_topic-info .topic-statistic_veiws {
+.topic_topic-info .topic-statistic_veiws {
   margin-right: 24px;
 }
-.inner-topic_topic-info .topic-statistic_veiws span {
+.topic_topic-info .topic-statistic_veiws span {
   margin-right: 7px;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -134,14 +134,14 @@
   line-height: 14px;
   font-size: 14px;
 }
-.inner-topic_topic-info .topic-statistic_comments {
+.topic_topic-info .topic-statistic_comments {
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
 }
-.inner-topic_topic-info .topic-statistic_comments span {
+.topic_topic-info .topic-statistic_comments span {
   margin-left: 5px;
   background-color: #9ea4ad;
   position: relative;
@@ -152,7 +152,7 @@
   line-height: 10px;
   color: #fff;
 }
-.inner-topic_topic-info .topic-statistic_comments span::before {
+.topic_topic-info .topic-statistic_comments span::before {
   content: "";
   position: absolute;
   width: 11px;
@@ -163,14 +163,14 @@
   background-image: url('../img/tail.svg');
   background-repeat: no-repeat;
 }
-.inner-topic_topic-info .topic-statistic .readers {
+.topic_topic-info .topic-statistic .readers {
   margin-right: 24px;
 }
-.inner-topic_topic-info .topic-rating {
+.topic_topic-info .topic-rating {
   display: flex;
   align-items: center;
 }
-.inner-topic_topic-info .topic-rating_count {
+.topic_topic-info .topic-rating_count {
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -178,7 +178,7 @@
   line-height: 26px;
   white-space: nowrap;
 }
-.inner-topic_topic-info .topic-rating_count span {
+.topic_topic-info .topic-rating_count span {
   margin-left: 5px;
   color: #b64ad4;
   font-family: 'Roboto', sans-serif;
@@ -186,10 +186,10 @@
   font-weight: 700;
   line-height: 26px;
 }
-.inner-topic_topic-info .topic-rating_add-rating {
+.topic_topic-info .topic-rating_add-rating {
   margin-left: 12px;
 }
-.inner-topic_topic-info .topic-rating_add-rating span {
+.topic_topic-info .topic-rating_add-rating span {
   display: flex;
   justify-content: center;
   width: 24px;
@@ -202,18 +202,18 @@
   color: #fff;
   cursor: pointer;
 }
-.inner-topic_topic-info .topic-rating_add-rating--nocolor a {
+.topic_topic-info .topic-rating_add-rating--nocolor a {
   color: #b54ad3;
   border: 1px solid #b54ad3;
   background-color: inherit;
   line-height: 24px;
 }
-.inner-topic_topic-info .topic-rating_add-favourite {
+.topic_topic-info .topic-rating_add-favourite {
   display: flex;
   align-items: center;
   margin-left: 24px;
 }
-.inner-topic_topic-info .topic-rating_add-favourite span {
+.topic_topic-info .topic-rating_add-favourite span {
   margin-left: 8px;
   color: #707986;
   font-family: 'Roboto', sans-serif;
@@ -221,7 +221,7 @@
   font-weight: 400;
   line-height: 12px;
 }
-.inner-topic_topic-info .topic-rating_icon-star {
+.topic_topic-info .topic-rating_icon-star {
   margin-left: 24px;
   width: 24px;
   height: 24px;
@@ -231,13 +231,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.inner-topic_topic-info .topic-rating_icon-star--active {
+.topic_topic-info .topic-rating_icon-star--active {
   background-image: url('../img/star_active.svg');
 }
-.inner-topic_content {
+.topic_content {
   padding-left: 60px;
 }
-.inner-topic_content h1 {
+.topic_content h1 {
   margin-bottom: 15px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -245,7 +245,7 @@
   font-weight: 700;
   line-height: 24px;
 }
-.inner-topic_content h2 {
+.topic_content h2 {
   margin-bottom: 10px;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
@@ -253,7 +253,7 @@
   font-weight: 700;
   line-height: 20px;
 }
-.inner-topic_content p {
+.topic_content p {
   margin-bottom: 15px;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
@@ -261,17 +261,17 @@
   font-weight: 400;
   line-height: 20px;
 }
-.inner-topic_content p a {
+.topic_content p a {
   color: #1991eb;
   font-weight: 500;
   text-decoration: underline;
 }
-.inner-topic_content p a:hover {
+.topic_content p a:hover {
   text-decoration: none;
 }
-.inner-topic_content-image {
+.topic_content-image {
   padding: 32px 0;
 }
-.inner-topic_content-image img {
+.topic_content-image img {
   width: 100%;
 }

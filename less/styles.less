@@ -172,7 +172,7 @@ b {
 	}
 	&_block {
 		display: flex;
-		//align-items: flex-end;
+		align-items: center;
 	}
 	&_username-container {
 		display: flex;
@@ -220,6 +220,21 @@ b {
 		}
 	}
 	&_name {
+		&--admin {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 9px;
+				height: 11px;
+				right: -15px;
+				top: 1px;
+				background-image: @img-admin-icon;
+				background-position: center;
+				background-repeat: no-repeat;
+				z-index: 11;
+			}
+		}
 		color: #333f52;
 		font-family: @main-font;
 		font-size: 14px;

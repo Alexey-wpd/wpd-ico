@@ -14,7 +14,7 @@
             legend {
                 padding-top: 18px;
                 padding-bottom: 15px;
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 500;
@@ -48,7 +48,7 @@
     margin-top: 32px;
     h1 {
         margin-bottom: 20px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 24px;
         font-weight: 700;
@@ -57,7 +57,7 @@
     &_intro {
         margin-bottom: 20px;
         p {
-            color: #707986;
+            color: @gray;
             font-family: @main-font;
             font-size: 13px;
             font-weight: 400;
@@ -74,7 +74,7 @@
         margin-bottom: 7px;
         span {
             margin-bottom: 7px;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -113,7 +113,7 @@
         position: relative;
         select {
             padding: 6px 70px 6px 12px;
-            color: #707986;
+            color: @gray;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -180,7 +180,7 @@
         //justify-catalogue: space-between;
         align-items: center;
         h2 {
-            color: #333f52;
+            color: @dark;
             font-size: 24px;
             font-weight: 700;
             line-height: 24px;
@@ -199,7 +199,7 @@
             padding: 3px 4px 2px;
             margin-right: 4px;
             margin-bottom: 4px;
-            background-color: #8f96a1;
+            background-color: @light-grey;
             color: #ffffff;
             font-family: @main-font;
             font-size: 10px;
@@ -218,7 +218,7 @@
         }
         &-24 {
             margin-bottom: 5px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 11px;
             font-weight: 500;
@@ -227,7 +227,7 @@
             letter-spacing: 0.3px;
         }
         &-usd {
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 16px;
             font-weight: 700;
@@ -244,7 +244,7 @@
         margin-bottom: 8px;
         span {
             margin-right: 16px;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -265,24 +265,42 @@
             font-weight: 500;
             line-height: 14px;
             letter-spacing: -0.13px;
-            sup {
-                top: -7px;
-                margin-left: 4px;
-                //margin-top: -22px;
-                padding: 1px 5px 2px 4px;
-                border-radius: 8px;
-                background-color: #5bb0d5;
-                color: #ffffff;
-                font-family: @main-font;
-                font-size: 9px;
-                font-weight: 500;
-                line-height: 9px;
+        }
+        sup {
+            top: -7px;
+            margin-left: 4px;
+            //margin-top: -22px;
+            padding: 2px 5px 2px 4px;
+            border-radius: 8px;
+            background-color: #5bb0d5;
+            color: #ffffff;
+            font-family: @main-font;
+            font-size: 9px;
+            font-weight: 500;
+            line-height: 9px;
+            &:hover {
+                text-decoration: none;
             }
         }
         .to-discuss {
             //margin-right: 45px;
             padding-left: 45px;
-            color: #525c6c;
+            color: @main-text-color;
+            &:hover {
+                color: rgba(82, 92, 108, 0.85);
+                &::before {
+                    content: "";
+        			position: absolute;
+        			width: 16px;
+        			height: 14px;
+        			left: 20px;
+        			top: 0px;
+        			background-image: @img-discuss-icon-hover;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+                }
+            }
             &::before {
                 content: "";
     			position: absolute;
@@ -298,7 +316,22 @@
         }
         .to-rate {
             padding-left: 45px;
-            color: #525c6c;
+            color: @main-text-color;
+            &:hover {
+                color: rgba(82, 92, 108, 0.85);
+                &::before {
+                    content: "";
+        			position: absolute;
+        			width: 16px;
+        			height: 14px;
+        			left: 20px;
+        			top: 0px;
+        			background-image: @img-to-rate-icon-hover;
+        			background-position: center;
+        			background-repeat: no-repeat;
+        			z-index: 11;
+                }
+            }
             &::before {
                 content: "";
     			position: absolute;
@@ -312,7 +345,23 @@
     			z-index: 11;
             }
             &--active {
-                color: #45af37;
+                color: @accent-color;
+                &:hover {
+                    text-decoration: underline;
+                    color: @accent-color;
+                    &::before {
+                        content: "";
+            			position: absolute;
+            			width: 14px;
+            			height: 14px;
+            			left: 20px;
+            			top: 0px;
+            			background-image: @img-green-check;
+            			background-position: center;
+            			background-repeat: no-repeat;
+            			z-index: 11;
+                    }
+                }
                 &::before {
                     content: "";
         			position: absolute;
@@ -341,14 +390,14 @@
             white-space: nowrap;
         }
         &-name {
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 500;
             line-height: 12px;
         }
         &-score {
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 15px;
             font-weight: 700;
@@ -373,8 +422,8 @@
     		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
     		border-radius: 0;
     		padding: 17px 1px 15px 20px;
-    		box-shadow: inset 0px -2px 0 darken(@main-color, 10%);
-    		background-color: @main-color;
+    		box-shadow: inset 0px -2px 0 darken(@link-color, 10%);
+    		background-color: @link-color;
     		&::before {
     			content: "";
     			position: absolute;

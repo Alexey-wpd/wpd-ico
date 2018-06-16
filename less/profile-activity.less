@@ -6,7 +6,7 @@
     justify-content: space-between;
     padding: 28px 0 24px;
     h2 {
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 20px;
         font-weight: 500;
@@ -37,13 +37,16 @@
             display: block;
             padding: 10px 20px 9px;
             margin-left: -1px;
-            color: #525c6c;
+            color: @main-text-color;
             background-color: #fff;
-            border: 1px solid #ced8e3;
+            border: 1px solid @super-light-grey;
             font-family: @main-font;
             font-weight: 500;
             font-size: 13px;
             line-height: 12px;
+            &:hover {
+                background-color: #e8edf2;
+            }
         }
     }
 }
@@ -62,8 +65,8 @@
         //width: 23%;
         span {
             padding: 4px 6px 3px;
-            border: 1px solid #8f96a1;
-            color: #8f96a1;
+            border: 1px solid @light-grey;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 500;
@@ -78,8 +81,8 @@
         }
         &--comment {
             span {
-                border: 1px solid #8f96a1;
-                color: #8f96a1;
+                border: 1px solid @light-grey;
+                color: @light-grey;
             }
         }
         &--review {
@@ -94,20 +97,24 @@
         a {
             display: inline-block;
             margin-bottom: 8px;
-            color: #1991eb;
+            color: @link-color;
             font-family: @main-font;
             font-size: 16px;
             font-weight: 500;
             line-height: 16px;
             letter-spacing: -0.11px;
+            &:hover {
+                color: @link-hover-color;
+                text-decoration: underline;
+            }
             span {
-                color: #8f96a1;
+                color: @light-grey;
                 font-size: 12px;
             }
         }
         p {
             margin-bottom: 8px;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -120,7 +127,7 @@
         }
         &-date {
             margin-right: 26px;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -128,7 +135,7 @@
         }
         &-views {
             margin-right: 32px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -181,7 +188,7 @@
         font-weight: 700;
         line-height: 12px;
         &--thread {
-            color: #b64ad4;
+            color: @purple;
         }
     }
     .rating_tag {

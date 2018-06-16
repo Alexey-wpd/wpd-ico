@@ -9,7 +9,7 @@
     &_item {
         padding: 14px 16px 14px 28px;
         background-color: #ffffff;
-        border-bottom: 1px solid #c5d0de;
+        border-bottom: 1px solid @light-light-grey;
         &--active {
             border-left: 4px solid #7dc773;
         }
@@ -20,7 +20,7 @@
             margin-bottom: 0;
         }
         .user_message-date {
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -47,7 +47,7 @@
             .user-message {
                 margin-left: 54px;
                 padding: 8px 20px;
-                border: 1px solid #c5d0de;
+                border: 1px solid @light-light-grey;
                 background-color: #fafbfc;
                 &--white {
                     margin-left: 0px;
@@ -56,7 +56,7 @@
                 }
                 &_text {
                     margin-bottom: 8px;
-                    color: #525c6c;
+                    color: @main-text-color;
                     font-family: @main-font;
                     font-size: 14px;
                     font-weight: 400;
@@ -64,7 +64,7 @@
                 }
                 &_date {
                     float: right;
-                    color: #8f96a1;
+                    color: @light-grey;
                     font-family: @main-font;
                     font-size: 12px;
                     font-weight: 400;
@@ -77,7 +77,7 @@
 .messaging-answer {
     padding: 12px 20px 12px 15px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.09);
-    border: 1px solid #c5d0de;
+    border: 1px solid @light-light-grey;
     background-color: #ffffff;
     &-form {
         display: flex;
@@ -86,20 +86,18 @@
             padding: 5px;
             width: 70%;
             border: none;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
             line-height: 20px;
+            &:focus {
+                box-shadow: none;
+            }
         }
         .btn-send {
             padding: 10px 16px 8px;
             margin-left: auto;
-            box-shadow: 0 2px 0 #3b962f;
-            border-radius: 4px;
-            background-color: #45af37;
-            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-            color: #ffffff;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 500;
@@ -115,7 +113,7 @@
     justify-content: space-between;
     padding: 28px 0 24px;
     h2 {
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 20px;
         font-weight: 500;
@@ -146,13 +144,16 @@
             display: block;
             padding: 10px 20px 9px;
             margin-left: -1px;
-            color: #525c6c;
+            color: @main-text-color;
             background-color: #fff;
-            border: 1px solid #ced8e3;
+            border: 1px solid @super-light-grey;
             font-family: @main-font;
             font-weight: 500;
             font-size: 13px;
             line-height: 12px;
+            &:hover {
+                background-color: #e8edf2;
+            }
         }
     }
 }
@@ -167,8 +168,8 @@
     &_name {
         span {
             padding: 4px 6px 3px;
-            border: 1px solid #8f96a1;
-            color: #8f96a1;
+            border: 1px solid @light-grey;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 500;
@@ -183,8 +184,8 @@
         }
         &--comment {
             span {
-                border: 1px solid #8f96a1;
-                color: #8f96a1;
+                border: 1px solid @light-grey;
+                color: @light-grey;
             }
         }
         &--review {
@@ -198,20 +199,24 @@
         a {
             display: inline-block;
             margin-bottom: 8px;
-            color: #1991eb;
+            color: @link-color;
             font-family: @main-font;
             font-size: 16px;
             font-weight: 500;
             line-height: 16px;
             letter-spacing: -0.11px;
+            &:hover {
+                text-decoration: underline;
+                color: @link-hover-color;
+            }
             span {
-                color: #8f96a1;
+                color: @light-grey;
                 font-size: 12px;
             }
         }
         p {
             margin-bottom: 8px;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -224,7 +229,7 @@
         }
         &-date {
             margin-right: 26px;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -232,7 +237,7 @@
         }
         &-views {
             margin-right: 32px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -290,6 +295,10 @@
             letter-spacing: -0.1px;
             text-decoration: underline;
             text-decoration-style: dashed;
+            &:hover {
+                color: @accent-hover-color;
+                text-decoration-style: solid;
+            }
         }
     }
 }

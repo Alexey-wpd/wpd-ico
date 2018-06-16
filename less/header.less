@@ -38,6 +38,10 @@
                 white-space: nowrap;
                 text-decoration: underline;
                 text-decoration-color: rgba(68, 175, 54, 0.25);
+                &:hover {
+                    color: @accent-hover-color;
+                    text-decoration-color: rgba(68, 175, 54, 0.85);
+                }
             }
             &--active {
                 //position: relative;
@@ -55,13 +59,17 @@
             &-item {
                 a {
                     padding: 0 10px;
-                    color: #525c6c;
+                    color: @main-text-color;
                     font-family: @main-font;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 20px;
                     letter-spacing: -0.1px;
                     text-decoration-color: rgba(143, 150, 161, 0.25);
+                    &:hover {
+                        color: rgba(82, 92, 108, 0.85);
+                        text-decoration-color: rgba(143, 150, 161, 0.85);
+                    }
                 }
             }
         }
@@ -98,7 +106,7 @@
                 font-weight: 400;
                 line-height: 18px;
                 border-radius: 4px;
-                border: 1px solid #c5d0de;
+                border: 1px solid @light-light-grey;
                 background-color: #ffffff;
             }
         }
@@ -465,10 +473,10 @@
             &:first-child {
                 a {
                     padding: 18px 45px 18px 0;
-                    color: #c5d0de;
+                    color: @light-light-grey;
                     &:hover {
                         background-color: #525c6c;
-                        color: #c5d0de;
+                        color: @light-light-grey;
                     }
                 }
             }
@@ -507,7 +515,7 @@
             p {
                 margin-right: 50px;
                 max-width: 600px;
-                color: #c5d0de;
+                color: @light-light-grey;
                 font-family: @main-font;
                 font-size: 13px;
                 font-weight: 400;

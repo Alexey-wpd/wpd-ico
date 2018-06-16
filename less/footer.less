@@ -17,7 +17,7 @@
         margin-right: 60px;
         p {
             max-width: 255px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -68,7 +68,8 @@
                     text-decoration: underline;
                     text-decoration-color: rgba(68, 175, 54, 0.25);
                     &:hover {
-                        text-decoration: none;
+                        color: @accent-hover-color;
+                        text-decoration-color: rgba(68, 175, 54, 0.85);
                     }
                 }
                 &--bold {
@@ -80,8 +81,12 @@
                 &--grey {
                     a {
                         font-size: 16px;
-                        color: #8f96a1;
+                        color: @light-grey;
                         text-decoration-color: rgba(143, 150, 161, 0.25);
+                        &:hover {
+                            color: rgba(143, 150, 161, 0.85);
+                            text-decoration-color: rgba(143, 150, 161, 0.85);
+                        }
                     }
                 }
             }
@@ -111,13 +116,13 @@
         input {
             padding: 8px 40px 8px 15px;
             width: 100%;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
             border-radius: 4px;
-            border: 1px solid #c5d0de;
+            border: 1px solid @light-light-grey;
             background-color: #ffffff;
         }
     }
@@ -131,7 +136,7 @@
         }
         a {
             margin-right: 32px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -140,7 +145,6 @@
             white-space: nowrap;
             &:hover {
                 text-decoration: none;
-                color: darken(#8f96a1, 10%);
             }
         }
         .worldpokerdeals {
@@ -152,7 +156,7 @@
                 justify-content: flex-start;
                 position: relative;
                 margin-right: 0;
-                color: #8f96a1;
+                color: @light-grey;
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 12px;

@@ -11,12 +11,12 @@
     background-color: #fafbfc;
     &_title {
         padding: 19px 28px;
-        background-color: darken(@body-bg, 15%);
-        box-shadow: 0 1px 0 darken(@body-bg, 15%);
+        background-color: #ced8e3;
+        box-shadow: 0 1px 0 #ced8e3;
         border-radius: 4px 4px 0 0;
         border-left: 4px solid #7bd2fe;
         h2 {
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 20px;
             font-weight: 700;
@@ -66,19 +66,23 @@
             &_title {
                 margin-right: 16px;
                 a {
-                    color: @main-color;
+                    color: @link-color;
                     font-family: @main-font;
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 16px;
                     &:hover {
                         text-decoration: underline;
-                        color: darken(@main-color, 10%);
+                        color: rgba(25, 145, 235, 0.85);
                     }
                 }
                 &--no-topics {
                     a {
                         color: rgba(25, 145, 235, 0.5);
+                        &:hover {
+                            text-decoration: underline;
+                            color: rgba(25, 145, 235, 0.85);
+                        }
                     }
                 }
                 &--dropdown {
@@ -91,7 +95,11 @@
                 }
                 &--grey {
                     a {
-                        color: #525c6c;
+                        color: @main-text-color;
+                        &:hover {
+                            text-decoration: underline;
+                            color: @main-text-color;
+                        }
                     }
                 }
             }
@@ -101,7 +109,7 @@
             margin-top: 3px;
             margin-left: 29px;
             span {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 12px;
                 font-weight: 500;
@@ -129,14 +137,14 @@
             //margin-left: 38px;
             display: flex;
             a {
-                color: @main-color;
+                color: @link-color;
                 font-family: @main-font;
                 font-size: 12px;
                 font-weight: 400;
                 //line-height: 12px;
                 &:hover {
                     text-decoration: underline;
-                    color: darken(@main-color, 10%);
+                    color: rgba(25, 145, 235, 0.85);
                 }
             }
         }
@@ -162,7 +170,7 @@
         }
         &_rating {
             //margin-right: 16px;
-            color: #b64ad4;
+            color: @purple;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 700;
@@ -208,7 +216,7 @@
         margin-top: 2px;
         &_time {
             margin-right: 12px;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -219,7 +227,7 @@
             position: relative;
             padding-left: 15px;
             margin-right: 7px;
-            color: #707986;
+            color: @gray;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 500;

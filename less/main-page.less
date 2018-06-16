@@ -58,7 +58,7 @@
     margin-top: 44px;
     h2 {
         margin-bottom: 26px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 20px;
         font-weight: 700;
@@ -132,7 +132,7 @@
             justify-content: space-between;
             align-items: flex-start;
             h3 {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 20px;
                 font-weight: 700;
@@ -144,7 +144,7 @@
             border-radius: 4px;
             border: 1px solid #cbd5e2;
             background-color: transparent;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 10px;
             font-weight: 400;
@@ -161,7 +161,7 @@
             p {
                 height: 32px;
                 overflow: hidden;
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-size: 12px;
                 font-weight: 400;
@@ -177,7 +177,7 @@
                 margin-bottom: 16px;
             }
             &-trading-start-date {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 700;
@@ -185,7 +185,7 @@
                 letter-spacing: -0.35px;
             }
             &-full-amount {
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-size: 16px;
                 font-weight: 700;
@@ -213,7 +213,7 @@
                     z-index: 11;
                 }
                 &--canseled {
-                    color: #ff3657;
+                    color: @red;
                     &::before {
                         content: "";
                         position: absolute;
@@ -229,7 +229,7 @@
                 }
             }
             &-trading-time-left {
-                color: #8f96a1;
+                color: @light-grey;
                 font-family: @main-font;
                 font-size: 12px;
                 font-weight: 400;
@@ -242,19 +242,19 @@
                 font-weight: 400;
                 line-height: 12px;
                 &--canseled {
-                    color: #ff3657;
+                    color: @red;
                 }
             }
             &-current-percent {
                 margin-left: 10px;
-                color: #8f96a1;
+                color: @light-grey;
                 font-family: @main-font;
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 12px;
             }
             &-current-token-price {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 700;
@@ -264,7 +264,7 @@
             &-token-x {
                 position: relative;
                 padding-left: 14px;
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-size: 16px;
                 font-weight: 700;
@@ -293,10 +293,7 @@
         margin-bottom: 42px;
         a {
             padding: 18px 24px 14px;
-            background-color: @accent-color;
-            box-shadow: 0 4px 0 darken(@accent-color, 10%);
-            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
-            color: #ffffff;
+
             font-size: 16px;
             font-weight: 700;
             line-height: 16px;
@@ -310,7 +307,7 @@
      h2 {
          margin-top: 34px;
          margin-bottom: 26px;
-         color: #333f52;
+         color: @dark;
          font-family: @main-font;
          font-size: 20px;
          font-weight: 700;
@@ -330,6 +327,9 @@
                 border-radius: 0 0 4px 4px;
             }
             .user {
+                .user_block {
+                    align-items: flex-start;
+                }
                 margin-bottom: 0;
                 &_name {
                     font-size: 14px;
@@ -349,7 +349,7 @@
             .forum-topic {
                 &_title {
                     a {
-                        color: @main-color;
+                        color: @link-color;
                         font-family: @main-font;
                         font-size: 16px;
                         font-weight: 400;
@@ -358,7 +358,7 @@
                         max-width: 490px;
                         &:hover {
                             text-decoration: underline;
-                            color: darken(@main-color, 20%);
+                            color: @link-hover-color;
                         }
                     }
                 }
@@ -386,7 +386,7 @@
                 }
                 &_rating {
                     margin-left: auto;
-                    color: #b64ad4;
+                    color: @purple;
                     font-family: @main-font;
                     font-size: 14px;
                     font-weight: 700;
@@ -414,7 +414,7 @@
                 &_time {
                     margin-right: 27px;
                     position: relative;
-                    color: #333f52;
+                    color: @dark;
                     font-family: @main-font;
                     font-size: 12px;
                     font-weight: 400;
@@ -432,7 +432,7 @@
                 }
                 &_veiws {
                     margin-right: 24px;
-                    color: #8f96a1;
+                    color: @light-grey;
                     font-family: @main-font;
                     font-size: 12px;
                     font-weight: 400;
@@ -475,14 +475,14 @@
             }
         }
         &_time {
-            color: #8f96a1;
+            color: @light-grey;
             font-size: 12px;
             font-weight: 400;
             line-height: 18px;
         }
         &_ico {
             &-name {
-                color: @main-color;
+                color: @link-color;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 22px;
@@ -570,7 +570,7 @@
 
 .add-review {
     h3 {
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 18px;
         font-weight: 700;
@@ -591,7 +591,7 @@
             display: flex;
             align-items: center;
             label {
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 400;
@@ -599,14 +599,14 @@
             }
             select {
                 padding: 10px 36px 7px 12px;
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 15px;
                 font-weight: 400;
                 line-height: 18px;
-                box-shadow: 0 1px 0 #c5d0de;
+                box-shadow: 0 1px 0 @light-light-grey;
                 border-radius: 4px;
-                border: 1px solid #c5d0de;
+                border: 1px solid @light-light-grey;
                 background-color: #ffffff;
             }
         }
@@ -622,7 +622,7 @@
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid #f3b325;
     background-color: #ffffff;
-    color: #f7981c;
+    color: @orange;
     font-size: 10px;
     font-weight: 700;
     line-height: 10px;

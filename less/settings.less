@@ -7,7 +7,7 @@
     background-color: #e0e6ed;
     h1 {
         margin-bottom: 30px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 24px;
         font-weight: 700;
@@ -21,11 +21,15 @@
             a {
                 display: inline-block;
                 padding: 11px 0;
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 18px;
+                &:hover {
+                    color: rgba(82, 92, 108, 0.85);
+                    text-decoration: none;
+                }
             }
             &--active {
                 position: relative;
@@ -37,7 +41,7 @@
                     position: absolute;
                     width: 100%;
                     height: 5px;
-                    background-color: #8f96a1;
+                    background-color: @light-grey;
                     bottom: -5px;
                 }
             }
@@ -49,7 +53,7 @@
     h2 {
         margin-top: 32px;
         margin-bottom: 18px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -63,7 +67,7 @@
     &-list {
         &_item {
             margin-bottom: 16px;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -83,7 +87,7 @@
         ul {
             li {
                 margin-bottom: 16px;
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 400;
@@ -105,7 +109,7 @@
     h2 {
         margin-top: 32px;
         margin-bottom: 20px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -116,7 +120,7 @@
         display: flex;
         flex-direction: column;
         label {
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -126,9 +130,9 @@
             width: 100%;
             padding: 12px 12px 11px;
             border-radius: 4px;
-            border: 1px solid #c5d0de;
+            border: 1px solid @light-light-grey;
             background-color: #ffffff;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 16px;
             font-weight: 500;
@@ -143,7 +147,7 @@
     h2 {
         margin-top: 28px;
         margin-bottom: 18px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -157,7 +161,7 @@
     }
     label {
         span {
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -169,11 +173,6 @@
     margin-bottom: 50px;
     .btn-settings {
         padding: 16px 16px 14px;
-        box-shadow: 0 2px 0 #3e9532;
-        border-radius: 4px;
-        background-color: #45af37;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-        color: #ffffff;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -183,9 +182,9 @@
     .btn-finish-session {
         padding: 13px 16px 10px;
         border-radius: 4px;
-        border: 1px solid #8f96a1;
+        border: 1px solid @light-grey;
         background-color: #e0e6ed;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 500;
@@ -199,7 +198,7 @@
     h2 {
         margin-top: 34px;
         margin-bottom: 18px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -208,7 +207,7 @@
     &_current-pass,
     &_new-pass {
         label {
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -217,9 +216,9 @@
         input {
             width: 100%;
             border-radius: 4px;
-            border: 1px solid #c5d0de;
+            border: 1px solid @light-light-grey;
             background-color: #ffffff;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 16px;
             font-weight: 500;
@@ -239,7 +238,7 @@
         display: flex;
         margin-bottom: 34px;
         span {
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -251,7 +250,7 @@
     margin-bottom: 50px;
     h2 {
         margin-bottom: 22px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -263,7 +262,7 @@
         td {
             padding-bottom: 16px;
             &:first-child {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 400;
@@ -272,7 +271,7 @@
             &:last-child {
                 text-align: right;
                 height: 16px;
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-size: 16px;
                 font-weight: 500;
@@ -291,14 +290,14 @@
     h2 {
         margin-top: 34px;
         margin-bottom: 18px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
     }
     label {
-        color: #525c6c;
+        color: @main-text-color;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 400;
@@ -310,9 +309,9 @@
         width: 100%;
         margin-bottom: 23px;
         border-radius: 4px;
-        border: 1px solid #c5d0de;
+        border: 1px solid @light-light-grey;
         background-color: #ffffff;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 500;
@@ -328,7 +327,7 @@
     .symbol-counter {
         float: right;
         display: inline-block;
-        color: #8f96a1;
+        color: @light-grey;
         font-family: @main-font;
         font-size: 12px;
         font-weight: 400;
@@ -346,7 +345,7 @@
             position: absolute;
             top: 36px;
             right: -72px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -417,7 +416,7 @@
     margin-bottom: 40px;
     h2 {
         margin-bottom: 20px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
@@ -429,9 +428,9 @@
         width: 100%;
         margin-bottom: 12px;
         border-radius: 4px;
-        border: 1px solid #c5d0de;
+        border: 1px solid @light-light-grey;
         background-color: #ffffff;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 500;
@@ -458,7 +457,7 @@
             position: absolute;
             top: 12px;
             right: -72px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 400;
@@ -478,20 +477,23 @@
         letter-spacing: -0.1px;
         text-decoration: underline;
         text-decoration-style: dashed;
+        &:hover {
+            color: @accent-hover-color;
+        }
     }
 }
 .other-settings {
     margin-bottom: 36px;
     h2 {
         margin-bottom: 20px;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
     }
     label {
-        color: #525c6c;
+        color: @main-text-color;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 400;
@@ -503,9 +505,9 @@
         width: 100%;
         margin-bottom: 12px;
         border-radius: 4px;
-        border: 1px solid #c5d0de;
+        border: 1px solid @light-light-grey;
         background-color: #ffffff;
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 16px;
         font-weight: 500;
@@ -523,7 +525,7 @@
     margin-top: 96px;
     padding-bottom: 14px;
     box-shadow: 0 10px 30px rgba(82, 92, 108, 0.15);
-    border-top: 4px solid #c5d0de;
+    border-top: 4px solid @light-light-grey;
     border-radius: 4px;
     background-color: #ffffff;
     text-align: center;
@@ -534,7 +536,7 @@
         width: 130px;
         height: 130px;
         border-radius: 50%;
-        border: 2px solid #c5d0de;
+        border: 2px solid @light-light-grey;
         img {
             width: 100%;
             border: 2px solid #ffffff;
@@ -544,13 +546,17 @@
     &_remove-image {
         display: block;
         margin-bottom: 12px;
-        color: #8f96a1;
+        color: @light-grey;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 400;
         line-height: 16px;
         text-decoration: underline;
         letter-spacing: -0.23px;
+        &:hover {
+            color: @light-grey;
+            text-decoration: none;
+        }
     }
     input[type="file"] {
         display: none;
@@ -564,11 +570,6 @@
         display: inline-block;
         margin-bottom: 16px;
         padding: 13px 16px 10px;
-        box-shadow: 0 2px 0 #3b962f;
-        border-radius: 4px;
-        background-color: #45af37;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-        color: #ffffff;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 500;
@@ -577,7 +578,7 @@
     }
     p {
         padding: 0 75px;
-        color: #8f96a1;
+        color: @light-grey;
         font-family: @main-font;
         font-size: 12px;
         font-weight: 400;

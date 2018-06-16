@@ -64,10 +64,6 @@
 }
 .profile-topline_button button {
   padding: 13px 17px 12px 37px;
-  border-radius: 4px;
-  border: 1px solid #45af37;
-  background-color: #ffffff;
-  color: #45af37;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -100,6 +96,10 @@
   font-weight: 500;
   line-height: 18px;
 }
+.profile-topline_nav-item a:hover {
+  color: rgba(82, 92, 108, 0.85);
+  text-decoration: none;
+}
 .profile-topline_nav-item a sup {
   top: -7px;
   margin-left: 4px;
@@ -118,6 +118,9 @@
 .profile-topline_nav-item--active a {
   color: #5cb0d5;
   font-weight: 700;
+}
+.profile-topline_nav-item--active a:hover {
+  color: #5cb0d5;
 }
 .profile-topline_nav-item--active::before {
   content: "";
@@ -296,6 +299,9 @@
   font-size: 13px;
   line-height: 12px;
 }
+.profile-usersrating_filter label b:hover {
+  background-color: #e8edf2;
+}
 .profile-usersrating_list {
   margin-bottom: 56px;
 }
@@ -369,11 +375,7 @@
 }
 .profile-usersrating_button a {
   padding: 10px 16px;
-  border-radius: 4px;
-  border: 1px solid #45af37;
-  background-color: #ffffff;
-  color: #45af37;
-  font-family: #44af36;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 11px;
@@ -429,6 +431,11 @@
 .profile-activity_forum-threads a:last-child,
 .profile-activity_forum-comments a:last-child {
   margin-bottom: 22px;
+}
+.profile-activity_forum-threads a:hover,
+.profile-activity_forum-comments a:hover {
+  text-decoration: underline;
+  color: rgba(25, 145, 235, 0.85);
 }
 .profile-activity_forum-threads span,
 .profile-activity_forum-comments span {
@@ -619,12 +626,16 @@
   align-items: center;
   margin-bottom: 8px;
 }
-.profile-reviews_item-name h5 {
+.profile-reviews_item-name a {
   color: #1991eb;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+}
+.profile-reviews_item-name a:hover {
+  color: rgba(25, 145, 235, 0.85);
+  text-decoration: underline;
 }
 .profile-reviews_item .rating_tag {
   position: relative;

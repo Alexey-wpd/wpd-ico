@@ -64,8 +64,8 @@
 }
 .forum-section_title {
   padding: 19px 28px;
-  background-color: #beceda;
-  box-shadow: 0 1px 0 #beceda;
+  background-color: #ced8e3;
+  box-shadow: 0 1px 0 #ced8e3;
   border-radius: 4px 4px 0 0;
   border-left: 4px solid #7bd2fe;
 }
@@ -125,10 +125,14 @@
 }
 .forum-section_item .forum-subsection_title a:hover {
   text-decoration: underline;
-  color: #1175c0;
+  color: rgba(25, 145, 235, 0.85);
 }
 .forum-section_item .forum-subsection_title--no-topics a {
   color: rgba(25, 145, 235, 0.5);
+}
+.forum-section_item .forum-subsection_title--no-topics a:hover {
+  text-decoration: underline;
+  color: rgba(25, 145, 235, 0.85);
 }
 .forum-section_item .forum-subsection_title--dropdown a {
   font-size: 14px;
@@ -137,6 +141,10 @@
   letter-spacing: -0.1px;
 }
 .forum-section_item .forum-subsection_title--grey a {
+  color: #525c6c;
+}
+.forum-section_item .forum-subsection_title--grey a:hover {
+  text-decoration: underline;
   color: #525c6c;
 }
 .forum-section_item .topic-count {
@@ -175,7 +183,7 @@
 }
 .forum-section .forum-topic_title a:hover {
   text-decoration: underline;
-  color: #1175c0;
+  color: rgba(25, 145, 235, 0.85);
 }
 .forum-section .forum-topic_comments-count {
   margin-right: 16px;

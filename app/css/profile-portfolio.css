@@ -71,6 +71,10 @@
   font-size: 20px;
   line-height: 18px;
 }
+.profile-portfolio-nav_item a:hover {
+  text-decoration: none;
+  color: rgba(112, 121, 134, 0.85);
+}
 .profile-portfolio-nav_item--active {
   position: relative;
 }
@@ -87,6 +91,9 @@
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+}
+.profile-portfolio-nav_item--active a:hover {
+  color: #333f52;
 }
 .profile-portfolio-data {
   display: flex;
@@ -303,6 +310,9 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 12px;
+}
+.profile-portfolio-chart_periods label b:hover {
+  background-color: #e8edf2;
 }
 .profile-portfolio_list {
   margin-top: 26px;
@@ -877,10 +887,6 @@
 .profile-portfolio_item tfoot .btn-trade {
   position: relative;
   padding: 6px 8px 5px 22px;
-  background-color: #1991eb;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 #1175c0;
-  color: #fff;
   font-size: 11px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;

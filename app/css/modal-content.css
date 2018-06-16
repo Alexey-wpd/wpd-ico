@@ -75,7 +75,6 @@
   position: relative;
   width: 100%;
   padding: 12px 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
   border-radius: 4px;
   border: 1px solid #c5d0de;
   background-color: #ffffff;
@@ -137,6 +136,7 @@
   line-height: 24px;
 }
 .modal-content-sign-up a:hover {
+  color: rgba(69, 175, 55, 0.85);
   text-decoration: none;
 }
 .modal-content-sign-up a::before {
@@ -168,11 +168,6 @@
 }
 .modal-content-sign-up .sign-up-form .btn-sign-up {
   padding: 13px 16px 11px 16px;
-  box-shadow: 0 2px 0 #3e9532;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -195,11 +190,6 @@
 }
 .modal-content-reset .reset-form_button .btn-reset {
   padding: 16px 16px 14px 16px;
-  box-shadow: 0 2px 0 #707986;
-  border-radius: 4px;
-  background-color: #8f96a1;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -214,6 +204,9 @@
   line-height: 16px;
   text-decoration: underline;
   letter-spacing: -0.23px;
+}
+.modal-content-reset .reset-form_button a:hover {
+  color: rgba(143, 150, 161, 0.85);
 }
 .modal-content-sign-in {
   padding: 32px 24px;
@@ -254,11 +247,6 @@
 }
 .modal-content-sign-in .sign-in-form_button .btn-sign-in {
   padding: 16px 16px 14px 16px;
-  box-shadow: 0 2px 0 #707986;
-  border-radius: 4px;
-  background-color: #8f96a1;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -273,6 +261,9 @@
   line-height: 16px;
   text-decoration: underline;
   letter-spacing: -0.23px;
+}
+.modal-content-sign-in .sign-in-form_button .fogot-password:hover {
+  color: #8f96a1;
 }
 .modal-content-sign-in_social p {
   margin-bottom: 14px;
@@ -328,11 +319,6 @@
 }
 .modal-content-success .btn-sign-in {
   padding: 13px 16px 11px 16px;
-  box-shadow: 0 2px 0 #3e9532;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -363,11 +349,6 @@
 }
 .modal-content-sign-up-section .btn-sign-up {
   padding: 13px 16px 11px 16px;
-  box-shadow: 0 2px 0 #3e9532;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;

@@ -81,6 +81,10 @@
   font-weight: 500;
   line-height: 18px;
 }
+.settings-topline_nav-item a:hover {
+  color: rgba(82, 92, 108, 0.85);
+  text-decoration: none;
+}
 .settings-topline_nav-item--active {
   position: relative;
 }
@@ -220,11 +224,6 @@
 }
 .settings-button .btn-settings {
   padding: 16px 16px 14px;
-  box-shadow: 0 2px 0 #3e9532;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -530,6 +529,9 @@
   text-decoration: underline;
   text-decoration-style: dashed;
 }
+.external-links-add-link:hover {
+  color: rgba(69, 175, 55, 0.85);
+}
 .other-settings {
   margin-bottom: 36px;
 }
@@ -603,6 +605,10 @@
   text-decoration: underline;
   letter-spacing: -0.23px;
 }
+.avatar-settings_remove-image:hover {
+  color: #8f96a1;
+  text-decoration: none;
+}
 .avatar-settings input[type="file"] {
   display: none;
   margin-bottom: 16px;
@@ -615,11 +621,6 @@
   display: inline-block;
   margin-bottom: 16px;
   padding: 13px 16px 10px;
-  box-shadow: 0 2px 0 #3b962f;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;

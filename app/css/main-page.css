@@ -336,10 +336,6 @@
 }
 .top5-ico_button a {
   padding: 18px 24px 14px;
-  background-color: #44af36;
-  box-shadow: 0 4px 0 #35882a;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
-  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
@@ -375,6 +371,9 @@
 .latest-forum-item .user {
   margin-bottom: 0;
 }
+.latest-forum-item .user .user_block {
+  align-items: flex-start;
+}
 .latest-forum-item .user_name {
   font-size: 14px;
   font-weight: 500;
@@ -400,7 +399,7 @@
 }
 .latest-forum-item .forum-topic_title a:hover {
   text-decoration: underline;
-  color: #0d5891;
+  color: rgba(25, 145, 235, 0.85);
 }
 .latest-forum-item .forum-topic_comments-count {
   position: relative;

@@ -123,7 +123,8 @@
   text-decoration-color: rgba(68, 175, 54, 0.25);
 }
 .footer_nav-menu-item a:hover {
-  text-decoration: none;
+  color: rgba(69, 175, 55, 0.85);
+  text-decoration-color: rgba(68, 175, 54, 0.85);
 }
 .footer_nav-menu-item--bold a {
   font-size: 16px;
@@ -133,6 +134,10 @@
   font-size: 16px;
   color: #8f96a1;
   text-decoration-color: rgba(143, 150, 161, 0.25);
+}
+.footer_nav-menu-item--grey a:hover {
+  color: rgba(143, 150, 161, 0.85);
+  text-decoration-color: rgba(143, 150, 161, 0.85);
 }
 .footer_search {
   position: relative;
@@ -189,7 +194,6 @@
 }
 .footer .footer-terms a:hover {
   text-decoration: none;
-  color: #737c8a;
 }
 .footer .footer-terms .worldpokerdeals {
   margin-left: auto;

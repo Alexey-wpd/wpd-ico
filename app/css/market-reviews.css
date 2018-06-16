@@ -396,6 +396,9 @@
   font-weight: 500;
   line-height: 14px;
 }
+.user-reviews_item-bottomline a:hover {
+  color: rgba(25, 145, 235, 0.85);
+}
 .user-reviews_item-bottomline a:before {
   content: "";
   position: absolute;
@@ -505,7 +508,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
   border: 1px solid #c5d0de;
   background-color: #ffffff;
   outline: none;
@@ -550,7 +552,6 @@
   width: 100%;
   height: 100%;
   padding: 13px 30px 20px 17px;
-  box-shadow: 0 2px 20px rgba(25, 145, 235, 0.2);
   border: 1px solid #c5d0de;
   background-color: #ffffff;
   color: #525c6c;
@@ -558,6 +559,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+.add-reviews_form-text textarea:focus {
+  box-shadow: 0 2px 20px rgba(25, 145, 235, 0.2);
 }
 .add-reviews_form-scores {
   padding: 24px 28px;
@@ -614,4 +618,9 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
+}
+.add-reviews_form-button button:hover {
+  border: 1px solid #1991eb;
+  color: #1991eb;
+  background-color: #fafbfc;
 }

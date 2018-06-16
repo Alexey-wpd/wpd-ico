@@ -102,16 +102,24 @@
   position: relative;
   bottom: -14px;
   padding: 10px 15px 7px 38px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.15px;
-  box-shadow: 0 2px 0 #1175c0;
   border-radius: 4px;
-  background-color: #1991eb;
+}
+.market-topline .market-card_description a::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 17px;
+  top: 9px;
+  background-image: url('../img/chain.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .market-topline .market-card_social {
   display: flex;
@@ -385,8 +393,6 @@
   background-repeat: no-repeat;
 }
 .market-bottom-line .market-brief-info_buttons a {
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -396,9 +402,7 @@
 .market-bottom-line .market-brief-info_buttons-discuss {
   position: relative;
   padding: 12px 16px 10px 44px;
-  box-shadow: 0 2px 0 #3a962e;
   border-radius: 4px 0 0 4px;
-  background-color: #44af36;
 }
 .market-bottom-line .market-brief-info_buttons-discuss::before {
   content: "";
@@ -416,9 +420,7 @@
   margin-right: 12px;
   position: relative;
   padding: 12px 16px 10px 44px;
-  box-shadow: 0 2px 0 #3a962e;
   border-radius: 0 4px 4px 0;
-  background-color: #44af36;
 }
 .market-bottom-line .market-brief-info_buttons-review::before {
   content: "";
@@ -434,7 +436,6 @@
 }
 .market-bottom-line .market-brief-info_buttons-signup {
   padding: 11px 16px 9px 16px;
-  background-color: #1991eb;
   box-shadow: 0 2px 0 #1776bd;
   border-radius: 4px;
 }
@@ -590,10 +591,6 @@
 .market-overview_button a {
   padding: 11px 16px 9px;
   box-shadow: 0 2px 0 #1776bd;
-  border-radius: 4px;
-  background-color: #1991eb;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -638,11 +635,6 @@
 .related-market_item-buttons-details {
   position: relative;
   padding: 8px 12px 6px 28px;
-  box-shadow: 0 2px 0 #3a962e;
-  border-radius: 4px;
-  background-color: #44af36;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -671,5 +663,5 @@
   letter-spacing: -0.07px;
 }
 .related-market_item-buttons-visit:hover {
-  text-decoration: none;
+  color: rgba(25, 145, 235, 0.85);
 }

@@ -92,6 +92,10 @@
   text-decoration: underline;
   text-decoration-color: rgba(68, 175, 54, 0.25);
 }
+.header .main-nav_item a:hover {
+  color: rgba(69, 175, 55, 0.85);
+  text-decoration-color: rgba(68, 175, 54, 0.85);
+}
 .header .main-nav_faq {
   display: block;
 }
@@ -104,6 +108,10 @@
   line-height: 20px;
   letter-spacing: -0.1px;
   text-decoration-color: rgba(143, 150, 161, 0.25);
+}
+.header .main-nav_faq-item a:hover {
+  color: rgba(82, 92, 108, 0.85);
+  text-decoration-color: rgba(143, 150, 161, 0.85);
 }
 .header .main-nav_user-menu {
   display: flex;

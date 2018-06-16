@@ -96,6 +96,9 @@
   font-size: 13px;
   line-height: 12px;
 }
+.profile-activity-filter label b:hover {
+  background-color: #e8edf2;
+}
 .profile-activity-list {
   margin-bottom: 50px;
 }
@@ -136,6 +139,10 @@
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.11px;
+}
+.profile-activity-item_content a:hover {
+  color: rgba(25, 145, 235, 0.85);
+  text-decoration: underline;
 }
 .profile-activity-item_content a span {
   color: #8f96a1;

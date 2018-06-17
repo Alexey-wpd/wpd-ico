@@ -26,13 +26,16 @@
     			display: block;
     			padding: 12px 12px 11px;
     			margin-left: -1px;
-    			color: #525c6c;
+    			color: @main-text-color;
     			background-color: #fff;
-    			border: 1px solid #c5d0de;
+    			border: 1px solid @light-light-grey;
     			font-family: @main-font;
                 font-weight: 500;
     			font-size: 11px;
     			line-height: 12px;
+                &:hover {
+                    background-color: #e8edf2;
+                }
     		}
     	}
     }
@@ -42,7 +45,7 @@
         padding-left: 28px;
         a {
             position: relative;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-weight: 400;
             font-size: 14px;
@@ -72,7 +75,7 @@
     padding: 18px 0 6px;
     &_menu {
         display: flex;
-        border-bottom: 1px solid #c5d0de;
+        border-bottom: 1px solid @light-light-grey;
         &-item {
             margin-right: 48px;
             &:last-child {
@@ -81,11 +84,15 @@
             a {
                 display: inline-block;
                 padding: 14px 0;
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-weight: 400;;
                 font-size: 20px;
                 line-height: 18px;
+                &:hover {
+                    text-decoration: none;
+                    color: rgba(112, 121, 134, 0.85);
+                }
             }
             &--active {
                 position: relative;
@@ -99,9 +106,13 @@
                     left: 0;
                 }
                 a {
-                    color: #333f52;
+                    color: @dark;
                     font-family: @main-font;
                     font-weight: 500;
+                    &:hover {
+                        text-decoration: none;
+                        color: rgba(51, 63, 82, 0.85);
+                    }
                 }
             }
             &--private {
@@ -134,6 +145,10 @@
             line-height: 12px;
             text-decoration: underline;
             text-decoration-style: dashed;
+            &:hover {
+                text-decoration-style: solid;
+                color: @accent-hover-color;
+            }
             &::before {
                 content: '';
                 position: absolute;
@@ -195,7 +210,7 @@
             line-height: 18px;
             text-decoration: underline;
             &:hover {
-                text-decoration: none;
+                color: @link-hover-color;
             }
             &::before {
     			content: "";
@@ -216,7 +231,7 @@
         flex-direction: column;
         &-price {
             margin-bottom: 9px;
-            color: #707986;
+            color: @gray;
             font-family: @main-font;
             font-weight: 500;
             font-size: 11px;
@@ -226,7 +241,7 @@
         }
         &-usd {
             margin-bottom: 4px;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-weight: 700;
             font-size: 24px;
@@ -236,7 +251,7 @@
         }
         &-btc {
             opacity: 0.6;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-weight: 500;
             font-size: 11px;
@@ -250,7 +265,7 @@
         margin-left: 60px;
         &-24hours {
             margin-bottom: 9px;
-            color: #707986;
+            color: @gray;
             font-family: @main-font;
             font-weight: 500;
             font-size: 11px;
@@ -286,7 +301,7 @@
         }
         &-usd {
             opacity: 0.6;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-weight: 500;
             font-size: 11px;
@@ -334,7 +349,7 @@
         table-layout: fixed;
         width: 100%;
         background-color: #e0e6ed;
-        border-bottom: 2px solid #c5d0de;
+        border-bottom: 2px solid @light-light-grey;
         &-cell {
             display: table-cell;
             padding: 18px 12px 14px 12px;
@@ -343,7 +358,7 @@
                 border-right: none;
             }
             span {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-weight: 400;
                 font-size: 13px;
@@ -367,7 +382,7 @@
                 &::before {
                     content: "";
                     display: inline-block;
-                    border: 5px solid #c5d0de;
+                    border: 5px solid @light-light-grey;
                     border-right-width: 4px;
                     border-left-width: 4px;
                     border-right-color: transparent;
@@ -377,7 +392,7 @@
                     &::before {
                         content: "";
                         display: inline-block;
-                        border: 5px solid #8f96a1;
+                        border: 5px solid @light-grey;
                         border-right-width: 4px;
                         border-left-width: 4px;
                         border-right-color: transparent;
@@ -454,7 +469,7 @@
             display: table-cell;
             padding: 0px 10px 0 24px;
             span {
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 14px;
@@ -464,7 +479,7 @@
             b {
                 font-family: @main-font;
                 font-weight: 500;
-                color: #8f96a1;
+                color: @light-grey;
                 letter-spacing: -0.2px;
             }
             &::before {
@@ -525,7 +540,7 @@
                 justify-content: space-between;
             }
             span {
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -549,7 +564,7 @@
             text-align: center;
             span {
                 //margin: auto;
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -563,7 +578,7 @@
             &-usd {
                 display: block;
                 white-space: nowrap;
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -571,7 +586,7 @@
             }
             &-bts {
                 opacity: 0.6;
-                color: #8f96a1;
+                color: @light-grey;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 9px;
@@ -584,9 +599,9 @@
             display: table-cell;
             b {
                 padding: 2px 8px 2px;
-                color: #8f96a1;
+                color: @light-grey;
                 border-radius: 9px;
-                border: 1px solid #8f96a1;
+                border: 1px solid @light-grey;
                 font-family: @main-font;
                 font-weight: 700;
                 font-size: 11px;
@@ -597,7 +612,7 @@
                 position: relative;
                 margin: auto;
                 padding-left: 18px;
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-weight: 400;
                 font-size: 14px;
@@ -629,7 +644,7 @@
             width: 13%;
             display: table-cell;
             span {
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -650,7 +665,7 @@
                 justify-content: space-between;
             }
             span {
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -693,7 +708,7 @@
                 height: 1px;
                 top: 6px;
                 left: 1px;
-                background-color: #707986;;
+                background-color: @gray;;
                 transform: rotate(45deg);
             }
             &::after {
@@ -703,13 +718,13 @@
                 height: 1px;
                 top: 6px;
                 left: 1px;
-                background-color: #707986;;
+                background-color: @gray;;
                 transform: rotate(-45deg);
             }
         }
         h3 {
             margin-bottom: 16px;
-            color: #525c6c;
+            color: @main-text-color;
             font-family: @main-font;
             font-weight: 700;
             font-size: 16px;
@@ -723,7 +738,7 @@
             justify-content: space-between;
             text-align: left;
             label {
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-weight: 400;
                 font-size: 14px;
@@ -743,9 +758,6 @@
                 margin-left: 30px;
                 button {
                     padding: 12px 16px 10px;
-                    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                    background-color: @accent-color;
-                    color: #ffffff;
                     font-family: @main-font;
                     font-weight: 500;
                     font-size: 14px;
@@ -773,15 +785,15 @@
                 select {
                     max-width: 264px;
                     padding: 10px 32px 8px 12px;
-                    color: #525c6c;
+                    color: @main-text-color;
                     font-family: @main-font;
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 16px;
                     text-transform: uppercase;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
                     border-radius: 4px;
-                    border: 1px solid #44af36;
+                    border: 1px solid @light-light-grey;
+                    //border: 1px solid #44af36;
                     background-color: #ffffff;
                 }
             }
@@ -800,7 +812,7 @@
                     line-height: 16px;
                     text-transform: uppercase;
                     border-radius: 4px;
-                    border: 1px solid #c5d0de;
+                    border: 1px solid @light-light-grey;
                     background-color: #ffffff;
                 }
                 .count {
@@ -808,7 +820,7 @@
                     display: block;
                     width: 9px;
                     height: 9px;
-                    background-color: #c5d0de;
+                    background-color: @light-light-grey;
                     cursor: pointer;
                     &--down {
                         top:44px;
@@ -824,7 +836,7 @@
                         }
                     }
                     &:hover {
-                        background-color: #8f96a1;
+                        background-color: @light-grey;
                     }
                     &--up {
                         top:32px;
@@ -881,9 +893,13 @@
                     text-transform: uppercase;
                     text-decoration: underline;
                     text-decoration-style: dashed;
+                    &:hover {
+                        text-decoration-style: solid;
+                        color: @link-hover-color;
+                    }
                 }
                 &-market {
-                    color: #8f96a1;
+                    color: @light-grey;
                     font-family: @main-font;
                     font-weight: 700;
                     font-size: 10px;
@@ -900,21 +916,20 @@
                     line-height: 16px;
                     text-transform: uppercase;
                     border-radius: 4px 0 0 4px;
-                    border: 1px solid #c5d0de;
+                    border: 1px solid @light-light-grey;
                     background-color: #ffffff;
                 }
                 select {
                     margin-left: -1px;
                     padding: 0px 32px 0px 12px;
-                    color: #525c6c;
+                    color: @main-text-color;
                     font-family: @main-font;
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 15px;
                     text-transform: uppercase;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
                     border-radius: 0 4px 4px 0;
-                    border: 1px solid #c5d0de;
+                    border: 1px solid @light-light-grey;
                     background-color: #ffffff;
                 }
             }
@@ -923,7 +938,7 @@
                 flex-direction: column;
                 margin-right: auto;;
                 span {
-                    color: #333f52;
+                    color: @dark;
                     font-family: @main-font;
                     font-weight: 500;
                     font-size: 16px;
@@ -943,10 +958,10 @@
         box-shadow: 0 2px 4px rgba(51, 51, 51, 0.1);
         border-radius: 4px;
         background-color: #fafbfc;
-        border-top: 4px solid #c5d0de;
+        border-top: 4px solid @light-light-grey;
         h3 {
             margin-bottom: 20px;
-            color: #707986;
+            color: @gray;
             font-size: 14px;
             font-family: @main-font;
             font-weight: 700;
@@ -974,7 +989,7 @@
             }
             &--sold {
                 .history_item-amount {
-                    color: #ff3657;
+                    color: @red;
                 }
                 &::before {
                     background-image: @img-sold;
@@ -995,7 +1010,7 @@
                 width: 60%;
             }
             &-name {
-                color: #525c6c;
+                color: @main-text-color;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 14px;
@@ -1004,7 +1019,7 @@
             &-amount {
                 display: flex;
                 align-items: center;
-                color: #333f52;
+                color: @dark;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -1012,7 +1027,7 @@
                 text-transform: uppercase;
                 &-usd {
                     margin-left: 6px;
-                    color: #8f96a1;
+                    color: @light-grey;
                     font-family: @main-font;
                     font-weight: 500;
                     font-size: 12px;
@@ -1021,7 +1036,7 @@
                 }
             }
             &-time {
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-weight: 400;
                 font-size: 12px;
@@ -1106,7 +1121,7 @@
                     padding: 30px 12px 9px 12px;
                     border-right: 1px solid #e9ecee;
                     span {
-                        color: #525c6c;
+                        color: @main-text-color;
                         font-family: @main-font;
                         font-weight: 400;
                         font-size: 13px;
@@ -1158,7 +1173,7 @@
                     .sold {
                         position: relative;
                         padding-left: 22px;
-                        color: #ff3657;
+                        color: @red;
                         &::before {
                             content: "";
                             position: absolute;
@@ -1181,7 +1196,7 @@
                     border-right: none;
                 }
                 span {
-                    color: #333f52;
+                    color: @dark;
                     font-family: @main-font;
                     font-weight: 500;;
                     font-size: 16px;
@@ -1195,13 +1210,17 @@
                     display: inline-block;
                     margin-right: 28px;
                     padding-left: 15px;
-                    color: #45af37;
+                    color: @accent-color;
                     font-family: @main-font;
                     font-weight: 400;
                     font-size: 12px;
                     line-height: 12px;
                     text-decoration: underline;
                     text-decoration-style: dashed;
+                    &:hover {
+                        text-decoration-style: solid;
+                        color: @accent-hover-color;
+                    }
                     &::before {
                         content: "";
                         position: absolute;
@@ -1218,7 +1237,7 @@
                 .delete {
                     position: relative;
                     padding-left: 15px;
-                    color: #8f96a1;
+                    color: @light-grey;
                     font-family: @main-font;
                     font-weight: 400;
                     font-size: 10px;
@@ -1247,11 +1266,6 @@
             box-shadow: none;
             .btn-add-record {
                 padding: 13px 16px 10px;
-                box-shadow: 0 2px 0 #3b962f;
-                border-radius: 4px;
-                background-color: #45af37;
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-                color: #ffffff;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 14px;
@@ -1259,9 +1273,9 @@
                 letter-spacing: -0.23px;
                 &--active {
                     padding: 13px 16px 10px;
-                    box-shadow: 0 2px 0 #707986, inset 0 2px 4px rgba(1, 1, 1, 0.3);
+                    box-shadow: 0 2px 0 @gray, inset 0 2px 4px rgba(1, 1, 1, 0.3);
                     border-radius: 4px;
-                    background-color: #8f96a1;
+                    background-color: @light-grey;
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
                     color: #ffffff;
                     font-family: @main-font;
@@ -1278,7 +1292,7 @@
         tr {
             td {
                 padding: 12px 12px 12px 12px;
-                color: #707986;
+                color: @gray;
                 font-family: @main-font;
                 font-weight: 500;
                 font-size: 16px;
@@ -1302,7 +1316,7 @@
                 background-color: #fff;
                 border-bottom: 1px solid #e9ecee;
                 td {
-                    color: #525c6c;
+                    color: @main-text-color;
                     font-family: @main-font;
                     font-weight: 400;
                     font-size: 13px;
@@ -1337,10 +1351,6 @@
         .btn-trade {
             position: relative;
             padding: 6px 8px 5px 22px;
-            background-color: #1991eb;
-            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 0 #1175c0;
-            color: #fff;
             font-size: 11px;
             font-family: @main-font;
             font-weight: 500;

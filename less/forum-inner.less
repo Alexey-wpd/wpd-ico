@@ -11,7 +11,7 @@
     align-items: center;
     margin-bottom: 15px;
     h1 {
-        color: #333f52;
+        color: @dark;
         font-family: @main-font;
         font-size: 24px;
         font-weight: 700;
@@ -24,7 +24,7 @@
     align-items: flex-end;
     margin-bottom: 15px;
     span {
-        color: #707986;
+        color: @gray;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 400;
@@ -39,7 +39,7 @@
     position: relative;
     select {
         padding: 6px 22px 6px 12px;
-        color: #707986;
+        color: @gray;
         font-family: @main-font;
         font-size: 14px;
         font-weight: 400;
@@ -91,6 +91,9 @@
     }
     .user {
         margin-bottom: 0;
+        .user_block {
+            align-items: flex-start;
+        }
         &_name {
             font-size: 14px;
             font-weight: 500;
@@ -109,16 +112,16 @@
     .forum-topic {
         &_title {
             a {
-                color: @main-color;
+                color: @link-color;
                 font-family: @main-font;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
                 letter-spacing: -0.11px;
-                max-width: 490px;
+                //max-width: 490px;
                 &:hover {
                     text-decoration: underline;
-                    color: darken(@main-color, 20%);
+                    color: @link-hover-color;
                 }
             }
         }
@@ -146,7 +149,7 @@
         }
         &_rating {
             margin-left: auto;
-            color: #b64ad4;
+            color: @purple;
             font-family: @main-font;
             font-size: 14px;
             font-weight: 700;
@@ -174,7 +177,7 @@
         &_time {
             margin-right: 27px;
             position: relative;
-            color: #333f52;
+            color: @dark;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;
@@ -192,7 +195,7 @@
         }
         &_veiws {
             margin-right: 24px;
-            color: #8f96a1;
+            color: @light-grey;
             font-family: @main-font;
             font-size: 12px;
             font-weight: 400;

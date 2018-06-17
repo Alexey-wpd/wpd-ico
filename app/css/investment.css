@@ -86,6 +86,9 @@
   font-size: 11px;
   line-height: 12px;
 }
+.portfolio-view_filter label b:hover {
+  background-color: #e8edf2;
+}
 .portfolio-view_public {
   display: flex;
   margin-top: 30px;
@@ -138,6 +141,10 @@
   font-size: 20px;
   line-height: 18px;
 }
+.portfolio-nav_menu-item a:hover {
+  text-decoration: none;
+  color: rgba(112, 121, 134, 0.85);
+}
 .portfolio-nav_menu-item--active {
   position: relative;
 }
@@ -154,6 +161,10 @@
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+}
+.portfolio-nav_menu-item--active a:hover {
+  text-decoration: none;
+  color: rgba(51, 63, 82, 0.85);
 }
 .portfolio-nav_menu-item--private a {
   position: relative;
@@ -180,6 +191,10 @@
   line-height: 12px;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+.portfolio-nav_add-portfolio a:hover {
+  text-decoration-style: solid;
+  color: rgba(69, 175, 55, 0.85);
 }
 .portfolio-nav_add-portfolio a::before {
   content: '';
@@ -242,7 +257,7 @@
   text-decoration: underline;
 }
 .portfolio_changes a:hover {
-  text-decoration: none;
+  color: rgba(25, 145, 235, 0.85);
 }
 .portfolio_changes a::before {
   content: "";
@@ -764,9 +779,6 @@
 }
 .portfolio_form .add-coin-form_buttons button {
   padding: 12px 16px 10px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  background-color: #44af36;
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -800,9 +812,8 @@
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
   border-radius: 4px;
-  border: 1px solid #44af36;
+  border: 1px solid #c5d0de;
   background-color: #ffffff;
 }
 .portfolio_form .add-coin-form_amount {
@@ -903,6 +914,10 @@
   text-decoration: underline;
   text-decoration-style: dashed;
 }
+.portfolio_form .add-coin-form_price-ico:hover {
+  text-decoration-style: solid;
+  color: rgba(25, 145, 235, 0.85);
+}
 .portfolio_form .add-coin-form_price-market {
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -933,7 +948,6 @@
   font-size: 15px;
   line-height: 15px;
   text-transform: uppercase;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
   border-radius: 0 4px 4px 0;
   border: 1px solid #c5d0de;
   background-color: #ffffff;
@@ -1184,13 +1198,17 @@
   display: inline-block;
   margin-right: 28px;
   padding-left: 15px;
-  color: #45af37;
+  color: #44af36;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+.portfolio .tbody tr td .edit:hover {
+  text-decoration-style: solid;
+  color: rgba(69, 175, 55, 0.85);
 }
 .portfolio .tbody tr td .edit::before {
   content: "";
@@ -1234,11 +1252,6 @@
 }
 .portfolio .tbody .portfolio_form .btn-add-record {
   padding: 13px 16px 10px;
-  box-shadow: 0 2px 0 #3b962f;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -1321,10 +1334,6 @@
 .portfolio tfoot .btn-trade {
   position: relative;
   padding: 6px 8px 5px 22px;
-  background-color: #1991eb;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 #1175c0;
-  color: #fff;
   font-size: 11px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;

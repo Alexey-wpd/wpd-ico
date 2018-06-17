@@ -100,6 +100,11 @@
 }
 .comments-button-set .btn-add-comments:hover {
   color: #1991eb;
+  border: 1px solid #1991eb;
+  background-color: #fafbfc;
+}
+.comments-button-set .btn-add-comments:active {
+  background-color: #ffffff;
 }
 .comments-button-set .btn-add-comments::before {
   content: "";
@@ -121,6 +126,11 @@
 }
 .comments-button-set .btn-invite:hover {
   color: #525c6c;
+  border: 1px solid #8f96a1;
+  background-color: #fafbfc;
+}
+.comments-button-set .btn-invite:active {
+  background-color: #ffffff;
 }
 .comments-button-set .btn-invite::before {
   content: "";
@@ -276,6 +286,9 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
+}
+.comments-item_reply a:hover {
+  color: rgba(25, 145, 235, 0.85);
 }
 .comments-item_reply a::before {
   content: "";

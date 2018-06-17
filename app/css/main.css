@@ -258,7 +258,7 @@
   flex-grow: 2;
   border-radius: 4px 0 0 4px;
   background-color: #ffffff;
-  padding: 11px 15px;
+  padding: 12px 15px 10px;
   max-width: 460px;
   color: #333f52;
   font-family: 'Roboto', sans-serif;
@@ -1333,6 +1333,9 @@
 .subsection-content-item .user {
   margin-bottom: 0;
 }
+.subsection-content-item .user .user_block {
+  align-items: flex-start;
+}
 .subsection-content-item .user_name {
   font-size: 14px;
   font-weight: 500;
@@ -1354,11 +1357,10 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.11px;
-  max-width: 490px;
 }
 .subsection-content-item .forum-topic_title a:hover {
   text-decoration: underline;
-  color: #0d5891;
+  color: rgba(25, 145, 235, 0.85);
 }
 .subsection-content-item .forum-topic_comments-count {
   position: relative;
@@ -1655,7 +1657,7 @@
   text-decoration: underline;
 }
 .topic_content p a:hover {
-  text-decoration: none;
+  color: rgba(25, 145, 235, 0.85);
 }
 .topic_content-image {
   padding: 32px 0;
@@ -1710,6 +1712,11 @@
 }
 .comments-button-set .btn-add-comments:hover {
   color: #1991eb;
+  border: 1px solid #1991eb;
+  background-color: #fafbfc;
+}
+.comments-button-set .btn-add-comments:active {
+  background-color: #ffffff;
 }
 .comments-button-set .btn-add-comments::before {
   content: "";
@@ -1731,6 +1738,11 @@
 }
 .comments-button-set .btn-invite:hover {
   color: #525c6c;
+  border: 1px solid #8f96a1;
+  background-color: #fafbfc;
+}
+.comments-button-set .btn-invite:active {
+  background-color: #ffffff;
 }
 .comments-button-set .btn-invite::before {
   content: "";
@@ -1886,6 +1898,9 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
+}
+.comments-item_reply a:hover {
+  color: rgba(25, 145, 235, 0.85);
 }
 .comments-item_reply a::before {
   content: "";
@@ -4684,6 +4699,9 @@
   font-size: 11px;
   line-height: 12px;
 }
+.portfolio-view_filter label b:hover {
+  background-color: #e8edf2;
+}
 .portfolio-view_public {
   display: flex;
   margin-top: 30px;
@@ -4736,6 +4754,10 @@
   font-size: 20px;
   line-height: 18px;
 }
+.portfolio-nav_menu-item a:hover {
+  text-decoration: none;
+  color: rgba(112, 121, 134, 0.85);
+}
 .portfolio-nav_menu-item--active {
   position: relative;
 }
@@ -4752,6 +4774,10 @@
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+}
+.portfolio-nav_menu-item--active a:hover {
+  text-decoration: none;
+  color: rgba(51, 63, 82, 0.85);
 }
 .portfolio-nav_menu-item--private a {
   position: relative;
@@ -4778,6 +4804,10 @@
   line-height: 12px;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+.portfolio-nav_add-portfolio a:hover {
+  text-decoration-style: solid;
+  color: rgba(69, 175, 55, 0.85);
 }
 .portfolio-nav_add-portfolio a::before {
   content: '';
@@ -4840,7 +4870,7 @@
   text-decoration: underline;
 }
 .portfolio_changes a:hover {
-  text-decoration: none;
+  color: rgba(25, 145, 235, 0.85);
 }
 .portfolio_changes a::before {
   content: "";
@@ -5362,9 +5392,6 @@
 }
 .portfolio_form .add-coin-form_buttons button {
   padding: 12px 16px 10px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  background-color: #44af36;
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -5398,9 +5425,8 @@
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
   border-radius: 4px;
-  border: 1px solid #44af36;
+  border: 1px solid #c5d0de;
   background-color: #ffffff;
 }
 .portfolio_form .add-coin-form_amount {
@@ -5501,6 +5527,10 @@
   text-decoration: underline;
   text-decoration-style: dashed;
 }
+.portfolio_form .add-coin-form_price-ico:hover {
+  text-decoration-style: solid;
+  color: rgba(25, 145, 235, 0.85);
+}
 .portfolio_form .add-coin-form_price-market {
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
@@ -5531,7 +5561,6 @@
   font-size: 15px;
   line-height: 15px;
   text-transform: uppercase;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
   border-radius: 0 4px 4px 0;
   border: 1px solid #c5d0de;
   background-color: #ffffff;
@@ -5782,13 +5811,17 @@
   display: inline-block;
   margin-right: 28px;
   padding-left: 15px;
-  color: #45af37;
+  color: #44af36;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+.portfolio .tbody tr td .edit:hover {
+  text-decoration-style: solid;
+  color: rgba(69, 175, 55, 0.85);
 }
 .portfolio .tbody tr td .edit::before {
   content: "";
@@ -5832,11 +5865,6 @@
 }
 .portfolio .tbody .portfolio_form .btn-add-record {
   padding: 13px 16px 10px;
-  box-shadow: 0 2px 0 #3b962f;
-  border-radius: 4px;
-  background-color: #45af37;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -5919,10 +5947,6 @@
 .portfolio tfoot .btn-trade {
   position: relative;
   padding: 6px 8px 5px 22px;
-  background-color: #1991eb;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 #1175c0;
-  color: #fff;
   font-size: 11px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -7147,6 +7171,17 @@
   font-weight: 400;
   line-height: 18px;
 }
+.ico-catalogue_nav-item a:hover {
+  background-color: #e8edf2;
+  text-decoration: none;
+}
+.ico-catalogue_nav-item a:active {
+  box-shadow: 0 2px 0 #3e9532, inset 0 2px 4px rgba(1, 1, 1, 0.3);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 700;
+  background-color: #44af36;
+}
 .ico-catalogue_nav-item:first-child a {
   border-radius: 4px 0 0 4px;
 }
@@ -7155,6 +7190,13 @@
   border-right: none;
 }
 .ico-catalogue_nav-item--active a {
+  box-shadow: 0 2px 0 #3e9532, inset 0 2px 4px rgba(1, 1, 1, 0.3);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 700;
+  background-color: #44af36;
+}
+.ico-catalogue_nav-item--active a:hover {
   box-shadow: 0 2px 0 #3e9532, inset 0 2px 4px rgba(1, 1, 1, 0.3);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -7674,7 +7716,7 @@
   padding: 16px 0;
 }
 .ico-catalogue-item_links-wrapper a {
-  margin-right: 30px;
+  margin-left: 30px;
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -7686,11 +7728,10 @@
 .ico-catalogue-item_links-wrapper a:first-child {
   margin-left: 20px;
 }
-.ico-catalogue-item_links-wrapper a sup {
+.ico-catalogue-item_links-wrapper sup {
   top: -7px;
   margin-left: 4px;
-  margin-top: -22px;
-  padding: 1px 5px 1px 4px;
+  padding: 2px 5px 2px 4px;
   border-radius: 8px;
   background-color: #5bb0d5;
   color: #ffffff;
@@ -7705,6 +7746,21 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
+}
+.ico-catalogue-item_links-wrapper .to-discuss:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .to-discuss:hover::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -1px;
+  background-image: url('../img/discuss-icon-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .to-discuss::before {
   content: "";
@@ -7725,6 +7781,21 @@
   font-weight: 500;
   line-height: 14px;
 }
+.ico-catalogue-item_links-wrapper .to-rate:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .to-rate:hover::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/to-rate-icon-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .ico-catalogue-item_links-wrapper .to-rate::before {
   content: "";
   position: absolute;
@@ -7739,6 +7810,22 @@
 }
 .ico-catalogue-item_links-wrapper .to-rate--active {
   color: #45af37;
+}
+.ico-catalogue-item_links-wrapper .to-rate--active:hover {
+  text-decoration: underline;
+  color: #44af36;
+}
+.ico-catalogue-item_links-wrapper .to-rate--active:hover::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: -1px;
+  background-image: url('../img/green-check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .to-rate--active::before {
   content: "";
@@ -7759,6 +7846,9 @@
   font-weight: 500;
   line-height: 14px;
 }
+.ico-catalogue-item_links-wrapper .add-calendar:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
 .ico-catalogue-item_links-wrapper .add-calendar::before {
   content: "";
   position: absolute;
@@ -7773,6 +7863,9 @@
 }
 .ico-catalogue-item_links-wrapper .add-calendar--active {
   color: #44af36;
+}
+.ico-catalogue-item_links-wrapper .add-calendar--active:hover {
+  color: rgba(69, 175, 55, 0.85);
 }
 .ico-catalogue-item_links-wrapper .add-calendar--active::before {
   content: "";
@@ -7794,6 +7887,9 @@
   font-weight: 500;
   line-height: 14px;
 }
+.ico-catalogue-item_links-wrapper .buy-sell:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
 .ico-catalogue-item_links-wrapper .buy-sell::before {
   content: "";
   position: absolute;
@@ -7806,29 +7902,28 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_button {
+.ico-catalogue-item .btn-details {
+  position: relative;
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 0 #3b962f;
   border-radius: 0 0 4px;
-  background-color: #45af37;
-}
-.ico-catalogue-item_button-details {
-  position: relative;
-  padding: 18px 0px 13px 16px;
+  padding: 18px 0px 13px 18px;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
 }
-.ico-catalogue-item_button-details::before {
+.ico-catalogue-item .btn-details span {
+  position: relative;
+}
+.ico-catalogue-item .btn-details span::before {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
-  left: -6px;
-  top: 16px;
+  left: -21px;
+  top: -2px;
   background-image: url('../img/white-check-big.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -8126,16 +8221,24 @@
   position: relative;
   bottom: -14px;
   padding: 10px 15px 7px 38px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.15px;
-  box-shadow: 0 2px 0 #1175c0;
   border-radius: 4px;
-  background-color: #1991eb;
+}
+.ico-topline .ico-card_description a::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 17px;
+  top: 9px;
+  background-image: url('../img/chain.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-topline .ico-card_social {
   padding: 32px 44px 24px;
@@ -8621,11 +8724,7 @@
   position: relative;
   padding: 12px 16px 10px 44px;
   margin-right: 1px;
-  box-shadow: 0 2px 0 #3a962e;
-  background-color: #44af36;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0;
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -8691,6 +8790,11 @@
   font-weight: 500;
   line-height: 11px;
   text-transform: uppercase;
+}
+.ico-exchanges_periods-item:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #525c6c;
 }
 .ico-exchanges_periods-item--active {
   color: #525c6c;
@@ -9210,6 +9314,9 @@
   line-height: 20px;
   text-decoration: underline;
 }
+.project-overview_links li a:hover {
+  color: rgba(25, 145, 235, 0.85);
+}
 .sponsored-ico_sponsored {
   margin-top: 32px;
   margin-bottom: 12px;
@@ -9349,7 +9456,7 @@
 }
 .latest-posts_topics .forum-topic_title a:hover {
   text-decoration: underline;
-  color: #1175c0;
+  color: rgba(25, 145, 235, 0.85);
 }
 .latest-posts_topics .forum-topic_comments-count {
   display: inline;
@@ -10113,7 +10220,7 @@
   padding: 16px 0;
 }
 .ico-favourite_list .ico-item_links-wrapper a {
-  margin-right: 30px;
+  margin-left: 30px;
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -10125,11 +10232,10 @@
 .ico-favourite_list .ico-item_links-wrapper a:first-child {
   margin-left: 20px;
 }
-.ico-favourite_list .ico-item_links-wrapper a sup {
+.ico-favourite_list .ico-item_links-wrapper sup {
   top: -7px;
   margin-left: 4px;
-  margin-top: -22px;
-  padding: 1px 5px 1px 4px;
+  padding: 2px 5px 2px 4px;
   border-radius: 8px;
   background-color: #5bb0d5;
   color: #ffffff;
@@ -10141,9 +10247,21 @@
 .ico-favourite_list .ico-item_links-wrapper .to-discuss {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-discuss:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .to-discuss:hover::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -1px;
+  background-image: url('../img/discuss-icon-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-discuss::before {
   content: "";
@@ -10162,8 +10280,6 @@
   color: #45af37;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-favourite_list .ico-item_links-wrapper .your-review::before {
   content: "";
@@ -10180,9 +10296,21 @@
 .ico-favourite_list .ico-item_links-wrapper .to-rate {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-rate:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .to-rate:hover::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/to-rate-icon-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate::before {
   content: "";
@@ -10199,6 +10327,22 @@
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active {
   color: #45af37;
 }
+.ico-favourite_list .ico-item_links-wrapper .to-rate--active:hover {
+  text-decoration: underline;
+  color: #44af36;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-rate--active:hover::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: -1px;
+  background-image: url('../img/green-check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active::before {
   content: "";
   position: absolute;
@@ -10214,9 +10358,9 @@
 .ico-favourite_list .ico-item_links-wrapper .add-calendar {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-calendar:hover {
+  color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar::before {
   content: "";
@@ -10232,6 +10376,9 @@
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar--active {
   color: #44af36;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-calendar--active:hover {
+  color: rgba(69, 175, 55, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar--active::before {
   content: "";
@@ -10249,9 +10396,9 @@
   padding-left: 24px;
   margin-right: 15px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .buy-sell:hover {
+  color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell::before {
   content: "";
@@ -10265,29 +10412,28 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-favourite_list .ico-item_button {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 2px 0 #3b962f;
-  border-radius: 0 0 4px;
-  background-color: #45af37;
-}
 .ico-favourite_list .ico-item_button-details {
   position: relative;
+  display: flex;
+  justify-content: center;
   padding: 18px 0px 13px 16px;
+  border-radius: 0 0 4px 0;
+}
+.ico-favourite_list .ico-item_button-details span {
+  position: relative;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
 }
-.ico-favourite_list .ico-item_button-details::before {
+.ico-favourite_list .ico-item_button-details span::before {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
-  left: -6px;
-  top: 16px;
+  left: -21px;
+  top: -2px;
   background-image: url('../img/white-check-big.svg');
   background-position: center;
   background-repeat: no-repeat;

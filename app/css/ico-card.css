@@ -160,16 +160,24 @@
   position: relative;
   bottom: -14px;
   padding: 10px 15px 7px 38px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.15px;
-  box-shadow: 0 2px 0 #1175c0;
   border-radius: 4px;
-  background-color: #1991eb;
+}
+.ico-topline .ico-card_description a::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 17px;
+  top: 9px;
+  background-image: url('../img/chain.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-topline .ico-card_social {
   padding: 32px 44px 24px;
@@ -655,11 +663,7 @@
   position: relative;
   padding: 12px 16px 10px 44px;
   margin-right: 1px;
-  box-shadow: 0 2px 0 #3a962e;
-  background-color: #44af36;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0;
-  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -725,6 +729,11 @@
   font-weight: 500;
   line-height: 11px;
   text-transform: uppercase;
+}
+.ico-exchanges_periods-item:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #525c6c;
 }
 .ico-exchanges_periods-item--active {
   color: #525c6c;

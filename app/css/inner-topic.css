@@ -267,7 +267,7 @@
   text-decoration: underline;
 }
 .topic_content p a:hover {
-  text-decoration: none;
+  color: rgba(25, 145, 235, 0.85);
 }
 .topic_content-image {
   padding: 32px 0;

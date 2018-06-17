@@ -528,7 +528,7 @@
   padding: 16px 0;
 }
 .ico-favourite_list .ico-item_links-wrapper a {
-  margin-right: 30px;
+  margin-left: 30px;
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -540,11 +540,10 @@
 .ico-favourite_list .ico-item_links-wrapper a:first-child {
   margin-left: 20px;
 }
-.ico-favourite_list .ico-item_links-wrapper a sup {
+.ico-favourite_list .ico-item_links-wrapper sup {
   top: -7px;
   margin-left: 4px;
-  margin-top: -22px;
-  padding: 1px 5px 1px 4px;
+  padding: 2px 5px 2px 4px;
   border-radius: 8px;
   background-color: #5bb0d5;
   color: #ffffff;
@@ -556,9 +555,21 @@
 .ico-favourite_list .ico-item_links-wrapper .to-discuss {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-discuss:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .to-discuss:hover::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -1px;
+  background-image: url('../img/discuss-icon-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-discuss::before {
   content: "";
@@ -577,8 +588,6 @@
   color: #45af37;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-favourite_list .ico-item_links-wrapper .your-review::before {
   content: "";
@@ -595,9 +604,21 @@
 .ico-favourite_list .ico-item_links-wrapper .to-rate {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-rate:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .to-rate:hover::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/to-rate-icon-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate::before {
   content: "";
@@ -614,6 +635,22 @@
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active {
   color: #45af37;
 }
+.ico-favourite_list .ico-item_links-wrapper .to-rate--active:hover {
+  text-decoration: underline;
+  color: #44af36;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-rate--active:hover::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: -1px;
+  background-image: url('../img/green-check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active::before {
   content: "";
   position: absolute;
@@ -629,9 +666,9 @@
 .ico-favourite_list .ico-item_links-wrapper .add-calendar {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-calendar:hover {
+  color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar::before {
   content: "";
@@ -647,6 +684,9 @@
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar--active {
   color: #44af36;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-calendar--active:hover {
+  color: rgba(69, 175, 55, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar--active::before {
   content: "";
@@ -664,9 +704,9 @@
   padding-left: 24px;
   margin-right: 15px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+}
+.ico-favourite_list .ico-item_links-wrapper .buy-sell:hover {
+  color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell::before {
   content: "";
@@ -680,29 +720,28 @@
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-favourite_list .ico-item_button {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 2px 0 #3b962f;
-  border-radius: 0 0 4px;
-  background-color: #45af37;
-}
 .ico-favourite_list .ico-item_button-details {
   position: relative;
+  display: flex;
+  justify-content: center;
   padding: 18px 0px 13px 16px;
+  border-radius: 0 0 4px 0;
+}
+.ico-favourite_list .ico-item_button-details span {
+  position: relative;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
 }
-.ico-favourite_list .ico-item_button-details::before {
+.ico-favourite_list .ico-item_button-details span::before {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
-  left: -6px;
-  top: 16px;
+  left: -21px;
+  top: -2px;
   background-image: url('../img/white-check-big.svg');
   background-position: center;
   background-repeat: no-repeat;

@@ -113,6 +113,9 @@
   line-height: 20px;
   text-decoration: underline;
 }
+.project-overview_links li a:hover {
+  color: rgba(25, 145, 235, 0.85);
+}
 .sponsored-ico_sponsored {
   margin-top: 32px;
   margin-bottom: 12px;
@@ -252,7 +255,7 @@
 }
 .latest-posts_topics .forum-topic_title a:hover {
   text-decoration: underline;
-  color: #1175c0;
+  color: rgba(25, 145, 235, 0.85);
 }
 .latest-posts_topics .forum-topic_comments-count {
   display: inline;

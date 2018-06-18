@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="16" viewBox="0 0 15 16"><defs><path id="k39ba" d="M1100.83 169.12l.85-7.03a6.85 6.85 0 1 0 5.54 4.26c-.02-.05-6.4 2.77-6.4 2.77z"/><path id="k39bb" d="M1108.65 163.54a5.87 5.87 0 0 0-4.69-3.54l-.72 5.83 5.41-2.29z"/></defs><g><g transform="translate(-1094 -160)"><g><g><use fill="#45af37" xlink:href="#k39ba"/></g><g><use fill="#45af37" xlink:href="#k39bb"/></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Interfaces" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ICO-Main-Page-(LogedIn-Dropdown)-1.0" transform="translate(-1094.000000, -160.000000)" fill="#8F96A1" fill-rule="nonzero">
+            <g id="Logged-In-Dropdown" transform="translate(1070.000000, 72.000000)">
+                <g id="Group-7">
+                    <g id="Base-Copy-2">
+                        <g id="dashboard" transform="translate(24.000000, 88.000000)">
+                            <g id="Group-5">
+                                <path d="M6.8265198,9.11346939 L7.68235653,2.08718367 C3.92529531,1.62971429 0.508805511,4.30432653 0.0510095923,8.06138776 C-0.406786326,11.819102 2.26782592,15.2352653 6.02488714,15.6930612 C9.78162184,16.1508571 13.1981116,13.4765714 13.6562341,9.71918367 C13.8002341,8.53289796 13.6314178,7.38220408 13.2160708,6.34644898 C13.1968055,6.30008163 6.8265198,9.11346939 6.8265198,9.11346939 Z" id="Shape"></path>
+                                <path d="M14.6482341,3.54155102 C13.8554178,1.67379592 12.118928,0.267428571 9.96121367,0 L9.23762184,5.83085714 L14.6488871,3.54253061 C14.6488871,3.54220408 14.6482341,3.54187755 14.6482341,3.54155102 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

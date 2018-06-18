@@ -127,19 +127,18 @@
         border-radius: 2px;
         border: 1px solid @accent-color;
         background-color: #7cc772;
-        a {
-            display: inline-block;
-            text-indent: -9999px;
-            font-size: 11px;
-            font-weight: 500;
-            line-height: 14px;
+        &-close {
+            display: inline-block;;
+            font-size: 0px;
             width: 12px;
             height: 12px;
             background-image: @img-cross;
-            background-position: 50% 50%;
+            background-position: 2px 5px;
             background-repeat: no-repeat;
+            cursor: pointer;
         }
         span {
+            display: inline-block;
             color: #ffffff;
             font-family: @main-font;
             font-size: 11px;
@@ -609,21 +608,10 @@
         .to-discuss {
             padding-left: 24px;
             color: @main-text-color;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 14px;
             &:hover {
                 color: rgba(82, 92, 108, 0.85);
                 &::before {
-                    content: "";
-        			position: absolute;
-                    width: 16px;
-                    height: 14px;
-                    left: 0px;
-                    top: -1px;
-        			background-image: @img-discuss-icon-hover;
-        			background-position: center;
-        			background-repeat: no-repeat;
+                    opacity: 1;
         			z-index: 11;
                 }
             }
@@ -634,30 +622,20 @@
                 height: 14px;
                 left: 0px;
                 top: -1px;
-                background-image: @img-discuss-icon;
+                background-image: @img-discuss-icon-hover;
                 background-position: center;
                 background-repeat: no-repeat;
                 z-index: 11;
+                opacity: 0.5;
             }
         }
         .to-rate {
             padding-left: 24px;
             color: @main-text-color;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 14px;
             &:hover {
                 color: rgba(82, 92, 108, 0.85);
                 &::before {
-                    content: "";
-        			position: absolute;
-                    width: 16px;
-                    height: 14px;
-                    left: 0px;
-                    top: -2px;
-        			background-image: @img-to-rate-icon-hover;
-        			background-position: center;
-        			background-repeat: no-repeat;
+                    opacity: 1;
         			z-index: 11;
                 }
             }
@@ -668,13 +646,14 @@
                 height: 14px;
                 left: 0px;
                 top: -2px;
-                background-image: @img-to-rate-icon;
+                background-image: @img-to-rate-icon-hover;
                 background-position: center;
                 background-repeat: no-repeat;
+                opacity: 0.5;
                 z-index: 11;
             }
             &--active {
-                color: #45af37;
+                color: @accent-color;
                 &:hover {
                     text-decoration: underline;
                     color: @accent-color;
@@ -701,6 +680,7 @@
                     background-image: @img-green-check;
                     background-position: center;
                     background-repeat: no-repeat;
+                    opacity: 1;
                     z-index: 11;
                 }
             }
@@ -708,11 +688,12 @@
         .add-calendar {
             padding-left: 24px;
             color: @main-text-color;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 14px;
             &:hover {
                 color: rgba(82, 92, 108, 0.85);
+                &::before {
+                    opacity: 1;
+        			z-index: 11;
+                }
             }
             &::before {
                 content: "";
@@ -724,6 +705,7 @@
                 background-image: @img-calendar-small;
                 background-position: center;
                 background-repeat: no-repeat;
+                opacity: 0.5;
                 z-index: 11;
             }
             &--active {
@@ -741,19 +723,46 @@
                     background-image: @img-green-check;
                     background-position: center;
                     background-repeat: no-repeat;
+                    opacity: 1;
                     z-index: 11;
                 }
+            }
+        }
+        .add-portfolio {
+            padding-left: 24px;
+            margin-right: 15px;
+            color: @main-text-color;
+            &:hover {
+                color: rgba(82, 92, 108, 0.85);
+                &::before {
+                    opacity: 1;
+        			z-index: 11;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 14px;
+                left: 0px;
+                top: -2px;
+                background-image: @img-add-to-portfolio;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+                z-index: 11;
             }
         }
         .buy-sell {
             padding-left: 24px;
             margin-right: 15px;
             color: @main-text-color;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 14px;
             &:hover {
                 color: rgba(82, 92, 108, 0.85);
+                &::before {
+                    opacity: 1;
+        			z-index: 11;
+                }
             }
             &::before {
                 content: "";
@@ -765,6 +774,7 @@
                 background-image: @img-wallet-blue;
                 background-position: center;
                 background-repeat: no-repeat;
+                opacity: 0.5;
                 z-index: 11;
             }
         }
@@ -839,6 +849,9 @@
                     line-height: 16px;
                     text-decoration: underline;
                     text-decoration-style: dashed;
+                    &:hover {
+                        color: rgba(92, 176, 213, 0.85);
+                    }
                 }
             }
             li {

@@ -166,17 +166,33 @@
         .sign-in-form {
             margin-bottom: 30px;
             &_user {
-                margin-bottom: 16px;
+                margin-bottom: 8px;
             }
             &_password {
+                margin-top: 8px;
                 margin-bottom: 10px;
                 background-image: @img-eye-grey;
                 background-position: 246px 14px;
                 background-repeat: no-repeat;
                 z-index: 11;
             }
+            .exists {
+                border: 1px solid @accent-color;
+            }
             .error {
                 border: 1px solid @red;
+            }
+            .login-exists {
+                display: inline-block;
+                margin-bottom: 8px;
+                color: @accent-color;
+                font-family: @main-font;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                &--hidden {
+                    display: none;
+                }
             }
             .wrong-password {
                 display: inline-block;
@@ -186,6 +202,9 @@
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 12px;
+                &--hidden {
+                    display: none;
+                }
             }
             &_button {
                 margin-top: 10px;

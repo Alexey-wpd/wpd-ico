@@ -524,14 +524,25 @@
         }
         &_links {
             a {
+                position: relative;
                 margin-right: 28px;
                 color: #7dc773;
                 font-family: @main-font;
                 font-size: 13px;
                 font-weight: 500;
                 line-height: 20px;
-                text-decoration: underline;
-                text-decoration-style: dashed;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    top: 15px;
+                    background-color: rgba(125, 199, 115, 0.5);
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: rgba(125, 199, 115, 0.85);
+                }
                 &:last-child {
                     margin-right: 0;
                 }

@@ -173,19 +173,18 @@
   border: 1px solid #44af36;
   background-color: #7cc772;
 }
-.ico-catalogue_tag a {
+.ico-catalogue_tag-close {
   display: inline-block;
-  text-indent: -9999px;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 14px;
+  font-size: 0px;
   width: 12px;
   height: 12px;
   background-image: url('../img/cross.svg');
-  background-position: 50% 50%;
+  background-position: 2px 5px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .ico-catalogue_tag span {
+  display: inline-block;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -649,14 +648,15 @@
 .ico-catalogue-item_links-wrapper .to-discuss {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .to-discuss:hover {
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-catalogue-item_links-wrapper .to-discuss:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-catalogue-item_links-wrapper .to-discuss::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -667,39 +667,17 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
-}
-.ico-catalogue-item_links-wrapper .to-discuss::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -1px;
-  background-image: url('../img/discuss-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+  opacity: 0.5;
 }
 .ico-catalogue-item_links-wrapper .to-rate {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .to-rate:hover {
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-catalogue-item_links-wrapper .to-rate:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -2px;
-  background-image: url('../img/to-rate-icon-hover.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .to-rate::before {
@@ -709,13 +687,14 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/to-rate-icon.svg');
+  background-image: url('../img/to-rate-icon-hover.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .to-rate--active {
-  color: #45af37;
+  color: #44af36;
 }
 .ico-catalogue-item_links-wrapper .to-rate--active:hover {
   text-decoration: underline;
@@ -743,17 +722,19 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .add-calendar {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .add-calendar:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .add-calendar:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .add-calendar::before {
   content: "";
@@ -765,6 +746,7 @@
   background-image: url('../img/calendar-small.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .add-calendar--active {
@@ -783,18 +765,45 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 11;
+}
+.ico-catalogue-item_links-wrapper .add-portfolio {
+  padding-left: 24px;
+  margin-right: 15px;
+  color: #525c6c;
+}
+.ico-catalogue-item_links-wrapper .add-portfolio:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .add-portfolio:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-catalogue-item_links-wrapper .add-portfolio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/add-to-portfolio.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .buy-sell {
   padding-left: 24px;
   margin-right: 15px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .buy-sell:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .buy-sell:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .buy-sell::before {
   content: "";
@@ -806,6 +815,7 @@
   background-image: url('../img/wallet-blue.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item .btn-details {
@@ -875,6 +885,9 @@
   line-height: 16px;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+.ico-choosing-form .form-group .choosing-form_list-show-more a:hover {
+  color: rgba(92, 176, 213, 0.85);
 }
 .ico-choosing-form .form-group .choosing-form_list li:last-child {
   margin-bottom: 15px;

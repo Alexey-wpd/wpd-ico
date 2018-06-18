@@ -524,14 +524,25 @@
   line-height: 16px;
 }
 .header .catalogue-header_links a {
+  position: relative;
   margin-right: 28px;
   color: #7dc773;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 20px;
-  text-decoration: underline;
-  text-decoration-style: dashed;
+}
+.header .catalogue-header_links a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 15px;
+  background-color: rgba(125, 199, 115, 0.5);
+}
+.header .catalogue-header_links a:hover {
+  text-decoration: none;
+  color: rgba(125, 199, 115, 0.85);
 }
 .header .catalogue-header_links a:last-child {
   margin-right: 0;
@@ -2131,17 +2142,15 @@
   border: 1px solid #44af36;
   background-color: #7cc772;
 }
-.markets-catalogue_tag a {
+.markets-catalogue_tag-close {
   display: inline-block;
-  text-indent: -9999px;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 14px;
+  font-size: 0px;
   width: 12px;
   height: 12px;
   background-image: url('../img/cross.svg');
-  background-position: 50% 50%;
+  background-position: 2px 5px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .markets-catalogue_tag span {
   color: #ffffff;
@@ -4689,7 +4698,7 @@
 }
 .portfolio-view_filter label b {
   display: block;
-  padding: 12px 12px 11px;
+  padding: 12px 12px 10px;
   margin-left: -1px;
   color: #525c6c;
   background-color: #fff;
@@ -7267,19 +7276,18 @@
   border: 1px solid #44af36;
   background-color: #7cc772;
 }
-.ico-catalogue_tag a {
+.ico-catalogue_tag-close {
   display: inline-block;
-  text-indent: -9999px;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 14px;
+  font-size: 0px;
   width: 12px;
   height: 12px;
   background-image: url('../img/cross.svg');
-  background-position: 50% 50%;
+  background-position: 2px 5px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .ico-catalogue_tag span {
+  display: inline-block;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -7743,14 +7751,15 @@
 .ico-catalogue-item_links-wrapper .to-discuss {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .to-discuss:hover {
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-catalogue-item_links-wrapper .to-discuss:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-catalogue-item_links-wrapper .to-discuss::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -7761,39 +7770,17 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
-}
-.ico-catalogue-item_links-wrapper .to-discuss::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -1px;
-  background-image: url('../img/discuss-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+  opacity: 0.5;
 }
 .ico-catalogue-item_links-wrapper .to-rate {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .to-rate:hover {
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-catalogue-item_links-wrapper .to-rate:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -2px;
-  background-image: url('../img/to-rate-icon-hover.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .to-rate::before {
@@ -7803,13 +7790,14 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/to-rate-icon.svg');
+  background-image: url('../img/to-rate-icon-hover.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .to-rate--active {
-  color: #45af37;
+  color: #44af36;
 }
 .ico-catalogue-item_links-wrapper .to-rate--active:hover {
   text-decoration: underline;
@@ -7837,17 +7825,19 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .add-calendar {
   padding-left: 24px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .add-calendar:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .add-calendar:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .add-calendar::before {
   content: "";
@@ -7859,6 +7849,7 @@
   background-image: url('../img/calendar-small.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .add-calendar--active {
@@ -7877,18 +7868,45 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 11;
+}
+.ico-catalogue-item_links-wrapper .add-portfolio {
+  padding-left: 24px;
+  margin-right: 15px;
+  color: #525c6c;
+}
+.ico-catalogue-item_links-wrapper .add-portfolio:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .add-portfolio:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-catalogue-item_links-wrapper .add-portfolio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/add-to-portfolio.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .buy-sell {
   padding-left: 24px;
   margin-right: 15px;
   color: #525c6c;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
 }
 .ico-catalogue-item_links-wrapper .buy-sell:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-catalogue-item_links-wrapper .buy-sell:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-catalogue-item_links-wrapper .buy-sell::before {
   content: "";
@@ -7900,6 +7918,7 @@
   background-image: url('../img/wallet-blue.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-catalogue-item .btn-details {
@@ -7969,6 +7988,9 @@
   line-height: 16px;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+.ico-choosing-form .form-group .choosing-form_list-show-more a:hover {
+  color: rgba(92, 176, 213, 0.85);
 }
 .ico-choosing-form .form-group .choosing-form_list li:last-child {
   margin-bottom: 15px;
@@ -10252,6 +10274,10 @@
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .to-discuss:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-discuss::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -10262,18 +10288,7 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
-}
-.ico-favourite_list .ico-item_links-wrapper .to-discuss::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -1px;
-  background-image: url('../img/discuss-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+  opacity: 0.5;
 }
 .ico-favourite_list .ico-item_links-wrapper .your-review {
   padding-left: 20px;
@@ -10301,15 +10316,7 @@
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -2px;
-  background-image: url('../img/to-rate-icon-hover.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate::before {
@@ -10319,13 +10326,14 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/to-rate-icon.svg');
+  background-image: url('../img/to-rate-icon-hover.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active {
-  color: #45af37;
+  color: #44af36;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active:hover {
   text-decoration: underline;
@@ -10353,6 +10361,7 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar {
@@ -10361,6 +10370,10 @@
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .add-calendar:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar::before {
   content: "";
@@ -10372,6 +10385,7 @@
   background-image: url('../img/calendar-small.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar--active {
@@ -10390,6 +10404,32 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 11;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio {
+  padding-left: 24px;
+  margin-right: 15px;
+  color: #525c6c;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/add-to-portfolio.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell {
@@ -10399,6 +10439,10 @@
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .buy-sell:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell::before {
   content: "";
@@ -10410,6 +10454,7 @@
   background-image: url('../img/wallet-blue.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_button-details {
@@ -10863,17 +10908,24 @@ b {
   box-shadow: 0 1px 0 #e2e7ee;
 }
 .paginator a:hover {
-  background-color: #e0e6ed;
+  text-decoration: none;
+  background-color: #e8edf2;
+}
+.paginator a:active {
+  background-color: #c5d0de;
+  color: #ffffff;
 }
 .paginator .first {
   border-radius: 4px 0 0 4px;
   border-left: 1px solid rgba(197, 208, 222, 0.5);
 }
 .paginator .current {
-  background-color: #e0e6ed;
+  background-color: #c5d0de;
+  color: #ffffff;
 }
 .paginator .current:hover {
-  background-color: #e0e6ed;
+  background-color: #c5d0de;
+  color: #ffffff;
 }
 .paginator .next {
   text-indent: -9999px;
@@ -13404,17 +13456,33 @@ label.radio input[type=radio]:checked + span::after {
   margin-bottom: 30px;
 }
 .modal-content-sign-in .sign-in-form_user {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-content-sign-in .sign-in-form_password {
+  margin-top: 8px;
   margin-bottom: 10px;
   background-image: url('../img/eye-grey.svg');
   background-position: 246px 14px;
   background-repeat: no-repeat;
   z-index: 11;
 }
+.modal-content-sign-in .sign-in-form .exists {
+  border: 1px solid #44af36;
+}
 .modal-content-sign-in .sign-in-form .error {
   border: 1px solid #ff3657;
+}
+.modal-content-sign-in .sign-in-form .login-exists {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #44af36;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.modal-content-sign-in .sign-in-form .login-exists--hidden {
+  display: none;
 }
 .modal-content-sign-in .sign-in-form .wrong-password {
   display: inline-block;
@@ -13424,6 +13492,9 @@ label.radio input[type=radio]:checked + span::after {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+}
+.modal-content-sign-in .sign-in-form .wrong-password--hidden {
+  display: none;
 }
 .modal-content-sign-in .sign-in-form_button {
   margin-top: 10px;

@@ -560,6 +560,10 @@
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .to-discuss:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-favourite_list .ico-item_links-wrapper .to-discuss::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -570,18 +574,7 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
-}
-.ico-favourite_list .ico-item_links-wrapper .to-discuss::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -1px;
-  background-image: url('../img/discuss-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+  opacity: 0.5;
 }
 .ico-favourite_list .ico-item_links-wrapper .your-review {
   padding-left: 20px;
@@ -609,15 +602,7 @@
   color: rgba(82, 92, 108, 0.85);
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 0px;
-  top: -2px;
-  background-image: url('../img/to-rate-icon-hover.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate::before {
@@ -627,13 +612,14 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/to-rate-icon.svg');
+  background-image: url('../img/to-rate-icon-hover.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active {
-  color: #45af37;
+  color: #44af36;
 }
 .ico-favourite_list .ico-item_links-wrapper .to-rate--active:hover {
   text-decoration: underline;
@@ -661,6 +647,7 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar {
@@ -669,6 +656,10 @@
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .add-calendar:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar::before {
   content: "";
@@ -680,6 +671,7 @@
   background-image: url('../img/calendar-small.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .add-calendar--active {
@@ -698,6 +690,32 @@
   background-image: url('../img/green-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 11;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio {
+  padding-left: 24px;
+  margin-right: 15px;
+  color: #525c6c;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio:hover {
+  color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio:hover::before {
+  opacity: 1;
+  z-index: 11;
+}
+.ico-favourite_list .ico-item_links-wrapper .add-portfolio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  left: 0px;
+  top: -2px;
+  background-image: url('../img/add-to-portfolio.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell {
@@ -707,6 +725,10 @@
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell:hover {
   color: rgba(82, 92, 108, 0.85);
+}
+.ico-favourite_list .ico-item_links-wrapper .buy-sell:hover::before {
+  opacity: 1;
+  z-index: 11;
 }
 .ico-favourite_list .ico-item_links-wrapper .buy-sell::before {
   content: "";
@@ -718,6 +740,7 @@
   background-image: url('../img/wallet-blue.svg');
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .ico-favourite_list .ico-item_button-details {

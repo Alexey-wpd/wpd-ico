@@ -218,17 +218,33 @@
   margin-bottom: 30px;
 }
 .modal-content-sign-in .sign-in-form_user {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-content-sign-in .sign-in-form_password {
+  margin-top: 8px;
   margin-bottom: 10px;
   background-image: url('../img/eye-grey.svg');
   background-position: 246px 14px;
   background-repeat: no-repeat;
   z-index: 11;
 }
+.modal-content-sign-in .sign-in-form .exists {
+  border: 1px solid #44af36;
+}
 .modal-content-sign-in .sign-in-form .error {
   border: 1px solid #ff3657;
+}
+.modal-content-sign-in .sign-in-form .login-exists {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #44af36;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.modal-content-sign-in .sign-in-form .login-exists--hidden {
+  display: none;
 }
 .modal-content-sign-in .sign-in-form .wrong-password {
   display: inline-block;
@@ -238,6 +254,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+}
+.modal-content-sign-in .sign-in-form .wrong-password--hidden {
+  display: none;
 }
 .modal-content-sign-in .sign-in-form_button {
   margin-top: 10px;

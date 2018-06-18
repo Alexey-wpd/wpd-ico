@@ -477,17 +477,24 @@ b {
   box-shadow: 0 1px 0 #e2e7ee;
 }
 .paginator a:hover {
-  background-color: #e0e6ed;
+  text-decoration: none;
+  background-color: #e8edf2;
+}
+.paginator a:active {
+  background-color: #c5d0de;
+  color: #ffffff;
 }
 .paginator .first {
   border-radius: 4px 0 0 4px;
   border-left: 1px solid rgba(197, 208, 222, 0.5);
 }
 .paginator .current {
-  background-color: #e0e6ed;
+  background-color: #c5d0de;
+  color: #ffffff;
 }
 .paginator .current:hover {
-  background-color: #e0e6ed;
+  background-color: #c5d0de;
+  color: #ffffff;
 }
 .paginator .next {
   text-indent: -9999px;

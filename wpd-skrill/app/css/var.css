@@ -1,0 +1,9 @@
+@include font-face(
+  "OpenSans",
+  "../fonts/OpenSans/opensans-regular-webfont",
+  "../fonts/OpenSans/opensans-bold-webfont",
+  ("woff2", "woff", "eot")
+) {
+  font-style: normal;
+  font-weight: 400;
+}

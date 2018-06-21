@@ -1,5 +1,45 @@
 @import "vars";
 
+.settings-topline,
+.ico-notif,
+.social-notif,
+.channels-notif,
+.settings-button,
+.change-password,
+.security-block,
+.profile-settings,
+.external-links,
+.other-settings,
+.avatar-settings {
+    h2 {
+        margin-top: 32px;
+        margin-bottom: 18px;
+        color: @dark;
+        font-family: @main-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    label {
+        color: @main-text-color;
+        font-family: @main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px 12px 11px;
+        padding: 12px 20px 11px 12px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+    textarea {
+        padding: 14px 20px 12px 12px;
+    }
+}
 
 //------------------------NOTiFICATION----------------//
 .settings-topline {
@@ -50,15 +90,6 @@
 }
 .ico-notif,
 .social-notif {
-    h2 {
-        margin-top: 32px;
-        margin-bottom: 18px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-    }
     &-wrapper {
         display: flex;
         align-items: center;
@@ -106,53 +137,16 @@
     }
 }
 .channels-notif {
-    h2 {
-        margin-top: 32px;
-        margin-bottom: 20px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-    }
     &_email,
     &_telegram {
         display: flex;
         flex-direction: column;
-        label {
-            color: @main-text-color;
-            font-family: @main-font;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
-        }
-        input {
-            width: 100%;
-            padding: 12px 12px 11px;
-            border-radius: 4px;
-            border: 1px solid @light-light-grey;
-            background-color: #ffffff;
-            color: @dark;
-            font-family: @main-font;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 16px;
-        }
     }
     &_email {
         margin-bottom: 24px;
     }
 }
 .other-notif {
-    h2 {
-        margin-top: 28px;
-        margin-bottom: 18px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-    }
     &-list {
         margin-bottom: 26px;
         &_item {
@@ -195,39 +189,6 @@
 //------------------------SECURITY----------------//
 .change-password {
     margin-bottom: 44px;
-    h2 {
-        margin-top: 34px;
-        margin-bottom: 18px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-    }
-    &_current-pass,
-    &_new-pass {
-        label {
-            color: @main-text-color;
-            font-family: @main-font;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
-        }
-        input {
-            width: 100%;
-            border-radius: 4px;
-            border: 1px solid @light-light-grey;
-            background-color: #ffffff;
-            color: @dark;
-            font-family: @main-font;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 16px;
-        }
-        input {
-            padding: 12px 20px 11px 12px;
-        }
-    }
     &_current-pass {
         margin-bottom: 24px;
     }
@@ -250,11 +211,6 @@
     margin-bottom: 50px;
     h2 {
         margin-bottom: 22px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
     }
     &-table {
         width: 100%;
@@ -287,16 +243,11 @@
 
 .profile-settings {
     margin-bottom: 40px;
-    h2 {
-        margin-top: 34px;
-        margin-bottom: 18px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
+    .label-wrapper {
+        display: flex;
     }
     label {
+        display: block;
         color: @main-text-color;
         font-family: @main-font;
         font-size: 14px;
@@ -304,40 +255,26 @@
         line-height: 16px;
     }
     input,
-    select,
     textarea {
         width: 100%;
         margin-bottom: 23px;
-        border-radius: 4px;
-        border: 1px solid @light-light-grey;
-        background-color: #ffffff;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 16px;
     }
     input {
         padding: 12px 20px 11px 12px;
-    }
-    select,
-    textarea {
-        padding: 14px 20px 12px 12px;
-    }
-    .symbol-counter {
-        float: right;
-        display: inline-block;
-        color: @light-grey;
-        font-family: @main-font;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
     }
     .form-group {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
+    }
+    .symbol-counter {
+        margin-left: auto;
+        color: @light-grey;
+        font-family: @main-font;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
     }
     &_email {
         position: relative;
@@ -379,7 +316,7 @@
             width: 19%;
         }
         &-month {
-            width: 49%;
+            width: 50%;
             label {
                 font-size: 0;
             }
@@ -405,7 +342,7 @@
             height: 4px;
             right: 12px;
             top: 50%;
-            background-image: @img-select-arrow;
+            //background-image: @img-select-arrow;
             background-position: center;
             background-repeat: no-repeat;
             z-index: 11;
@@ -416,32 +353,11 @@
     margin-bottom: 40px;
     h2 {
         margin-bottom: 20px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
     }
     input,
-    select,
     textarea {
         width: 100%;
         margin-bottom: 12px;
-        border-radius: 4px;
-        border: 1px solid @light-light-grey;
-        background-color: #ffffff;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 16px;
-    }
-    input {
-        padding: 12px 20px 11px 12px;
-    }
-    select,
-    textarea {
-        padding: 14px 20px 12px 12px;
     }
     &-item {
         display: flex;
@@ -486,39 +402,11 @@
     margin-bottom: 36px;
     h2 {
         margin-bottom: 20px;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20px;
-    }
-    label {
-        color: @main-text-color;
-        font-family: @main-font;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
     }
     input,
-    select,
     textarea {
         width: 100%;
         margin-bottom: 12px;
-        border-radius: 4px;
-        border: 1px solid @light-light-grey;
-        background-color: #ffffff;
-        color: @dark;
-        font-family: @main-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 16px;
-    }
-    input {
-        padding: 12px 20px 11px 12px;
-    }
-    select,
-    textarea {
-        padding: 14px 20px 12px 12px;
     }
 }
 .avatar-settings {

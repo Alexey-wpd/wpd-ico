@@ -49,50 +49,7 @@ h2 {
 	font-weight: 700;
 	line-height: 24px;
 }
-form ::-webkit-input-placeholder {
-    color: @light-light-grey;
-    font-size: 14px;
-}
 
-form ::-moz-placeholder {
-    color: @light-light-grey;
-    font-size: 14px;
-}
-
-form :-moz-placeholder {
-    color: @light-light-grey;
-    font-size: 14px;
-}
-
-form :-ms-input-placeholder {
-    color: @light-light-grey;
-    font-size: 14px;
-}
-select, input {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	position: relative;
-	outline: none;
-}
-input,
-select,
-textarea {
-	outline: none;
-	&:focus {
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-		border-radius: 4px;
-	}
-}
-fieldset {
-	border: none;
-	padding: 0;
-	margin: 0;
-}
-legend {
-	margin: 0;
-	padding: 0;
-}
 button {
 	outline: none;
 	&:active {
@@ -172,24 +129,7 @@ b {
 			z-index: 11;
 		}
 	}
-	&--prymary {
-		padding: 12px 20px 12px 54px;
-		background-color: @accent-color;
-		color: #fff;
-		box-shadow: 0 2px 0 darken(@accent-color, 10%);
-		&::before {
-			content: "";
-			position: absolute;
-			width: 21px;
-			height: 21px;
-			left: 18px;
-			top: 8px;
-			background-image: @img-prymary-btn-icon;
-			background-position: center;
-			background-repeat: no-repeat;
-			z-index: 11;
-		}
-	}
+
 	&-green {
 		box-shadow: 0 2px 0 #3b962f;
 		border-radius: 4px;
@@ -474,18 +414,6 @@ b {
 			background-color: #ffffff;
 			outline: none;
 		}
-		&::before {
-			content: "";
-			position: absolute;
-			width: 8px;
-			height: 4px;
-			left: 38px;
-			top: 16px;
-			background-image: @img-select-arrow;
-			background-position: center;
-			background-repeat: no-repeat;
-			z-index: 11;
-		}
 	}
 }
 .paginator-wrapper {
@@ -518,22 +446,6 @@ b {
 }
 //===================checkboks=======================
 label.checkbox {
-	&:hover {
-		span {
-			&::before {
-				content: '';
-			    position: absolute;
-			    top: 0;
-			    left: 0;
-			    width: 16px;
-			    height: 21px;
-			    background-image: @img-checkbox-hover;
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    z-index: 33;
-			}
-		}
-	}
 	input[type=checkbox] {
 		display: none;
 		position: relative;
@@ -652,22 +564,6 @@ label.toggle input[type=checkbox]:checked + span::after {
 }
 //============================radio-buttons========================//
 label.radio {
-	&:hover {
-		span {
-			&::before {
-				content: '';
-			    position: absolute;
-			    top: 0;
-			    left: 0;
-			    width: 16px;
-			    height: 21px;
-			    background-image: @img-radio-hover;
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    z-index: 33;
-			}
-		}
-	}
 	input[type=radio] {
 		display: none;
 		position: relative;

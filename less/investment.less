@@ -770,18 +770,6 @@
                 flex-direction: column;
                 margin-right: 30px;
                 flex-grow: 1;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 8px;
-                    height: 4px;
-                    right: 18px;
-                    top: 41px;
-                    background-image: @img-select-arrow;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    z-index: 11;
-                }
                 select {
                     max-width: 264px;
                     padding: 10px 32px 8px 12px;
@@ -811,9 +799,6 @@
                     font-weight: 400;
                     line-height: 16px;
                     text-transform: uppercase;
-                    border-radius: 4px;
-                    border: 1px solid @light-light-grey;
-                    background-color: #ffffff;
                 }
                 .count {
                     position: absolute;
@@ -868,18 +853,6 @@
                 display: flex;
                 flex-direction: column;
                 margin-right: 32px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 8px;
-                    height: 4px;
-                    right: 18px;
-                    top: 41px;
-                    background-image: @img-select-arrow;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    z-index: 11;
-                }
                 &-input-wrapper {
                     display: flex;
                 }
@@ -907,30 +880,14 @@
                     text-transform: uppercase
                 }
                 input {
+                    margin-right: -1px;
                     padding: 12px;
                     width: 154px;
                     height: 36px;
                     font-size: 15px;
-                    font-family: @main-font;
                     font-weight: 400;
                     line-height: 16px;
                     text-transform: uppercase;
-                    border-radius: 4px 0 0 4px;
-                    border: 1px solid @light-light-grey;
-                    background-color: #ffffff;
-                }
-                select {
-                    margin-left: -1px;
-                    padding: 0px 32px 0px 12px;
-                    color: @main-text-color;
-                    font-family: @main-font;
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 15px;
-                    text-transform: uppercase;
-                    border-radius: 0 4px 4px 0;
-                    border: 1px solid @light-light-grey;
-                    background-color: #ffffff;
                 }
             }
             &_total {

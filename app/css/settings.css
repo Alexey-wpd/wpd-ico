@@ -53,6 +53,84 @@
   font-style: normal;
   font-weight: normal;
 }
+.settings-topline h2,
+.ico-notif h2,
+.social-notif h2,
+.channels-notif h2,
+.settings-button h2,
+.change-password h2,
+.security-block h2,
+.profile-settings h2,
+.external-links h2,
+.other-settings h2,
+.avatar-settings h2 {
+  margin-top: 32px;
+  margin-bottom: 18px;
+  color: #333f52;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.settings-topline label,
+.ico-notif label,
+.social-notif label,
+.channels-notif label,
+.settings-button label,
+.change-password label,
+.security-block label,
+.profile-settings label,
+.external-links label,
+.other-settings label,
+.avatar-settings label {
+  color: #525c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.settings-topline input,
+.ico-notif input,
+.social-notif input,
+.channels-notif input,
+.settings-button input,
+.change-password input,
+.security-block input,
+.profile-settings input,
+.external-links input,
+.other-settings input,
+.avatar-settings input,
+.settings-topline textarea,
+.ico-notif textarea,
+.social-notif textarea,
+.channels-notif textarea,
+.settings-button textarea,
+.change-password textarea,
+.security-block textarea,
+.profile-settings textarea,
+.external-links textarea,
+.other-settings textarea,
+.avatar-settings textarea {
+  width: 100%;
+  padding: 12px 12px 11px;
+  padding: 12px 20px 11px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.settings-topline textarea,
+.ico-notif textarea,
+.social-notif textarea,
+.channels-notif textarea,
+.settings-button textarea,
+.change-password textarea,
+.security-block textarea,
+.profile-settings textarea,
+.external-links textarea,
+.other-settings textarea,
+.avatar-settings textarea {
+  padding: 14px 20px 12px 12px;
+}
 .settings-topline {
   padding: 32px 0 0;
   background-color: #e0e6ed;
@@ -98,16 +176,6 @@
   height: 5px;
   background-color: #8f96a1;
   bottom: -5px;
-}
-.ico-notif h2,
-.social-notif h2 {
-  margin-top: 32px;
-  margin-bottom: 18px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
 }
 .ico-notif-wrapper,
 .social-notif-wrapper {
@@ -159,52 +227,13 @@
 .social-notif-checkbox-set_telegram {
   margin-right: 45px;
 }
-.channels-notif h2 {
-  margin-top: 32px;
-  margin-bottom: 20px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-}
 .channels-notif_email,
 .channels-notif_telegram {
   display: flex;
   flex-direction: column;
 }
-.channels-notif_email label,
-.channels-notif_telegram label {
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-}
-.channels-notif_email input,
-.channels-notif_telegram input {
-  width: 100%;
-  padding: 12px 12px 11px;
-  border-radius: 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-}
 .channels-notif_email {
   margin-bottom: 24px;
-}
-.other-notif h2 {
-  margin-top: 28px;
-  margin-bottom: 18px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
 }
 .other-notif-list {
   margin-bottom: 26px;
@@ -245,39 +274,6 @@
 .change-password {
   margin-bottom: 44px;
 }
-.change-password h2 {
-  margin-top: 34px;
-  margin-bottom: 18px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-}
-.change-password_current-pass label,
-.change-password_new-pass label {
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-}
-.change-password_current-pass input,
-.change-password_new-pass input {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-}
-.change-password_current-pass input,
-.change-password_new-pass input {
-  padding: 12px 20px 11px 12px;
-}
 .change-password_current-pass {
   margin-bottom: 24px;
 }
@@ -300,11 +296,6 @@
 }
 .security-block h2 {
   margin-bottom: 22px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
 }
 .security-block-table {
   width: 100%;
@@ -335,16 +326,11 @@
 .profile-settings {
   margin-bottom: 40px;
 }
-.profile-settings h2 {
-  margin-top: 34px;
-  margin-bottom: 18px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
+.profile-settings .label-wrapper {
+  display: flex;
 }
 .profile-settings label {
+  display: block;
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -352,40 +338,26 @@
   line-height: 16px;
 }
 .profile-settings input,
-.profile-settings select,
 .profile-settings textarea {
   width: 100%;
   margin-bottom: 23px;
-  border-radius: 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
 }
 .profile-settings input {
   padding: 12px 20px 11px 12px;
-}
-.profile-settings select,
-.profile-settings textarea {
-  padding: 14px 20px 12px 12px;
-}
-.profile-settings .symbol-counter {
-  float: right;
-  display: inline-block;
-  color: #8f96a1;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
 }
 .profile-settings .form-group {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+}
+.profile-settings .symbol-counter {
+  margin-left: auto;
+  color: #8f96a1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }
 .profile-settings_email {
   position: relative;
@@ -426,7 +398,7 @@
   width: 19%;
 }
 .profile-settings_birthday-month {
-  width: 49%;
+  width: 50%;
 }
 .profile-settings_birthday-month label {
   font-size: 0;
@@ -457,7 +429,6 @@
   height: 4px;
   right: 12px;
   top: 50%;
-  background-image: url('../img/select-arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -467,32 +438,11 @@
 }
 .external-links h2 {
   margin-bottom: 20px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
 }
 .external-links input,
-.external-links select,
 .external-links textarea {
   width: 100%;
   margin-bottom: 12px;
-  border-radius: 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-}
-.external-links input {
-  padding: 12px 20px 11px 12px;
-}
-.external-links select,
-.external-links textarea {
-  padding: 14px 20px 12px 12px;
 }
 .external-links-item {
   display: flex;
@@ -537,39 +487,11 @@
 }
 .other-settings h2 {
   margin-bottom: 20px;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-}
-.other-settings label {
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
 }
 .other-settings input,
-.other-settings select,
 .other-settings textarea {
   width: 100%;
   margin-bottom: 12px;
-  border-radius: 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-  color: #333f52;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-}
-.other-settings input {
-  padding: 12px 20px 11px 12px;
-}
-.other-settings select,
-.other-settings textarea {
-  padding: 14px 20px 12px 12px;
 }
 .avatar-settings {
   margin-top: 96px;

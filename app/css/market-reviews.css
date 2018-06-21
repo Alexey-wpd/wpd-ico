@@ -82,46 +82,6 @@
 .user-reviews_select {
   position: relative;
 }
-.user-reviews_select select {
-  padding: 10px 22px 8px 12px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  border-radius: 0 4px 4px 0;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  background-color: #ffffff;
-  outline: none;
-}
-.user-reviews_select::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 36px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  border-radius: 4px 0 0 4px;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  background-color: #ffffff;
-  left: -39px;
-  top: 0px;
-  background-image: url('../img/topic-select-icon.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.user-reviews_select::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  right: 16px;
-  top: 17px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .user-reviews_social {
   display: flex;
   justify-content: flex-end;

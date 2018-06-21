@@ -791,18 +791,6 @@
   margin-right: 30px;
   flex-grow: 1;
 }
-.portfolio_form .add-coin-form_name::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  right: 18px;
-  top: 41px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .portfolio_form .add-coin-form_name select {
   max-width: 264px;
   padding: 10px 32px 8px 12px;
@@ -831,9 +819,6 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  border-radius: 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
 }
 .portfolio_form .add-coin-form_amount .count {
   position: absolute;
@@ -888,18 +873,6 @@
   flex-direction: column;
   margin-right: 32px;
 }
-.portfolio_form .add-coin-form_price::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  right: 18px;
-  top: 41px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .portfolio_form .add-coin-form_price-input-wrapper {
   display: flex;
 }
@@ -927,30 +900,14 @@
   text-transform: uppercase;
 }
 .portfolio_form .add-coin-form_price input {
+  margin-right: -1px;
   padding: 12px;
   width: 154px;
   height: 36px;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  border-radius: 4px 0 0 4px;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-}
-.portfolio_form .add-coin-form_price select {
-  margin-left: -1px;
-  padding: 0px 32px 0px 12px;
-  color: #525c6c;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 15px;
-  text-transform: uppercase;
-  border-radius: 0 4px 4px 0;
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
 }
 .portfolio_form .add-coin-form_total {
   display: flex;

@@ -254,35 +254,6 @@
 .sidebar .top-10_header-time-period {
   position: relative;
 }
-.sidebar .top-10_header-time-period select {
-  padding: 4px 24px 3px 11px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  border-radius: 2px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  background-color: #ffffff;
-}
-.sidebar .top-10_header-time-period select:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border: 1px solid #c5d0de;
-  background-color: #ffffff;
-}
-.sidebar .top-10_header-time-period::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  left: 81px;
-  top: 9px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .sidebar .top-10_topics {
   margin-bottom: 18px;
 }

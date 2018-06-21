@@ -107,50 +107,6 @@ h2 {
   font-weight: 700;
   line-height: 24px;
 }
-form ::-webkit-input-placeholder {
-  color: #c5d0de;
-  font-size: 14px;
-}
-form ::-moz-placeholder {
-  color: #c5d0de;
-  font-size: 14px;
-}
-form :-moz-placeholder {
-  color: #c5d0de;
-  font-size: 14px;
-}
-form :-ms-input-placeholder {
-  color: #c5d0de;
-  font-size: 14px;
-}
-select,
-input {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  position: relative;
-  outline: none;
-}
-input,
-select,
-textarea {
-  outline: none;
-}
-input:focus,
-select:focus,
-textarea:focus {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 4px;
-}
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-legend {
-  margin: 0;
-  padding: 0;
-}
 button {
   outline: none;
 }
@@ -224,24 +180,6 @@ b {
   left: 10px;
   top: 10px;
   background-image: url('../img/login-icon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
-.btn--prymary {
-  padding: 12px 20px 12px 54px;
-  background-color: #44af36;
-  color: #fff;
-  box-shadow: 0 2px 0 #35882a;
-}
-.btn--prymary::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 18px;
-  top: 8px;
-  background-image: url('../img/prymary-btn_icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
@@ -524,18 +462,6 @@ b {
   background-color: #ffffff;
   outline: none;
 }
-.paginator_page-list::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  left: 38px;
-  top: 16px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .paginator-wrapper {
   display: flex;
   justify-content: space-between;
@@ -560,18 +486,6 @@ b {
   top: -1px;
   background-image: url('../img/arrow-left-circle.svg');
   background-repeat: no-repeat;
-}
-label.checkbox:hover span::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 21px;
-  background-image: url('../img/checkbox-hover.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 33;
 }
 label.checkbox input[type=checkbox] {
   display: none;
@@ -683,18 +597,6 @@ label.toggle input[type=checkbox]:checked + span::after {
   background-color: #707986;
   opacity: 0.9;
   color: #fff;
-}
-label.radio:hover span::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 21px;
-  background-image: url('../img/radio-hover.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 33;
 }
 label.radio input[type=radio] {
   display: none;

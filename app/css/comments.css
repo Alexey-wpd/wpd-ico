@@ -153,46 +153,6 @@
   margin-left: 64px;
   position: relative;
 }
-.comments-select select {
-  padding: 6px 32px 6px 12px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  border-radius: 0 4px 4px 0;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  background-color: #ffffff;
-  outline: none;
-}
-.comments-select::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 33px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  border-radius: 4px 0 0 4px;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  background-color: #ffffff;
-  left: -39px;
-  top: 0px;
-  background-image: url('../img/topic-select-icon.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.comments-select::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  left: 103px;
-  top: 15px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .comments-list {
   margin-top: 28px;
 }

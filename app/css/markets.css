@@ -156,46 +156,6 @@
 .markets-catalogue_topics-select {
   position: relative;
 }
-.markets-catalogue_topics-select select {
-  padding: 6px 70px 6px 12px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  border-radius: 0 4px 4px 0;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  background-color: #ffffff;
-  outline: none;
-}
-.markets-catalogue_topics-select::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 33px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  border-radius: 4px 0 0 4px;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  background-color: #ffffff;
-  left: -39px;
-  top: 0px;
-  background-image: url('../img/topic-select-icon.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.markets-catalogue_topics-select::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  right: 16px;
-  top: 15px;
-  background-image: url('../img/select-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
-}
 .markets-item {
   margin-bottom: 20px;
 }

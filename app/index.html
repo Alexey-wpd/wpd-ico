@@ -10,6 +10,7 @@
     <title>ICO PAPA</title>
 
     <!-- Bootstrap grid CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -110,17 +111,19 @@
                               <h2>Форум</h2>
                               <form>
                                   <input type="text" placeholder="Сколько будет стоить биткоин" name="search">
-                                  <select size="1" name="name[]">
-                                        <option value=""><a href="#">Поиск по всему форуму</a></option>
-                                        <option value=""><a href="#">Поиск где-либо еще</a></option>
-                                        <option value=""><a href="#">Глянуть в гугле</a></option>
-                                  </select>
+                                  <div class="header-select">
+                                      <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="name[]">
+                                            <option value="">Поиск по всему форуму</option>
+                                            <option value="">Поиск где-либо еще</option>
+                                            <option value="">Глянуть в гугле</option>
+                                      </select>
+                                  </div>
                               </form>
                           </div>
                       </div>
                       <div class="col-3">
-                          <div class="bottom-line-button">
-                              <a href="#" class="btn btn-green btn--prymary">Начать новую тему</a>
+                          <div class="header_bottom-line-button">
+                              <a href="#" class="btn btn-green">Начать новую тему</a>
                           </div>
                       </div>
                   </div>
@@ -523,11 +526,13 @@
                                       <h3>ТОП-10 ТЕМ</h3>
                                   </div>
                                   <div class="top-10_header-time-period">
-                                      <select size="1" name="name[]">
-                                            <option value=""><a href="#">За сегодня</a></option>
-                                            <option value=""><a href="#">Вчера</a></option>
-                                            <option value=""><a href="#">За месяц</a></option>
-                                      </select>
+                                      <div class="select-small">
+                                          <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="name[]">
+                                                <option value="">За сегодня</option>
+                                                <option value="">Вчера</option>
+                                                <option value="">За месяц</option>
+                                          </select>
+                                      </div>
                                   </div>
                               </div>
                               <!-- /.top-10_header -->
@@ -825,6 +830,16 @@
       <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
       <script src="libs/jquery/jquery-1.11.1.min.js"></script>
       <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
       <script src="js/common.js"></script>
+      <script type="text/javascript">
+      // In your Javascript (external .js resource or <script> tag)
+            $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+            $(".js-example-basic-hide-search").select2({
+                minimumResultsForSearch: Infinity
+                });
+            });
+      </script>
   </body>
 </html>

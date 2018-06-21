@@ -10,6 +10,7 @@
     <title>ICO PAPA INNER</title>
 
     <!-- Bootstrap grid CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -110,11 +111,13 @@
                               <h2>Форум</h2>
                               <form>
                                   <input type="text" placeholder="Сколько будет стоить биткоин" name="search">
-                                  <select size="1" name="name[]">
-                                        <option value=""><a href="#">Поиск по этому разделу</a></option>
-                                        <option value=""><a href="#">Поиск где-либо еще</a></option>
-                                        <option value=""><a href="#">Глянуть в гугле</a></option>
-                                  </select>
+                                  <div class="header-select">
+                                      <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="name[]">
+                                            <option value=""><a href="#">Поиск по этому разделу</a></option>
+                                            <option value=""><a href="#">Поиск где-либо еще</a></option>
+                                            <option value=""><a href="#">Глянуть в гугле</a></option>
+                                      </select>
+                                  </div>
                               </form>
                           </div>
                       </div>
@@ -144,11 +147,13 @@
                       <div class="subsection-topics-amount">
                           <span>Темы <b>21–40 </b>из <b>367</b></span>
                           <div class="subsection-topics-select">
-                              <select size="1" name="name[]">
-                                    <option value=""><a href="#">По количеству комментариев</a></option>
-                                    <option value=""><a href="#">По количеству еще чего-нибудь</a></option>
-                                    <option value=""><a href="#">В гугле</a></option>
-                              </select>
+                              <div class="main-select">
+                                  <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="name[]">
+                                        <option value="">По количеству комментариев</option>
+                                        <option value="">По количеству еще чего-нибудь</option>
+                                        <option value="">В гугле</option>
+                                  </select>
+                              </div>
                           </div>
                       </div>
                       <!-- /.inner-forum_topics-select -->
@@ -298,7 +303,7 @@
                           <a href="#">5</a>
                           <a class="next" href="#">Next</a>
                           <div class="paginator_page-list">
-                              <select size="1" name="name[]">
+                              <select class="js-example-basic-single" size="1" name="name[]">
                                     <option value=""><a href="#">16</a></option>
                                     <option value=""><a href="#">19</a></option>
                                     <option value=""><a href="#">18</a></option>
@@ -309,7 +314,7 @@
                   </div>
                   <!-- /.col-9 -->
                   <div class="col-3">
-                      
+
                   </div>
                   <!-- /.col-3 -->
               </div>
@@ -433,6 +438,16 @@
       <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
       <script src="libs/jquery/jquery-1.11.1.min.js"></script>
       <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
       <script src="js/common.js"></script>
+      <script type="text/javascript">
+      // In your Javascript (external .js resource or <script> tag)
+            $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+            $(".js-example-basic-hide-search").select2({
+                minimumResultsForSearch: Infinity
+                });
+            });
+      </script>
   </body>
 </html>

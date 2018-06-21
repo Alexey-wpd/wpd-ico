@@ -10,6 +10,7 @@
     <title>GENEGAL</title>
 
     <!-- Bootstrap grid CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -168,34 +169,42 @@
                               <div class="form-group">
                                   <div class="profile-settings_sex">
                                       <label for="" >Last Name</label>
-                                      <select size="1" name="">
-                                           <option value="">Male</option>
-                                           <option value="">Female</option>
-                                     </select>
+                                      <div class="form-select">
+                                          <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="">
+                                               <option value="">Male</option>
+                                               <option value="">Female</option>
+                                         </select>
+                                      </div>
                                   </div>
                                   <div class="profile-settings_birthday">
                                       <div class="profile-settings_birthday-day">
                                           <label for="" >Birthday</label>
-                                          <select size="1" name="">
-                                               <option value="">12</option>
-                                               <option value="">13</option>
-                                               <option value="">14</option>
-                                               <option value="">15</option>
-                                         </select>
+                                          <div class="form-select">
+                                              <select class="js-example-basic-single" size="1" name="">
+                                                   <option value="">12</option>
+                                                   <option value="">13</option>
+                                                   <option value="">14</option>
+                                                   <option value="">15</option>
+                                             </select>
+                                          </div>
                                       </div>
                                      <div class="profile-settings_birthday-month">
                                          <label for="" >month</label>
-                                         <select size="1" name="">
-                                              <option value="">September</option>
-                                              <option value="">October</option>
-                                        </select>
+                                         <div class="form-select">
+                                             <select class="js-example-basic-single" size="1" name="">
+                                                  <option value="">September</option>
+                                                  <option value="">October</option>
+                                            </select>
+                                         </div>
                                      </div>
                                     <div class="profile-settings_birthday-year">
                                         <label for="" >year</label>
-                                        <select size="1" name="">
-                                             <option value="">1950</option>
-                                             <option value="">1951</option>
-                                       </select>
+                                        <div class="form-select">
+                                            <select class="js-example-basic-single" size="1" name="">
+                                                 <option value="">1950</option>
+                                                 <option value="">1951</option>
+                                           </select>
+                                        </div>
                                     </div>
                                   </div>
                               </div>
@@ -203,28 +212,39 @@
                               <div class="form-group">
                                   <div class="profile-settings_country">
                                       <label for="" >From</label>
-                                      <select size="1" name="">
-                                           <option value="">Russia</option>
-                                           <option value="">Thailand</option>
-                                     </select>
+                                      <div class="form-select">
+                                          <select class="js-example-basic-single" size="1" name="">
+                                               <option value="">Russia</option>
+                                               <option value="">Thailand</option>
+                                         </select>
+                                      </div>
                                   </div>
                                   <div class="profile-settings_city">
                                       <label for="" >city</label>
-                                      <select size="1" name="">
-                                           <option value="">Novocheboksarsk</option>
-                                           <option value="">Kanash</option>
-                                     </select>
+                                      <div class="form-select">
+                                          <select class="js-example-basic-single" size="1" name="">
+                                               <option value="">Novocheboksarsk</option>
+                                               <option value="">Kanash</option>
+                                               <option value="">Kanash</option>
+                                               <option value="">Kanash</option>
+                                               <option value="">Kanash</option>
+                                         </select>
+                                      </div>
                                   </div>
                               </div>
                               <!-- /.form-group -->
                               <div class="profile-settings_status">
-                                  <label for="" >Status</label>
-                                  <span class="symbol-counter">119/200</span>
+                                  <div class="label-wrapper">
+                                      <label for="" >Status</label>
+                                      <span class="symbol-counter">119/200</span>
+                                  </div>
                                   <input type="text" name="price" id="" placeholder="Status lorem ipsum dolor sit amet, adipiscing elit. Sed in ultrices nunc. Nulla…">
                               </div>
                               <div class="profile-settings_about">
-                                  <label for="" >Status</label>
-                                  <span class="symbol-counter">119/200</span>
+                                  <div class="label-wrapper">
+                                      <label for="" >Status</label>
+                                      <span class="symbol-counter">119/200</span>
+                                  </div>
                                   <textarea name="name" rows="8" cols=""></textarea>
                               </div>
                           </div>
@@ -232,10 +252,12 @@
                           <div class="external-links">
                               <div class="external-links-item">
                                   <div class="external-links-item_social">
-                                      <select size="1" name="">
-                                           <option value="">Facebook</option>
-                                           <option value="">Twitter</option>
-                                     </select>
+                                      <div class="form-select">
+                                          <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="">
+                                               <option value="">Facebook</option>
+                                               <option value="">Twitter</option>
+                                         </select>
+                                      </div>
                                   </div>
                                   <div class="external-links-item_link">
                                       <input type="text" name="" id="" placeholder="">
@@ -245,10 +267,12 @@
                               <!-- /.external-links-item -->
                               <div class="external-links-item">
                                   <div class="external-links-item_social">
-                                      <select size="1" name="">
-                                           <option value="">Twitter</option>
-                                           <option value="">Facebook</option>
-                                     </select>
+                                      <div class="form-select">
+                                          <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="">
+                                               <option value="">Twitter</option>
+                                               <option value="">Facebook</option>
+                                         </select>
+                                      </div>
                                   </div>
                                   <div class="external-links-item_link">
                                       <input type="text" name="" id="" placeholder="https://facebook.com/adkl2jjo">
@@ -263,11 +287,13 @@
                               <h2>Other settings</h2>
                               <div class="others-settings_time-zone">
                                   <label for="" >Time Zone</label>
-                                  <select size="1" name="">
-                                       <option value="">(UTC +07:00) Bangkok, Hanoi, Jakarta</option>
-                                       <option value="">(UTC +07:00) Bangkok, Hanoi, Jakarta</option>
-                                       <option value="">(UTC +07:00) Bangkok, Hanoi, Jakarta</option>
-                                 </select>
+                                  <div class="form-select">
+                                      <select class="js-example-basic-single" size="1" name="">
+                                           <option value="">(UTC +07:00) Bangkok, Hanoi, Jakarta</option>
+                                           <option value="">(UTC +07:00) Bangkok, Hanoi, Jakarta</option>
+                                           <option value="">(UTC +07:00) Bangkok, Hanoi, Jakarta</option>
+                                     </select>
+                                  </div>
                               </div>
                           </div>
                           <!-- /.others-settings -->
@@ -400,6 +426,18 @@
       <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
       <script src="libs/jquery/jquery-1.11.1.min.js"></script>
       <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
       <script src="js/common.js"></script>
+      <script type="text/javascript">
+      // In your Javascript (external .js resource or <script> tag)
+            $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+            $(".js-example-basic-hide-search").select2({
+                minimumResultsForSearch: Infinity
+                });
+            });
+
+
+      </script>
   </body>
 </html>

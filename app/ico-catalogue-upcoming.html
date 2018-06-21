@@ -10,6 +10,7 @@
     <title>ICO-CATALOGUI UNPOMING</title>
 
     <!-- Bootstrap grid CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -476,11 +477,13 @@
                                       <li class="ico-catalogue_nav-item"><a href="#">Trading</a></li>
                                   </ul>
                                   <div class="ico-catalogue_select">
-                                      <select size="1" name="name[]">
-                                            <option value=""><a href="#">Overall score</a></option>
-                                            <option value=""><a href="#">Something</a></option>
-                                            <option value=""><a href="#">В гугле</a></option>
-                                      </select>
+                                      <div class="main-select">
+                                          <select class="js-example-basic-single js-example-basic-hide-search" size="1" name="name[]">
+                                                <option value="">Overall score</option>
+                                                <option value="">Something</option>
+                                                <option value="">В гугле</option>
+                                          </select>
+                                      </div>
                                   </div>
                               </div>
                               <!-- /.ico-catalogue_nav -->
@@ -738,7 +741,7 @@
                               <a href="#">5</a>
                               <a class="next" href="#">Next</a>
                               <div class="paginator_page-list">
-                                  <select size="1" name="name[]">
+                                  <select class="js-example-basic-single" size="1" name="name[]">
                                         <option value=""><a href="#">20</a></option>
                                         <option value=""><a href="#">19</a></option>
                                         <option value=""><a href="#">18</a></option>
@@ -871,6 +874,16 @@
       <!--<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
       <script src="libs/jquery/jquery-1.11.1.min.js"></script>
       <script src="libs/bootstrap/bootstrap.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
       <script src="js/common.js"></script>
+      <script type="text/javascript">
+      // In your Javascript (external .js resource or <script> tag)
+            $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+            $(".js-example-basic-hide-search").select2({
+                minimumResultsForSearch: Infinity
+                });
+            });
+      </script>
   </body>
 </html>

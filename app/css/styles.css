@@ -168,9 +168,7 @@ b {
   outline: none;
 }
 .btn--login {
-  padding: 10px 12px 10px 32px;
-  color: #fff;
-  background-color: #44af36;
+  padding: 12px 12px 8px 32px;
 }
 .btn--login::before {
   content: "";
@@ -178,7 +176,7 @@ b {
   width: 12px;
   height: 12px;
   left: 10px;
-  top: 10px;
+  top: 12px;
   background-image: url('../img/login-icon.svg');
   background-position: center;
   background-repeat: no-repeat;

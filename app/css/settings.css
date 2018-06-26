@@ -519,6 +519,7 @@
 .avatar-settings_remove-image {
   display: block;
   margin-bottom: 12px;
+  margin-top: 16px;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -533,15 +534,9 @@
 }
 .avatar-settings input[type="file"] {
   display: none;
-  margin-bottom: 16px;
-  padding: 13px 16px 10px;
-  box-shadow: 0 2px 0 #3b962f;
-  border-radius: 4px;
-  background-color: #45af37;
 }
 .avatar-settings .btn-upload {
   display: inline-block;
-  margin-bottom: 16px;
   padding: 13px 16px 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;

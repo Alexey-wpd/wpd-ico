@@ -334,7 +334,7 @@
                 &_name {
                     font-size: 14px;
                     font-weight: 500;
-                    line-height: 12px;
+                    line-height: 24px;
                     letter-spacing: -0.07px;
                     .user_rating {
                         margin-left: 5px;
@@ -343,7 +343,7 @@
                     }
                 }
                 &_rank {
-                    padding: 2px 4px;
+                    //padding: 2px 4px;
                 }
             }
             .forum-topic {
@@ -450,9 +450,10 @@
         position: relative;
         .user {
             margin-bottom: 0;
-            &_name {
-                margin-bottom: 4px;
-            }
+        }
+        .user_block {
+            display: flex;
+            align-items: flex-end;
         }
         &_item {
             position: relative;
@@ -486,6 +487,9 @@
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 22px;
+                &:hover {
+                    color: @link-hover-color;
+                }
             }
             &-rating {
                 display: flex;

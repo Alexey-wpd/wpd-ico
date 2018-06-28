@@ -12,10 +12,19 @@ select {
     outline: none;
 	&:focus {
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-		border-radius: 4px;
+		outline: none;
+	}
+	&:active {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+		outline: none;
+	}
+	&:visited {
+		outline: none;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
 	}
 }
 .form-select {
+	outline: none;
     .select2-container {
         width: 100% !important;
         width: 100%;
@@ -52,7 +61,7 @@ select {
         position: absolute;
         width: 40px;
         height: 37px;
-        box-shadow: 0 1px 0 #e2e7ee;
+        box-shadow: 0 1px 0 @light-light-grey;
         border-radius: 4px 0 0 4px;
         border: 1px solid @light-light-grey;
         background-color: #ffffff;
@@ -69,22 +78,22 @@ select {
         outline: none;
         outline: none;
         .select2-selection--single {
-            width: 125px;
+            //width: 125px;
             height: 37px;
-            padding: 5px 32px 0px 5px;
+            padding: 5px 0px 0px 4px;
             border: 1px solid @light-light-grey;
             border-radius: 0 4px 4px 0;
-            box-shadow: 0 1px 0 #e2e7ee;
+            box-shadow: 0 1px 0 @light-light-grey;
             &:focus {
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-                border-radius: 4px;
+                outline: none;
             }
             .select2-selection__arrow {
                 height: 36px;
                 right: 12px;
             }
             .select2-selection__rendered {
-                color: @main-text-color;
+                color: @gray;
                 font-family: @main-font;
                 font-size: 14px;
                 font-weight: 400;
@@ -104,12 +113,11 @@ select {
             width: 60px;
 			height: 34px;
             padding: 4px;
-            border: 1px solid rgba(197, 208, 222, 0.5);
+            border: 1px solid @light-light-grey;
             border-radius: 4px;
-			box-shadow: 0 1px 0 #e2e7ee;
+			box-shadow: 0 1px 0 @light-light-grey;
             &:focus {
-                //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-                //border-radius: 4px;
+                outline: none;
             }
             .select2-selection__arrow {
                 height: 34px;
@@ -137,7 +145,7 @@ select {
             border: 1px solid @light-light-grey;
             &:focus {
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-                border-radius: 4px;
+                outline: none;
             }
             .select2-selection__arrow {
                 height: 36px;
@@ -161,11 +169,14 @@ select {
         outline: none;
         outline: none;
         .select2-selection--single {
-            width: 206px;
+            width: 210px;
             height: 40px;
             padding: 6px 1px;
             border: 1px solid @light-light-grey;
             border-radius: 0 4px 4px 0;
+			&:focus {
+                outline: none;
+            }
             .select2-selection__arrow {
                 height: 40px;
                 right: 12px;
@@ -188,12 +199,15 @@ select {
         outline: none;
         outline: none;
         .select2-selection--single {
-            width: 112px;
+            //width: 112px;
             height: 22px;
             padding: 2px 1px;
-            border: 1px solid @light-light-grey;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+			box-shadow: 0 1px 0 #e2e7ee;
+            border: 1px solid rgba(197, 208, 222, 0.5);
             border-radius: 2px;
+			&:focus {
+                outline: none;
+            }
             .select2-selection__arrow {
                 height: 19px;
                 right: 8px;
@@ -224,7 +238,7 @@ select {
 			border-radius: 4px 0 0 4px;
             &:focus {
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-                //border-radius: 4px;
+                outline: none;
             }
             .select2-selection__arrow {
                 height: 36px;
@@ -253,9 +267,9 @@ select {
             height: 35px;
 			width: 57px;
             padding: 8px 12px 12px 3px;
-			box-shadow: 0 1px 0 #c5d0de;
+			box-shadow: 0 1px 0 @light-light-grey;
 			border-radius: 4px;
-			border: 1px solid #c5d0de;
+			border: 1px solid @light-light-grey;
 			background-color: #ffffff;
             .select2-selection__arrow {
                 height: 34px;

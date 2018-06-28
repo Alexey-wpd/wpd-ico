@@ -152,6 +152,7 @@
 .comments-select {
   margin-left: 64px;
   position: relative;
+  width: 125px;
 }
 .comments-list {
   margin-top: 28px;

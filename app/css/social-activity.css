@@ -195,7 +195,7 @@
   margin-left: -1px;
   color: #525c6c;
   background-color: #fff;
-  border: 1px solid #ced8e3;
+  border: 1px solid #44af36;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -214,13 +214,14 @@
   border-bottom: 1px solid #e8edf2;
 }
 .forum-activity-item_name span {
-  padding: 4px 6px 3px;
+  display: inline-block;
+  padding: 0px 6px;
   border: 1px solid #8f96a1;
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 18px;
   text-transform: uppercase;
 }
 .forum-activity-item_name--thread span {
@@ -333,5 +334,4 @@
 }
 .forum-activity-item_edit a:hover {
   color: rgba(69, 175, 55, 0.85);
-  text-decoration-style: solid;
 }

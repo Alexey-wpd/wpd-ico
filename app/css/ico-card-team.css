@@ -107,7 +107,7 @@
 }
 .ico-team_social span {
   margin-left: auto;
-  padding: 3px 6px 2px;
+  padding: 0px 6px;
   border-radius: 2px;
   border: 1px solid #707986;
   background-color: #ffffff;
@@ -115,7 +115,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 17px;
 }
 .ico-team_item {
   margin-bottom: 44px;
@@ -249,7 +249,8 @@
   margin-bottom: 4px;
 }
 .related-ico_item-category span {
-  padding: 3px 5px 2px;
+  display: inline-block;
+  padding: 0px 5px;
   border-radius: 4px;
   border: 1px solid #cbd5e2;
   background-color: #ffffff;
@@ -257,7 +258,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 15px;
 }
 .related-ico_item-discription {
   margin-bottom: 12px;
@@ -272,7 +273,7 @@
   line-height: 16px;
 }
 .related-ico_item-button a {
-  padding: 8px 10px 7px 28px;
+  padding: 8px 10px 6px 28px;
   box-shadow: 0 2px 0 #3b962f;
   border-radius: 4px;
   background-color: #45af37;

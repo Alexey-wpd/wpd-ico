@@ -66,7 +66,18 @@ select {
 }
 select:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 4px;
+  outline: none;
+}
+select:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+  outline: none;
+}
+select:visited {
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+}
+.form-select {
+  outline: none;
 }
 .form-select .select2-container {
   width: 100% !important;
@@ -102,7 +113,7 @@ select:focus {
   position: absolute;
   width: 40px;
   height: 37px;
-  box-shadow: 0 1px 0 #e2e7ee;
+  box-shadow: 0 1px 0 #c5d0de;
   border-radius: 4px 0 0 4px;
   border: 1px solid #c5d0de;
   background-color: #ffffff;
@@ -118,23 +129,22 @@ select:focus {
   outline: none;
 }
 .main-select .select2-container .select2-selection--single {
-  width: 125px;
   height: 37px;
-  padding: 5px 32px 0px 5px;
+  padding: 5px 0px 0px 4px;
   border: 1px solid #c5d0de;
   border-radius: 0 4px 4px 0;
-  box-shadow: 0 1px 0 #e2e7ee;
+  box-shadow: 0 1px 0 #c5d0de;
 }
 .main-select .select2-container .select2-selection--single:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 4px;
+  outline: none;
 }
 .main-select .select2-container .select2-selection--single .select2-selection__arrow {
   height: 36px;
   right: 12px;
 }
 .main-select .select2-container .select2-selection--single .select2-selection__rendered {
-  color: #525c6c;
+  color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -149,9 +159,12 @@ select:focus {
   width: 60px;
   height: 34px;
   padding: 4px;
-  border: 1px solid rgba(197, 208, 222, 0.5);
+  border: 1px solid #c5d0de;
   border-radius: 4px;
-  box-shadow: 0 1px 0 #e2e7ee;
+  box-shadow: 0 1px 0 #c5d0de;
+}
+.paginator .select2-container .select2-selection--single:focus {
+  outline: none;
 }
 .paginator .select2-container .select2-selection--single .select2-selection__arrow {
   height: 34px;
@@ -176,7 +189,7 @@ select:focus {
 }
 .cabinet-form-select .select2-container .select2-selection--single:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 4px;
+  outline: none;
 }
 .cabinet-form-select .select2-container .select2-selection--single .select2-selection__arrow {
   height: 36px;
@@ -196,11 +209,14 @@ select:focus {
   outline: none;
 }
 .header-select .select2-container .select2-selection--single {
-  width: 206px;
+  width: 210px;
   height: 40px;
   padding: 6px 1px;
   border: 1px solid #c5d0de;
   border-radius: 0 4px 4px 0;
+}
+.header-select .select2-container .select2-selection--single:focus {
+  outline: none;
 }
 .header-select .select2-container .select2-selection--single .select2-selection__arrow {
   height: 40px;
@@ -219,12 +235,14 @@ select:focus {
   outline: none;
 }
 .select-small .select2-container .select2-selection--single {
-  width: 112px;
   height: 22px;
   padding: 2px 1px;
-  border: 1px solid #c5d0de;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 0 #e2e7ee;
+  border: 1px solid rgba(197, 208, 222, 0.5);
   border-radius: 2px;
+}
+.select-small .select2-container .select2-selection--single:focus {
+  outline: none;
 }
 .select-small .select2-container .select2-selection--single .select2-selection__arrow {
   height: 19px;
@@ -254,6 +272,7 @@ select:focus {
 }
 .catalogue-form-select .select2-container .select2-selection--single:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+  outline: none;
 }
 .catalogue-form-select .select2-container .select2-selection--single .select2-selection__arrow {
   height: 36px;

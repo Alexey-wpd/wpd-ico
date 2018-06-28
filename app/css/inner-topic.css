@@ -89,9 +89,6 @@
   color: #44af36;
   font-family: 'Roboto', sans-serif;
 }
-.topic_top-line .user_block .user_rank {
-  padding: 2px 4px;
-}
 .topic_topic-info {
   display: flex;
   justify-content: space-between;

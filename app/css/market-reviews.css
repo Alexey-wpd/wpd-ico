@@ -81,6 +81,7 @@
 }
 .user-reviews_select {
   position: relative;
+  width: 110px;
 }
 .user-reviews_social {
   display: flex;

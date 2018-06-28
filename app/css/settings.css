@@ -63,7 +63,8 @@
 .profile-settings h2,
 .external-links h2,
 .other-settings h2,
-.avatar-settings h2 {
+.avatar-settings h2,
+.other-notif h2 {
   margin-top: 32px;
   margin-bottom: 18px;
   color: #333f52;
@@ -82,7 +83,8 @@
 .profile-settings label,
 .external-links label,
 .other-settings label,
-.avatar-settings label {
+.avatar-settings label,
+.other-notif label {
   color: #525c6c;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -100,6 +102,7 @@
 .external-links input,
 .other-settings input,
 .avatar-settings input,
+.other-notif input,
 .settings-topline textarea,
 .ico-notif textarea,
 .social-notif textarea,
@@ -110,7 +113,8 @@
 .profile-settings textarea,
 .external-links textarea,
 .other-settings textarea,
-.avatar-settings textarea {
+.avatar-settings textarea,
+.other-notif textarea {
   width: 100%;
   padding: 12px 12px 11px;
   padding: 12px 20px 11px 12px;
@@ -128,7 +132,8 @@
 .profile-settings textarea,
 .external-links textarea,
 .other-settings textarea,
-.avatar-settings textarea {
+.avatar-settings textarea,
+.other-notif textarea {
   padding: 14px 20px 12px 12px;
 }
 .settings-topline {

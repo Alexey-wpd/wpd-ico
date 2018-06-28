@@ -113,6 +113,12 @@ button {
 button:active {
   outline: none;
 }
+button:focus {
+  outline: none;
+}
+button:visited {
+  outline: none;
+}
 table {
   table-layout: auto;
 }
@@ -166,6 +172,15 @@ b {
 }
 .btn:active {
   outline: none;
+  box-shadow: none;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn:visited {
+  outline: none;
+  box-shadow: none;
 }
 .btn--login {
   padding: 12px 12px 8px 32px;
@@ -194,6 +209,11 @@ b {
 }
 .btn-green:active {
   background-color: #3b962f;
+  box-shadow: 0 2px 0 #3b962f;
+}
+.btn-green:focus {
+  outline: none;
+  box-shadow: 0 2px 0 #3b962f;
 }
 .btn-white {
   border-radius: 4px;
@@ -207,7 +227,7 @@ b {
 .btn-blue {
   background-color: #1991eb;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 #1175c0;
+  box-shadow: 0 2px 0 #1175c0;
   color: #fff;
 }
 .btn-blue:hover {
@@ -215,6 +235,11 @@ b {
 }
 .btn-blue:active {
   background-color: #1876bd;
+  box-shadow: 0 2px 0 #1175c0;
+}
+.btn-blue:focus {
+  outline: none;
+  box-shadow: 0 2px 0 #1175c0;
 }
 .btn-grey {
   box-shadow: 0 2px 0 #707986;
@@ -257,8 +282,8 @@ b {
   width: 100%;
 }
 .user_icon--small {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border: 1px solid #44af36;
   position: relative;
 }
@@ -316,25 +341,25 @@ b {
 .user_rank {
   display: inline-block;
   align-self: flex-start;
-  padding: 3px 6px;
+  padding: 0px 6px;
   background-color: #fff;
   color: #707986;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 400;
-  line-height: 11px;
+  line-height: 15px;
   border: 1px solid #707986;
   border-radius: 2px;
 }
 .user_rank--boss {
   color: #fff;
   background-color: #1991eb;
-  border: none;
+  border: 1px solid #1991eb;
 }
 .user_rank--team {
   color: #fff;
   background-color: #44af36;
-  border: none;
+  border: 1px solid #44af36;
 }
 .user_icon-set {
   margin-right: 74px;
@@ -408,9 +433,9 @@ b {
   font-size: 14px;
   font-weight: 400;
   line-height: 34px;
-  border-top: 1px solid rgba(197, 208, 222, 0.5);
-  border-bottom: 1px solid rgba(197, 208, 222, 0.5);
-  box-shadow: 0 1px 0 #e2e7ee;
+  border-top: 1px solid #c5d0de;
+  border-bottom: 1px solid #c5d0de;
+  box-shadow: 0 1px 0 #c5d0de;
 }
 .paginator a:hover {
   text-decoration: none;
@@ -422,7 +447,7 @@ b {
 }
 .paginator .first {
   border-radius: 4px 0 0 4px;
-  border-left: 1px solid rgba(197, 208, 222, 0.5);
+  border-left: 1px solid #c5d0de;
 }
 .paginator .current {
   background-color: #c5d0de;
@@ -438,27 +463,12 @@ b {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 0 4px 4px 0;
-  border-right: 1px solid rgba(197, 208, 222, 0.5);
-  border-left: 1px solid rgba(197, 208, 222, 0.5);
+  border-right: 1px solid #c5d0de;
+  border-left: 1px solid #c5d0de;
 }
 .paginator_page-list {
   position: relative;
   margin-left: 20px;
-}
-.paginator_page-list select {
-  padding: 0 12px;
-  width: 60px;
-  height: 34px;
-  color: #707986;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 34px;
-  border: 1px solid rgba(197, 208, 222, 0.5);
-  border-radius: 4px;
-  box-shadow: 0 1px 0 #e2e7ee;
-  background-color: #ffffff;
-  outline: none;
 }
 .paginator-wrapper {
   display: flex;
@@ -584,6 +594,8 @@ label.toggle input[type=checkbox]:checked + span::after {
   background-color: #44af36;
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-right-color: #ced8e3;
+  border-left-color: #ced8e3;
 }
 .profile-usersrating_filter label input[type=checkbox]:checked + b {
   background-color: #8f96a1;

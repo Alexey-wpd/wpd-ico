@@ -88,6 +88,7 @@
 }
 .subsection-topics-select {
   position: relative;
+  width: 250px;
 }
 .subsection-content-item {
   padding: 18px 28px 18px 16px;
@@ -110,16 +111,13 @@
 .subsection-content-item .user_name {
   font-size: 14px;
   font-weight: 500;
-  line-height: 12px;
+  line-height: 24px;
   letter-spacing: -0.07px;
 }
 .subsection-content-item .user_name .user_rating {
   margin-left: 5px;
   font-size: 10px;
   font-weight: 500;
-}
-.subsection-content-item .user_rank {
-  padding: 2px 4px;
 }
 .subsection-content-item .forum-topic_title a {
   color: #1991eb;

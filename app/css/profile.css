@@ -104,7 +104,7 @@
   top: -7px;
   margin-left: 4px;
   margin-top: -22px;
-  padding: 1px 5px 1px 5px;
+  padding: 0px 4px 0px 3px;
   border-radius: 8px;
   background-color: #8f96a1;
   color: #ffffff;
@@ -157,7 +157,8 @@
   margin-bottom: 15px;
 }
 .profile-user_status span {
-  padding: 4px 8px;
+  display: inline-block;
+  padding: 0px 8px;
   border-radius: 2px;
   border: 1px solid #707986;
   background-color: #ffffff;
@@ -166,7 +167,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 18px;
 }
 .profile-user_name {
   margin-bottom: 10px;

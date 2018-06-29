@@ -37,7 +37,7 @@
             display: block;
             padding: 10px 20px 9px;
             margin-left: -1px;
-            color: @main-text-color;
+            color: @accent-color;
             background-color: #fff;
             border: 1px solid @accent-color;
             font-family: @main-font;
@@ -153,11 +153,29 @@
         }
     }
     &_ratings {
-        //flex-grow: 2;
-        //display: flex;
-        //justify-content: space-between;
-        //align-items: center;
-        //padding-left: 40px;
+        .rating_tag {
+            display: inline-block;
+            position: relative;
+            background-color: @accent-color;
+            &::before {
+                content: "";
+                position: absolute;
+                border: 10px solid transparent;
+                border-left: 7px solid @accent-color;
+                top: 0px;
+                left: 33px;
+            }
+            span {
+                display: inline-block;
+                padding: 1px 5px 0 8px;
+                white-space: nowrap;
+                color: #fff;
+                font-family: @main-font;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+            }
+        }
     }
     &_comments {
         display: inline-block;
@@ -192,30 +210,5 @@
             color: @purple;
         }
     }
-    .rating_tag {
-        //margin-right: 16px;
-        position: relative;
-        display: flex;
-        width: 40px;
-        height: 20px;
-        background-color: #44af36;
-        &::before {
-            content: "";
-            display: inline-block;
-            position: relative;
-            border: 10px solid #fafbfc;
-            border-left-width: 0px;
-            border-right-width: 10px;
-            border-right-color: transparent;
-        }
-        span {
-            margin: auto;
-            white-space: nowrap;
-            color: #fff;
-            font-family: @main-font;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 21px;
-        }
-    }
+
 }

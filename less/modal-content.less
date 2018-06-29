@@ -104,13 +104,34 @@
                 z-index: 11;
             }
             .password-strength {
-                display: inline-block;
+                display: flex;
+                justify-content: space-between;
                 margin-bottom: 18px;
-                color: @light-grey;
-                font-family: @main-font;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 12px;
+                &-indicator {
+                    display: flex;
+                    &_item {
+                        margin-right: 1px;
+                        width: 27px;
+                        height: 4px;
+                        background-color: #c5d0de;
+                        &--red {
+                            background-color: @red;
+                        }
+                        &--orange {
+                            background-color: @orange;
+                        }
+                        &--green {
+                            background-color: @accent-color;
+                        }
+                    }
+                }
+                p {
+                    color: @light-grey;
+                    font-family: @main-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12px;
+                }
             }
             .btn-sign-up {
                 padding: 13px 16px 11px 16px;

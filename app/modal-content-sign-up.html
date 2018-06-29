@@ -117,7 +117,16 @@
                               <form action="#" class="sign-up-form">
                                   <input class="sign-up-form_user" type="email" name="email" value="" placeholder="E-mail">
                                   <input class="sign-up-form_password" type="password" name="password" placeholder="Password">
-                                  <span class="password-strength">Password strength</span>
+                                  <div class="password-strength">
+                                      <p class="password-strength">Password strength</p>
+                                      <div class="password-strength-indicator">
+                                          <span class="password-strength-indicator_item password-strength-indicator_item--red"></span>
+                                          <span class="password-strength-indicator_item password-strength-indicator_item--orange"></span>
+                                          <span class="password-strength-indicator_item password-strength-indicator_item--orange"></span>
+                                          <span class="password-strength-indicator_item password-strength-indicator_item--green"></span>
+                                          <span class="password-strength-indicator_item password-strength-indicator_item--green"></span>
+                                      </div>
+                                  </div>
                                   <div class="sign-up-form_button">
                                       <button class="btn btn-green btn-sign-up" type="submit" name="button">Sign Up</button>
                                   </div>

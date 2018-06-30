@@ -42,29 +42,45 @@ h2 {
 .btn {
   position: relative;
   display: inline-block;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: auto;
+  max-width: 305px;
+  width: 100%;
+  text-align: center;
   color: #ffffff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
+  letter-spacing: -0.12px;
+  line-height: 56px;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   outline: none;
   cursor: pointer;
 }
 .btn-red {
   background-color: #f05644;
+  box-shadow: 0 4px 0 0 #bf483b;
 }
-.btn-blue {
-  padding: 26px 44px 24px;
-  background-color: #1e88e5;
-}
-.btn-pink {
+.btn-red:hover {
   background-color: #ff8a65;
 }
-.btn-crowd {
-  padding: 26px 82px 24px;
+.btn-blue {
+  background-color: #1e88e5;
+  box-shadow: 0 4px 0 0 #1b68ac;
+}
+.btn-blue:hover {
+  background-color: #42a5f5;
+}
+.btn-pink {
+  background-color: #f05644;
+  box-shadow: 0 4px 0 0 #bf483b;
+}
+.btn-pink:hover {
+  background-color: #ff8a65;
 }
 .btn-crowd::before {
   content: "";
@@ -89,6 +105,9 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
+}
+.btn-get-vip:hover {
+  background-color: #42a5f5;
 }
 .content-wrapper {
   background-image: url('../img/pattern.svg');
@@ -121,7 +140,7 @@ h2 {
   letter-spacing: 0.5px;
 }
 .advantages-list_item:nth-child(even) {
-  padding-left: 112px;
+  padding-left: 100px;
   padding-right: 0px;
 }
 .advantages-list_item:nth-child(odd) {
@@ -131,30 +150,31 @@ h2 {
 .advantages-list_item::before {
   content: "";
   position: absolute;
-  top: -11px;
-  left: -17px;
-  width: 112px;
-  height: 92px;
-  background-image: url('../img/advantages-sprite.png');
+  top: -23px;
+  left: -11px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../img/advantages-sprite.svg');
+  background-position: center;
   background-repeat: no-repeat;
 }
 .advantages-list_item--icon1::before {
-  background-position: -297px -313px;
+  background-position: 95% 47%;
 }
 .advantages-list_item--icon2::before {
-  background-position: -516px -93px;
+  background-position: 9% 7%;
 }
 .advantages-list_item--icon3::before {
-  background-position: -37px -520px;
+  background-position: 50% 3%;
 }
 .advantages-list_item--icon4::before {
-  background-position: -118px -415px;
+  background-position: 1% 47%;
 }
 .advantages-list_item--icon5::before {
-  background-position: -375px -192px;
+  background-position: 92% 2%;
 }
 .advantages-list_item--icon6::before {
-  background-position: -537px -5px;
+  background-position: 3% 91%;
 }
 .advantages-button {
   margin-bottom: 48px;
@@ -215,54 +235,54 @@ h2 {
 .benefits-list_item::before {
   content: "";
   position: absolute;
-  top: -11px;
+  top: -15px;
   left: -27px;
   width: 46px;
-  height: 46px;
-  background-image: url('../img/benefits-sprite.png');
+  height: 48px;
+  background-image: url('../img/benefits-sprite.svg');
   background-repeat: no-repeat;
 }
 .benefits-list_item--icon1::before {
-  background-position: -10px -63px;
+  background-position: 28% 4%;
 }
 .benefits-list_item--icon2::before {
-  background-position: -10px -536px;
+  background-position: 4% 64%;
 }
 .benefits-list_item--icon3::before {
-  background-position: -10px -233px;
+  background-position: 26% 64%;
 }
 .benefits-list_item--icon4::before {
-  background-position: -10px -666px;
+  background-position: 5% 6%;
 }
 .benefits-list_item--icon5::before {
-  background-position: -10px -601px;
+  background-position: 72% 6%;
 }
 .benefits-list_item--icon6::before {
-  background-position: -10px -473px;
+  background-position: 95% 6%;
 }
 .benefits-list_item--icon7::before {
-  background-position: -10px -411px;
+  background-position: 95% 35%;
 }
 .benefits-list_item--icon8::before {
-  background-position: -10px -10px;
+  background-position: 72% 35%;
 }
 .benefits-list_item--icon9::before {
-  background-position: -10px -176px;
+  background-position: 4% 94%;
 }
 .benefits-list_item--icon10::before {
-  background-position: -10px -119px;
+  background-position: 47% 64%;
 }
 .benefits-list_item--icon11::before {
-  background-position: -10px -350px;
+  background-position: 5% 35%;
 }
 .benefits-list_item--icon12::before {
-  background-position: -10px -350px;
+  background-position: 50% 6%;
 }
 .benefits-button {
   margin-bottom: 38px;
 }
 .benefits-button a {
-  padding: 26px 87px 24px 38px;
+  margin-left: 42px;
 }
 .registration-step-1-image-wrapper {
   padding: 48px 38px 340px;
@@ -306,7 +326,6 @@ h2 {
 }
 .registration-step-1-button a {
   margin-bottom: 20px;
-  padding: 26px 104px 24px 60px;
 }
 .registration-step-1-button p {
   display: inline-block;
@@ -422,17 +441,20 @@ h2 {
 }
 .registration-step-2 .registration-form form .form-group button {
   float: right;
-  padding: 25px 46px 23px;
 }
 .registration-step-2 .registration-form form .check-id {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #2b87c5;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.12px;
+}
+.registration-step-2 .registration-form form .check-id:hover {
+  text-decoration: underline;
+  color: #4b9fd8;
 }
 .registration-step-2-image-wrapper {
   padding: 94px 38px 380px 82px;

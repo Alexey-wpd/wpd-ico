@@ -34,37 +34,40 @@
                     height: 15px;
                     left: 22px;
                     top: 2px;
-                    //background-image: url("../img/rating_icon.svg");
-                    background-position: center;
                     background-repeat: no-repeat;
                     z-index: 11;
                 }
                 &--icon-my-rating {
                     &::after {
-                        background-image: @img-my-rating_icon;
+                        background-image: @img-sidebar-profile-sprite;
+                        background-position: 9% 15%;
                     }
                 }
                 &--icon-my-message {
                     &::after {
                         top: 1px;
-                        background-image: @img-my-message-icon;
+                        background-image: @img-sidebar-profile-sprite;
+                        background-position: 93% 8%;
                     }
                 }
                 &--icon-my-topic {
                     &::after {
                         top: 4px;
-                        background-image: @img-my-topics-icon;
+                        background-image: @img-sidebar-profile-sprite;
+                        background-position: 48% 84%;
                     }
                 }
                 &--icon-my-favourites {
                     &::after {
-                        background-image: @img-my-favourites-icon;
+                        background-image: @img-sidebar-profile-sprite;
+                        background-position: 51% 12%;
                     }
                 }
                 &--icon-my-settings {
                     &::after {
                         top: 0px;
-                        background-image: @img-my-settings-icon;
+                        background-image: @img-sidebar-profile-sprite;
+                        background-position: 7% 87%;
                     }
                 }
                 .profile-item_name {

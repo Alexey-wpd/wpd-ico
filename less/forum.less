@@ -181,22 +181,12 @@
             width: 16px;
             height: 16px;
             position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                left: 0px;
-                top: 0px;
-                background-image: @img-star;
-                background-position: center;
-                background-repeat: no-repeat;
-                z-index: 11;
-            }
+            background-image: @img-stars-sprite;
+            background-position: 14% 45%;
+            background-repeat: no-repeat;
+            z-index: 11;
             &--active {
-                &::before {
-                    background-image: @img-star-active;
-                }
+                background-position: 86% 50%;
             }
         }
         &_numbers {

@@ -1,0 +1,172 @@
+@import "vars";
+
+//===================checkboks=======================
+label.checkbox {
+	input[type=checkbox] {
+		display: none;
+		position: relative;
+		top: 2px;
+	}
+	span {
+		position: relative;
+		display: block;
+		padding-left: 22px;
+		white-space: wrap;
+		color: @dark;
+		font-family: @main-font;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19px;
+		&::before {
+			content: '';
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 16px;
+		    height: 21px;
+		    background-image: @img-checkbox-radio-sprite;
+		    background-repeat: no-repeat;
+		    background-position: 9% 53%;
+		    z-index: 33;
+		}
+	}
+}
+label.checkbox input[type=checkbox]:checked + span::after {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: @img-checkbox-radio-sprite;
+    background-repeat: no-repeat;
+    background-position:74% 47%;
+    z-index: 33;
+}
+label.checkbox input[type=checkbox]:checked + .white-list::after {
+    background-image: @img-pink-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .KYC::after {
+    background-image: @img-blue-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .pre-ico::after {
+    background-image: @img-orange-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .start-ico::after {
+    //background-image: @img-checkbox;
+}
+label.checkbox input[type=checkbox]:checked + .ending-ico::after {
+    background-image: @img-purple-checkbox;
+}
+
+
+label.toggle {
+	margin-bottom: 0;
+	input[type=checkbox] {
+		display: none;
+		position: relative;
+		top: 2px;
+	}
+	span {
+		position: relative;
+		display: inline-block;
+		width: 48px;
+		height: 20px;
+		&::before {
+			content: '';
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 48px;
+		    height: 20px;
+            background-image: @img-checkbox-radio-sprite;
+		    background-repeat: no-repeat;
+		    background-position: 94% 7%;
+		    z-index: 33;
+		}
+	}
+}
+label.toggle input[type=checkbox]:checked + span::after {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 48px;
+	height: 20px;
+    background-image: @img-checkbox-radio-sprite;
+    background-repeat: no-repeat;
+    background-position: 7% 7%;
+    z-index: 33;
+}
+
+.portfolio-view_filter label input[type=checkbox]:checked+b,
+.profile-activity-filter label input[type=checkbox]:checked+b,
+.forum-activity-filter label input[type=checkbox]:checked+b {
+	background-color: @accent-color;
+    color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+	border-right-color: @super-light-grey;
+	border-left-color: @super-light-grey;
+}
+.profile-usersrating_filter label input[type=checkbox]:checked+b {
+	background-color: @light-grey;
+    color: #fff;
+	font-weight: 500;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profile-portfolio-chart_periods label input[type=radio]:checked+b {
+	background-color: @gray;
+	opacity: 0.9;
+    color: #fff;
+}
+
+//============================radio-buttons========================//
+label.radio {
+	input[type=radio] {
+		display: none;
+		position: relative;
+		top: 2px;
+	}
+	span {
+		position: relative;
+		display: block;
+		padding-left: 22px;
+		white-space: wrap;
+		color: @dark;
+		font-family: @main-font;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19px;
+		&::before {
+			content: '';
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 16px;
+		    height: 21px;
+            background-image: @img-checkbox-radio-sprite;
+            background-repeat: no-repeat;
+            background-position: 44% 53%;
+		    z-index: 33;
+		}
+	}
+}
+label.radio input[type=radio]:checked + span::after {
+	content: '';
+    position: absolute;
+    top:-1px;
+    left:-1px;
+    width: 17px;
+    height: 17px;
+    background-image: @img-checkbox-radio-sprite;
+    background-repeat: no-repeat;
+    background-position: 4% 93%;
+    z-index: 33;
+}
+
+.radio-buttons label input[type=radio]:checked+b {
+	background: @accent-color;
+    color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}

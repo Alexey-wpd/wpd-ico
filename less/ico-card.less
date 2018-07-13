@@ -146,25 +146,36 @@
                 height: 24px;
                 border-radius: 24px;
                 background-color: @light-grey;
+                background-image: @img-ico-socials;
                 background-position: center;
                 background-repeat: no-repeat;
                 &--fb {
-                    background-image: @img-f-icon;
+                    //background-color: #345c94;
+                    background-position: 78% 24%;
                 }
                 &--tw {
-                    background-image: @img-tw-icon;
+                    //background-color: #00b0e9;
+                    background-position: 100% -1%;
                 }
                 &--google {
-                    background-image: @img-G-icon;
+                    //background-color: #e34346;
+                    background-position: 22% -1%;
                 }
                 &--in {
-                    background-image: @img-in-icon;
+                    //background-color: #0086ba;
+                    background-position: 20% 99%;
                 }
                 &--vk {
-                    background-image: @img-wk-icon;
+                    //background-color: #4c75a3;
+                    background-position: 43% 21%;
+                }
+                &--yb {
+                    //background-color: #ce1312;
+                    background-position: -2px 3%;
                 }
                 &--m {
-                    background-image: @img-m-icon;
+                    //background-color: #00ac68;
+                    background-position: -54px 52%;
                 }
             }
         }
@@ -323,42 +334,58 @@
             }
             td {
                 padding-bottom: 10px;
-                color: #ffffff;
-                font-family: @main-font;
-                font-size: 20px;
-                font-weight: 500;
-                line-height: 20px;
-                letter-spacing: -0.5px;
                 border-bottom: 1px solid rgba(206, 216, 227, 0.5);
                 &:first-child {
                     border-bottom: none;
                 }
                 &:last-child {
                     text-align: center;
+                }
+                span {
+                    color: #ffffff;
+                    font-family: @main-font;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: -0.5px;
+                    small {
+
+                    }
+                    sup {
+                        color: #ffffff;
+                        font-family: @main-font;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        letter-spacing: -0.5px;
+                    }
+                }
+                span.roi-24h {
+                    position: relative;
                     color: #ffffff;
                     font-family: @main-font;
                     font-size: 24px;
                     font-weight: 700;
                     line-height: 20px;
                     letter-spacing: -1px;
-                    span {
-                        position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 11px;
+                        height: 8px;
+                        left: -18px;
+                        top: 12px;
+                        background-image: @img-triengle-sprite;
+                        background-position: 15% 52%;
+                        background-repeat: no-repeat;
+                        z-index: 11;
+                    }
+                    &--negative {
+                        //color: @red;
                         &::before {
-                            content: "";
-                			position: absolute;
-                			width: 11px;
-                			height: 8px;
-                			left: -17px;
-                			top: 12px;
-                			background-image: @img-triengle-red;
-                			background-position: center;
-                			background-repeat: no-repeat;
-                			z-index: 11;
+                            background-position: 84% 52%;
                         }
                     }
-                }
-                sup {
-                    font-size: 14px;
                 }
             }
         }
@@ -633,6 +660,9 @@
                 &:last-child {
                     padding: 12px 16px 10px;
                     border-radius: 0 4px 4px 0;
+                    &::before {
+                        background-image: none;
+                    }
                 }
                 &::before {
                     content: "";
@@ -641,31 +671,32 @@
         			height: 18px;
         			left: 16px;
         			top: 10px;
-        			background-position: center;
+                    background-image: @img-ico-market-card-buttons;
+        			//background-position: center;
         			background-repeat: no-repeat;
         			z-index: 11;
                 }
             }
             &-whitepaper {
                 &::before {
-                    background-image: @img-whitelist;
+                    background-position: 75% 86%;
                 }
             }
             &-goforum {
                 &::before {
-                    background-image: @img-discuss-icon-white;
+                    background-position: 12% 11%;
                 }
             }
             &-portfolio {
                 &::before {
                     top: 8px;
-                    background-image: @img-portfolio;
+                    background-position: 88% 11%;
                 }
             }
             &-review {
                 &::before {
                     top: 8px;
-                    background-image: @img-to-rate-icon-white;
+                    background-position: 9% 86%;
                 }
             }
         }
@@ -751,8 +782,8 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background-image: @img-portfolio;
-                background-position: center;
+                background-image: @img-ico-market-card-buttons;
+                background-position: 88% 11%;
                 background-repeat: no-repeat;
                 z-index: 11;
             }

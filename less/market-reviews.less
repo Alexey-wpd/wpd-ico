@@ -41,7 +41,8 @@
             width: 24px;
             height: 24px;
             border-radius: 2px;
-            background-position: center;
+            background-image: @img-ico-socials;
+            //background-position: center;
             background-repeat: no-repeat;
             &:first-child {
                 margin-right: 24px;
@@ -57,23 +58,23 @@
             }
             &--fb {
                 background-color: #345c94;
-                background-image: @img-f-icon;
+                background-position: 78% 24%;
             }
             &--tw {
                 background-color: #00b0e9;
-                background-image: @img-tw-icon;
+                background-position: 100% -1%;
             }
             &--google {
-                background-color: #e34245;
-                background-image: @img-G-icon;
+                background-color: #e34346;
+                background-position: 22% -1%;
             }
             &--in {
                 background-color: #0086ba;
-                background-image: @img-in-icon;
+                background-position: 20% 99%;
             }
             &--vk {
                 background-color: #4c75a3;
-                background-image: @img-wk-icon;
+                background-position: 43% 21%;
             }
         }
     }
@@ -184,42 +185,26 @@
                 position: relative;
                 margin-left: 4px;
                 cursor: pointer;
-                &::before {
-                    content: "";
-        			position: absolute;
-                    left: -15px;
-                    top: -6px;
-                    width: 13px;
-                    height: 11px;
-                    background-image: @img-thumbs-up;
-                    background-position: center;
-            		background-repeat: no-repeat;
-                }
+                width: 13px;
+                height: 11px;
+                background-image: @img-thumbs-sprite;
+                background-position: 92% 14%;
+                background-repeat: no-repeat;
                 &--active {
-                    &::before {
-                        background-image: @img-thumbs-up-green-review;
-                    }
+                    background-position: 92% 76%;
                 }
             }
             .thumbs-down {
                 position: relative;
                 margin-left: 4px;
                 cursor: pointer;
-                &::before {
-                    content: "";
-        			position: absolute;
-                    left: 3px;
-                    top: -4px;
-                    width: 13px;
-                    height: 11px;
-                    background-image: @img-thumbs-down;
-                    background-position: center;
-            		background-repeat: no-repeat;
-                }
+                width: 13px;
+                height: 15px;
+                background-image: @img-thumbs-sprite;
+                background-position: 8% 85%;
+                background-repeat: no-repeat;
                 &--active {
-                    &::before {
-                        background-image: @img-thumbs-down-red-review;
-                    }
+                    background-position: 46% 85%;
                 }
             }
         }

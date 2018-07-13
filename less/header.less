@@ -235,10 +235,10 @@
     }           //----------MAIN-PAGE--------------//
     &_slider {
         &--show {
-            display: block;
+            //display: block;
         }
         &--close {
-            display: none;
+            //display: block;
         }
         &-collapse-icon {
             position: absolute;
@@ -256,7 +256,7 @@
                 cursor: pointer;
             }
         }
-        display: none;
+        //display: none;
         box-shadow: 0 0 30px 0 rgba(0,0,0,0.10);
         background-image: radial-gradient(72% 51%, #C86DD7 0%, #3023AE 89%);
         &-item {
@@ -318,10 +318,10 @@
     }
     &_collapse {
             &--close {
-                display: none;
+                //display: none;
             }
             &--show {
-                display: block;
+                //display: block;
             }
             background-image: radial-gradient(27% -160%, #3BB54F 100%, #268B87 100%);
             h2 {
@@ -409,44 +409,45 @@
                     position: absolute;
                     top: 16px;
                     left: 16px;
-                    width: 25px;
+                    width: 28px;
                     height: 25px;
+                    background-image: @img-cabinet-nav-sprite;
                     background-repeat: no-repeat;
-                    background-position: center;
+                    //background-position: center;
                 }
             }
             &--calendar {
                 a {
                     &::before {
-                        background-image: @img-calendar;
+                        background-position: 3% 5%;
                     }
                 }
             }
             &--cases {
                 a {
                     &::before {
-                        background-image: @img-cases;
+                        background-position: 3% 50%;
                     }
                 }
             }
             &--investment {
                 a {
                     &::before {
-                        background-image: @img-investment;
+                        background-position: 47% 5%;
                     }
                 }
             }
             &--statistic {
                 a {
                     &::before {
-                        background-image: @img-statistic;
+                        background-position: 3% 93%;
                     }
                 }
             }
             &--marked-ico {
                 a {
                     &::before {
-                        background-image: @img-marked-ico;
+                        background-position: 92% 8%;
                     }
                 }
             }

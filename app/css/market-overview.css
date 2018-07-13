@@ -135,26 +135,29 @@
   height: 24px;
   border-radius: 24px;
   background-color: #8f96a1;
-  background-position: center;
+  background-image: url('../img/ico-socials.svg');
   background-repeat: no-repeat;
 }
 .market-topline .market-card_social-item--fb {
-  background-image: url('../img/f-icon.svg');
+  background-position: 78% 24%;
 }
 .market-topline .market-card_social-item--tw {
-  background-image: url('../img/tw-icon.svg');
+  background-position: 100% -1%;
 }
 .market-topline .market-card_social-item--google {
-  background-image: url('../img/G+-icon.svg');
+  background-position: 22% -1%;
 }
 .market-topline .market-card_social-item--in {
-  background-image: url('../img/in-icon.svg');
+  background-position: 20% 99%;
 }
 .market-topline .market-card_social-item--vk {
-  background-image: url('../img/wk-icon.svg');
+  background-position: 43% 21%;
+}
+.market-topline .market-card_social-item--yb {
+  background-position: -2px 3%;
 }
 .market-topline .market-card_social-item--m {
-  background-image: url('../img/m-icon.svg');
+  background-position: -54px 52%;
 }
 .market-topline .market-data {
   display: flex;
@@ -391,51 +394,50 @@
   background-repeat: no-repeat;
 }
 .market-bottom-line .market-brief-info_buttons a {
+  position: relative;
+  padding: 12px 16px 10px 44px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.15px;
 }
-.market-bottom-line .market-brief-info_buttons-discuss {
-  position: relative;
-  padding: 12px 16px 10px 44px;
-  border-radius: 4px 0 0 4px;
-}
-.market-bottom-line .market-brief-info_buttons-discuss::before {
+.market-bottom-line .market-brief-info_buttons a::before {
   content: "";
   position: absolute;
   width: 20px;
   height: 18px;
   left: 16px;
   top: 10px;
-  background-image: url('../img/discuss-icon-white.svg');
-  background-position: center;
+  background-image: url('../img/ico-market-card-buttons-sprite.svg');
   background-repeat: no-repeat;
   z-index: 11;
+}
+.market-bottom-line .market-brief-info_buttons a:last-child {
+  padding: 11px 16px 9px 16px;
+  border-radius: 4px;
+}
+.market-bottom-line .market-brief-info_buttons a:last-child::before {
+  background-image: none;
+}
+.market-bottom-line .market-brief-info_buttons-discuss {
+  border-radius: 4px 0 0 4px;
+}
+.market-bottom-line .market-brief-info_buttons-discuss::before {
+  background-position: 12% 11%;
 }
 .market-bottom-line .market-brief-info_buttons-review {
   margin-right: 12px;
-  position: relative;
-  padding: 12px 16px 10px 44px;
   border-radius: 0 4px 4px 0;
 }
 .market-bottom-line .market-brief-info_buttons-review::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  left: 16px;
-  top: 8px;
-  background-image: url('../img/to-rate-icon-white.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+  background-position: 9% 86%;
 }
 .market-bottom-line .market-brief-info_buttons-signup {
-  padding: 11px 16px 9px 16px;
   box-shadow: 0 2px 0 #1776bd;
-  border-radius: 4px;
+}
+.market-bottom-line .market-brief-info_buttons-signup::before {
+  background-image: none;
 }
 .page-tabs {
   background-color: #d7dfe8;

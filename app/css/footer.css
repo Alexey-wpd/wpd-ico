@@ -86,20 +86,36 @@
   width: 24px;
   height: 24px;
   border-radius: 2px;
-  background-position: center;
+  background-image: url('../img/ico-socials.svg');
   background-repeat: no-repeat;
 }
 .footer_social-item--fb {
   background-color: #345c94;
-  background-image: url('../img/fb-icon.svg');
+  background-position: 78% 24%;
 }
 .footer_social-item--tw {
   background-color: #00b0e9;
-  background-image: url('../img/twitter-ico.svg');
+  background-position: 100% -1%;
 }
-.footer_social-item--vk {
+.footer_social-item--google {
+  background-color: #e34346;
+  background-position: 22% -1%;
+}
+.footer_social-item--in {
+  background-color: #0086ba;
+  background-position: 20% 99%;
+}
+.footer_social-item--wk {
+  background-color: #4c75a3;
+  background-position: 43% 21%;
+}
+.footer_social-item--yb {
+  background-color: #ce1312;
+  background-position: -2px 3%;
+}
+.footer_social-item--m {
   background-color: #00ac68;
-  background-image: url('../img/mmm-icon.svg');
+  background-position: -54px 52%;
 }
 .footer_nav {
   display: flex;

@@ -170,12 +170,12 @@
   width: 16px;
   height: 16px;
   position: relative;
-  background-image: url('../img/star.svg');
-  background-position: center;
+  background-image: url('../img/stars-sprite.svg');
+  background-position: 14% 45%;
   background-repeat: no-repeat;
 }
 .subsection-content-item .forum-topic_star--active {
-  background-image: url('../img/star_active.svg');
+  background-position: 86% 50%;
 }
 .subsection-content-item .topic-statistic {
   margin-top: 4px;

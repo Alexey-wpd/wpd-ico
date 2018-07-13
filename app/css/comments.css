@@ -184,24 +184,24 @@
 .comments-item_rating .thumbs-up {
   width: 13px;
   height: 11px;
-  background-image: url('../img/thumbs-up.svg');
-  background-position: center;
+  background-image: url('../img/thumbs-sprite.svg');
+  background-position: 92% 14%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .comments-item_rating .thumbs-up--active {
-  background-image: url('../img/thumbs-up-green-review.svg');
+  background-position: 92% 76%;
 }
 .comments-item_rating .thumbs-down {
   width: 13px;
-  height: 11px;
-  background-image: url('../img/thumbs-down.svg');
-  background-position: center;
+  height: 15px;
+  background-image: url('../img/thumbs-sprite.svg');
+  background-position: 8% 85%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .comments-item_rating .thumbs-down--active {
-  background-image: url('../img/thumbs-down-red-review.svg');
+  background-position: 46% 85%;
 }
 .comments-item_rating .ellipsis {
   width: 18px;
@@ -313,24 +313,24 @@
 .comments_replys .replys-item_rating .thumbs-up {
   width: 13px;
   height: 11px;
-  background-image: url('../img/thumbs-up.svg');
-  background-position: center;
+  background-image: url('../img/thumbs-sprite.svg');
+  background-position: 92% 14%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .comments_replys .replys-item_rating .thumbs-up--active {
-  background-image: url('../img/thumbs-up-green-review.svg');
+  background-position: 92% 76%;
 }
 .comments_replys .replys-item_rating .thumbs-down {
   width: 13px;
-  height: 11px;
-  background-image: url('../img/thumbs-down.svg');
-  background-position: center;
+  height: 15px;
+  background-image: url('../img/thumbs-sprite.svg');
+  background-position: 8% 85%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .comments_replys .replys-item_rating .thumbs-down--active {
-  background-image: url('../img/thumbs-down-red-review.svg');
+  background-position: 46% 85%;
 }
 .comments_replys .replys-item_rating .ellipsis {
   width: 18px;

@@ -90,20 +90,21 @@
   width: 24px;
   height: 24px;
   border-radius: 2px;
+  background-image: url('../img/ico-socials.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 .ico-team_social-item--fb {
   background-color: #345c94;
-  background-image: url('../img/f-icon.svg');
+  background-position: 78% 24%;
 }
 .ico-team_social-item--tw {
   background-color: #00b0e9;
-  background-image: url('../img/tw-icon.svg');
+  background-position: 100% -1%;
 }
-.ico-team_social-item--g {
+.ico-team_social-item--google {
   background-color: #e34346;
-  background-image: url('../img/G+-icon.svg');
+  background-position: 22% -1%;
 }
 .ico-team_social span {
   margin-left: auto;

@@ -158,8 +158,30 @@
   z-index: 11;
 }
 .modal-content-sign-up .sign-up-form .password-strength {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 18px;
+}
+.modal-content-sign-up .sign-up-form .password-strength-indicator {
+  display: flex;
+}
+.modal-content-sign-up .sign-up-form .password-strength-indicator_item {
+  margin-right: 1px;
+  width: 27px;
+  height: 4px;
+  background-color: #c5d0de;
+}
+.modal-content-sign-up .sign-up-form .password-strength-indicator_item--red {
+  background-color: #ff3657;
+}
+.modal-content-sign-up .sign-up-form .password-strength-indicator_item--orange {
+  background-color: #f7981c;
+}
+.modal-content-sign-up .sign-up-form .password-strength-indicator_item--green {
+  background-color: #44af36;
+}
+.modal-content-sign-up .sign-up-form .password-strength p {
   color: #8f96a1;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -224,7 +246,7 @@
   margin-top: 8px;
   margin-bottom: 10px;
   background-image: url('../img/eye-grey.svg');
-  background-position: 246px 14px;
+  background-position: 246px 16px;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -301,9 +323,24 @@
   height: 32px;
   border-radius: 16px;
   background-color: #c5d0de;
-  background-image: url('../img/fb-icon.svg');
+  background-image: url('../img/social-form-sprite.svg');
   background-position: center;
   background-repeat: no-repeat;
+}
+.modal-content-sign-in_social-wrapper .social-btn--fb {
+  background-position: 109% 0%;
+}
+.modal-content-sign-in_social-wrapper .social-btn--tw {
+  background-position: 50% 92%;
+}
+.modal-content-sign-in_social-wrapper .social-btn--google {
+  background-position: 60% -9%;
+}
+.modal-content-sign-in_social-wrapper .social-btn--alian {
+  background-position: 0% 103%;
+}
+.modal-content-sign-in_social-wrapper .social-btn--git {
+  background-position: 3% -1%;
 }
 .modal-content-success {
   padding: 42px 34px 34px;

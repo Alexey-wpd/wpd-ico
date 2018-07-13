@@ -103,7 +103,6 @@
   height: 15px;
   left: 22px;
   top: 2px;
-  background-position: center;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -112,7 +111,8 @@
 .sidebar .profile_topics-item--icon-my-rating::after,
 .sidebar .profile_favourites-item--icon-my-rating::after,
 .sidebar .profile_settings-item--icon-my-rating::after {
-  background-image: url('../img/my-rating_icon.svg');
+  background-image: url('../img/sidebar-profile-sprite.svg');
+  background-position: 9% 15%;
 }
 .sidebar .profile_rating-item--icon-my-message::after,
 .sidebar .profile_messages-item--icon-my-message::after,
@@ -120,7 +120,8 @@
 .sidebar .profile_favourites-item--icon-my-message::after,
 .sidebar .profile_settings-item--icon-my-message::after {
   top: 1px;
-  background-image: url('../img/my-message-icon.svg');
+  background-image: url('../img/sidebar-profile-sprite.svg');
+  background-position: 93% 8%;
 }
 .sidebar .profile_rating-item--icon-my-topic::after,
 .sidebar .profile_messages-item--icon-my-topic::after,
@@ -128,14 +129,16 @@
 .sidebar .profile_favourites-item--icon-my-topic::after,
 .sidebar .profile_settings-item--icon-my-topic::after {
   top: 4px;
-  background-image: url('../img/my-topics-icon.svg');
+  background-image: url('../img/sidebar-profile-sprite.svg');
+  background-position: 48% 84%;
 }
 .sidebar .profile_rating-item--icon-my-favourites::after,
 .sidebar .profile_messages-item--icon-my-favourites::after,
 .sidebar .profile_topics-item--icon-my-favourites::after,
 .sidebar .profile_favourites-item--icon-my-favourites::after,
 .sidebar .profile_settings-item--icon-my-favourites::after {
-  background-image: url('../img/my-favourites-icon.svg');
+  background-image: url('../img/sidebar-profile-sprite.svg');
+  background-position: 51% 12%;
 }
 .sidebar .profile_rating-item--icon-my-settings::after,
 .sidebar .profile_messages-item--icon-my-settings::after,
@@ -143,7 +146,8 @@
 .sidebar .profile_favourites-item--icon-my-settings::after,
 .sidebar .profile_settings-item--icon-my-settings::after {
   top: 0px;
-  background-image: url('../img/my-settings-icon.svg');
+  background-image: url('../img/sidebar-profile-sprite.svg');
+  background-position: 7% 87%;
 }
 .sidebar .profile_rating-item .profile-item_name,
 .sidebar .profile_messages-item .profile-item_name,

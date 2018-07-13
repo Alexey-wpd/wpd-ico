@@ -223,9 +223,9 @@
   width: 20px;
   height: 16px;
   left: -4px;
-  top: 1px;
-  background-image: url('../img/triangle-green.svg');
-  background-position: center;
+  top: 3px;
+  background-image: url('../img/triengle-sprite.svg');
+  background-position: 0% 130%;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -234,7 +234,7 @@
 .ico-stats_item-roi-month--negative span::before {
   left: -4px;
   top: 3px;
-  background-image: url('../img/triengle-red.svg');
+  background-position: 100% 100%;
 }
 .ico-stats_item-date span {
   color: #707986;

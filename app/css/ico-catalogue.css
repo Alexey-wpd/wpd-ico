@@ -85,7 +85,6 @@
   box-shadow: 0 2px 0 #3e9532, inset 0 2px 4px rgba(1, 1, 1, 0.3);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-weight: 700;
   background-color: #44af36;
 }
 .ico-catalogue_nav-item:first-child a {
@@ -294,18 +293,19 @@
 .ico-catalogue-item_roi th:last-child {
   text-align: center;
 }
-.ico-catalogue-item_roi td {
+.ico-catalogue-item_roi td span {
   color: #333f52;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
 }
-.ico-catalogue-item_roi td span {
+.ico-catalogue-item_roi td span small {
+  font-weight: 700;
   font-size: 12px;
 }
-.ico-catalogue-item_roi td:last-child {
-  text-align: center;
+.ico-catalogue-item_roi td span.roi-24h {
+  position: relative;
   color: #45af37;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
@@ -313,38 +313,26 @@
   line-height: 20px;
   letter-spacing: -0.4px;
 }
-.ico-catalogue-item_roi td:last-child span {
-  position: relative;
-}
-.ico-catalogue-item_roi td:last-child span::before {
+.ico-catalogue-item_roi td span.roi-24h::before {
   content: "";
   position: absolute;
   width: 11px;
   height: 8px;
-  left: -22px;
-  top: 1px;
-  background-image: url('../img/triangle-green.svg');
-  background-position: center;
+  left: -18px;
+  top: 10px;
+  background-image: url('../img/triengle-sprite.svg');
+  background-position: 15% 52%;
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-catalogue-item_roi--negative td:last-child {
+.ico-catalogue-item_roi td span.roi-24h--negative {
   color: #ff3657;
 }
-.ico-catalogue-item_roi--negative td:last-child span {
-  position: relative;
+.ico-catalogue-item_roi td span.roi-24h--negative::before {
+  background-position: 84% 52%;
 }
-.ico-catalogue-item_roi--negative td:last-child span::before {
-  content: "";
-  position: absolute;
-  width: 11px;
-  height: 8px;
-  left: -22px;
-  top: 1px;
-  background-image: url('../img/triengle-red.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 11;
+.ico-catalogue-item_roi td:last-child {
+  text-align: center;
 }
 .ico-catalogue-item_fundraising {
   padding: 20px 0 18px 0px;
@@ -472,7 +460,8 @@
   color: #ff3657;
 }
 .ico-catalogue-item_status--canceled::before {
-  background-image: url('../img/thumbs-down-red.svg');
+  background-image: url('../img/thumbs-sprite.svg');
+  background-position: 9% 15%;
 }
 .ico-catalogue-item_status--reached {
   color: #44af36;
@@ -624,8 +613,8 @@
   height: 14px;
   left: 0px;
   top: -1px;
-  background-image: url('../img/discuss-icon-hover.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 8% 8%;
   background-repeat: no-repeat;
   z-index: 11;
   opacity: 0.5;
@@ -648,8 +637,8 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/to-rate-icon-hover.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 53%;
   background-repeat: no-repeat;
   opacity: 0.5;
   z-index: 11;
@@ -668,8 +657,8 @@
   height: 14px;
   left: 0px;
   top: -1px;
-  background-image: url('../img/green-check.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 9%;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -680,8 +669,8 @@
   height: 14px;
   left: 0px;
   top: -1px;
-  background-image: url('../img/green-check.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 9%;
   background-repeat: no-repeat;
   opacity: 1;
   z-index: 11;
@@ -704,8 +693,8 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/calendar-small.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 50% 52%;
   background-repeat: no-repeat;
   opacity: 0.5;
   z-index: 11;
@@ -723,8 +712,8 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/green-check.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 9%;
   background-repeat: no-repeat;
   opacity: 1;
   z-index: 11;
@@ -748,8 +737,8 @@
   height: 14px;
   left: 0px;
   top: -2px;
-  background-image: url('../img/add-to-portfolio.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 50% 9%;
   background-repeat: no-repeat;
   opacity: 0.5;
   z-index: 11;
@@ -772,9 +761,9 @@
   width: 16px;
   height: 14px;
   left: 0px;
-  top: -2px;
-  background-image: url('../img/wallet-blue.svg');
-  background-position: center;
+  top: -1px;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 8% 53%;
   background-repeat: no-repeat;
   opacity: 0.5;
   z-index: 11;
@@ -801,8 +790,8 @@
   height: 15px;
   left: -21px;
   top: -2px;
-  background-image: url('../img/white-check-big.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 8% 92%;
   background-repeat: no-repeat;
   z-index: 11;
 }

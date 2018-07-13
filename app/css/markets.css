@@ -293,15 +293,7 @@
   color: rgba(82, 92, 108, 0.85);
 }
 .markets-item_bottom-line .to-discuss:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 20px;
-  top: 0px;
-  background-image: url('../img/discuss-icon-hover.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .markets-item_bottom-line .to-discuss::before {
@@ -311,10 +303,11 @@
   height: 14px;
   left: 20px;
   top: 0px;
-  background-image: url('../img/discuss-icon.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 8% 8%;
   background-repeat: no-repeat;
   z-index: 11;
+  opacity: 0.5;
 }
 .markets-item_bottom-line .to-rate {
   padding-left: 45px;
@@ -324,15 +317,7 @@
   color: rgba(82, 92, 108, 0.85);
 }
 .markets-item_bottom-line .to-rate:hover::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  left: 20px;
-  top: 0px;
-  background-image: url('../img/to-rate-icon-hover.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .markets-item_bottom-line .to-rate::before {
@@ -342,9 +327,10 @@
   height: 14px;
   left: 20px;
   top: 0px;
-  background-image: url('../img/to-rate-icon.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 53%;
   background-repeat: no-repeat;
+  opacity: 0.5;
   z-index: 11;
 }
 .markets-item_bottom-line .to-rate--active {
@@ -361,8 +347,8 @@
   height: 14px;
   left: 20px;
   top: 0px;
-  background-image: url('../img/green-check.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 9%;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -373,9 +359,10 @@
   height: 14px;
   left: 20px;
   top: 0px;
-  background-image: url('../img/green-check.svg');
-  background-position: center;
+  background-image: url('../img/catalogue-item-icons-sprite.svg');
+  background-position: 92% 9%;
   background-repeat: no-repeat;
+  opacity: 1;
   z-index: 11;
 }
 .markets-item_characteristics {

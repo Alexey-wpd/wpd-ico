@@ -217,21 +217,13 @@
   width: 16px;
   height: 16px;
   position: relative;
-}
-.forum-section .forum-topic_star::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
-  background-image: url('../img/star.svg');
-  background-position: center;
+  background-image: url('../img/stars-sprite.svg');
+  background-position: 14% 45%;
   background-repeat: no-repeat;
   z-index: 11;
 }
-.forum-section .forum-topic_star--active::before {
-  background-image: url('../img/star_active.svg');
+.forum-section .forum-topic_star--active {
+  background-position: 86% 50%;
 }
 .forum-section .forum-topic_numbers {
   display: flex;

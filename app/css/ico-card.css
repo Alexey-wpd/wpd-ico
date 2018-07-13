@@ -194,26 +194,30 @@
   height: 24px;
   border-radius: 24px;
   background-color: #8f96a1;
+  background-image: url('../img/ico-socials.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 .ico-topline .ico-card_social-item--fb {
-  background-image: url('../img/f-icon.svg');
+  background-position: 78% 24%;
 }
 .ico-topline .ico-card_social-item--tw {
-  background-image: url('../img/tw-icon.svg');
+  background-position: 100% -1%;
 }
 .ico-topline .ico-card_social-item--google {
-  background-image: url('../img/G+-icon.svg');
+  background-position: 22% -1%;
 }
 .ico-topline .ico-card_social-item--in {
-  background-image: url('../img/in-icon.svg');
+  background-position: 20% 99%;
 }
 .ico-topline .ico-card_social-item--vk {
-  background-image: url('../img/wk-icon.svg');
+  background-position: 43% 21%;
+}
+.ico-topline .ico-card_social-item--yb {
+  background-position: -2px 3%;
 }
 .ico-topline .ico-card_social-item--m {
-  background-image: url('../img/m-icon.svg');
+  background-position: -54px 52%;
 }
 .ico-topline .ico-data {
   padding: 23px 0 30px;
@@ -371,12 +375,6 @@
 }
 .ico-topline .ico-data_trading-table td {
   padding-bottom: 10px;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: -0.5px;
   border-bottom: 1px solid rgba(206, 216, 227, 0.5);
 }
 .ico-topline .ico-data_trading-table td:first-child {
@@ -384,6 +382,25 @@
 }
 .ico-topline .ico-data_trading-table td:last-child {
   text-align: center;
+}
+.ico-topline .ico-data_trading-table td span {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+.ico-topline .ico-data_trading-table td span sup {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+.ico-topline .ico-data_trading-table td span.roi-24h {
+  position: relative;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -391,23 +408,20 @@
   line-height: 20px;
   letter-spacing: -1px;
 }
-.ico-topline .ico-data_trading-table td:last-child span {
-  position: relative;
-}
-.ico-topline .ico-data_trading-table td:last-child span::before {
+.ico-topline .ico-data_trading-table td span.roi-24h::before {
   content: "";
   position: absolute;
   width: 11px;
   height: 8px;
-  left: -17px;
+  left: -18px;
   top: 12px;
-  background-image: url('../img/triengle-red.svg');
-  background-position: center;
+  background-image: url('../img/triengle-sprite.svg');
+  background-position: 15% 52%;
   background-repeat: no-repeat;
   z-index: 11;
 }
-.ico-topline .ico-data_trading-table td sup {
-  font-size: 14px;
+.ico-topline .ico-data_trading-table td span.roi-24h--negative::before {
+  background-position: 84% 52%;
 }
 .ico-topline .ico-data_price-table {
   margin-bottom: 20px;
@@ -678,6 +692,9 @@
   padding: 12px 16px 10px;
   border-radius: 0 4px 4px 0;
 }
+.ico-bottom-line .ico-brief-info_buttons a:last-child::before {
+  background-image: none;
+}
 .ico-bottom-line .ico-brief-info_buttons a::before {
   content: "";
   position: absolute;
@@ -685,23 +702,23 @@
   height: 18px;
   left: 16px;
   top: 10px;
-  background-position: center;
+  background-image: url('../img/ico-market-card-buttons-sprite.svg');
   background-repeat: no-repeat;
   z-index: 11;
 }
 .ico-bottom-line .ico-brief-info_buttons-whitepaper::before {
-  background-image: url('../img/whitelist.svg');
+  background-position: 75% 86%;
 }
 .ico-bottom-line .ico-brief-info_buttons-goforum::before {
-  background-image: url('../img/discuss-icon-white.svg');
+  background-position: 12% 11%;
 }
 .ico-bottom-line .ico-brief-info_buttons-portfolio::before {
   top: 8px;
-  background-image: url('../img/portfolio.svg');
+  background-position: 88% 11%;
 }
 .ico-bottom-line .ico-brief-info_buttons-review::before {
   top: 8px;
-  background-image: url('../img/to-rate-icon-white.svg');
+  background-position: 9% 86%;
 }
 .ico-exchanges {
   padding: 32px 0 40px;
@@ -783,8 +800,8 @@
   height: 18px;
   left: 16px;
   top: 8px;
-  background-image: url('../img/portfolio.svg');
-  background-position: center;
+  background-image: url('../img/ico-market-card-buttons-sprite.svg');
+  background-position: 88% 11%;
   background-repeat: no-repeat;
   z-index: 11;
 }

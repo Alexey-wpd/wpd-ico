@@ -88,7 +88,7 @@
   display: block;
   padding: 10px 20px 9px;
   margin-left: -1px;
-  color: #525c6c;
+  color: #44af36;
   background-color: #fff;
   border: 1px solid #44af36;
   font-family: 'Roboto', sans-serif;
@@ -185,6 +185,29 @@
 .profile-activity-item_content--comment a {
   font-weight: 400;
 }
+.profile-activity-item_ratings .rating_tag {
+  display: inline-block;
+  position: relative;
+  background-color: #44af36;
+}
+.profile-activity-item_ratings .rating_tag::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-left: 7px solid #44af36;
+  top: 0px;
+  left: 33px;
+}
+.profile-activity-item_ratings .rating_tag span {
+  display: inline-block;
+  padding: 1px 5px 0 8px;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+}
 .profile-activity-item_comments {
   display: inline-block;
   background-color: #9ea4ad;
@@ -216,29 +239,4 @@
 }
 .profile-activity-item_rating--thread {
   color: #b64ad4;
-}
-.profile-activity-item .rating_tag {
-  position: relative;
-  display: flex;
-  width: 40px;
-  height: 20px;
-  background-color: #44af36;
-}
-.profile-activity-item .rating_tag::before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  border: 10px solid #fafbfc;
-  border-left-width: 0px;
-  border-right-width: 10px;
-  border-right-color: transparent;
-}
-.profile-activity-item .rating_tag span {
-  margin: auto;
-  white-space: nowrap;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
 }

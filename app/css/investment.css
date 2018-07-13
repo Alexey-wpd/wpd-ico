@@ -335,9 +335,9 @@
   width: 20px;
   height: 16px;
   left: -5px;
-  top: 6px;
-  background-image: url('../img/triangle-green.svg');
-  background-position: center;
+  top: 9px;
+  background-image: url('../img/triengle-sprite.svg');
+  background-position: 0% 130%;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -652,15 +652,15 @@
   height: 16px;
   left: -4px;
   top: 1px;
-  background-image: url('../img/triangle-green.svg');
-  background-position: center;
+  background-image: url('../img/triengle-sprite.svg');
+  background-position: 0% 130%;
   background-repeat: no-repeat;
   z-index: 11;
 }
 .portfolio_item-24hour--negative span::before {
   left: -4px;
   top: 3px;
-  background-image: url('../img/triengle-red.svg');
+  background-position: 100% 100%;
 }
 .portfolio_item-capitalizations {
   width: 13%;

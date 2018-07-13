@@ -225,8 +225,8 @@
   height: 15px;
   left: 4px;
   top: -1px;
-  background-image: url('../img/my-rating_icon.svg');
-  background-position: center;
+  background-image: url('../img/sidebar-profile-sprite.svg');
+  background-position: 9% 15%;
   background-repeat: no-repeat;
   z-index: 11;
 }
@@ -303,9 +303,6 @@
 .profile-usersrating_filter label b:hover {
   background-color: #e8edf2;
 }
-.profile-usersrating_list {
-  margin-bottom: 56px;
-}
 .profile-usersrating_item {
   margin-bottom: 18px;
 }
@@ -381,6 +378,25 @@
   font-weight: 500;
   line-height: 11px;
   letter-spacing: -0.23px;
+}
+.profile-usersrating .slider-control {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+}
+.profile-usersrating .slider-control-item {
+  margin-right: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  border: 1px solid #707986;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.profile-usersrating .slider-control-item--active {
+  border: 1px solid #8f96a1;
+  background-color: #8f96a1;
+  opacity: 1;
 }
 .profile-activity {
   margin-top: 16px;
@@ -555,28 +571,28 @@
   width: 24px;
   height: 24px;
   border-radius: 2px;
-  background-position: center;
+  background-image: url('../img/ico-socials.svg');
   background-repeat: no-repeat;
 }
 .profile-social_links-item--fb {
   background-color: #345c94;
-  background-image: url('../img/fb-icon.svg');
+  background-position: 78% 24%;
 }
 .profile-social_links-item--tw {
   background-color: #00b0e9;
-  background-image: url('../img/tw-icon.svg');
+  background-position: 100% -1%;
 }
 .profile-social_links-item--in {
   background-color: #0086ba;
-  background-image: url('../img/in-icon.svg');
+  background-position: 20% 99%;
 }
 .profile-social_links-item--m {
   background-color: #00ac68;
-  background-image: url('../img/m-icon.svg');
+  background-position: -54px 52%;
 }
 .profile-social_links-item--btc {
   background-color: #ffb629;
-  background-image: url('../img/btc-icon.svg');
+  background-position: -83px 1%;
 }
 .profile h2 {
   margin-bottom: 20px;
@@ -642,27 +658,24 @@
   position: relative;
   display: flex;
   margin-left: auto;
-  width: 30px;
-  height: 17px;
-  background-color: #44af36;
+  background-color: #7dc773;
 }
 .profile-reviews_item .rating_tag::before {
   content: "";
-  display: inline-block;
-  position: relative;
-  border: 8px solid #eff3f6;
-  border-left-width: 0px;
-  border-right-width: 6px;
-  border-right-color: transparent;
+  position: absolute;
+  border: 9px solid transparent;
+  border-right: 7px solid #7dc773;
+  top: 0px;
+  left: -16px;
 }
 .profile-reviews_item .rating_tag span {
-  margin: auto;
+  padding: 0 5px 0 3px;
   white-space: nowrap;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 700;
-  line-height: 12px;
+  line-height: 18px;
 }
 .profile-reviews_item-rating {
   margin-left: 22px;

@@ -14,6 +14,7 @@
     <link <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
 
   <body>
@@ -102,49 +103,51 @@
               <!-- /.row -->
           </div>
           <!-- /.container-fluid -->
-          <section class="header_slider">
-              <div class="container-fluid">
-                  <div class="row">
-                      <div class="col">
-                          <div class="header_slider-item">
-                              <div class="header_slider-collapse-icon  js-collapse">
-                                  <span></span>
+          <div class="colapsee">
+              <div class="header_slider" v-if="!showBlock">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col">
+                              <div class="header_slider-item">
+                                  <div class="header_slider-collapse-icon  js-collapse" @click="toggleName">
+                                      <span></span>
+                                  </div>
+                                  <h2 class="header_slider-title">Your own ICO tracker and calendar!</h2>
+                                  <p class="header_slider-intro">
+                                      Get smart notifications about upcoming events, add important dates to your personalized timeline, create and share your portfolio with community!
+                                  </p>
+                                  <div class="header_slider-button">
+                                      <a href="#" class="btn" >Sign Up for Free</a>
+                                  </div>
                               </div>
-                              <h2 class="header_slider-title">Your own ICO tracker and calendar!</h2>
-                              <p class="header_slider-intro">
-                                  Get smart notifications about upcoming events, add important dates to your personalized timeline, create and share your portfolio with community!
-                              </p>
-                              <div class="header_slider-button">
-                                  <a href="#" class="btn" >Sign Up for Free</a>
-                              </div>
+                              <!-- /.header_slider-item -->
                           </div>
-                          <!-- /.header_slider-item -->
                       </div>
                   </div>
+                  <!-- /.container-fluid -->
               </div>
-              <!-- /.container-fluid -->
-          </section>
-          <!-- /.header-slider -->
-          <div class="header_collapse">
-              <div class="container-fluid">
-                  <div class="row">
-                      <div class="col">
-                          <div class="header_collapse-wrapper">
-                              <h2>Your own ICO tracker and calendar!</h2>
-                              <div class="header_collapse-button">
-                                  <a href="#" class="btn">Sign Up for Free</a>
+              <!-- /.header-slider -->
+              <div class="header_collapse" v-if="showBlock">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col">
+                              <div class="header_collapse-wrapper">
+                                  <h2>Your own ICO tracker and calendar!</h2>
+                                  <div class="header_collapse-button">
+                                      <a href="#" class="btn">Sign Up for Free</a>
+                                  </div>
+                                  <div class="header_collapse-icon js-restore" @click="toggleName">
+                                      <span></span>
+                                  </div>
                               </div>
-                              <div class="header_collapse-icon js-restore">
-                                  <span></span>
-                              </div>
+                              <!-- /.header_collapse-wrapper -->
                           </div>
-                          <!-- /.header_collapse-wrapper -->
                       </div>
                   </div>
+                  <!-- /.container-fluid -->
               </div>
-              <!-- /.container-fluid -->
+              <!-- /.header_collapse -->
           </div>
-          <!-- /.header_collapse -->
       </header>
       <!-- /.header -->
       <section class="content">
@@ -705,5 +708,19 @@
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="libs/bootstrap/bootstrap.bundle.js"></script>
     <script src="js/common.js"></script>
+
+    <script>
+        let collapse = new Vue({
+            el: '.colapsee',
+            data: {
+                showBlock: true
+            },
+            methods: {
+                toggleName(){
+                    this.showBlock = !this.showBlock;
+                }
+            }
+        });
+    </script>
   </body>
 </html>
